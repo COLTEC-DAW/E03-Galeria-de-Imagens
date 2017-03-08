@@ -1,0 +1,115 @@
+.container {
+  overflow: hidden;
+  padding: 1%;
+  text-justify: auto;
+  color: #0045FF;
+}
+
+.col_1, col_2, col_3, col_4, col_5, col_6, col_7, col_8, col_9, col_10, col_11, col_12 {
+  padding-bottom: 99999px;
+  margin-bottom: -99999px;
+  margin: auto;
+}
+
+.col_1, .col_2, .col_3, .col_4, .col_5,.col_6,.col_7,.col_8,.col_9,.col_10,.col_11,.col_12 {
+  float: left;
+}
+
+.col_1 {
+  width: 8.3%;
+}
+
+
+.col_2 {
+  width: 16.6%;
+}
+
+
+.col_3 {
+  width: 24.9%;
+}
+
+
+.col_4 {
+  width: 33.2%;
+}
+
+
+.col_5 {
+  width: 41.5%;
+}
+
+.col_6 {
+  width: 49.8%;
+}
+
+.col_7 {
+  width: 58.1%;
+}
+
+.col_8 {
+  width: 66.4%;
+}
+
+.col_9 {
+  width: 74.7%;
+}
+
+.col_10 {
+  width: 83%;
+}
+
+.col_11 {
+  width: 91.3%;
+}
+
+.col_12 {
+  width: 99.6%;
+}
+
+#titulo{
+    text-align: center;
+    font-family: 'Lobster Two', cursive;
+    color: #ffffff;
+    background-color: #0045FF;
+}
+
+#sub{
+    text-align: center;
+    font-family: 'Lobster Two', cursive;
+    margin-bottom: 50px;
+}
+
+img{
+    width: 350px;
+    height: 450px;
+    border-radius: 50px;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    display: block;
+    margin: 0 auto;
+}
+
+img:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+footer{
+    text-align: center;
+    font-family: 'Lobster Two', cursive;
+}
+
+.conjunto{
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: 'Lobster Two', cursive;
+}
+
+p{
+    text-align: center;
+}
+
