@@ -88,14 +88,16 @@ img{
     filter: alpha(opacity=50);
     display: block;
     margin: 0 auto;
+    transition: all 0.5s ease-in-out;
 }
 
 img:hover {
     opacity: 1.0;
-    filter: alpha(opacity=100); /* For IE8 and earlier */
-    -moz-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+    filter: alpha(opacity=100); 
+    -webkit-transform : rotate(360deg) scale(1.2); 
+    -ms-transform: rotate(360deg) scale(1.2); 
+    transform: rotate(360deg) scale(1.2); 
+    position: relative;
 }
 
 footer{
@@ -112,4 +114,3 @@ footer{
 p{
     text-align: center;
 }
-
