@@ -1,0 +1,27 @@
+body{
+	background-color: #0F0A0A;
+	color:#FFFFFF;
+	margin: 5%;
+}
+header{
+	text-align: center;
+	background-color:#111111;
+}
+#container{
+	margin:0 auto;
+}
+.boxFilme{
+	float: left;
+	text-align: center;
+}
+.col4{
+	width: 31%;
+	padding:1%;	
+}
+.col12{
+	width:90%;
+}
+
+.boxFilme img{
+	width: 100%;
+}
