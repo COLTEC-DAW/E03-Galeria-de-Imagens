@@ -114,3 +114,19 @@ footer{
 p{
     text-align: center;
 }
+
+@keyframes movimento{
+  0%{
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+img{
+  animation-name: movimento;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-duration: 3s;
+}
