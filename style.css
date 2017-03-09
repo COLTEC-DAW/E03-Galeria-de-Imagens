@@ -94,7 +94,7 @@ body {
 h1 {
 	text-align: left;
 	padding-top: 2.5%;
-	text-shadow: 30px 10px 10px black;
+	/*text-shadow: 30px 10px 10px black; COMENTEI PQ FICA MUITO FEIO, MAS SEI COMO FAZER :D*/
 }
 
 p {
@@ -104,6 +104,34 @@ p {
 img {
 	text-align: center;
 	width: 100%;
+}
+
+/*Animacao de Inicio*/
+.col_4 {/*
+	-webkit-animation: width 1s;
+	animation: width 1s;*/
+	-webkit-animation: margin-top 0.7s;
+	animation: margin-top 0.7s;
+}
+/*
+@keyframes width {
+	from { width: 0%; }
+	to { width: 29.33%; }
+}
+
+@-webkit-keyframes width {
+	from { width: 0%; }
+	to { width: 29.33%; }
+}
+*/
+@keyframes margin-top {
+	from { margin-top: 500px; }
+	to { margin-top: 15px; }
+}
+
+@-webkit-keyframes margin-top {
+	from { margin-top: 500px; }
+	to { margin-top: 15px; }
 }
 
 .card {
