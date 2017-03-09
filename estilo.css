@@ -1,0 +1,102 @@
+body{
+    background-color: #212121;
+}
+
+img{
+    width: 75%;
+    height: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5%;
+}
+
+p{
+    text-align: center;
+}
+
+
+.container{
+    overflow: hidden;
+    padding: 1%;  
+    text-justify: auto;
+    color: #9E9E9E;
+    font-family: 'Cinzel', serif;
+}
+
+.col_1, col_2, col_3, col_4, col_5, col_6, col_7, col_8, col_9, col_10, col_11, col_12 {
+  padding-bottom: 99999px;
+  margin-bottom: -99999px;
+  margin: auto;
+}
+
+
+.col_1, .col_2, .col_3, .col_4, .col_5,.col_6,.col_7,.col_8,.col_9,.col_10,.col_11,.col_12 {
+  float: left;
+}
+
+.col_1 {
+  width: 8.3%;
+}
+
+
+.col_2 {
+  width: 16.6%;
+}
+
+
+.col_3 {
+  width: 24.9%;
+}
+
+
+.col_4 {
+  width: 33.2%;
+}
+
+
+.col_5 {
+  width: 41.5%;
+}
+
+.col_6 {
+  width: 49.8%;
+}
+
+.col_7 {
+  width: 58.1%;
+}
+
+.col_8 {
+  width: 66.4%;
+}
+
+.col_9 {
+  width: 74.7%;
+}
+
+.col_10 {
+  width: 83%;
+}
+
+.col_11 {
+  width: 91.3%;
+}
+
+.col_12 {
+  width: 99.6%;
+}
+
+#title{
+    text-align: center;
+    color: black;
+    background-color: #9E9E9E;
+}
+
+#subtitle{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+}
