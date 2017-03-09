@@ -8,9 +8,18 @@ img{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 5%;
+    margin-top: auto;
+/*    border-radius: 5%;*/
+    border-style: groove;
+    border-color: #9E9E9E;
+ /*   box-shadow: 3px 3px 3px 3px #9E9E9E;*/
+
 }
 
+.card{
+	animation: efeito 5s;
+	transition: 2s;
+}
 p{
     text-align: center;
 }
@@ -99,4 +108,20 @@ p{
 
 footer{
     text-align: center;
+}
+
+.card:hover{
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+	background-color: black;
+}
+
+@keyframes efeito{
+	from{
+		opacity: 0.0;
+	}
+	to{
+		opacity: 1;
+	}
 }
