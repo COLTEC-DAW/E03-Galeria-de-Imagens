@@ -8,10 +8,17 @@ img{
 }
 h1{
     text-align: center;
-    font-family: 'Arial Narrow';
+    font-size: 400%;
+    margin-top: 0px !important;
+}
+.title{
+    background-color: greenyellow;
+    margin-top: 0px !important; 
 }
 #subtitle{
-    font-family: Verdana,;
+    font-family: 'Pacifico', 'cursive';
+    text-align: center;
+    margin-bottom: 5%;
 }
 p{
     text-align: center;
@@ -45,6 +52,7 @@ footer{
 
 .col_4{
     width: 31.332%;
+    border-top: 7px;
 }
 
 .col_5{
