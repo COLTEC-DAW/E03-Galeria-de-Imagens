@@ -1,0 +1,50 @@
+.container{
+    width: 92%;
+    margin: auto;
+    overflow: hidden;
+}
+.col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12{
+    padding: 1%;
+    float: left;
+    padding-bottom: 999999px;
+    margin-bottom: -999999px;
+}
+img{
+    width: 10%;
+}
+.col_1{
+    width: 6.33%
+}
+.col_2{
+    width: 14.67%
+}
+.col_3{
+    width: 23%
+}
+.col_4{
+    width: 31,33%
+}
+.col_5{
+    width: 39.68%
+}
+.col_6{
+    width: 48.02%
+}
+.col_7{
+    width: 56.36%
+}
+.col_8{
+    width: 64.70%
+}
+.col_9{
+    width: 73.04%  
+}
+.col_10{
+    width: 81.38%
+}
+.col_11{
+    width: 89,72%
+}
+.col_12{
+    width: 98%
+}
