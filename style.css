@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Diplomata+SC|Ranga');
+
+body{
+    background-color: #8DE078;
+}
+
+.container{
+    width: 90%;
+    overflow: hidden;
+    margin: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5%;
+    height: 100%;
+    background-color: #A0FF88;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.movie_name{
+    text-align: center;
+}
+
+.date{
+    text-align: center;
+}
+
+img{
+    border-radius: 5% 5% 5% 5%;
+    margin: 5% 0% 0% 10%;
+    width: 80%;
+}
+
+.title{
+    text-align: center;
+    font-size: 250%;
+    font-family: 'Diplomata SC', cursive;
+}
+
+.subtitle{
+    text-align: center;
+    margin-bottom: 3%;
+    font-family: 'Ranga', cursive;
+    font-size: 175%; 
+}
+
+.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12{
+    padding: 1%;
+    float: left;
+    padding-bottom: 999999px;
+    margin-bottom: -999999px;
+}
+
+.col1{
+    width: 6.33%;
+}
+
+.col2{
+    width: 14.66%;
+}
+
+.col3{
+    width: 22.99%;
+}
+
+.col4{
+    width: 31.33%;
+}
+
+.col5{
+    width: 39.66%;
+}
+
+.col6{
+    width: 48%;
+}
+
+.col7{
+    width: 56.33%;
+}
+
+.col8{
+    width: 64.66%;
+}
+
+.col9{
+    width: 72.99%;
+}
+
+.col10{
+    width: 81.33%;
+}
+
+.col11{
+    width: 89.66%;
+}
+
+.col12{
+    width: 98%;
+}
+
+#footer{
+    text-align: center; 
+}
