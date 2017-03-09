@@ -124,7 +124,7 @@ p{
   }
 }
 
-img{
+img, .mov{
   animation-name: movimento;
   animation-iteration-count: 1;
   animation-timing-function: ease-out;
