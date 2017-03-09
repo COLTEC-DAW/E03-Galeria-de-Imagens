@@ -1,45 +1,43 @@
-html 
-{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-}
-
-body
-{
-    font-family: 'Noto Sans', sans-serif;
-    background-color: #FFFEF7;
-    margin: 0 10% 8px 10%;
-}
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
 
 h1
 {
     text-align: center;
-    font-size: 250%;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 2cm;
+    margin: 0;
 }
 
 .container
 {
-    width: 85%;
+    width: 90%;
     margin: auto;
     overflow: hidden;
 }
 
 .subtitulo
 {
-    font-size: 150%;
+    font-size: 0.7cm;
     text-align: center;
     color: darkslategray;
+    font-family: 'Pacifico', cursive;
+    margin: 0;
 }
 
 p
 {
     text-align: center;
+    font-family: 'Quicksand', sans-serif;
 }
 
 footer
 {
     text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.5cm;
 }
 
 .col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12 
@@ -115,8 +113,17 @@ footer
 
 img
 {
-    height: 400px;
-    width: 300px;
+    height: 300px;
+    width: 200px;
     margin: auto;
     display: block;
+    padding: 10px;
+}
+
+.cw3-card-12
+{
+  background-color: #F2FFEF;
+  border: 0px solid;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px #888888;
 }
