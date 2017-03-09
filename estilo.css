@@ -1,0 +1,46 @@
+.topo {
+    text-align: center;
+    font-family: 'Diplomata SC', cursive;
+    width: 100%;
+}
+
+img {
+    width: 300px;
+    height: 400px;
+}
+
+.col3 {
+    width: 26%;
+    float: left;
+    animation: cresce 2s;
+    animation-iteration-count: 1;
+    background: green;
+    box-shadow: 10px 10px 5px #888888;
+    border-radius: 25px;
+}
+
+.col12 {
+    float: left;
+    width: 100%;
+    height: 50px;
+}
+
+img + p {
+    font-size: 20px;
+    font-family: 'Slabo 27px', serif;
+}
+
+p+p {
+    font-family: 'Slabo 27px', serif;    
+}
+
+footer {
+    background: red;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+@keyframes cresce {
+    from {height: 1px, width: 1px;}
+    to {height: 400px, width: 300px;}
+}
