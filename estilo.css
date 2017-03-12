@@ -1,16 +1,50 @@
 .container{
-    width: 92%;
+    width: 90%;
     margin: auto;
     overflow: hidden;
+    color: white;
+    padding: 20px;
 }
 .col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12{
     padding: 1%;
     float: left;
     padding-bottom: 999999px;
     margin-bottom: -999999px;
+  
 }
+html{
+    background-color: black;
+}
+h1{
+    background: url(http://wiki.tarantino.info/images/Tarantino-xx-mural.jpg);
+    font-family: 'Rubik Mono One', sans-serif;
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    margin: 0px;
+}
+#sub{
+    font-family: 'Rubik Mono One', sans-serif;
+}
+p{
+    text-align: center;
+}
+
 img{
-    width: 10%;
+    border-radius: 5% 5% 5% 5%;
+    margin: 5% 0% 0% 10%;
+    width: 85%;
+}
+
+.card{
+    border: 2px solid black;
+    border-radius: 25px;
+    box-shadow: 4px 4px 10px;
+    background-color: gray;
+    
+}    
+.card:hover{
+    box-shadow: 8px 8px 14px;
 }
 .col_1{
     width: 6.33%
@@ -21,8 +55,8 @@ img{
 .col_3{
     width: 23%
 }
-.col_4{
-    width: 31.33%
+.col_4{  
+    width: 30%; 
 }
 .col_5{
     width: 39.68%
@@ -47,4 +81,33 @@ img{
 }
 .col_12{
     width: 98%
+}
+footer{
+    margin-top: 5%;
+    color: white;
+    text-align: center;
+}
+
+/*test*/
+@-webkit-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; } 
+}
+@-moz-keyframes fadeIn {
+0% { opacity: 0;}
+100% { opacity: 1; }
+}
+@-o-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+@keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+.fadeIn {
+-webkit-animation: fadeIn 3s ease-in-out;
+-moz-animation: fadeIn 3s ease-in-out;
+-o-animation: fadeIn 3s ease-in-out;
+animation: fadeIn 3s ease-in-out;
 }
