@@ -5,18 +5,32 @@
 }
 
 img {
-    width: 300px;
-    height: 400px;
+    width: 90%;
+    height: 20%;
+    align-content: center;
+}
+
+.col1 {
+    width: 9%;
+    float: left;
 }
 
 .col3 {
     width: 26%;
     float: left;
-    animation: cresce 2s;
+    animation-name: cresce;
+    animation-duration: 1s;
     animation-iteration-count: 1;
     background: green;
     box-shadow: 10px 10px 5px #888888;
     border-radius: 25px;
+    text-align: center;
+    transition: 1s;
+}
+
+.col3:hover {
+    width: 30%; /*Se o zoom fosse de 200% a página ficaria desestruturada*/
+    background-color: red;
 }
 
 .col12 {
@@ -28,10 +42,12 @@ img {
 img + p {
     font-size: 20px;
     font-family: 'Slabo 27px', serif;
+    text-align: center;
 }
 
 p+p {
     font-family: 'Slabo 27px', serif;    
+    text-align: center;
 }
 
 footer {
@@ -41,6 +57,6 @@ footer {
 }
 
 @keyframes cresce {
-    from {height: 1px, width: 1px;}
-    to {height: 400px, width: 300px;}
+    from {height: 1px; width: 1px;}
+    to {height: 400px; width: 300px;}
 }
