@@ -9,7 +9,7 @@ Você recebeu junto deste projeto a página `index.html` que deveria representar
 
 Ao se estruturar uma página web, o primeiro ponto a se pensar é como será sua estrutura geral. Ao se fazer uma galeria, geralmente as imagens são exibidas em formato de grade, de forma que o usuário consiga visualizar todos os itens inicialmente. 
 
-Utilize a técnica de Layout Híbrido visto na aula de **Page Layout** para estruturar a página de acordo com a figura abaixo:
+Utilize a técnica de Layout Híbrido visto na aula de **Page Layout** para estruturar a página utilizando um layout de 12 colunas, dividida de acordo com a figura abaixo:
 
 ![Estrutura da Página](galeria.png)
 
