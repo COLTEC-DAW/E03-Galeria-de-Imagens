@@ -26,6 +26,10 @@ body {
 	background-color: #fafafa;
 }
 
+#con {
+	text-align: center;
+}
+
 /*TELA GRANDE*/
 @media screen and (min-width: 1024px) {
 	.container .col_l4:last-child {
@@ -106,7 +110,7 @@ body {
 	}
 
 	.col_m1, .col_m2, .col_m3, .col_m4, .col_m5, .col_m6, .col_m7, .col_m8, .col_m9, .col_m10, .col_m11, .col_m12 {
-		float: left;
+		display: inline-block;
 		margin: auto;
 		margin: 2%;
 		padding-left: 1%;
@@ -180,7 +184,7 @@ body {
 	}
 
 	.col_s1, .col_s2, .col_s3, .col_s4, .col_s5, .col_s6, .col_s7, .col_s8, .col_s9, .col_s10, .col_s11, .col_s12 {
-		float: left;
+		display: inline-block;
 		margin: 2%;
 		padding-left: 1%;
 		padding-right: 1%;
