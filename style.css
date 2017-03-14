@@ -22,7 +22,7 @@ h1{
 .title{
     background-color: greenyellow;
     margin-top: 0px !important;
-    padding-bottom: 3% !important; 
+    margin-right: 0% !important; 
 }
 
 
@@ -31,7 +31,6 @@ h1{
     font-size: 125%;
     text-align: center;
     margin-top: 10%;
-    margin-bottom: 5%;
 }
 
 
@@ -52,60 +51,122 @@ footer{
 
 /* Colunas */
 
-.col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12{
+/* DESKTOP */
+
+.col_l1, .col_l2, .col_l3, .col_l4, .col_l5, .col_l6, .col_l7, .col_l8, .col_l9, .col_l10, .col_l11, .col_l12{
     float: left;
     padding: 1%;
     padding-bottom: 4242px;
     margin-bottom: -4242px; 
 }
 
-.col_1{
+.col_l1{
     width: 6.333%;
 }
 
-.col_2{
+.col_l2{
     width: 14.666%;
 }
 
-.col_3{
+.col_l3{
     width: 22.999%;
 }
 
-.col_4{
+.col_l4{
     width: 31.332%;
     border-top: 7px;
 }
 
-.col_5{
+.col_l5{
     width: 39.665%;
 }
 
-.col_6{
+.col_l6{
     width: 47.998%;
 }
 
-.col_7{
+.col_l7{
     width: 56.331%;
 }
 
-.col_8{
+.col_l8{
     width: 64.664%;
 }
 
-.col_9{
+.col_l9{
     width: 72.997%;
 }
 
-.col_10{
+.col_l10{
     width: 81.33%;
 }
 
-.col_11{
+.col_l11{
     width: 89.663%;
 }
 
-.col_12{
+.col_l12{
     width: 97.996%;
+}
+
+/* TABLET */
+
+@media screen and (max-width: 1024px,  min-width 648px){
+    .col_m1, .col_m2, .col_m3, .col_m4, .col_m5, .col_m6, .col_m7, .col_m8, .col_m9, .col_m10, .col_m11, .col_m12{
+        float: left;
+        padding: 1%;
+        padding-bottom: 4242px;
+        margin-bottom: -4242px; 
+    }
+    
+    .col_m1{
+        width: 6.333%;
+    }
+
+    .col_m2{
+        width: 14.666%;
+    }
+
+    .col_m3{
+        width: 22.999%;
+    }
+
+    .col_m4{
+        width: 31.332%;
+        border-top: 7px;
+    }
+
+    .col_m5{
+        width: 39.665%;
+    }
+
+    .col_m6{
+        width: 47.998%;
+    }
+
+    .col_m7{
+        width: 56.331%;
+    }
+
+    .col_m8{
+        width: 64.664%;
+    }
+
+    .col_m9{
+        width: 72.997%;
+    }
+
+    .col_m10{
+        width: 81.33%;
+    }
+
+    .col_m11{
+        width: 89.663%;
+    }
+
+    .col_m12{
+        width: 97.996%;
+    }
 }
 
 /* Cards */
@@ -114,13 +175,13 @@ footer{
     padding-bottom: 5px;
     border-radius: 2px;
     box-shadow: 0 1px 5px rgba(0,0,0,0.12), 0 1px 5px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);*/
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
     margin-top: 10px;
 }
 
 .card-pessoal:hover {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);*/
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
 /* Animações */
