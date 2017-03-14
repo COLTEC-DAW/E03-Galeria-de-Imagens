@@ -6,17 +6,10 @@
 
 img {
     width: 90%;
-    height: 20%;
     align-content: center;
 }
 
-.col1 {
-    width: 9%;
-    float: left;
-}
-
 .col3 {
-    width: 26%;
     float: left;
     animation-name: cresce;
     animation-duration: 1s;
@@ -28,9 +21,66 @@ img {
     transition: 1s;
 }
 
+
+.col1 {
+    float: left;
+}
+
+
+.col3 {
+    float: left;
+}
+
+@keyframes cresce {
+    from {height: 1px; width: 1px;}
+}
+
+@media screen and (min-width: 1023px){
+
+    .col1 {
+        width: 6%;
+    }
+
+    .col3 {
+        width: 25%;
+    }
+
+    .col3:hover {
+        width: 30%; /*Se o zoom fosse de 200% a página ficaria desestruturada*/
+    }
+
+}
+
+@media screen and (min-width: 648px) and (max-width: 1024px) {
+    .col1 {
+        width: 5%;
+    }
+
+    .col3 {
+        width: 45%;
+    }
+
+    .col3:hover {
+        width: 50%; /*Se o zoom fosse de 200% a página ficaria desestruturada*/
+    }
+
+}
+
+@media screen and (max-width: 648px) {
+    .col1 {
+        width: 15%;
+    }
+
+    .col3{
+        width: 75%;
+    }
+    .col3:hover {
+        width: 85%; /*Se o zoom fosse de 200% a página ficaria desestruturada*/
+    }
+}
+
 .col3:hover {
-    width: 30%; /*Se o zoom fosse de 200% a página ficaria desestruturada*/
-    background-color: red;
+    background-color: darkred;
 }
 
 .col12 {
@@ -51,12 +101,7 @@ p+p {
 }
 
 footer {
-    background: red;
     text-align: right;
-    font-family: Arial, Helvetica, sans-serif
-}
-
-@keyframes cresce {
-    from {height: 1px; width: 1px;}
-    to {height: 400px; width: 300px;}
+    font-family: Arial, Helvetica, sans-serif;
+    
 }
