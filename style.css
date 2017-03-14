@@ -1,8 +1,16 @@
-h1, h1+p{
+h1{
     text-align:center;
     font-family: 'Economica', sans-serif;
     padding-bottom: 20px;
     padding-top: 10px;
+}
+
+h1+p{
+    text-align:center;
+    font-family: 'Economica', sans-serif;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    text-size: 175%;
 }
 
 p{
@@ -15,6 +23,8 @@ footer{
 
 body{
   background-color: #DDDDFF;
+  animation: mudacorpage 3s infinite;
+  animation-iteration-count: 1;
 }
 
 .header{
@@ -86,24 +96,32 @@ body{
 }
 
 img{
-    height: 200px;
-    width: 150px;
+    width: 80%;
     margin: auto;
     display: block;
+}
+
+.card{
+    background-color: #FFFFFF;
+    padding-bottom: 5px;
     border: 0px solid;
     border-radius: 25px;
     box-shadow: #000000 5px 5px 3px;
-    transition: width 2s, height 2s;
-
-    animation: mymove 1.5s infinite;
+    transition: 1s;
+    animation: mudacor 3s infinite;
     animation-iteration-count: 1;
 }
 
-img:hover{
-    transform:scale(2,2);
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0);
 }
 
-@keyframes mymove{
-    from{transform:;height: 40px;width:30px;}
-    to{transform:;height:200px;width:150px;}
+@keyframes mudacor{
+    from{background-color:black;}
+    to{background-color:white;}
+}
+
+@keyframes mudacorpage{
+    from{background-color: black;}
+    to{background-color: #DDDDFF;}
 }
