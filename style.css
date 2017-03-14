@@ -13,13 +13,13 @@ footer{
     text-align:center;
 }
 
-.header{
-    background-color: darkcyan;
-    border-radius: 20px;
+body{
+  background-color: #DDDDFF;
 }
 
-body{
-  background-color: grey;
+.header{
+    background-color: #9098FF;
+    border-radius: 20px;
 }
 
 .container {
@@ -86,10 +86,24 @@ body{
 }
 
 img{
-    height: 400px;
-    width: 300px;
+    height: 200px;
+    width: 150px;
     margin: auto;
     display: block;
     border: 0px solid;
     border-radius: 25px;
+    box-shadow: #000000 5px 5px 3px;
+    transition: width 2s, height 2s;
+
+    animation: mymove 1.5s infinite;
+    animation-iteration-count: 1;
+}
+
+img:hover{
+    transform:scale(2,2);
+}
+
+@keyframes mymove{
+    from{transform:;height: 40px;width:30px;}
+    to{transform:;height:200px;width:150px;}
 }
