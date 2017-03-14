@@ -2,34 +2,55 @@
     width: 92%;
     margin: auto;
     overflow: hidden;
+    padding-top: 30%;
 }
+
+
 img{
     width: 100%;
 }
+
+
 h1{
     text-align: center;
-    font-size: 400%;
+    font-size: 450%;
     margin-top: 0px !important;
+    padding-top: 3%; 
 }
+
+
 .title{
     background-color: greenyellow;
-    margin-top: 0px !important; 
+    margin-top: 0px !important;
+    padding-bottom: 3% !important; 
 }
+
+
 #subtitle{
     font-family: 'Pacifico', 'cursive';
+    font-size: 125%;
     text-align: center;
+    margin-top: 10%;
     margin-bottom: 5%;
 }
+
+
 p{
     text-align: center;
 }
+
+
 footer{
     text-align: center;
 }
 
+
 #kBill{
     height: 100%;
 }
+
+
+/* Colunas */
 
 .col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12{
     float: left;
@@ -85,4 +106,70 @@ footer{
 
 .col_12{
     width: 97.996%;
+}
+
+/* Cards */
+
+.card_pessoal{
+    padding-bottom: 5px;
+    border-radius: 2px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.12), 0 1px 5px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);*/
+    margin-top: 10px;
+}
+
+.card-pessoal:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);*/
+}
+
+/* Animações */
+
+.primeiro{
+    -webkit-animation: sobe 1.0s;
+    animation: sobe 1.0s;
+    background-color: brown;
+}
+
+.segundo{
+    -webkit-animation: sobe 0.9s;
+    animation: sobe 0.9s;
+    background-color: mediumspringgreen;
+}
+
+
+.terceiro{
+    -webkit-animation: sobe 0.8s;
+    animation: sobe 0.8s;
+    background-color: gold;
+}
+
+
+.quarto{
+    -webkit-animation: sobe 0.7s;
+    animation: sobe 0.7s;
+    background-color: darkslategrey;
+}
+
+
+.quinto{
+    -webkit-animation: sobe 0.6s;
+    animation: sobe 0.6s;
+    background-color: khaki;
+}
+
+.sexto{
+    -webkit-animation: sobe 0.5s;
+    animation: sobe 0.5s;
+    background-color: gainsboro;
+}
+
+@keyframes sobe{
+    from { margin-top: 600px; }
+    to { margin-top: 0px; }
+}
+
+@-webkit-keyframes sobe {
+    from { margin-top: 100px; }
+    to { margin-top: 0px; }
 }
