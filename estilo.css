@@ -3,8 +3,8 @@ body{
 }
 
 img{
-    width: 75%;
-    height: 75%;
+    width: 60%;
+    height: 60%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -19,6 +19,9 @@ img{
 .card{
 	animation: efeito 5s;
 	transition: 2s;
+	border-radius: 10px;
+	display: block;
+	margin: 0 auto;
 }
 p{
     text-align: center;
