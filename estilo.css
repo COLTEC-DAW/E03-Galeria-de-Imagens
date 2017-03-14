@@ -5,61 +5,30 @@
   color: #0045FF;
 }
 
+body{
+  font-size: 18px;
+}
+
 .col_1, .col_2, .col_3, .col_4, .col_5,.col_6,.col_7,.col_8,.col_9,.col_10,.col_11,.col_12 {
   float: left;
   margin: auto;
-  padding: 1%;
+  padding: 2%;
 }
 
 .col_1 {
-  width: 6.3%;
-}
-
-.col_2 {
-  width: 16.6%;
-}
-
-.col_3 {
-  width: 24.9%;
+  width: 4.3%;
 }
 
 .col_4 {
-  width: 31.2%;
-}
-
-.col_5 {
-  width: 41.5%;
-}
-
-.col_6 {
-  width: 49.8%;
-}
-
-.col_7 {
-  width: 58.1%;
-}
-
-.col_8 {
-  width: 66.4%;
-}
-
-.col_9 {
-  width: 74.7%;
-}
-
-.col_10 {
-  width: 83%;
-}
-
-.col_11 {
-  width: 91.3%;
+  width: 29.2%;
 }
 
 .col_12 {
-  width: 97.6%;
+  width: 95.6%;
 }
 
 #titulo{
+    font-size: 2.8em;
     text-align: center;
     font-family: 'Lobster Two', cursive;
     color: #ffffff;
@@ -67,6 +36,7 @@
 }
 
 #sub{
+    font-size: 1.6em;
     text-align: center;
     font-family: 'Lobster Two', cursive;
     margin-bottom: 50px;
@@ -115,7 +85,16 @@ p{
   }
 }
 
-img, .mov{
+.ano{
+  font-size: 1.15em;
+}
+
+.nome{
+  font-size: 1.3em;
+  margin-top: 40px;
+}
+
+img, .ano, .nome{
   animation-name: movimento;
   animation-iteration-count: 1;
   animation-timing-function: ease-out;
