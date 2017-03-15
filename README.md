@@ -52,3 +52,20 @@ Adapte as fontes da página para um tamanho que seja relativo, conforme as técn
 * Nome do filme: `1.3em`
 * Título da página: `2.8em`
 * Subtítulo da página: `1.6em`
+
+
+## Modularizando CSS com SCSS
+
+Você observou que o arquivo CSS resultante da aplicação dos estilos requisitados anteriormente ficou muito grande!! O objetivo SCSS é utilizar os recursos de linguagem de programação para facilitar o desenvolvimento do arquivo CSS.
+
+### Criando paleta da página
+
+Para escrita da galeria, você provavelmente definiu valores padrão para fonte principal da página, cores de fundo, cor do cartão, etc. Utilize as variáveis para gerar a paleta básica de cores.
+
+### Mixins
+
+Os mixins são um recurso muito utilizando quando se deseja utilizar propriedades CSS que necessitam de *vendor prefix* para funcionar em vários navegadores, tais como `animation`, `transition`, `border-radius`, etc. Utilize mixins para representar propriedades que utilizam *vendor prefix* em sua página.
+
+### Layout responsivo em SCSS
+
+Reimplemente o layout responsivo utilizando os recursos de SCSS. Utilize recursos como variáveis e estrutura de repetição para gerar as colunas para cada dimensão.
