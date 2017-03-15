@@ -32,23 +32,3 @@ Cinema é movimento! Adicione uma animação que mostre os filmes da galeria com
 ### Interagindo com os Filmes
 
 Ao interagir com um dos filmes da galeria, é ideal que este filme ganhe destaque sobre os demais. Utilize as técnicas de transição vistas na aula de **CSS3** para dar um efeito de zoom de 200% nos filmes onde o usuário interage no momento.
-
-## Tornando a galeria responsiva
-
-### Layout para Mobile e Tablets
-
-Utilize as técnicas de layout responsivo para exibir a galeria tanto para Tablets quanto para smartphones. Mais especificamente, sua página deverá suportar 2 filmes por linha no layout para Tablets, e apenas um filme por linha no layout para smartphone. Abaixo seguem as dimensões que definem quando deverá ser aplicado cada layout:
-
-* Desktop: `> 1024px` de largura
-* Tablet: Entre `648px` e `1024px` de largura
-* Smartphone: `< 648px` de largura
-
-### Alterando tamanho da fonte
-
-Adapte as fontes da página para um tamanho que seja relativo, conforme as técnicas de design responsivo. As fontes deverão ter o seguinte tamanho:
-
-* body: `18px`
-* Ano do filme: `1.15em`
-* Nome do filme: `1.3em`
-* Título da página: `2.8em`
-* Subtítulo da página: `1.6em`
