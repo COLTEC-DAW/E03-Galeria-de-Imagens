@@ -2,13 +2,12 @@ body{
 	background-color: #000;
 	color:#FFFFFF;
 	margin: 0% 5% 5% 5%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
 }
 .col_4,.col_12 {
   padding-bottom: 99999px;
   margin-bottom: -99999px;
-}
-.col4{
-	width: 32%;
 }
 .col12{
 	width:99%;
@@ -18,24 +17,22 @@ header{
 	padding-bottom:0.5%;
 	text-align: center;
 	background-color:#111111;
-	font-family: 'Roboto', sans-serif;
 }
 header h1{
-	font-size:200%;
+	font-size:2.8em;
 }
 header p{
-	font-size:150%;
+	font-size:1.6em;
 }
 footer{
 	margin-top:5%;
 }
 footer p{
-	font-size:150%;
+	font-size:1.6em;
 	padding-top:0.5%;
 	padding-bottom:0.5%;
 	text-align: center;
 	background-color:#111111;
-	font-family: 'Roboto', sans-serif;
 }
 .boxFilme{
 	float: left;
@@ -77,7 +74,15 @@ footer p{
 .legenda{
 	background-color:#000;
 	border-radius: 10px;
+	
 }
+.legenda p{
+	font-size:1.3em;
+}
+.legenda p + p{
+	font-size:1.15em;
+}
+
 
 @keyframes movimento{
   0%{
@@ -92,4 +97,20 @@ footer p{
   animation-iteration-count: 1;
   animation-timing-function: ease-out;
   animation-duration: 3s;
+}
+
+@media screen and (max-width: 647px){
+	.col4{
+		width: 99%;
+	}
+}
+@media screen and (min-width: 648px) and (max-width: 1023px){
+	.col4{
+		width: 47%;
+	}
+}
+@media screen and (min-width: 1024px){
+	.col4{
+		width: 32%;
+	}
 }
