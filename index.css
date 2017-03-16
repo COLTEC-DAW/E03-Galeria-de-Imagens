@@ -3,6 +3,235 @@
 @import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
 @import url('https://fonts.googleapis.com/css?family=Acme');
 
+/* TELA GRANDE */
+
+@media screen and (min-width: 1024px) 
+{
+    .l1, .l2, .l3, .l4, .l5, .l6, .l7, .l8, .l9, .l10, .l11, .l12 
+    {
+        float: left;
+        padding: 1%;
+        padding-bottom: 99999px;
+        margin-bottom: -99999px;
+    }
+
+    .l1 
+    {
+    width: 6.33%;
+    }
+
+
+    .l2 
+    {
+    width: 14.66%;
+    }
+
+
+    .l3 
+    {
+    width: 22.99%;
+    }
+
+
+    .l4 
+    {
+    width: 31.33%;
+    }
+
+    .l5 
+    {
+    width: 39.65%;
+    }
+
+    .l6 
+    {
+    width: 47.96%;
+    }
+
+    .l7 
+    {
+    width: 56.31%;
+    }
+
+    .l8 
+    {
+    width: 64.64%;
+    }
+
+    .l9
+    {
+    width: 73%;
+    }
+
+    .l10
+    {
+    width: 81.3%;
+    }
+
+    .l11
+    {
+    width: 89.63%;
+    }
+
+    .l12 
+    {
+    width: 98%;
+    }
+}
+
+/* TELA MÉDIA */
+
+@media screen and (min-width: 648px) and (max-width: 1023px) 
+{
+.m1, .m2, .m3, .m4, .m5, .m6, .m7, .m8, .m9, .m10, .m11, .m12 
+    {
+        float: left;
+        padding: 1%;
+        padding-bottom: 99999px;
+        margin-bottom: -99999px;
+    }
+
+    .m1 
+    {
+    width: 6.33%;
+    }
+
+
+    .m2 
+    {
+    width: 14.66%;
+    }
+
+
+    .m3 
+    {
+    width: 22.99%;
+    }
+
+
+    .m4 
+    {
+    width: 31.33%;
+    }
+
+    .m5 
+    {
+    width: 39.65%;
+    }
+
+    .m6 
+    {
+    width: 47.96%;
+    }
+
+    .m7 
+    {
+    width: 56.31%;
+    }
+
+    .m8 
+    {
+    width: 64.64%;
+    }
+
+    .m9
+    {
+    width: 73%;
+    }
+
+    .m10
+    {
+    width: 81.3%;
+    }
+
+    .m11
+    {
+    width: 89.63%;
+    }
+
+    .m12 
+    {
+    width: 98%;
+    }
+
+}
+
+/* TELA PEQUENA */
+
+@media screen and (max-width: 647px) 
+{
+.s1, .s2, .s3, .s4, .s5, .s6, .s7, .s8, .s9, .s10, .s11, .s12 
+    {
+        float: left;
+        padding: 1%;
+        padding-bottom: 99999px;
+        margin-bottom: -99999px;
+    }
+
+    .s1 
+    {
+    width: 6.33%;
+    }
+
+
+    .s2 
+    {
+    width: 14.66%;
+    }
+
+
+    .s3 
+    {
+    width: 22.99%;
+    }
+
+
+    .s4 
+    {
+    width: 31.33%;
+    }
+
+    .s5 
+    {
+    width: 39.65%;
+    }
+
+    .s6 
+    {
+    width: 47.96%;
+    }
+
+    .s7 
+    {
+    width: 56.31%;
+    }
+
+    .s8 
+    {
+    width: 64.64%;
+    }
+
+    .s9
+    {
+    width: 73%;
+    }
+
+    .s10
+    {
+    width: 81.3%;
+    }
+
+    .s11
+    {
+    width: 89.63%;
+    }
+
+    .s12 
+    {
+    width: 98%;
+    }
+}
+
 h1 
 {
     text-align: center;
@@ -79,77 +308,6 @@ footer
     text-align: center;
     font-family: 'Quicksand', sans-serif;
     font-size: 0.5cm;
-}
-
-.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12 
-{
-    float: left;
-    padding: 1%;
-    padding-bottom: 99999px;
-    margin-bottom: -99999px;
-}
-
-.col1 
-{
-  width: 6.33%;
-}
-
-
-.col2 
-{
-  width: 14.66%;
-}
-
-
-.col3 
-{
-  width: 22.99%;
-}
-
-
-.col4 
-{
-  width: 31.33%;
-}
-
-.col5 
-{
-  width: 39.65%;
-}
-
-.col6 
-{
-  width: 47.96%;
-}
-
-.col7 
-{
-  width: 56.31%;
-}
-
-.col8 
-{
-  width: 64.64%;
-}
-
-.col9
-{
-  width: 73%;
-}
-
-.col10
-{
-  width: 81.3%;
-}
-
-.col11
-{
-  width: 89.63%;
-}
-
-.col12 
-{
-  width: 98%;
 }
 
 img
