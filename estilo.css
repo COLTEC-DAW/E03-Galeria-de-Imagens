@@ -1,8 +1,7 @@
 .container {
   overflow: hidden;
-  padding: 1%;
   text-justify: auto;
-  color: #0045FF;
+  color: #F0304B;;
 }
 
 body{
@@ -12,19 +11,11 @@ body{
 .col_1, .col_2, .col_3, .col_4, .col_5,.col_6,.col_7,.col_8,.col_9,.col_10,.col_11,.col_12 {
   float: left;
   margin: auto;
-  padding: 2%;
-}
-
-.col_1 {
-  width: 4.3%;
-}
-
-.col_4 {
-  width: 29.2%;
+  padding: 0.5%;
 }
 
 .col_12 {
-  width: 95.6%;
+  width: 99%;
 }
 
 #titulo{
@@ -32,14 +23,14 @@ body{
     text-align: center;
     font-family: 'Lobster Two', cursive;
     color: #ffffff;
-    background-color: #0045FF;
+    background-color: #83E5DE;
 }
 
 #sub{
     font-size: 1.6em;
     text-align: center;
     font-family: 'Lobster Two', cursive;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 
 img{
@@ -58,6 +49,13 @@ img:hover {
     -webkit-transform : rotate(360deg) scale(1.2); 
     -ms-transform: rotate(360deg) scale(1.2); 
     transform: rotate(360deg) scale(1.2); 
+    position: relative;
+}
+
+.col_4:hover{
+    -webkit-transform : scale(1.2); 
+    -ms-transform:  scale(1.2); 
+    transform:  scale(1.2); 
     position: relative;
 }
 
@@ -87,11 +85,12 @@ p{
 
 .ano{
   font-size: 1.15em;
+  margin-bottom: 60px;
 }
 
 .nome{
   font-size: 1.3em;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 img, .ano, .nome{
@@ -99,4 +98,20 @@ img, .ano, .nome{
   animation-iteration-count: 1;
   animation-timing-function: ease-out;
   animation-duration: 3s;
+}
+
+@media screen and (max-width: 647px){
+	.col_4{
+		width: 99%;
+	}
+}
+@media screen and (min-width: 648px) and (max-width: 1023px){
+	.col_4{
+		width: 47%;
+	}
+}
+@media screen and (min-width: 1024px){
+	.col_4{  
+		width: 32%;
+	}
 }
