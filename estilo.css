@@ -1,6 +1,7 @@
 .topo {
     text-align: center;
     font-family: 'Diplomata SC', cursive;
+    font-size: 20px;
     width: 100%;
 }
 
@@ -9,26 +10,9 @@ img {
     align-content: center;
 }
 
-.col3 {
-    float: left;
-    animation-name: cresce;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    background: green;
-    box-shadow: 10px 10px 5px #888888;
-    border-radius: 25px;
-    text-align: center;
-    transition: 1s;
-}
-
-
 .col1 {
     float: left;
-}
-
-
-.col3 {
-    float: left;
+    width: 5%;
 }
 
 @keyframes cresce {
@@ -37,50 +21,71 @@ img {
 
 @media screen and (min-width: 1023px){
 
-    .col1 {
-        width: 6%;
+    .col4L {
+        margin: 5%;
+        float: left;
+        width: 23.3%;    
+        animation-name: cresce;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        background:red;
+        box-shadow: 10px 10px 5px #888888;
+        border-radius: 25px;
+        text-align: center;
+        transition: 1s;
     }
 
-    .col3 {
-        width: 25%;
-    }
-
-    .col3:hover {
-        width: 30%; /*Se o zoom fosse de 200% a página ficaria desestruturada*/
+    .col4L:hover {
+        transform: scale(1.2, 1.2); /*Se o zoom fosse de 200% a página ficaria desestruturada*/
+        background-color: darkred;
     }
 
 }
 
 @media screen and (min-width: 648px) and (max-width: 1024px) {
-    .col1 {
-        width: 5%;
+
+    .col6M {
+        margin: 5%;
+        float: left;
+        width: 40%;
+        animation-name: cresce;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        background: green;
+        box-shadow: 10px 10px 5px #888888;
+        border-radius: 25px;
+        text-align: center;
+        transition: 1s;
     }
 
-    .col3 {
-        width: 45%;
-    }
-
-    .col3:hover {
-        width: 50%; /*Se o zoom fosse de 200% a página ficaria desestruturada*/
+    .col6M:hover {
+        transform: scale(1.2, 1.2); /*Se o zoom fosse de 200% a página ficaria desestruturada*/
+        background-color: darkred;
     }
 
 }
 
 @media screen and (max-width: 648px) {
-    .col1 {
-        width: 15%;
+
+    .col12P{
+        float: left;
+        margin: 5%;
+        width: 90%;
+        animation-name: cresce;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        background: green;
+        box-shadow: 10px 10px 5px #888888;
+        border-radius: 25px;
+        text-align: center;
+        transition: 1s;
     }
 
-    .col3{
-        width: 75%;
+    .col12P:hover {
+        transform: scale(1.05, 1.05); /*Se o zoom fosse de 200% a página ficaria desestruturada*/
+        background-color: darkred;
     }
-    .col3:hover {
-        width: 85%; /*Se o zoom fosse de 200% a página ficaria desestruturada*/
-    }
-}
 
-.col3:hover {
-    background-color: darkred;
 }
 
 .col12 {
@@ -90,12 +95,13 @@ img {
 }
 
 img + p {
-    font-size: 20px;
+    font-size: 1.3em;
     font-family: 'Slabo 27px', serif;
     text-align: center;
 }
 
 p+p {
+    font-size: 1.15em;
     font-family: 'Slabo 27px', serif;    
     text-align: center;
 }
