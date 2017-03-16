@@ -65,7 +65,7 @@
         margin: auto;
         }
 
-        @media screen and (min-width: 1024px){
+     
        
         .col_1,.col_2,.col_3,.col_4,.col_5,.col_6,.col_7,.col_8,.col_9,.col_10,.col_11,.col_12{
         float:right;
@@ -88,8 +88,71 @@
            width: 22.5%;     
         }
 
-        .col_4{ 
-            width: 30%; 
+        @media screen and (min-width: 1024px){
+            .col_4{ 
+                width: 30%; 
+            }
+            img {
+                width: 350px;
+                height 500px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                opacity: 1; 
+                filter: alpha(opacity=100);
+                border-radius: 10px;
+
+                -webkit-transition: width 2s, height 2s;
+                transition: width 2s, height 2s;
+
+             }
+        }
+
+         @media screen and (max-width: 1370px){
+             img {
+                width: 250px;
+                height 400px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                opacity: 1; 
+                filter: alpha(opacity=100);
+                border-radius: 10px;
+
+                -webkit-transition: width 2s, height 2s;
+                transition: width 2s, height 2s;
+
+             }
+
+         }
+        
+         @media screen and (min-width: 648px) and (max-width: 1023px){
+            .col_4{ 
+                width: 48%; 
+            }
+             
+
+
+        }
+         @media screen and (max-width: 647px){
+            .col_4{ 
+                width: 90%; 
+            }
+              img {
+                width: 300px;
+                height 450px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                opacity: 1; 
+                filter: alpha(opacity=100);
+                border-radius: 10px;
+
+                -webkit-transition: width 2s, height 2s;
+                transition: width 2s, height 2s;
+
+             }
+
         }
 
         .col_5{ 
@@ -122,7 +185,7 @@
             width: 90%; 
         }
       
-        }
+        
         
 
 
@@ -149,26 +212,18 @@
         p{
          font-family: 'Rajdhani', sans-serif;
          text-align: center;
+         font-size: 1.3em;
 
             
         }
 
+        p.ano{
+            font-size: 1.15em;
+        }
+
        
 
-        img {
-        width: 350px;
-        height 500px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        opacity: 1; 
-        filter: alpha(opacity=100);
-        border-radius: 10px;
-
-        -webkit-transition: width 2s, height 2s;
-        transition: width 2s, height 2s;
-
-        }
+        
 
         img:hover {
         opacity: 0.5;
