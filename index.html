@@ -6,96 +6,264 @@
 
         <style>
             @import url('https://fonts.googleapis.com/css?family=Sansita');
+            @import url('https://fonts.googleapis.com/css?family=Philosopher');
+            @import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
+            @import url('https://fonts.googleapis.com/css?family=Pontano+Sans');
+            @import url('https://fonts.googleapis.com/css?family=Abel');
 
             body{
-                background-color: beige;
-                padding-top: 2%;
+                background-color: #858183;
+               
                 padding-left: 10%;
                 padding-right: 10%;
+                   animation-duration: 3s;
+                animation-name: slidein
+                   
+               
+              
             }
             h1 {
                 text-align: center;
-                font-family:  'Sansita', sans-serif;
-                color: black;
+                font-family: 'Abel', sans-serif;
+                color: white;
                 padding-left: 10%;
                 padding-right: 10%;
-                margin-bottom: 10%;
-
-                background-color: #FF876D;
+                margin-bottom: 5%;
+                font-size: 50px;
+                border: 2px solid black;
+                
+                background-color: #4F4D4E;
+           
             }
 
-            .container {
+            
+
+            #sub {
+                text-align: center;
+                font-family: 'Abel', sans-serif;
+                color:  white;
+                font-size: 35px;
+                margin-bottom: 5%;
+                
+                
+            }
+            
+            #container {
                 width: 92%;
                 margin: auto;
+                
+               
+               
+                      
+            }
+             
+            img{
+                
+                
+                width: 200px;
+                height: 270px;
+                
+                 padding-top: 6%;
+                display: block;
+                margin: 0 auto;
+               
+            }
+            footer{
+              text-align: center;
+            font-family: 'Abel', sans-serif;
+              width: 100%;
+              clear: both;
+              font-size: 20px;
+              color: white;
+              padding-top: 2%;
             }
 
+            .card {
+                background-color:#4F4D4E;
+                border: 3px solid black;
+                position: relative;
+                border-radius: 10px;
+                box-shadow: saddlebrown; 
+                -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+                 transition: width 2s, height 2s,  transform 2s;
+                
 
-            .col_1, .col_2, .col_3, .col_4, .col_5 {
+            }
+            .card:hover 
+                {
+                     width: 333.094px;
+                     height: 389.625px;
+                 -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+                }
+
+            #leg {
+                background-color: black;
+                position: relative;
+                text-align: center;
+                font-family: 'Julius Sans One', sans-serif;
+                color: aliceblue;
+                font-size: 18px;
+
+            }
+           
+
+            .col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12  {
                 float: left;
                 padding: 1%;
+                padding-bottom: 99999px;
+                margin-bottom: -99999px;
+                
+                
             }
 
-            .col_1 {
-                width: 18%;
-            }
+            .col_1 
+                {
+                width: 6.33%;
+                }
 
 
-            .col_2 {
-                width: 38%;
-            }
+            .col_2 
+                {
+                width: 14.66%;
+                }
 
 
-            .col_3 {
-                width: 58%;
-            }
+            .col_3 
+                {
+                width: 22.99%;
+                }
 
 
-            .col_4 {
-                width: 78%;
-            }
+            .col_4 
+                {
+                width: 31.33%;
+                }
 
+            .col_5 
+                {
+                width: 39.65%;
+                }
 
-            .col_5 {
+            .col_6 
+                {
+                width: 47.96%;
+                }
+
+            .col_7 
+                {
+                width: 56.31%;
+                }
+
+            .col_8 
+                {
+                width: 64.64%;
+                }
+
+            .col_9
+                {
+                width: 73%;
+                }
+
+            .col_10
+                {
+                width: 81.3%;
+                }
+
+            .col_11
+                {
+                width: 89.63%;
+                }
+
+            .col_12 
+                {
                 width: 98%;
+                }
+                
+                @keyframes slidein {
+               from {
+                margin-left: 0%;
+                 width: 150%
             }
 
+            to {
+                margin-left: 0%;
+                width: 100%;
+                }
+            }
+           
+  
     </style>
   </head>
   
   
     <body>
         <h1>Galeria do Tarantino</h1>
-        <p>Galeria de alguns dos filmes de Quentin Tarantino</p>
-        <div class=˜container˜>
-        <div >
-            <img src="img/caes_de_aluguel.jpg" alt="">
-            <p><b>Cães de Aluguel</b></p>
-            <p>1992</p>
+        <p id=sub>Galeria de alguns dos filmes de Quentin Tarantino</p>
+        <div id=˜container˜>
+            
+        <div class=col_4 >
+
+            <div class=card>
+                <img src="img/caes_de_aluguel.jpg" alt="">
+                <div id=leg> 
+                <p><b>Cães de Aluguel</b></p>
+                <p>1992</p>
+                </div>
+            </div>
+       
         </div>
-        <div>
-            <img src="img/pulp_fiction.jpg" alt="">
-            <p><b>Pulp Fiction: Tempos de Violência</b></p>
-            <p>1994</p>
+        <div class=col_4>
+            <div class=card>
+           
+                <img src="img/pulp_fiction.jpg" alt="">
+                <div id=leg> 
+                <p><b>Pulp Fiction: Tempos de Violência</b></p>
+                <p>1994</p>
+                </div>
+            </div>
+           
         </div>
-        <div>
-            <img src="img/kill_bill.jpg" alt="">
-            <p><b>Kill Bill: Volume 1</b></p>
-            <p>2003</p>
+        <div class=col_4>
+            <div class=card>
+            
+                <img src="img/kill_bill.jpg" alt="">
+                <div id=leg> 
+                <p><b>Kill Bill: Volume 1</b></p>
+                <p>2003</p>
+                </div> 
+            </div>
+            
         </div>
-        <div>
-            <img src="img/bastardos_inglorios.jpg" alt="">
-            <p><b>Bastardos Inglórios</b></p>
-            <p>2009</p>
+        <div class=col_4>
+            <div class=card>
+             
+                <img src="img/bastardos_inglorios.jpg" alt="">
+                <div id=leg> 
+                <p><b>Bastardos Inglórios</b></p>
+                <p>2009</p>
+                </div>
+            </div>
         </div>
-        <div>
-            <img src="img/django_livre.jpg" alt="">
-            <p><b>Django Livre</b></p>
-            <p>2012</p>
+        <div class=col_4>
+            <div class=card>
+                <img src="img/django_livre.jpg" alt="">
+                <div id=leg> 
+                <p><b>Django Livre</b></p>
+                <p>2012</p>
+                </div>
+            </div>
         </div>
-        <div>
-            <img src="img/os_oito_odiados.jpg" alt="">
-            <p><b>Os Oito Odiados</b></p>
-            <p>2015</p>
+        <div class=col_4>
+            <div class=card>
+             
+                <img src="img/os_oito_odiados.jpg" alt="">
+                <div id=leg> 
+                <p><b>Os Oito Odiados</b></p>
+                <p>2015</p>
+                </div>
+            </div>
+            
         </div>
         </div>
         <footer>
