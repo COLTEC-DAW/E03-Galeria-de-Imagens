@@ -3,6 +3,7 @@ h1{
     font-family: 'Economica', sans-serif;
     padding-bottom: 20px;
     padding-top: 10px;
+    text-size: 2.8em;
 }
 
 h1+p{
@@ -10,7 +11,7 @@ h1+p{
     font-family: 'Economica', sans-serif;
     padding-bottom: 20px;
     padding-top: 10px;
-    text-size: 175%;
+    text-size: 1.6em;
 }
 
 p{
@@ -25,6 +26,7 @@ body{
   background-color: #DDDDFF;
   animation: mudacorpage 3s infinite;
   animation-iteration-count: 1;
+  text-size: 18px;
 }
 
 .header{
@@ -38,6 +40,7 @@ body{
   overflow: hidden;
 
 }
+
     @media screen and (min-width: 1024px){
     .col_L1, .col_L2, .col_L3, .col_L4, .col_L5, .col_L6 , .col_L7, .col_L8, .col_L9, .col_L10, .col_L11, .col_L12 {
     float: left;
@@ -47,6 +50,10 @@ body{
 
     }
 
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0);
+    transform: scale(1.08, 1.08);
+}
     .col_L1 {
         width: 6.33%;
     }
@@ -94,6 +101,17 @@ body{
     .col_L12 {
         width: 98%;
     }
+    .card{
+    background-color: #FFFFFF;
+    padding-bottom: 5px;
+    border: 0px solid;
+    border-radius: 25px;
+    box-shadow: #000000 5px 5px 3px;
+    transition: 1s;
+    animation: mudacor 3s infinite;
+    animation-iteration-count: 1;
+}
+
 }
 @media screen and (max-width: 1024px) and (min-width: 648px){
     .col_M1, .col_M2, .col_M3, .col_M4, .col_M5, .col_M6 , .col_M7, .col_M8, .col_M9, .col_M10, .col_M11, .col_M12 {
@@ -151,9 +169,26 @@ body{
     .col_M12 {
         width: 98%;
     }
+
+    .card{
+        background-color: #FFFFFF;
+        padding-bottom: 5px;
+        border: 0px solid;
+        border-radius: 25px;
+        box-shadow: #000000 5px 5px 3px;
+        transition: 1s;
+        animation: mudacor 3s infinite;
+        animation-iteration-count: 1;
+    }
+    
+    .card:hover{
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0);
+        transform: scale(1.08, 1.08);
+    }
+
 }
 
-@media screen and(max-width: 648){
+@media screen and(max-width: 648px){
     .col_P1, .col_P2, .col_P3, .col_P4, .col_P5, .col_P6 , .col_P7, .col_P8, .col_P9, .col_P10, .col_P11, .col_P12 {
     float: left;
     padding: 1%;
@@ -209,27 +244,26 @@ body{
     .col_P12 {
         width: 98%;
     }
+
+    .card{
+        background-color: #FFFFFF;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        transition: 1s;
+        animation: mudacor 3s infinite;
+        animation-iteration-count: 1;
+    }
+
 }
+
+.card:hover{
+    transform: scale(1.05, 1.05);
+}
+
 img{
     width: 80%;
     margin: auto;
     display: block;
-}
-
-.card{
-    background-color: #FFFFFF;
-    padding-bottom: 5px;
-    border: 0px solid;
-    border-radius: 25px;
-    box-shadow: #000000 5px 5px 3px;
-    transition: 1s;
-    animation: mudacor 3s infinite;
-    animation-iteration-count: 1;
-}
-
-.card:hover{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0);
-    transform: scale(1.08, 1.08);
 }
 
 @keyframes mudacor{
@@ -240,4 +274,12 @@ img{
 @keyframes mudacorpage{
     from{background-color: black;}
     to{background-color: #DDDDFF;}
+}
+
+.nome{
+    text-size: 1.3em;
+}
+
+.ano{
+    text-size: 1.15em;
 }
