@@ -27,6 +27,7 @@ img{
 	border-radius: 10px;
 	display: block;
 	margin: 0 auto;
+	margin-top: 15%;
 }
 
 
@@ -51,9 +52,9 @@ footer{
     font-family: 'Cinzel', serif;
 }
 
-.col_1, col_2, col_3, col_4, col_5, col_6, col_7, col_8, col_9, col_10, col_11, col_12 {
-  padding-bottom: 99999px;
-  margin-bottom: -99999px;
+.col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12 {
+/*  padding-bottom: 99999px;
+  margin-bottom: -99999px;*/
   margin: auto;
 }
 
@@ -122,7 +123,8 @@ footer{
 
 #subtitle{
     text-align: center;
-	font-size: 1.6em;
+	font-size: 1em;
+	margin-top: -7%;
 }
 
 footer{
