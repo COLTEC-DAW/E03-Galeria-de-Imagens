@@ -36,7 +36,6 @@ body{
 img{
     max-width: 100%;
     border-radius: 50px;
-    opacity: 0.5;
     filter: alpha(opacity=50);
     display: block;
     transition: all 0.5s ease-in-out;
@@ -50,6 +49,7 @@ img:hover {
     -ms-transform: rotate(360deg) scale(1.2); 
     transform: rotate(360deg) scale(1.2); 
     position: relative;
+    transition: 1.0s;
 }
 
 .col_4:hover{
@@ -57,6 +57,7 @@ img:hover {
     -ms-transform:  scale(1.2); 
     transform:  scale(1.2); 
     position: relative;
+    transition: 1s;
 }
 
 footer{
