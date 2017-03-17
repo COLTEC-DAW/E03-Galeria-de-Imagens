@@ -22,9 +22,12 @@ h1{
     font-size: 80px;
     text-align: center;
     margin: 0px;
+    width: auto;
+    font-size: 2.8em;
 }
 #sub{
     font-family: 'Rubik Mono One', sans-serif;
+    font-size: 1.1em;
 }
 p{
     text-align: center;
@@ -37,14 +40,18 @@ img{
 }
 
 .card{
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 25px;
     box-shadow: 4px 4px 10px;
     background-color: gray;
+    transition: all .2s ease-in-out;
     
 }    
 .card:hover{
     box-shadow: 8px 8px 14px;
+    transform: scale(1.1);
+
+/*Divisão em colunas */
 }
 .col_1{
     width: 6.33%
@@ -59,7 +66,7 @@ img{
     width: 30%; 
 }
 .col_5{
-    width: 39.68%
+    width: 37.68%
 }
 .col_6{
     width: 48.02%
@@ -82,13 +89,42 @@ img{
 .col_12{
     width: 98%
 }
+/*rodapé*/
 footer{
     margin-top: 5%;
     color: white;
     text-align: center;
 }
 
-/*test*/
+.film{
+    font-size: 1.2em;
+}
+.ano{
+    font-size: 1.1em;
+}
+
+/* Media Queries*/
+@media screen and (min-width: 1050px){
+    .col_4{
+        width: 30%;
+        transition: 1s;
+    }
+}
+
+@media screen and (max-width: 647px){
+    .col_4{
+        width: 98%;
+        transition: 1s;
+    }
+}
+@media screen and (min-width: 647px) and (max-width: 1049px){
+    .col_4{
+        width: 48%;
+        transition: 1s;
+    }
+}
+
+/*ANIMAÇAO Fade In*/
 @-webkit-keyframes fadeIn {
 0% { opacity: 0; }
 100% { opacity: 1; } 
@@ -106,8 +142,9 @@ footer{
 100% { opacity: 1; }
 }
 .fadeIn {
--webkit-animation: fadeIn 3s ease-in-out;
--moz-animation: fadeIn 3s ease-in-out;
--o-animation: fadeIn 3s ease-in-out;
-animation: fadeIn 3s ease-in-out;
+    font-size: 18px;
+    -webkit-animation: fadeIn 3s ease-in-out;
+    -moz-animation: fadeIn 3s ease-in-out;
+    -o-animation: fadeIn 3s ease-in-out;
+    animation: fadeIn 3s ease-in-out;
 }
