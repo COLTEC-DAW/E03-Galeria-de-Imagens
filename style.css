@@ -2,12 +2,12 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One');
 
 body{
-    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 2s; /* Firefox < 16 */
-        -ms-animation: fadein 2s; /* Internet Explorer */
-         -o-animation: fadein 2s; /* Opera < 12.1 */
-            animation: fadein 2s;
-    background: url('http://www.zhongyaodqt.com/data/out/12/56725277-django-unchained-wallpapers.jpg');
+    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 3s; /* Firefox < 16 */
+        -ms-animation: fadein 3s; /* Internet Explorer */
+         -o-animation: fadein 3s; /* Opera < 12.1 */
+            animation: fadein 3s;
+    background: url('http://i.imgur.com/h8kUUlx.jpg');
     background-repeat: repeat;
     font-size: 18px;
 }
@@ -48,27 +48,45 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    
 }
 
+.header {
+  position: relative;
+  width: 100%;
+  height: 150px;
+}
+
+.title, .background{
+    position: absolute;
+    width: 100%;
+    height: 100%
+
+}
+
 .title{
     text-align: center;
+    vertical-align: middle;
     font-size: 2.8em;
     font-family: 'Rubik Mono One', sans-serif;
-    color: deeppink;
-    background: url('https://wallpaperscraft.com/image/quentin_tarantino_pulp_fiction_kill_bill_reservoir_dogs_100612_1920x1080.jpg');
-    background-size: 30% 100%;
-    background-origin: border-box;
+    color: red;
     padding: 2%;
     margin: 0px;
     -webkit-animation: movimento 3s;
-    animation: movimento 3s;
+    animation: movimento 3s;  
+}
+
+.background{
+    background: url('https://wallpaperscraft.com/image/quentin_tarantino_pulp_fiction_kill_bill_reservoir_dogs_100612_1920x1080.jpg');
+    background-size: 30% 100%;
+    opacity: 0.6;
+    background-origin: border-box;
 }
 
 @keyframes movimento{
     from{
-        margin-right:100%;
-        width: 200%;
+        margin-left: 100%;
+        width: 300%;
     }
     to{
-        margin-right: 0px;
+        margin-left: 0%;
         width: 100%;
     }
 }
@@ -87,7 +105,7 @@ body{
 .subtitle{
     text-align: center;
     font-family: 'Ranga', cursive;
-    color: green;
+    color: white;
     font-size: 1.6em; 
 }
 
@@ -97,7 +115,7 @@ body{
     transition: 0.3s;
     border-radius: 5%;
     height: 100%;
-    background-color: #A0FF88;
+    background-color: rgba(255, 255, 255, 0.6); 
 }
 
 .card:hover {
@@ -119,11 +137,13 @@ img:hover{
 .movie_name{
     text-align: center;
     font-size: 1.3em;
+    color: red;
 }
 
 .date{
     text-align: center;
     font-size: 1.15em;
+    color: red;
 }
 
 .col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12{
@@ -147,27 +167,18 @@ img:hover{
  @media screen and (min-width: 1024px){
     .col4{
         width: 31%;
-        -webkit-transition: 2s;
-        -moz-transition: 2s;
-        transition: 2s;
     }
 }
 
 @media screen and (min-width: 648px) and (max-width: 1024px){
     .col4{
         width: 48%;
-        -webkit-transition: 2s;
-        -moz-transition: 2s;
-        transition: 2s;
     }
 }
 
 @media screen and (max-width: 648px){
     .col4{
         width: 98%;
-        -webkit-transition: 2s;
-        -moz-transition: 2s;
-        transition: 2s;
     }
 }
 
@@ -204,5 +215,6 @@ img:hover{
 }
 
 #footer{
-    text-align: center; 
+    text-align: center;
+    color: white;
 }
