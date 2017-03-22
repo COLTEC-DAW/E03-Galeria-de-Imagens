@@ -1,0 +1,335 @@
+body {
+	background-color: #fafafa;
+	font-size: 18px;
+}
+
+#cabeca {
+	background-color: #F44336;
+	color: white;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-radius: 0px;
+	margin: 0px;
+	padding-right: 50px;
+	width: 100%;
+	padding-left: 15%;
+}
+
+#cabeca p {
+	text-align: left;
+	padding-bottom: 3%;
+	font-size: 1.6em;
+}
+
+.container {
+	width: 92%;
+	margin: auto;
+	overflow: hidden;
+	background-color: #fafafa;
+}
+
+#con {
+	text-align: center;
+}
+
+/*TELA GRANDE*/
+@media screen and (min-width: 1024px) {
+	.container .col_l4:last-child {
+		margin-bottom: -323202px;
+	}
+
+	.col_l1, .col_l2, .col_l3, .col_l4, .col_l5, .col_l6, .col_l7, .col_l8, .col_l9, .col_l10, .col_l11, .col_l12 {
+		float: left;
+		margin: 2%;
+		padding-left: 1%;
+		padding-right: 1%;
+		padding-bottom: 323232px;
+		margin-bottom: -323222px;
+
+		border: 0px solid black;
+		border-radius: 2px;
+		background-color: #fafafa;
+	}
+
+	.row {
+		display: block;
+		background-color: #fafafa;
+	}
+
+	.col_l1 {
+		width: 6.33%;
+	}
+
+	.col_l2 {
+		width: 14.66%;
+	}
+
+	.col_l3 {
+		width: 22.99%
+	}
+
+	.col_l4 {
+		width: 29.33333333%;
+	}
+
+	.col_l5 {
+		width: 39.65%;	
+	}
+
+	.col_l6 {
+		width: 47.96%;
+	}
+
+	.col_l7 {
+		width: 56.31%;
+	}
+
+	.col_l8 {
+		width: 64.64%;
+	}
+
+	.col_l9 {
+		width: 73%;
+	}
+
+	.col_l10 {
+		width: 81.3%;
+	}
+
+	.col_l11 {
+		width: 89.63%;
+	}
+
+	.col_l12 {
+		width: 98%;
+	}
+}
+
+/*TELA MEDIA*/
+@media screen and (min-width: 648px) and (max-width: 1023px){
+	.container .col_m4:last-child {
+		margin-bottom: -323202px;
+	}
+
+	.col_m1, .col_m2, .col_m3, .col_m4, .col_m5, .col_m6, .col_m7, .col_m8, .col_m9, .col_m10, .col_m11, .col_m12 {
+		display: inline-block;
+		margin: auto;
+		margin: 2%;
+		padding-left: 1%;
+		padding-right: 1%;
+		padding-bottom: 323232px;
+		margin-bottom: -323222px;
+
+		border: 0px solid black;
+		border-radius: 2px;
+		background-color: #fafafa;
+	}
+
+	.row {
+		display: block;
+		background-color: #fafafa;
+	}
+
+	.col_m1 {
+		width: 6.33%;
+	}
+
+	.col_m2 {
+		width: 14.66%;
+	}
+
+	.col_m3 {
+		width: 22.99%
+	}
+
+	.col_m4 {
+		width: 29.33%;
+	}
+
+	.col_m5 {
+		width: 39.65%;	
+	}
+
+	.col_m6 {
+		width: 45%;
+	}
+
+	.col_m7 {
+		width: 56.31%;
+	}
+
+	.col_m8 {
+		width: 64.64%;
+	}
+
+	.col_m9 {
+		width: 73%;
+	}
+
+	.col_m10 {
+		width: 81.3%;
+	}
+
+	.col_m11 {
+		width: 89.63%;
+	}
+
+	.col_m12 {
+		width: 98%;
+	}
+}
+
+/*TELA PEQUENA*/
+@media screen and (max-width: 647px){
+	.container .col_s4:last-child {
+		margin-bottom: -323202px;
+	}
+
+	.col_s1, .col_s2, .col_s3, .col_s4, .col_s5, .col_s6, .col_s7, .col_s8, .col_s9, .col_s10, .col_s11, .col_s12 {
+		display: inline-block;
+		margin: 2%;
+		padding-left: 1%;
+		padding-right: 1%;
+		padding-bottom: 323232px;
+		margin-bottom: -323222px;
+
+		border: 0px solid black;
+		border-radius: 2px;
+		background-color: #fafafa;
+	}
+
+	.row {
+		display: block;
+		background-color: #fafafa;
+	}
+
+	.col_s1 {
+		width: 6.33%;
+	}
+
+	.col_s2 {
+		width: 14.66%;
+	}
+
+	.col_s3 {
+		width: 22.99%
+	}
+
+	.col_s4 {
+		width: 29.33%;
+	}
+
+	.col_s5 {
+		width: 39.65%;	
+	}
+
+	.col_s6 {
+		width: 47.96%;
+	}
+
+	.col_s7 {
+		width: 56.31%;
+	}
+
+	.col_s8 {
+		width: 64.64%;
+	}
+
+	.col_s9 {
+		width: 73%;
+	}
+
+	.col_s10 {
+		width: 81.3%;
+	}
+
+	.col_s11 {
+		width: 89.63%;
+	}
+
+	.col_s12 {
+		width: 85%;
+	}
+}
+
+h1 {
+	text-align: left;
+	padding-top: 2.5%;
+	font-size: 2.8em;
+	/*text-shadow: 30px 10px 10px black; COMENTEI PQ FICA MUITO FEIO, MAS SEI COMO FAZER :D*/
+}
+
+p {
+	text-align: center;
+}
+
+img {
+	text-align: center;
+	width: 100%;
+}
+
+.nome {
+	font-size: 1.3em;
+}
+
+.ano {
+	font-size: 1.15em;
+}
+
+/*Cards*/
+.card-autoral {
+	background-color: white;
+	padding-bottom: 5px;
+	border-radius: 2px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	margin-top: 10px;
+}
+
+.card-autoral:hover {
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+/*Animacao de Inicio*/
+/*.col_l4 {
+	-webkit-animation: width 1s;
+	animation: width 1s;
+	-webkit-animation: margin-top 0.7s;
+	animation: margin-top 0.7s;
+}*/
+
+.primeiro {
+	-webkit-animation: margin-top 0.8s;
+	animation: margin-top 0.8s;
+}
+.segundo {
+	-webkit-animation: margin-top 0.9s;
+	animation: margin-top 0.9s;
+}
+.terceiro {
+	-webkit-animation: margin-top 1s;
+	animation: margin-top 1s;
+}
+
+/*
+@keyframes width {
+	from { width: 0%; }
+	to { width: 29.33%; }
+}
+
+@-webkit-keyframes width {
+	from { width: 0%; }
+	to { width: 29.33%; }
+}
+*/
+
+@keyframes margin-top {
+	from { margin-top: 500px; }
+	to { margin-top: 10px; }
+}
+
+@-webkit-keyframes margin-top {
+	from { margin-top: 500px; }
+	to { margin-top: 10px; }
+}

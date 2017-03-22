@@ -1,0 +1,173 @@
+/***VARIAVEIS***/
+$body-background-color: #fafafa;
+$cabeca-background-color: #f44336;
+$cabeca-color: white;
+$container-background-color: #fafafa;
+$column-background-color: #fafafa;
+$cards-background-color: white;
+
+$body-font-size: 18px;
+$ano-font-size: 1.15em;
+$nome-font-size: 1.3em;
+$h1-font-size: 2.8em;
+$p-font-size: 1.6em;
+
+$largura-col: 8.33%;
+
+/***ELEMENTOS***/
+body {
+	background-color: $body-background-color;
+	font-size: $body-font-size;
+}
+
+#cabeca {
+	background-color: $cabeca-background-color;
+	color: $cabeca-color;
+	padding-bottom: 10px;
+	padding-right: 50px;
+	padding-left: 15%;
+	margin: 0px;
+	margin-bottom: 10px;
+	border-radius: 0px;
+	width: 100%;
+
+	p {
+		text-align: left;
+		padding-bottom: 3%;
+	}
+}
+
+.container {
+	width: 92%;
+	margin: auto;
+	overflow: hidden;
+	background-color: $container-background-color;
+}
+
+#con {
+	text-align: center;
+}
+
+.card-autoral {
+	background-color: white;
+	padding-bottom: 5px;
+	border-radius: 2px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	margin-top: 10px;
+	
+	&:hover {
+		box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	  	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	}
+}
+
+h1 {
+	text-align: left;
+	padding-top: 2.5%;
+	font-size: $h1-font-size;
+	/*text-shadow: 30px 10px 10px black; COMENTEI PQ FICA MUITO FEIO, MAS SEI COMO FAZER :D*/
+}
+
+p {
+	text-align: center;
+	font-size: $p-font-size;
+}
+
+img {
+	text-align: center;
+	width: 100%;
+}
+
+.nome {
+	font-size: $nome-font-size;
+}
+
+.ano {
+	font-size: $ano-font-size;
+}
+
+/***ANIMACOES***/
+@mixin initial_animation($time) {
+	-webkit-animation: margin-top $time;
+	-moz-animation: margin-top $time;
+	-ms-animation: margin-top $time;
+	animation: margin-top $time;
+}
+
+@each $coluna, $time in (primeiro, 0.8s),
+						(segundo, 0.9s),
+						(terceiro, 1s) {
+	.#{$coluna} {
+		@include initial_animation($time);
+	}							
+}
+
+@mixin margin_animation($animation-name) {
+	@-webkit-keyframes #{$animation-name} {
+		@content;
+	}
+
+	@-moz-keyframes #{$animation-name} {
+		@content;
+	}
+
+	@-o-keyframes #{$animation-name} {
+		@content;
+	}
+	
+	@keyframes #{$animation-name} {
+		@content;
+	}
+}
+
+@include margin_animation(margin-top) {
+	from { margin-top: 500px; }
+	to { margin-top: 10px; }
+}
+
+/***LAYOUT RESPONSIVO***/
+//Styles das colunas
+@mixin column_style($i) {
+	display: inline-block;
+	margin: auto;
+	margin: 2%;
+	padding-left: 1%;
+	padding-right: 1%;
+	padding-bottom: 323232px;
+	margin-bottom: -323222px;
+
+	border: 0px solid black;
+	border-radius: 2px;
+	background-color: #fafafa;
+
+	width: ($largura-col * $i) - 5%;
+}
+
+//Chama styles
+@mixin multiple_column_size($size) {
+	@for $i from 1 to 13 {
+		.col_#{$size}#{$i} {
+			@include column_style($i);
+
+			&:last-child {
+				margin-bottom: -323202px;
+			}
+		}
+	}
+}
+
+/*TELA GRANDE*/
+@media screen and (min-width: 1024px) {
+	@include multiple_column_size(l);
+}
+
+/*TELA MEDIA*/
+@media screen and (min-width: 648px) and (max-width: 1023px) {
+	@include multiple_column_size(m);
+}
+
+/*TELA PEQUENA*/
+@media screen and (max-width: 647px) {
+	@include multiple_column_size(s);
+}
