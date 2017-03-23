@@ -1,0 +1,135 @@
+$font-stack: Helvetica; /* fonte padrão */
+$primary-color: #F0304B; /* cor principal */
+$cor_fundo_tit: #83E5DE;
+$background: #83E5DE;
+$cor_titulo: #fff;
+
+
+.container {
+    font: 100% $font-stack;
+    color: $primary-color;
+    overflow: hidden;
+}
+
+body{
+  font-size: 18px;
+}
+
+
+@for $i from 1 to 13 {
+  .col_#{$i} {  float: left;
+                margin: auto;
+                padding: 0.5%; }
+}
+
+.col_12 {
+  width: 99%;
+}
+
+#titulo{
+    font-size: 2.8em;
+    text-align: center;
+    font-family: 'Lobster Two', cursive;
+    color: $cor_titulo;
+    background-color: $cor_fundo_tit;
+}
+
+#sub{
+    font-size: 1.6em;
+    text-align: center;
+    font-family: 'Lobster Two', cursive;
+    margin-bottom: 70px;
+}
+
+img{
+    max-width: 100%;
+    border-radius: 50px;
+    filter: alpha(opacity=50);
+    display: block;
+    transition: all 0.5s ease-in-out;
+    margin: 0 auto;
+}
+
+
+@mixin border-radius($a) {
+    -webkit-transform : $a; 
+    -ms-transform: $a;
+    transform: $a;
+}
+
+img:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100); 
+    @include border-radius(rotate(360deg) scale(1.2));
+    position: relative;
+    transition: 1.0s;
+}
+
+@mixin correr($a) {
+    -webkit-transform : $a; 
+    -ms-transform: $a;
+    transform: $a;
+}
+
+.col_4:hover{
+    @include border-radius(scale(1.2));
+    position: relative;
+    transition: 1s;
+}
+
+footer{
+    text-align: center;
+    font-family: 'Lobster Two', cursive;
+}
+
+.conjunto{
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: 'Lobster Two', cursive;
+}
+
+p{
+    text-align: center;
+}
+
+@keyframes movimento{
+  0%{
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.ano{
+  font-size: 1.15em;
+  margin-bottom: 60px;
+}
+
+.nome{
+  font-size: 1.3em;
+  margin-top: 60px;
+}
+
+img, .ano, .nome{
+  animation-name: movimento;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-duration: 3s;
+}
+
+@media screen and (max-width: 647px){
+	.col_4{
+		width: 99%;
+	}
+}
+@media screen and (min-width: 648px) and (max-width: 1023px){
+	.col_4{
+		width: 47%;
+	}
+}
+@media screen and (min-width: 1024px){
+	.col_4{  
+		width: 32%;
+	}
+}
