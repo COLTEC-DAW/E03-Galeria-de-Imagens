@@ -1,0 +1,155 @@
+//Paleta de cores
+$cor-fundo: #212121;
+$cor-fonte: #9E9E9E;
+$cor-legenda: black;
+
+//Mixin
+
+@mixin animation($scale){
+	-webkit-transform: $scale;
+	-ms-transform: $scale;
+	transform: $scale;
+}
+
+@mixin transition($tra){
+	-webkit-transition: $tra;
+	-ms-transition: $tra;
+	transition: $tra;
+}
+
+@mixin border-r($br){
+	-webkit-border-radius: $br;
+	-ms-border-radius: $br;
+	border-radius: $br;
+}
+
+//Responsividade
+
+@for $i from 1 to 13{
+    .col_#{$i}{
+        padding-bottom: 99999px;
+        margin-bottom: -99999px;
+        margin: auto;
+        width: ((100/12) * $i) - 2;
+    }
+}
+
+body{
+    background-color: $cor-fundo;
+	font-size: 18px;
+}
+
+img{
+    width: 60%;
+    height: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+/*    border-radius: 5%;*/
+    border-style: groove;
+    border-color: $cor-fonte;
+ /*   box-shadow: 3px 3px 3px 3px #9E9E9E;*/
+
+}
+
+#title{
+	font-size: 2.8em;
+}
+
+.card{
+	animation: efeito 5s;
+	@include transition(2s);
+	@include border-r(10px);
+	display: block;
+	margin: 0 auto;
+	margin-top: 15%;
+}
+
+
+p{
+    text-align: center;
+	font-size: 1.15em;
+}
+
+b{
+	font-size: 1.3em;
+}
+
+footer{
+	font-size: 1.6em;
+}
+
+.container{
+    overflow: hidden;
+    padding: 1%;  
+    text-justify: auto;
+    color: $cor-fonte;
+    font-family: 'Cinzel', serif;
+}
+
+#title{
+    text-align: center;
+    color: $cor-legenda;
+    background-color: $cor-fonte;
+}
+
+#subtitle{
+    text-align: center;
+	font-size: 1em;
+	margin-top: -7%;
+}
+
+footer{
+    text-align: center;
+}
+
+.card:hover{
+    @include animation(scale(1.2));
+}
+
+.legenda{
+	width: 60%;
+	margin: 0 auto;
+	@include border-r(3px);
+	padding-top: 5px;
+	padding-bottom: 5px; 
+	border-style: solid;
+	border-color: transparent;
+}
+
+.card:hover .legenda{
+	@include transition(1s);
+	background-color: $cor-legenda;
+	border-color: $cor-legenda; 
+}
+
+@keyframes efeito{
+	from{
+		opacity: 0.0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+@media screen and (max-width: 647px){
+	.col_4{
+		transition: 1s;
+		width: 99%;
+	}
+}
+
+@media screen and (min-width: 648px) and (max-width: 1049px){
+	.col_4{
+		@include transition(1s);
+		width: 47%;
+	}
+}
+
+@media screen and (min-width: 1050px){
+	.col_4{
+		@include transition(1s);
+		width: 32%;
+	}
+}
