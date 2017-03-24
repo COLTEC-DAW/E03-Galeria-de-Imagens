@@ -1,0 +1,343 @@
+/*.container{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    color: white;
+    padding: 20px;
+}
+.col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12{
+    padding: 1%;
+    float: left;
+    padding-bottom: 999999px;
+    margin-bottom: -999999px;
+  
+}
+html{
+    background-color: black;
+}
+h1{
+    background: url(http://wiki.tarantino.info/images/Tarantino-xx-mural.jpg);
+    font-family: 'Rubik Mono One', sans-serif;
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    margin: 0px;
+    width: auto;
+    font-size: 2.8em;
+}
+#sub{
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 1.1em;
+}
+p{
+    text-align: center;
+}
+
+img{
+    border-radius: 5% 5% 5% 5%;
+    margin: 5% 0% 0% 10%;
+    width: 85%;
+}
+
+.card{
+    border: 1px solid black;
+    border-radius: 25px;
+    box-shadow: 4px 4px 10px;
+    background-color: gray;
+    transition: all .2s ease-in-out;
+    
+}    
+.card:hover{
+    box-shadow: 8px 8px 14px;
+    transform: scale(1.1);
+
+/*Divisão em colunas */
+/*
+}
+.col_1{
+    width: 6.33%
+}
+.col_2{
+    width: 14.67%
+}
+.col_3{
+    width: 23%
+}
+.col_4{  
+    width: 30%; 
+}
+.col_5{
+    width: 37.68%
+}
+.col_6{
+    width: 48.02%
+}
+.col_7{
+    width: 56.36%
+}
+.col_8{
+    width: 64.70%
+}
+.col_9{
+    width: 73.04%  
+}
+.col_10{
+    width: 81.38%
+}
+.col_11{
+    width: 89,72%
+}
+.col_12{
+    width: 98%
+}
+
+/*rodapé*/
+/*
+footer{
+    margin-top: 5%;
+    color: white;
+    text-align: center;
+}
+
+.film{
+    font-size: 1.2em;
+}
+.ano{
+    font-size: 1.1em;
+}
+
+/* Media Queries*/
+/*
+@media screen and (min-width: 1050px){
+    .col_4{
+        width: 30%;
+        transition: 1s;
+    }
+}
+
+@media screen and (max-width: 647px){
+    .col_4{
+        width: 98%;
+        transition: 1s;
+    }
+}
+@media screen and (min-width: 647px) and (max-width: 1049px){
+    .col_4{
+        width: 48%;
+        transition: 1s;
+    }
+}
+
+/*ANIMAÇAO Fade In*/
+/*
+@-webkit-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; } 
+}
+@-moz-keyframes fadeIn {
+0% { opacity: 0;}
+100% { opacity: 1; }
+}
+@-o-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+@keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+.fadeIn {
+    font-size: 18px;
+    -webkit-animation: fadeIn 3s ease-in-out;
+    -moz-animation: fadeIn 3s ease-in-out;
+    -o-animation: fadeIn 3s ease-in-out;
+    animation: fadeIn 3s ease-in-out;
+}*/
+
+
+/* SCSS */
+@charset "UTF-8";
+.container {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  color: white;
+  padding: 20px;
+}
+
+.col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12 {
+  padding: 1%;
+  float: left;
+  padding-bottom: 999999px;
+  margin-bottom: -999999px;
+}
+
+html {
+  background-color: black;
+}
+
+h1 {
+  background: url(http://wiki.tarantino.info/images/Tarantino-xx-mural.jpg);
+  font-family: 'Rubik Mono One', sans-serif;
+  color: white;
+  font-size: 80px;
+  text-align: center;
+  margin: 0px;
+  width: auto;
+  font-size: 2.8em;
+}
+
+#sub {
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 1.1em;
+}
+
+p {
+  text-align: center;
+}
+
+img {
+  border-radius: 5% 5% 5% 5%;
+  margin: 5% 0% 0% 10%;
+  width: 85%;
+}
+
+.card {
+  border: 1px solid black;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  border-radius: 25px;
+  box-shadow: 4px 4px 10px;
+  background-color: gray;
+  transition: all .2s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 8px 8px 14px;
+  transform: scale(1.1);
+  /*Divisão em colunas */
+}
+
+.col_1 {
+  width: 6.33%;
+}
+
+.col_2 {
+  width: 14.67%;
+}
+
+.col_3 {
+  width: 23%;
+}
+
+.col_4 {
+  width: 31.33333%;
+}
+@media screen and (max-width: 647px) {
+  .col_4 {
+    width: 98%;
+    transition: 1s;
+  }
+}
+@media screen and (min-width: 647px) and (max-width: 1049px) {
+  .col_4 {
+    width: 50% -2%;
+    transition: 1s;
+  }
+}
+
+.col_5 {
+  width: 37.68%;
+}
+
+.col_6 {
+  width: 48.02%;
+}
+
+.col_7 {
+  width: 56.36%;
+}
+
+.col_8 {
+  width: 64.7%;
+}
+
+.col_9 {
+  width: 73.04%;
+}
+
+.col_10 {
+  width: 81.38%;
+}
+
+.col_11 {
+  width: 89, 72%;
+}
+
+.col_12 {
+  width: 98%;
+}
+
+/*rodapé*/
+footer {
+  margin-top: 5%;
+  color: white;
+  text-align: center;
+}
+
+.film {
+  font-size: 1.2em;
+}
+
+.ano {
+  font-size: 1.1em;
+}
+
+/* Media Queries*/
+@media screen and (min-width: 1050px) {
+  .col_4 {
+    width: 30%;
+    transition: 1s;
+  }
+}
+/*ANIMAÇAO Fade In*/
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fadeIn {
+  font-size: 18px;
+  -webkit-animation: fadeIn, 3s;
+  -moz-animation: fadeIn, 3s;
+  -o-animation: fadeIn, 3s;
+  -animation: fadeIn, 3s;
+}
