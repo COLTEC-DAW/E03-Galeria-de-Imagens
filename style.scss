@@ -1,0 +1,198 @@
+$cardScale: 1.08;
+$fonte: 'Economica';
+$pequeno: ".col_P";
+$medio: ".col_M";
+$grande: ".col_L";
+$nome_textSize: 1.30em;
+$ano_textSize: 1.15em;
+$BGcolor: #DDDDFF;
+$headerColor: #9098FF;
+$white: #FFFFFF;
+$black: #000000;
+$largura_Col: 8.333%;
+$raio:25px;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin animation($param, $param2, $param3){
+    -webkit-animation: $param, $param2, $param3; 
+    -moz-animation: $param, $param2, $param3;
+    -ms-animation: $param, $param2, $param3;
+    animation: $param, $param2, $param3;
+}
+
+@mixin transition($tempo){
+    -webkit-transition: $tempo;
+    -moz-transition: $tempo;
+    -ms-transition: $tempo;
+    transition: $tempo;
+}
+
+.row{
+    &:before,
+    &:after {
+        content: " "; /* 1 */
+        display: table; /* 2 */
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+h1{
+    text-align: center;
+    font-family: $fonte, sans-serif;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    text-size: 2.8em;
+}
+
+h1+p{
+    text-align:center;
+    font-family: $fonte, sans-serif;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    text-size: 1.6em;
+}
+
+p{
+  text-align: center;
+}
+
+footer{
+    text-align:center;
+    margin-top: 30px;
+}
+
+body{
+  background-color: $BGcolor;
+  animation: mudacorpage 3s infinite;
+  animation-iteration-count: 1;
+  text-size: 18px;
+}
+
+.header{
+    background-color: $headerColor;
+    border-radius: 20px;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+}
+
+    @media screen and (min-width: 1024px){
+
+    @for $i from 1 to 13{
+        #{$grande}#{$i}{
+            width: ($largura_Col * $i) - 5%;
+            float: left;
+            padding: 1%;
+            margin: 1%;
+            padding-bottom: 99999px;
+            margin-bottom: -99999px;
+        }
+    }
+    
+    .card{
+        background-color: #FFFFFF;
+        padding-bottom: 5px;
+        border: 0px solid;
+        @include border-radius($raio);
+        box-shadow: #000000 5px 5px 3px;
+        @include transition(1s);
+        @include animation(mudacor, 3s, infinite);
+        animation-iteration-count: 1;
+
+        &:hover{
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0);
+            transform: scale($cardScale, $cardScale);
+        }
+    }
+
+}
+@media screen and (max-width: 1024px) and (min-width: 648px){
+
+    @for $i from 1 to 13{
+        #{$medio}#{$i}{
+            float: left;
+            padding: 1%;
+            padding-bottom: 99999px;
+            margin-bottom: -99999px;
+            width: ($largura_Col * $i) - 5%;
+        }
+    }
+    .card{
+        background-color: $white;
+        padding-bottom: 5px;
+        border: 0px solid;
+        @include border-radius($raio);
+        box-shadow: #000000 5px 5px 3px;
+        @include transition(1s);
+        @include animation(mudacor, 3s, infinite);
+        animation-iteration-count: 1;
+    
+        &:hover{
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0);
+            transform: scale($cardScale, $cardScale);
+        }
+    }
+    
+
+}
+
+@media screen and(max-width: 648px){
+
+     @for $i from 1 to 13{
+        #{$pequeno}#{$i}{
+            float: left;
+            padding: 1%;
+            padding-bottom: 99999px;
+            margin-bottom: -99999px;
+            width: ($largura_Col * $i) - 5%;
+        }
+    }
+    .card{
+        background-color: $white;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        @include transition(1s);
+        @include animation(mudacor, 3s, infinite);
+        animation-iteration-count: 1;
+        
+        &:hover{
+            transform: scale($cardScale*0.97, $cardScale*0.97);
+        }
+    }
+
+}
+
+img{
+    width: 80%;
+    margin: auto;
+    display: block;
+}
+
+@keyframes mudacor{
+    from{background-color:$black;}
+    to{background-color:$white;}
+}
+
+@keyframes mudacorpage{
+    from{background-color: $black;}
+    to{background-color: $BGcolor;}
+}
+
+.nome{
+    text-size: $nome_textSize;
+}
+
+.ano{
+    text-size: $ano_textSize;
+}
