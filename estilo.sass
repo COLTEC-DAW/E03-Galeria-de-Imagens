@@ -1,0 +1,48 @@
+$fonte: Slabo 27px
+
+@keyframes cresce {
+    from {height: 1px; width: 1px;}
+}
+
+img {
+    width: 90%;
+    align-content: center;
+}
+
+img + p {
+    font-size: 1.3em;
+    font-family: $fonte;
+    text-align: center;
+}
+
+p+p {
+    font-size: 1.15em;
+    font-family: $fonte;    
+    text-align: center;
+}
+
+.col4, .col6, .col12 {
+    float: left;
+    margin: 5%;
+    animation-name: cresce;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    background: green;
+    box-shadow: 10px 10px 5px #888888;
+    border-radius: 25px;
+    text-align: center;
+    transition: 1s;
+    hover {
+        transform: scale(1.2, 1.2); /*Se o zoom fosse de 200% a página ficaria desestruturada*/
+        background-color: darkred;
+    }
+    @media screen and (min-width: 1023px){
+        width: 23.3%;
+    }
+    @media screen and (min-width: 648px) and (max-width: 1024px) {
+        width: 40%;
+    }
+    @media screen and (max-width: 648px) {
+        width: 90%;
+    }
+}
