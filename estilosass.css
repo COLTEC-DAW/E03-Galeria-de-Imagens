@@ -1,0 +1,53 @@
+/*
+Error: Invalid CSS after "90%": expected expression (e.g. 1px, bold), was ";"
+        on line 8 of estilo.sass
+
+3: @keyframes cresce {
+4:     from {height: 1px; width: 1px;}
+5: }
+6: 
+7: img {
+8:     width: 90%;
+9:     align-content: center;
+10: }
+11: 
+12: img + p {
+13:     font-size: 1.3em;
+
+Backtrace:
+estilo.sass:8
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1207:in `expected'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/lexer.rb:229:in `expected!'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/parser.rb:744:in `assert_done'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/parser.rb:76:in `parse'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/parser.rb:240:in `parse'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script.rb:27:in `parse'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:1151:in `parse_script'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:721:in `parse_property'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:692:in `parse_property_or_rule'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:658:in `parse_line'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:536:in `build_tree'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:555:in `block in append_children'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:554:in `each'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:554:in `append_children'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:545:in `block in build_tree'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:538:in `each'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:538:in `build_tree'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:555:in `block in append_children'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:554:in `each'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:554:in `append_children'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:409:in `_to_tree'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/bin/sass:13:in `<top (required)>'
+C:/Ruby23/bin/sass:22:in `load'
+C:/Ruby23/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"90%\": expected expression (e.g. 1px, bold), was \";\"\A         on line 8 of estilo.sass\A \A 3: @keyframes cresce {\A 4:     from {height: 1px; width: 1px;}\A 5: }\A 6: \A 7: img {\A 8:     width: 90%;\A 9:     align-content: center;\A 10: }\A 11: \A 12: img + p {\A 13:     font-size: 1.3em;"; }
