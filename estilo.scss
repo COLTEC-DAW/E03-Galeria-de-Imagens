@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css?family=Diplomata+SC|Ranga');
+@import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One');
+
+$primary-color: red;
+$subtitle-color: white;
+$card-color: rgba(255, 255, 255, 0.6);
+$radius-card: 10px;
+$text-align: center;
+
+/*Mixins*/
+@mixin animations($animation, $time){
+    -webkit-animation: $animation $time; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: $animation $time; /* Firefox < 16 */
+        -ms-animation: $animation $time; /* Internet Explorer */
+         -o-animation: $animation $time; /* Opera < 12.1 */
+            animation: $animation $time;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+/*Animação fadein*/
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/*Animação movimento*/
+@-moz-keyframes movimento {
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+@keyframes movimento{
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes movimento{
+    from{
+        margin-right: 100%;
+        width: 200%;
+    }
+    to{
+        margin-right: 0px;
+        width: 100%;
+    }
+}
+
+@-ms-keyframes movimento {
+    from{
+        margin-right: 100%;
+        width: 200%;
+    }
+    to{
+        margin-right: 0px;
+        width: 100%;
+    }
+}
+
+@-o-keyframes movimento {
+    from{
+        margin-right: 100%;
+        width: 200%;
+    }
+    to{
+        margin-right: 0px;
+        width: 100%;
+    }
+}
+
+/*código geral*/
+body{
+    @include animations(fadein, 3s);
+    background: url('http://i.imgur.com/h8kUUlx.jpg');
+    background-repeat: repeat;
+    font-size: 18px;
+}
+
+.container{
+    width: 95%;
+    overflow: hidden;
+    margin: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 150px;
+}
+
+.title, .background{
+    position: absolute;
+    width: 100%;
+    height: 100%
+
+}
+
+.title{
+    text-align: $text-align;
+    vertical-align: middle;
+    font-size: 2.8em;
+    font-family: 'Rubik Mono One', sans-serif;
+    color: $primary-color;
+    padding: 2%;
+    margin: 0px;
+    @include animations(movimento, 3s);  
+}
+
+.background{
+    background: url('https://wallpaperscraft.com/image/quentin_tarantino_pulp_fiction_kill_bill_reservoir_dogs_100612_1920x1080.jpg');
+    background-size: 30% 100%;
+    opacity: 0.6;
+    background-origin: border-box;
+}
+
+.subtitle{
+    text-align: $text-align;
+    font-family: 'Ranga', cursive;
+    color: $subtitle-color;
+    font-size: 1.6em; 
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 4px 4px 10px rgba(255,255,255, 1);
+    transition: 0.3s;
+    @include border-radius($radius-card);
+    height: 100%;
+    background-color: $card-color; 
+}
+
+.card:hover {
+    box-shadow: 8px 8px 14px rgba(255,255,255, 1);
+}
+
+img{
+    @include border-radius($radius-card);
+    margin: 5% 0% 0% 10%;
+    width: 80%;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+img:hover{
+    transform: scale(1.05, 1.05);
+}
+
+.movie_name{
+    text-align: $text-align;
+    font-size: 1.3em;
+    color: $primary-color;
+}
+
+.date{
+    text-align: $text-align;
+    font-size: 1.15em;
+    color: $primary-color;
+}
+
+.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12{
+    padding: 1%;
+    float: left;
+    padding-bottom: 999999px;
+    margin-bottom: -999999px;
+}
+
+@for $i from 1 to 12{
+    @if $i != 4 {
+        .col#{$i}{
+            width: (($i/12) * 100%) - 2%;
+       }
+    }
+    @else{
+        .col#{$i}{
+            width: ((4/12) * 100%) - 2%;
+            @media screen and (min-width: 648px) and (max-width: 1024px){
+                width: ((6/12) * 100%) - 2%;
+            }
+            @media screen and (max-width: 648px){
+                width: 98%;
+            }
+        }
+    }
+}
+
+#footer{
+    text-align: $text-align;
+    color: $subtitle-color;
+}
