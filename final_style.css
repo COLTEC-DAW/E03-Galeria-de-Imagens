@@ -1,0 +1,339 @@
+.container {
+  width: 92%;
+  margin: auto;
+  overflow: hidden; }
+
+body {
+  font-size: 18px; }
+
+img {
+  width: 100%; }
+
+h1 {
+  text-align: center;
+  font-size: 2.8em;
+  margin-top: 0px !important; }
+
+.title {
+  background-color: greenyellow;
+  margin-top: 0px !important;
+  margin-right: 0% !important;
+  padding-bottom: 0.4%;
+  padding-top: 4.3%; }
+
+#subtitle {
+  font-family: 'Pacifico', 'cursive';
+  font-size: 1.3em;
+  text-align: center;
+  margin-top: 3%;
+  padding-top: 0%; }
+
+.ano_filme {
+  font-size: 1.15em; }
+
+.nome_filme {
+  font-size: 1.3em; }
+
+p {
+  text-align: center; }
+
+footer {
+  text-align: center; }
+
+#kBill {
+  height: 100%; }
+
+.card_pessoal {
+  padding-bottom: 5px;
+  border-radius: 2px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.12), 0 1px 5px rgba(0, 0, 0, 0.24);
+  margin-top: 10px; }
+
+.card-pessoal:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+
+@media screen and (max-width: 896px) {
+  .col_t1 {
+    width: 6%, 333%;
+    float: left;
+    padding: 1%;
+    padding-bottom: 4242px;
+    margin-bottom: -4242px; }
+
+  .col_t2 {
+    width: 8%, 666%;
+    float: left;
+    padding: 1%;
+    padding-bottom: 4242px;
+    margin-bottom: -4242px; }
+
+  .col_t3 {
+    width: 10%, 999%;
+    float: left;
+    padding: 1%;
+    padding-bottom: 4242px;
+    margin-bottom: -4242px; }
+
+  .col_t4 {
+    width: 12%, 1332%;
+    float: left;
+    padding: 1%;
+    padding-bottom: 4242px;
+    margin-bottom: -4242px; }
+
+  .col_t5 {
+    width: 14%, 1665%;
+    float: left;
+    padding: 1%;
+    padding-bottom: 4242px;
+    margin-bottom: -4242px; }
+
+  .col_t6 {
+    width: 16%, 1998%;
+    float: left;
+    padding: 1%;
+    padding-bottom: 4242px;
+    margin-bottom: -4242px; }
+
+  .col_t7 {
+    width: 18%, 2331%;
+    float: left;
+    padding: 1%;
+    padding-bottom: 4242px;
+    margin-bottom: -4242px; }
+
+  .col_t8 {
+    width: 20%, 2664%;
+    float: left;
+    padding: 1%;
+    padding-bottom: 4242px;
+    margin-bottom: -4242px; }
+
+  .col_t9 {
+    width: 22%, 2997%;
+    float: left;
+    padding: 1%;
+    padding-bottom: 4242px;
+    margin-bottom: -4242px; }
+
+  .col_t10 {
+    width: 24%, 3330%;
+    float: left;
+    padding: 1%;
+    padding-bottom: 4242px;
+    margin-bottom: -4242px; }
+
+  .col_t11 {
+    width: 26%, 3663%;
+    float: left;
+    padding: 1%;
+    padding-bottom: 4242px;
+    margin-bottom: -4242px; } }
+@media screen and (max-width: 1024px) and (min-width: 648px) {
+  .col_m1 {
+    width: 6%, 333%;
+    float: left;
+    padding: 1%;
+    padding-bottom: 4242px;
+    margin-bottom: -4242px; }
+
+  .col_m2 {
+    width: 8%, 666%;
+    float: left;
+    padding: 1%;
+    padding-bottom: 4242px;
+    margin-bottom: -4242px; }
+
+  .col_m3 {
+    width: 10%, 999%;
+    float: left;
+    padding: 1%;
+    padding-bottom: 4242px;
+    margin-bottom: -4242px; }
+
+  .col_m4 {
+    width: 12%, 1332%;
+    float: left;
+    padding: 1%;
+    padding-bottom: 4242px;
+    margin-bottom: -4242px; }
+
+  .col_m5 {
+    width: 14%, 1665%;
+    float: left;
+    padding: 1%;
+    padding-bottom: 4242px;
+    margin-bottom: -4242px; }
+
+  .col_m6 {
+    width: 16%, 1998%;
+    float: left;
+    padding: 1%;
+    padding-bottom: 4242px;
+    margin-bottom: -4242px; }
+
+  .col_m7 {
+    width: 18%, 2331%;
+    float: left;
+    padding: 1%;
+    padding-bottom: 4242px;
+    margin-bottom: -4242px; }
+
+  .col_m8 {
+    width: 20%, 2664%;
+    float: left;
+    padding: 1%;
+    padding-bottom: 4242px;
+    margin-bottom: -4242px; }
+
+  .col_m9 {
+    width: 22%, 2997%;
+    float: left;
+    padding: 1%;
+    padding-bottom: 4242px;
+    margin-bottom: -4242px; }
+
+  .col_m10 {
+    width: 24%, 3330%;
+    float: left;
+    padding: 1%;
+    padding-bottom: 4242px;
+    margin-bottom: -4242px; }
+
+  .col_m11 {
+    width: 26%, 3663%;
+    float: left;
+    padding: 1%;
+    padding-bottom: 4242px;
+    margin-bottom: -4242px; } }
+.col_l1 {
+  width: 6%, 333%;
+  float: left;
+  padding: 1%;
+  padding-bottom: 4242px;
+  margin-bottom: -4242px; }
+
+.col_l2 {
+  width: 8%, 666%;
+  float: left;
+  padding: 1%;
+  padding-bottom: 4242px;
+  margin-bottom: -4242px; }
+
+.col_l3 {
+  width: 10%, 999%;
+  float: left;
+  padding: 1%;
+  padding-bottom: 4242px;
+  margin-bottom: -4242px; }
+
+.col_l4 {
+  width: 12%, 1332%;
+  float: left;
+  padding: 1%;
+  padding-bottom: 4242px;
+  margin-bottom: -4242px; }
+
+.col_l5 {
+  width: 14%, 1665%;
+  float: left;
+  padding: 1%;
+  padding-bottom: 4242px;
+  margin-bottom: -4242px; }
+
+.col_l6 {
+  width: 16%, 1998%;
+  float: left;
+  padding: 1%;
+  padding-bottom: 4242px;
+  margin-bottom: -4242px; }
+
+.col_l7 {
+  width: 18%, 2331%;
+  float: left;
+  padding: 1%;
+  padding-bottom: 4242px;
+  margin-bottom: -4242px; }
+
+.col_l8 {
+  width: 20%, 2664%;
+  float: left;
+  padding: 1%;
+  padding-bottom: 4242px;
+  margin-bottom: -4242px; }
+
+.col_l9 {
+  width: 22%, 2997%;
+  float: left;
+  padding: 1%;
+  padding-bottom: 4242px;
+  margin-bottom: -4242px; }
+
+.col_l10 {
+  width: 24%, 3330%;
+  float: left;
+  padding: 1%;
+  padding-bottom: 4242px;
+  margin-bottom: -4242px; }
+
+.col_l11 {
+  width: 26%, 3663%;
+  float: left;
+  padding: 1%;
+  padding-bottom: 4242px;
+  margin-bottom: -4242px; }
+
+.primeiro {
+  -webkit-animation: sobe 1;
+  -moz-animation: sobe 1;
+  -ms-animation: sobe 1;
+  animation: sobe 1;
+  background-color: brown; }
+
+.segundo {
+  -webkit-animation: sobe 0.9;
+  -moz-animation: sobe 0.9;
+  -ms-animation: sobe 0.9;
+  animation: sobe 0.9;
+  background-color: mediumspringgreen; }
+
+.terceiro {
+  -webkit-animation: sobe 1.8;
+  -moz-animation: sobe 1.8;
+  -ms-animation: sobe 1.8;
+  animation: sobe 1.8;
+  background-color: gold; }
+
+.quarto {
+  -webkit-animation: sobe 1.7;
+  -moz-animation: sobe 1.7;
+  -ms-animation: sobe 1.7;
+  animation: sobe 1.7;
+  background-color: darkslategrey; }
+
+.quinto {
+  -webkit-animation: sobe 1.6;
+  -moz-animation: sobe 1.6;
+  -ms-animation: sobe 1.6;
+  animation: sobe 1.6;
+  background-color: khaki; }
+
+.sexto {
+  -webkit-animation: sobe 1.5;
+  -moz-animation: sobe 1.5;
+  -ms-animation: sobe 1.5;
+  animation: sobe 1.5;
+  background-color: gainsboro; }
+
+@keyframes sobe {
+  from {
+    margin-top: 600px; }
+  to {
+    margin-top: 0px; } }
+@-webkit-keyframes sobe {
+  from {
+    margin-top: 600px; }
+  to {
+    margin-top: 0px; } }
+
+/*# sourceMappingURL=final_style.css.map */

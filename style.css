@@ -297,6 +297,6 @@ footer{
 }
 
 @-webkit-keyframes sobe {
-    from { margin-top: 100px; }
+    from { margin-top: 600px; }
     to { margin-top: 0px; }
 }
