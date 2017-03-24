@@ -1,0 +1,139 @@
+.container{
+    width: 92%;
+    margin: auto;
+    overflow: hidden;
+}
+
+body{
+    font-size: 18px;
+}
+
+img{
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+    font-size: 2.8em;
+    margin-top: 0px !important;
+}
+
+.title{
+    background-color: greenyellow;
+    margin-top: 0px !important;
+    margin-right: 0% !important;
+    padding-bottom: 0.4%;
+    padding-top: 4.3%;
+}
+
+#subtitle{
+    font-family: 'Pacifico', 'cursive';
+    font-size: 1.3em;
+    text-align: center;
+    margin-top: 3%;
+    padding-top: 0%;
+}
+
+.ano_filme{
+    font-size: 1.15em;
+}
+
+.nome_filme{
+    font-size: 1.3em;
+}
+
+p{
+    text-align: center;
+}
+
+
+footer{
+    text-align: center;
+}
+
+
+#kBill{
+    height: 100%;
+}
+
+// CARDS
+
+.card_pessoal{
+    padding-bottom: 5px;
+    border-radius: 2px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.12), 0 1px 5px rgba(0,0,0,0.24);
+    margin-top: 10px;
+}
+
+.card-pessoal:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+// COLUNAS
+
+// smartphone
+@media screen and (max-width: 896px){    
+    @for $i from 1 to 12{
+        .col_t#{$i}{
+            width: 2%*$i + 4,333%*$i;
+            float: left;
+            padding: 1%;
+            padding-bottom: 4242px;
+            margin-bottom: -4242px; 
+        }
+    }
+}
+
+
+@media screen and (max-width: 1024px) and  (min-width: 648px){
+    @for $i from 1 to 12{
+        .col_m#{$i}{
+            width: 2%*$i + 4,333%*$i;
+            float: left;
+            padding: 1%;
+            padding-bottom: 4242px;
+            margin-bottom: -4242px;
+        }
+    }
+}
+
+    @for $i from 1 to 12{
+        .col_l#{$i}{
+            width: 2%*$i + 4,333%*$i;
+            float: left;
+            padding: 1%;
+            padding-bottom: 4242px;
+            margin-bottom: -4242px;
+        }
+    }
+
+// ANIMAÇÕES 
+
+@mixin animation($tempo){
+    -webkit-animation: sobe $tempo;
+    -moz-animation: sobe $tempo;
+    -ms-animation: sobe $tempo;
+    animation: sobe $tempo;
+}
+
+@each $nome, $tempo, $cor in (primeiro, 1.0, brown)
+                             (segundo, 0.9, mediumspringgreen)
+                             (terceiro, 1.8, gold)
+                             (quarto, 1.7, darkslategrey)
+                             (quinto, 1.6, khaki)
+                             (sexto, 1.5, gainsboro){
+    .#{$nome}{
+        @include animation($tempo);
+        background-color: $cor;
+    }
+}
+
+@keyframes sobe{
+    from { margin-top: 600px; }
+    to { margin-top: 0px; }
+}
+
+@-webkit-keyframes sobe {
+    from { margin-top: 600px; }
+    to { margin-top: 0px; }
+}
