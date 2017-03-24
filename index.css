@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
+@import url('https://fonts.googleapis.com/css?family=Acme');
+
+/* TELA GRANDE */
+
+@media screen and (min-width: 1024px) 
+{
+    .l1, .l2, .l3, .l4, .l5, .l6, .l7, .l8, .l9, .l10, .l11, .l12 
+    {
+        float: left;
+        padding: 1%;
+        padding-bottom: 99999px;
+        margin-bottom: -99999px;
+    }
+
+    .l1 
+    {
+    width: 6.33%;
+    }
+
+
+    .l2 
+    {
+    width: 14.66%;
+    }
+
+
+    .l3 
+    {
+    width: 22.99%;
+    }
+
+
+    .l4 
+    {
+    width: 31.33%;
+    }
+
+    .l5 
+    {
+    width: 39.65%;
+    }
+
+    .l6 
+    {
+    width: 47.96%;
+    }
+
+    .l7 
+    {
+    width: 56.31%;
+    }
+
+    .l8 
+    {
+    width: 64.64%;
+    }
+
+    .l9
+    {
+    width: 73%;
+    }
+
+    .l10
+    {
+    width: 81.3%;
+    }
+
+    .l11
+    {
+    width: 89.63%;
+    }
+
+    .l12 
+    {
+    width: 98%;
+    }
+}
+
+/* TELA MÉDIA */
+
+@media screen and (min-width: 648px) and (max-width: 1023px) 
+{
+.m1, .m2, .m3, .m4, .m5, .m6, .m7, .m8, .m9, .m10, .m11, .m12 
+    {
+        float: left;
+        padding: 1%;
+        padding-bottom: 99999px;
+        margin-bottom: -99999px;
+    }
+
+    .m1 
+    {
+    width: 6.33%;
+    }
+
+
+    .m2 
+    {
+    width: 14.66%;
+    }
+
+
+    .m3 
+    {
+    width: 22.99%;
+    }
+
+
+    .m4 
+    {
+    width: 31.33%;
+    }
+
+    .m5 
+    {
+    width: 39.65%;
+    }
+
+    .m6 
+    {
+    width: 47.96%;
+    }
+
+    .m7 
+    {
+    width: 56.31%;
+    }
+
+    .m8 
+    {
+    width: 64.64%;
+    }
+
+    .m9
+    {
+    width: 73%;
+    }
+
+    .m10
+    {
+    width: 81.3%;
+    }
+
+    .m11
+    {
+    width: 89.63%;
+    }
+
+    .m12 
+    {
+    width: 98%;
+    }
+
+}
+
+/* TELA PEQUENA */
+
+@media screen and (max-width: 647px) 
+{
+.s1, .s2, .s3, .s4, .s5, .s6, .s7, .s8, .s9, .s10, .s11, .s12 
+    {
+        float: left;
+        padding: 1%;
+        padding-bottom: 99999px;
+        margin-bottom: -99999px;
+    }
+
+    .s1 
+    {
+    width: 6.33%;
+    }
+
+
+    .s2 
+    {
+    width: 14.66%;
+    }
+
+
+    .s3 
+    {
+    width: 22.99%;
+    }
+
+
+    .s4 
+    {
+    width: 31.33%;
+    }
+
+    .s5 
+    {
+    width: 39.65%;
+    }
+
+    .s6 
+    {
+    width: 47.96%;
+    }
+
+    .s7 
+    {
+    width: 56.31%;
+    }
+
+    .s8 
+    {
+    width: 64.64%;
+    }
+
+    .s9
+    {
+    width: 73%;
+    }
+
+    .s10
+    {
+    width: 81.3%;
+    }
+
+    .s11
+    {
+    width: 89.63%;
+    }
+
+    .s12 
+    {
+    width: 98%;
+    }
+}
+
+h1 
+{
+    text-align: center;
+    font-family: 'Acme', sans-serif;
+    font-size: 1.5cm;
+    margin: 0;
+}
+
+.titulo
+{
+    -webkit-animation: mymove 4s;
+    animation: mymove 4s;
+    background-color: #B30000;
+}
+
+body
+{
+  background-color: #F70000;
+}
+
+.container
+{
+    width: 90%;
+    margin: 1%;
+    padding: 5%;
+    overflow: hidden;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 20px;
+    -webkit-animation: mymove 4s;
+    animation: mymove 4s;
+}
+
+@-webkit-keyframes mymove 
+{
+    0% 
+    {
+        transform: translateY(50%);
+    }
+    100% 
+    {
+        transform: translateY(0);
+    }
+}
+
+@keyframes mymove
+{
+    0% 
+    {
+        transform: translateY(50%);
+    }
+    100% 
+    {
+        transform: translateY(0);
+    } 
+}
+
+.subtitulo
+{
+    font-size: 0.7cm;
+    text-align: center;
+    color: black;
+    font-family: 'Pacifico', cursive;
+    margin: 0;
+}
+
+p
+{
+    text-align: center;
+
+}
+
+footer
+{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.5cm;
+}
+
+img
+{
+    height: 300px;
+    width: 200px;
+    margin: auto;
+    display: block;
+    padding: 5px;
+}
+
+.cw3-card-12
+{
+  background-color: white;
+  border: 0px solid;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px #970000;
+  position: relative;
+  padding: auto;
+  width: 200px;
+}
+
+.cw3-card-12:hover 
+{
+    box-shadow: 0px 0px 150px #000000;
+    z-index: 2;
+    -webkit-transform: scale(1.3); /*Se não estou enganada, teria que ser 2, mas achei muito grande*/
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
