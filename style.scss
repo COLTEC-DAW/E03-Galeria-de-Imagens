@@ -10,6 +10,42 @@
             $card-color: #4F4D4E;
             $black-color: black; 
             $leg-color: aliceblue;
+            $larguraColuna: 8.33%;
+
+            @mixin ColumStyle ($x) {
+                float: left;
+                padding: 1%;
+
+                width: ($larguraColuna * $x) - 5%;
+                
+            }
+
+            @mixin multipleColumnSize ($size) {
+
+                @for $j from 1 to 13 {
+                    .#{$size}#{$j} {
+                        @include columnStyle($j); 
+                    }
+                }
+            }
+
+             @media screen and (min-width: 1024px) {
+
+                @include multipleColumnSize(l);
+             }
+
+             @media screen and (min-width: 648px) and (max-width: 1023px)  {
+
+                 @include multipleColumnSize(m);
+             }
+
+             @media screen and (min-width: 0px) and (max-width: 647px)   {
+
+                 @include multipleColumnSize(p);
+             }
+
+
+
 
             @mixin animation-duration($s) {
                 animation-duration: $s;
@@ -148,7 +184,7 @@
                 }
 
                 }
-
+/*
     @media screen and (min-width: 1024px) {
                 .coll_1, .coll_2, .coll_3, .coll_4, .coll_5, .coll_6, .coll_7, .coll_8, .coll_9, .coll_10, .coll_11, .coll_12 
                 {
@@ -318,3 +354,4 @@
                 width: 98%;
                 }
             }
+*/
