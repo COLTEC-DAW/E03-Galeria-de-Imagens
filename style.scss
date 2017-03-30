@@ -1,0 +1,186 @@
+
+            @import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
+            @import url('https://fonts.googleapis.com/css?family=Abel');
+
+            $font1 : 'Abel', sans-serif;
+            $font2 : 'Julius Sans One', sans-serif;
+            $body-color : #858183;
+            $h1bg-color: #4F4D4E;
+            $white-color: white;
+            $card-color: #4F4D4E;
+            $black-color: black; 
+            $leg-color: aliceblue;
+            $larguraColuna: 8.33%;
+
+            @mixin ColumnStyle ($x) {
+                float: left;
+                padding: 1%;
+
+                width: ($larguraColuna * $x) - 5%;
+                
+            }
+
+            @mixin multipleColumnSize ($size) {
+
+                @for $j from 1 to 13 {
+                    .#{$size}#{$j} {
+                        @include ColumnStyle($j); 
+                    }
+                }
+            }
+
+             @media screen and (min-width: 1024px) {
+
+                @include multipleColumnSize(l);
+             }
+
+             @media screen and (min-width: 648px) and (max-width: 1023px)  {
+
+                 @include multipleColumnSize(m);
+             }
+
+             @media screen and (min-width: 0px) and (max-width: 647px)   {
+
+                 @include multipleColumnSize(p);
+             }
+
+
+
+
+            @mixin animation-duration($s) {
+                animation-duration: $s;
+                -moz-animation-duration: $s;
+                -webkit-animation-duration: $s;
+                -ms-animation-duration: $s;
+            }
+
+            @mixin animation-name($name) {
+                animation-name: $name;
+                -moz-animation-name: $name;
+                -webkit-animation-name: $name;
+                -ms-animation-name: $name;
+            }
+
+
+            body{
+                background-color: $body-color;
+                padding-left: 8%;
+                padding-right: 8%;
+                @include animation-duration(3s);
+                @include animation-name(slidein);
+
+            }
+            
+
+            h1 {
+                text-align: center;
+                font-family: $font1;
+                color: $white-color;
+                padding-left: 10%;
+                padding-right: 10%;
+                margin-bottom: 5%;
+                font-size: 50px;
+                border: 2px solid black;
+                background-color: $h1bg-color;
+           
+            }
+            
+            #sub {
+                text-align: center;
+                font-family: $font1;
+                color:  $white-color;
+                font-size: 35px;
+                margin-bottom: 5%;
+                
+                
+            }
+            
+            #container {
+                width: 92%;
+                margin: auto;
+                 padding-bottom: 99999px;
+                margin-bottom: -99999px;
+                      
+            }
+             
+            img{
+                width: 40%;
+                height: 60%;
+                padding-top: 6%;
+                display: block;
+                margin: 0 auto;
+               
+            }
+
+            footer{
+              text-align: center;
+              font-family: $font1;
+              width: 100%;
+              clear: both;
+              font-size: 20px;
+              color: $white-color;
+              padding-top: 2%;
+            }
+
+            @mixin border-radius($radius) {
+                -webkit-border-radius: $radius; 
+                -moz-border-radius: $radius; 
+                -ms-border-radius: $radius;
+                border-radius: $radius;  
+            }
+
+            @mixin transition($t) {
+                transition: width $t, height $t, transform $t;
+                -webkit-transition: width $t, height $t, -webkit-transform $t;
+                -moz-transition: width $t, height $t, -moz-transform $t;
+                -ms-transition: width $t, height $t, -ms-transform $t;
+
+
+            }
+
+            @mixin transform($deg) {
+                transform: rotate($deg);
+                -webkit-transform: rotate($deg);
+                -moz-transform: rotate($deg);
+                -ms-transform: rotate($deg);
+
+
+            }
+
+            .card {
+                background-color: $card-color;
+                border: 3px solid $black-color;
+                position: relative;
+                @include border-radius (10px);
+                box-shadow: saddlebrown; 
+                @include transition(2s); 
+
+                &:hover 
+                    {
+                        @include transform(360deg);
+                    }
+                
+            }
+                
+
+            #leg {
+                background-color: $black-color;
+                position: relative;
+                text-align: center;
+                font-family: $font2;
+                color: $leg-color; 
+                font-size: 18px;
+            }
+           
+                
+                @keyframes slidein {
+               from {
+                margin-left: 0%;
+                 width: 50%
+            }
+            to {
+                margin-left: 0%;
+                width: 83%;
+                }
+
+                }

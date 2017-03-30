@@ -1,0 +1,324 @@
+
+            @import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
+            @import url('https://fonts.googleapis.com/css?family=Abel');
+            body{
+                background-color: #858183;
+                padding-left: 8%;
+                padding-right: 8%;
+                animation-duration: 3s;
+                animation-name: slidein
+
+            }
+
+            @media screen and (min-width: 1024px) {
+                .coll_1, .coll_2, .coll_3, .coll_4, .coll_5, .coll_6, .coll_7, .coll_8, .coll_9, .coll_10, .coll_11, .coll_12 
+                {
+                    float: left;
+                    padding: 1%;
+                    
+                }
+
+                .coll_1 
+                {
+                width: 6.33%;
+                }
+
+
+                .coll_2 
+                {
+                width: 14.66%;
+                }
+
+
+                .coll_3 
+                {
+                width: 22.99%;
+                }
+
+
+                .coll_4 
+                {
+                width: 31.33%;
+                }
+
+                .coll_5 
+                {
+                width: 39.65%;
+                }
+
+                .coll_6 
+                {
+                width: 47.96%;
+                }
+
+                .coll_7 
+                {
+                width: 56.31%;
+                }
+
+                .coll_8 
+                {
+                width: 64.64%;
+                }
+
+                .coll_9
+                {
+                width: 73%;
+                }
+
+                .coll_10
+                {
+                width: 81.3%;
+                }
+
+                .coll_11
+                {
+                width: 89.63%;
+                }
+
+                .coll_12 
+                {
+                width: 98%;
+                }
+            }
+
+            
+
+            @media screen and (min-width: 648px) and (max-width: 1023px)  {
+            .colm_1, .colm_2, .colm_3, .colm_4, .colm_5, .colm_6, .colm_7, .colm_8, .colm_9, .colm_10, .colm_11, .colm_12 
+                {
+                    float: left;
+                    padding: 1%;
+                   
+                }
+
+                .colm_1 
+                {
+                width: 6.33%;
+                }
+
+
+                .colm_2 
+                {
+                width: 14.66%;
+                }
+
+
+                .colm_3 
+                {
+                width: 22.99%;
+                }
+
+
+                .colm_4 
+                {
+                width: 31.33%;
+                }
+
+                .colm_5 
+                {
+                width: 39.65%;
+                }
+
+                .colm_6 
+                {
+                width: 47.96%;
+                }
+
+                .colm_7 
+                {
+                width: 56.31%;
+                }
+
+                .colm_8 
+                {
+                width: 64.64%;
+                }
+
+                .colm_9
+                {
+                width: 73%;
+                }
+
+                .colm_10
+                {
+                width: 81.3%;
+                }
+
+                .colm_11
+                {
+                width: 89.63%;
+                }
+
+                .colm_12 
+                {
+                width: 98%;
+                }
+
+            }
+
+           
+
+            @media screen and (min-width: 0px) and (max-width: 647px)   {
+
+            .colp_1, .colp_2, .colp_3, .colp_4, .colp_5, .colp_6, .colp_7, .colp_8, .colp_9, .colp_10, .colp_11, .colp_12 
+                {
+                    float: left;
+                    padding: 1%;
+
+                }
+
+                .colp_1 
+                {
+                width: 6.33%;
+                }
+
+
+                .colp_2 
+                {
+                width: 14.66%;
+                }
+
+
+                .colp_3 
+                {
+                width: 22.99%;
+                }
+
+
+                .colp_4 
+                {
+                width: 31.33%;
+                }
+
+                .colp_5 
+                {
+                width: 39.65%;
+                }
+
+                .colp_6 
+                {
+                width: 47.96%;
+                }
+
+                .colp_7 
+                {
+                width: 56.31%;
+                }
+
+                .colp_8 
+                {
+                width: 64.64%;
+                }
+
+                .colp_9
+                {
+                width: 73%;
+                }
+
+                .colp_10
+                {
+                width: 81.3%;
+                }
+
+                .colp_11
+                {
+                width: 89.63%;
+                }
+
+                .colp_12 
+                {
+                width: 98%;
+                }
+            }
+
+
+
+            h1 {
+                text-align: center;
+                font-family: 'Abel', sans-serif;
+                color: white;
+                padding-left: 10%;
+                padding-right: 10%;
+                margin-bottom: 5%;
+                font-size: 50px;
+                border: 2px solid black;
+                
+                background-color: #4F4D4E;
+           
+            }
+            
+            #sub {
+                text-align: center;
+                font-family: 'Abel', sans-serif;
+                color:  white;
+                font-size: 35px;
+                margin-bottom: 5%;
+                
+                
+            }
+            
+            #container {
+                width: 92%;
+                margin: auto;
+                 padding-bottom: 99999px;
+                margin-bottom: -99999px;
+               
+               
+                      
+            }
+             
+            img{
+                width: 40%;
+                height: 60%;
+                padding-top: 6%;
+                display: block;
+                margin: 0 auto;
+               
+            }
+            footer{
+              text-align: center;
+              font-family: 'Abel', sans-serif;
+              width: 100%;
+              clear: both;
+              font-size: 20px;
+              color: white;
+              padding-top: 2%;
+            }
+            .card {
+                background-color:#4F4D4E;
+                border: 3px solid black;
+                position: relative;
+                border-radius: 10px;
+                box-shadow: saddlebrown; 
+                -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+                 transition: width 2s, height 2s,  transform 2s;
+                
+            }
+            .card:hover 
+                {
+                 -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+                }
+            #leg {
+                background-color: black;
+                position: relative;
+                text-align: center;
+                font-family: 'Julius Sans One', sans-serif;
+                color: aliceblue;
+                font-size: 18px;
+            }
+           
+                
+                @keyframes slidein {
+               from {
+                margin-left: 0%;
+                 width: 50%
+            }
+            to {
+                margin-left: 0%;
+                width: 83%;
+                }
+            }
+            
+           

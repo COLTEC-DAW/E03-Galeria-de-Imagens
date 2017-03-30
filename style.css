@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css?family=Julius+Sans+One");
+@import url("https://fonts.googleapis.com/css?family=Abel");
+@media screen and (min-width: 1024px) {
+  .l1 {
+    float: left;
+    padding: 1%;
+    width: 3.33%; }
+
+  .l2 {
+    float: left;
+    padding: 1%;
+    width: 11.66%; }
+
+  .l3 {
+    float: left;
+    padding: 1%;
+    width: 19.99%; }
+
+  .l4 {
+    float: left;
+    padding: 1%;
+    width: 28.32%; }
+
+  .l5 {
+    float: left;
+    padding: 1%;
+    width: 36.65%; }
+
+  .l6 {
+    float: left;
+    padding: 1%;
+    width: 44.98%; }
+
+  .l7 {
+    float: left;
+    padding: 1%;
+    width: 53.31%; }
+
+  .l8 {
+    float: left;
+    padding: 1%;
+    width: 61.64%; }
+
+  .l9 {
+    float: left;
+    padding: 1%;
+    width: 69.97%; }
+
+  .l10 {
+    float: left;
+    padding: 1%;
+    width: 78.3%; }
+
+  .l11 {
+    float: left;
+    padding: 1%;
+    width: 86.63%; }
+
+  .l12 {
+    float: left;
+    padding: 1%;
+    width: 94.96%; } }
+@media screen and (min-width: 648px) and (max-width: 1023px) {
+  .m1 {
+    float: left;
+    padding: 1%;
+    width: 3.33%; }
+
+  .m2 {
+    float: left;
+    padding: 1%;
+    width: 11.66%; }
+
+  .m3 {
+    float: left;
+    padding: 1%;
+    width: 19.99%; }
+
+  .m4 {
+    float: left;
+    padding: 1%;
+    width: 28.32%; }
+
+  .m5 {
+    float: left;
+    padding: 1%;
+    width: 36.65%; }
+
+  .m6 {
+    float: left;
+    padding: 1%;
+    width: 44.98%; }
+
+  .m7 {
+    float: left;
+    padding: 1%;
+    width: 53.31%; }
+
+  .m8 {
+    float: left;
+    padding: 1%;
+    width: 61.64%; }
+
+  .m9 {
+    float: left;
+    padding: 1%;
+    width: 69.97%; }
+
+  .m10 {
+    float: left;
+    padding: 1%;
+    width: 78.3%; }
+
+  .m11 {
+    float: left;
+    padding: 1%;
+    width: 86.63%; }
+
+  .m12 {
+    float: left;
+    padding: 1%;
+    width: 94.96%; } }
+@media screen and (min-width: 0px) and (max-width: 647px) {
+  .p1 {
+    float: left;
+    padding: 1%;
+    width: 3.33%; }
+
+  .p2 {
+    float: left;
+    padding: 1%;
+    width: 11.66%; }
+
+  .p3 {
+    float: left;
+    padding: 1%;
+    width: 19.99%; }
+
+  .p4 {
+    float: left;
+    padding: 1%;
+    width: 28.32%; }
+
+  .p5 {
+    float: left;
+    padding: 1%;
+    width: 36.65%; }
+
+  .p6 {
+    float: left;
+    padding: 1%;
+    width: 44.98%; }
+
+  .p7 {
+    float: left;
+    padding: 1%;
+    width: 53.31%; }
+
+  .p8 {
+    float: left;
+    padding: 1%;
+    width: 61.64%; }
+
+  .p9 {
+    float: left;
+    padding: 1%;
+    width: 69.97%; }
+
+  .p10 {
+    float: left;
+    padding: 1%;
+    width: 78.3%; }
+
+  .p11 {
+    float: left;
+    padding: 1%;
+    width: 86.63%; }
+
+  .p12 {
+    float: left;
+    padding: 1%;
+    width: 94.96%; } }
+body {
+  background-color: #858183;
+  padding-left: 8%;
+  padding-right: 8%;
+  animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -webkit-animation-duration: 3s;
+  -ms-animation-duration: 3s;
+  animation-name: slidein;
+  -moz-animation-name: slidein;
+  -webkit-animation-name: slidein;
+  -ms-animation-name: slidein; }
+
+h1 {
+  text-align: center;
+  font-family: "Abel", sans-serif;
+  color: white;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-bottom: 5%;
+  font-size: 50px;
+  border: 2px solid black;
+  background-color: #4F4D4E; }
+
+#sub {
+  text-align: center;
+  font-family: "Abel", sans-serif;
+  color: white;
+  font-size: 35px;
+  margin-bottom: 5%; }
+
+#container {
+  width: 92%;
+  margin: auto;
+  padding-bottom: 99999px;
+  margin-bottom: -99999px; }
+
+img {
+  width: 40%;
+  height: 60%;
+  padding-top: 6%;
+  display: block;
+  margin: 0 auto; }
+
+footer {
+  text-align: center;
+  font-family: "Abel", sans-serif;
+  width: 100%;
+  clear: both;
+  font-size: 20px;
+  color: white;
+  padding-top: 2%; }
+
+.card {
+  background-color: #4F4D4E;
+  border: 3px solid black;
+  position: relative;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  box-shadow: saddlebrown;
+  transition: width 2s, height 2s, transform 2s;
+  -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+  -moz-transition: width 2s, height 2s, -moz-transform 2s;
+  -ms-transition: width 2s, height 2s, -ms-transform 2s; }
+  .card:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg); }
+
+#leg {
+  background-color: black;
+  position: relative;
+  text-align: center;
+  font-family: "Julius Sans One", sans-serif;
+  color: aliceblue;
+  font-size: 18px; }
+
+@keyframes slidein {
+  from {
+    margin-left: 0%;
+    width: 50%; }
+  to {
+    margin-left: 0%;
+    width: 83%; } }
+
+/*# sourceMappingURL=style.css.map */
