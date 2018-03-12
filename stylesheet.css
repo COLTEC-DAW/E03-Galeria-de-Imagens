@@ -10,6 +10,7 @@
 #title {
     text-align: center;
     color: black;
+    margin-bottom: 4%;
     background-color: white;
     border-radius: 30px;
     border: 3px solid;
@@ -30,9 +31,10 @@
     border: 2px solid;
     border-color: #A63429;
     text-align: center;
+    margin-bottom: 3%;
     padding-top: 15px;
     font-family: 'Montserrat', sans-serif;
-    height: 380px;
+    height: 330px;
     box-shadow: 10px 10px #A6203D;
 }
 
@@ -49,9 +51,9 @@
     -webkit-animation: mymove 2s; /* Safari 4.0 - 8.0 */
     animation: mymove 2s;
 }
-.img:hover{
-    width: 70%;
-    height: 77%;
+.filmes:hover{
+    transform: scale(1.2, 1.2);
+    transition-duration: 1s;
 }
 
 /* Safari 4.0 - 8.0 */
