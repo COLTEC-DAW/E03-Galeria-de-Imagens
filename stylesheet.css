@@ -21,6 +21,7 @@
 #subtitle{
     font-size: 20px;
     font-style: italic;
+
 }
 
 .filmes{
@@ -31,7 +32,7 @@
     text-align: center;
     padding-top: 15px;
     font-family: 'Montserrat', sans-serif;
-    height: 350px;
+    height: 380px;
     box-shadow: 10px 10px #A6203D;
 }
 
@@ -42,15 +43,15 @@
     border-radius: 3%;
     border: 2px solid;
     border-color: #A63429;
-    margin-top: 1%;
+    margin-top: 3%;
     position: relative;
     animation-direction: alternate;
     -webkit-animation: mymove 2s; /* Safari 4.0 - 8.0 */
     animation: mymove 2s;
 }
 .img:hover{
-    width: 75%;
-    height: 75%;
+    width: 70%;
+    height: 77%;
 }
 
 /* Safari 4.0 - 8.0 */
