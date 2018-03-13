@@ -1,0 +1,79 @@
+h1{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 500%;
+}
+
+#total{
+    float: left;
+    display: inline;
+}
+
+.margem{
+    padding-left: 10%;
+}
+
+img{
+    width: 75%;
+}
+
+.row{
+    clear: both;
+}
+
+body{
+    padding: 10%
+  }
+  
+  .col_1 {
+    width: 8.33%;
+  }
+  
+  
+  .col_2 {
+    width: 16.66%;
+  }
+  
+  .col_3 {
+    width: 25%;
+    float: left;
+    text-align: center;
+  }
+  
+  
+  .col_4 {
+    width: 33.33%;
+  }
+  
+  
+  .col_5 {
+    width: 41.66%;
+  }
+
+  .col_6{
+    width: 50%;  
+  }
+
+  .col_7{
+    width: 58.33%;
+  }
+
+  .col_8{
+    width: 66.66%;  
+  }
+
+  .col_9{
+    width: 75%;  
+  }
+
+  .col_10{
+    width: 83.33%;  
+  }
+
+  .col_11{
+    width: 91.66%;  
+  }
+
+  .col_12{
+    width: 100%;  
+  }
