@@ -1,12 +1,25 @@
+body{
+  padding: 1%;
+  background-color: #FC400B;
+}
+
 h1{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Ruluko', sans-serif;
   text-align: center;
-  font-size: 500%;
+  font-size: 700%;
+  background-color: #3B0754;
+  color: #FBFFFD;
+  padding: 4%;
+  text-shadow: 7px 7px 7px #FF9442;
 }
 
 #total{
   float: left;
   display: inline;
+}
+
+.subtítulo{
+  font-size: 200%;
 }
 
 .margem{
@@ -20,10 +33,6 @@ img{
 .row{
   clear: both;
 }
-
-body{
-    padding: 10%
-  }
   
 .col_1 {
    width: 8.33%;
