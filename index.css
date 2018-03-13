@@ -1,0 +1,90 @@
+h1{
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+    font-size: 500%;
+    margin: 1%;
+    padding: 5%;
+    text-shadow: 5px 5px 5px #FF0000;
+}
+    
+body{
+    background: black;
+}
+    
+.footer{
+    width: 300px;
+    margin: 5%;
+    text-shadow: 5px 5px 5px #FF0000;
+    color: white;
+    background: black;
+    border-radius: 25px;
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    float: left;
+}
+    
+img{
+    border-radius: 17px;
+    max-width: 100%;
+}
+    
+.div{
+    width: 300px;
+    margin: 8%;
+    border: 8px solid white;
+    text-shadow: 5px 5px 5px #FF0000;
+    color: white;
+    background: black;
+    border-radius: 25px;
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    float: left;
+    -webkit-animation: myfirst 3s 2;
+    -webkit-animation-direction: alternate;
+    animation: myfirst 3s 2;
+    animation-direction: alternate;
+}
+    
+@-webkit-keyframes myfirst {
+    0% {background: black; left: 0px; top: 0px;}
+    25% {background: darkgreen; left: 200px; top: 0px;}
+    50% {background: darkblue; left: 200px; top: 200px;}
+    75% {background: grey; left: 0px; top: 200px;}
+    100% {background: darkred; left: 0px; top: 0px;}
+}
+    
+@keyframes myfirst {
+    0% {background: black; left: 0px; top: 0px;}
+    25% {background: darkgreen; left: 200px; top: 0px;}
+    50% {background: darkblue; left: 200px; top: 200px;}
+    75% {background: grey; left: 0px; top: 200px;}
+    100% {background: darkred; left: 0px; top: 0px;}
+}
+    
+div:hover {
+    transform: scale(1.7, 1.7); 
+    z-index: 10;
+}
+    
+.col1{
+    width: 12,5%; 
+}
+    
+.col2{
+    width: 25%;
+    float: left;
+}
+    
+.col3{
+    width: 50%;
+    float: left;
+}
+    
+.col4{
+    width: 100%;
+}
+    
+    
