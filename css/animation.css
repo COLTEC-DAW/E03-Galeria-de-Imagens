@@ -1,0 +1,13 @@
+/* Arquivo contendo a animação da pagina 
+
+@keyframes mymove {
+    from{left: 20px;}
+    to{left: 100px;}
+}
+
+.cartaz {
+    animation: mymove 15s infinite;
+    position: relative;
+    animation-timing-function: linear;
+    }
+*/

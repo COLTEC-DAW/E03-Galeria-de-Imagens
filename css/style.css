@@ -1,0 +1,68 @@
+/* Arquivo contendo o Estilo da pagina*/
+.container{        
+    width: 60%;
+    margin: 0 auto;
+}
+
+.cartaz{
+    border: 5px solid; 
+}
+
+/* Definindo espaçamento das colunas*/
+.col_1, .col_2, .col_3, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10 , .col_11, .col_12{
+    float: left;
+    text-align: center;
+    margin: 1%;    
+}
+
+    .col_1{
+     width: 8%;
+    }
+    .col_2{
+     width: 16%;
+    }
+    .col_3{
+     width: 30.42217%;             
+    }
+    .col_4{
+     width: 32%;                      
+    }
+    .col_5{
+     width: 40%;       
+    }
+    .col_6{
+     width: 48%;           
+    }
+    .col_7{
+     width: 56%;         
+    }
+    .col_8{
+     width: 64%;
+    }
+    .col_9{
+     width: 72%;
+    }
+    .col_10{
+     width: 80%;
+    }
+    .col_11{
+     width: 88%;
+    }
+    .col_12{
+     width: 96%;
+    }
+
+h1{
+    font-family: 'Courier New';
+    text-align: center;
+}
+
+img{
+    max-width: 70000px;
+    max-height: 450px
+}
+
+img + p{
+    padding-top: 5%;
+    border-top: 5px solid;   
+}
