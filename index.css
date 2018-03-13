@@ -11,6 +11,8 @@ h1{
   color: #FBFFFD;
   padding: 4%;
   text-shadow: 7px 7px 7px #FF9442;
+  border: 5px solid;
+  border-radius: 25px;
 }
 
 #total{
@@ -22,12 +24,18 @@ h1{
   font-size: 200%;
 }
 
+.p{
+  font-size: 120%;
+}
+
 .margem{
   padding-left: 10%;
 }
 
 img{
   width: 75%;
+  border: 7px solid;
+  border-radius: 15px;
 }
 
 .row{
@@ -35,7 +43,7 @@ img{
 }
   
 .col_1 {
-   width: 8.33%;
+   width: 8.33%; 
 }
     
 .col_2 {
@@ -46,7 +54,7 @@ img{
   width: 25%;
   float: left;
   text-align: center;
-}
+}  
   
 .col_4 {
   width: 33.33%;
