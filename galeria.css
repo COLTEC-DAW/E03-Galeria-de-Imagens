@@ -14,9 +14,8 @@
     display: inline;
 }
 
-#margem{
-    float: left;
-    display: inline;
+.margem{
+    padding-left: 2%;
 }
 
 .col-1 {width: 8.33%;}
