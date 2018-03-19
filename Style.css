@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Karla');
+@import url('https://fonts.googleapis.com/css?family=Limelight');
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif');
+
+
+h1 {
+    font-size: 52px;
+    color:whitesmoke;
+    background-color:black;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: 'Limelight', cursive;
+    /* border: 9px double #990000; */
+    border: 10px ridge #990000;       
+}
+
+body{
+  
+  background-color:wheat;
+  margin: 0%
+}
+
+div{
+    position: relative;
+    margin-top: 20px;
+    margin-left: 0px;
+   /* animation: mymove 5s infinite;*/
+
+  }
+
+/*@keyframes mymove {
+    from {left: 0px;}
+    to {left: 200px;}
+    */
+
+#principal{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container {
+   width:90%;
+   margin: 0 auto;
+  }
+
+
+  .col_1, .col_2, .col_3, .col_4, .col_5 , .col_6, .col_7,.col_8,.col_9,.col_10,.col_11,.col_12 {
+    float: left;
+  }
+   
+  .col_1 {
+    width: 8.33%;
+  }
+
+  .col_2 {
+    width: 16.66%;
+  }
+
+  .col_3 {
+    width: 25%;
+     float: left;
+     
+ }
+
+ .col_4 {
+    width: 29.33%;
+    float: left;
+    padding: 2%;
+ }
+ 
+  .col_5 {
+    width: 41.66%;
+  }
+  
+  .col_6 {
+    width: 50%;
+  }
+  
+  .col_7 {
+    width: 58.33%;
+  }
+  
+  .col_8 {
+    width: 66.66%;
+  }
+  
+  .col_9 {
+    width: 75%;
+  }
+  
+  .col_10 {
+    width: 83.33%;
+  }
+  
+  .col_11 {
+    width: 91.66%;
+  }
+  
+  .col_12 {
+    width: 100%;
+  }
+
+  
+
+
+img{
+    width: 250px;
+    height: 370px;
+    border-style: solid;
+    position:relative;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .7);
+    display: block;
+    margin:auto;
+    border: 4px solid black;
+    padding: 0px;
+    border-radius: 25px;
+
+}
+
+.zoom {
+
+  transition: transform .2s; 
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.5);
+}
+.frase{
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  font-size: 20px;
+  text-decoration: underline;
+
+}
+
+.top{
+  margin-top: 0%
+}
+
+
+p{
+  text-align: center;
+  font-family: 'Bree Serif', serif;
+}
+
+footer{
+  max-width:100%;
+  background-color: black;
+  text-align: center; 
+  font-size:  20px;
+  color:whitesmoke;
+  background-color:black;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: 'Bree Serif', serif;
+   border: 9px double #990000; 
+/*  border: 10px ridge #990000; */      
+}
