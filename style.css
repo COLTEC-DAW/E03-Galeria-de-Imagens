@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css?family=Sigmar+One');
+
+body { background-color: rgb(209, 209, 209) }
+
+header { 
+    text-align: center; 
+    margin-bottom: 5%; 
+    background-color: rgb(33, 79, 105);
+    color: white
+}
+
+header h1 { font-size: 300%; font-family: 'Sigmar One', cursive }
+
+header p { font-size: 150%; margin-top: -20px }
+
+
+img { 
+    height: 50%; width: 50%;
+    border: rgb(33, 79, 105) 10px ridge;
+    border-radius: 20px;
+    transition: all 0.3s
+}
+
+img:hover {
+    transform: scale(1.6)
+}
+
+
+#filmes { 
+    display: inline;
+    font-size: 200%
+}
+
+.filmes {
+    -webkit-animation-duration: 0.7s; 
+    animation-duration: 0.7s; 
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; 
+}
+
+footer {
+    background-color: teal;
+    color: white;
+    padding: 4%;
+    text-align: left;
+    font-size: 150%
+}
+
+
+/* Layout híbrido - 12 colunas */
+
+.uma_coluna     { width: 8.33%;  float: left}
+.duas_colunas   { width: 16.66%; float: left}
+.tres_colunas   { width: 24.99%; float: left}
+.quatro_colunas { width: 33.33%; float: left; text-align: center}
+.cinco_colunas  { width: 41.66%; float: left}
+.seis_colunas   { width: 49.99%; float: left}
+.sete_colunas   { width: 58.33%; float: left}
+.oito_colunas   { width: 66.66%; float: left}
+.nove_colunas   { width: 74.99%; float: left}
+.dez_colunas    { width: 83.33%; float: left}
+.onze_colunas   { width: 91.66%; float: left}
+.doze_colunas   { width: 100%;   float: left}
+
+ 
+ @-webkit-keyframes bounceInLeft {
+    0% {
+       opacity: 0;
+       -webkit-transform: translateX(-2000px);
+    }
+    60% {
+       opacity: 1;
+       -webkit-transform: translateX(30px);
+    }
+    80% {
+       -webkit-transform: translateX(-10px);
+    }
+    100% {
+       -webkit-transform: translateX(0);
+    }
+ }
+ 
+ @keyframes bounceInLeft {
+    0% {
+       opacity: 0;
+       transform: translateX(-2000px);
+    }
+    60% {
+       opacity: 1;
+       transform: translateX(30px);
+    }
+    80% {
+       transform: translateX(-10px);
+    }
+    100% {
+       transform: translateX(0);
+    }
+ }
+ 
+ .bounceInLeft {
+    -webkit-animation-name: bounceInLeft;
+    animation-name: bounceInLeft;
+ }
+
+
