@@ -1,76 +1,134 @@
-.container {
-    width: 1080px;
-    margin: auto;
-    overflow: hidden;
-  }
+@keyframes mymove{
+  from {left: 0px;}
+  to {left: 1500px;}
+}
 
+.container {
+    margin: 0%;
+    overflow: hidden;
+    display: inline;
+
+ 
+  }
+  
+  img {
+    width: 300px;
+    height: 400px;
+    border: 2px solid;
+    border-radius: 25px;
+    box-shadow: 10px 10px gray;
+    position: relative;
+    animation: mymove 3s reverse;
+    transition: width 1s, height 1s;
+  }
+ 
+  img:hover{
+    width: 400px;
+    height: 500px;
+  }
 
   .col_1, .col_2, .col_3, .col_4, .col_5 .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12 {
     float: left;
-    padding: 1%;
-    padding-bottom: 323232px;
-    margin-bottom: -323232px;
+    padding: 2%;
+
+  }
+  
+  h1{
+    font-size: 45px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
-  .col_1 {
-    width: 10%;
+  #subtitulo{
+    font-size: 20px;
   }
 
+
+.offset-L-2{
+  padding-left: 16.2%;
+  padding-top: 0px; 
+}  
+
+.offset-R-2{
+  padding-right: 16.2%; 
+}
+  .col_1
+   {
+    width: 8.1%;
+  }
 
   .col_2 {
-    width: 18%;
+    width: 16.2%;
   }
 
 
   .col_3 {
-    width: 26%;
+    width: 24.3%;
   }
 
 
   .col_4 {
-    width: 34%;
+    width: 28.3%;
+    text-align: center;
   }
 
 
   .col_5 {
-    width: 42%;
+    width: 40.5%;
   }
   
   .col_6 {
-    width: 50%;
+    width: 48.6%;
   }
   
   .col_7 {
-    width: 58%;
+    width: 56.7%;
   }
   
   .col_8 {
-    width: 66%;
+    width: 64.8%;
   }
 
   .col_9 {
-    width: 74%;
+    width: 72.9%;
   }
 
   .col_10 {
-    width: 82%;
+    width: 81%;
   }
 
   .col_11 {
-    width: 90%;
+    width: 89.1%;
   }
 
   .col_12 {
-    width: 98%;
+    width: 97.2%;
   }
 
+  #linha {
+    clear: both;
+    display: inline;
+  }
 
   #header {
       background-color:yellowgreen;
       color: black;
+
   }
 
   h1, #subtitulo {
     align-content: center;
     text-align: center;
+    font-family: 'Amita', cursive;
+  }
+
+  #filme_1, #filme_2, #filme_3, #filme_4, #filme_5, #filme_6{
+    height: 500px;
+    margin-top: 30px;
+    font-size: 25px;
+
+  }
+  html{
+    background: beige;
   }
