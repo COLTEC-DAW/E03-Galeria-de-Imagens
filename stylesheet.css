@@ -1,3 +1,6 @@
+body{
+    font-size: 18px;
+}
 #catalogo {
     display: inline-block;
 }
@@ -7,6 +10,7 @@
 #margem{
     display: inline-block;
 }
+
 #title {
     text-align: center;
     color: black;
@@ -15,14 +19,21 @@
     border-radius: 30px;
     border: 3px solid;
     border-color: #A63429;
-    font-size: 30px;
+    font-size: 1.4em;
     font-style: oblique;
     font-family: 'Merriweather', serif;
 }
 #subtitle{
-    font-size: 20px;
+    font-size: 0.8em;
     font-style: italic;
 
+}
+
+#nomeFilme{
+    font-size: 1.3em;
+}
+#anoFilme{
+    font-size: 1.15em;
 }
 
 .filmes{
@@ -34,7 +45,7 @@
     margin-bottom: 3%;
     padding-top: 15px;
     font-family: 'Montserrat', sans-serif;
-    height: 330px;
+    height: 380px;
     box-shadow: 10px 10px #A6203D;
 }
 
@@ -69,25 +80,73 @@
 .row{
     display: inline;
 }
+@media screen and (min-width: 1024px) {
 
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {
-    width: 25%;
+    .col-g-1 {width: 8.33%;}
+    .col-g-2 {width: 16.66%;}
+    .col-g-3 {width: 25%;}
+    .col-g-4 {
+        width: 29.33%;
+        padding: 2%;
+        float: left;
+    }
+    .col-g-5 {width: 41.66%;}
+    .col-g-6 {width: 50%;}
+    .col-g-7 {width: 58.33%;}
+    .col-g-8 {width: 66.66%;}
+    .col-g-9 {width: 75%;}
+    .col-g-10 {width: 83.33%;}
+    .col-g-11 {width: 91.66%;}
+    .col-g-12 {width: 100%;}
+    .center{float:center;}
+    .right{float:right;}
+    .left{float:left;}
 }
-.col-4 {
-    width: 29.33%;
-    padding: 2%;
-    float: left;
+
+@media screen and (min-width: 648px) and (max-width: 1024px) {
+
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {
+        width: 44%;
+        padding: 2%;
+        float:left;
 }
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-.center{float:center;}
-.right{float:right;}
-.left{float:left;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+    .center{float:center;}
+    .right{float:right;}
+    .left{float:left;}
+}
+
+
+@media screen and (max-width: 648px) {
+
+    .col-p-1 {width: 8.33%;}
+    .col-p-2 {width: 16.66%;}
+    .col-p-3 {width: 25%;}
+    .col-p-4 {width: 33.33%;}
+    .col-p-5 {width: 41.66%;}
+    .col-p-6 {width: 50%;}
+    .col-p-7 {width: 58.33%;}
+    .col-p-8 {width: 66.66%;}
+    .col-p-9 {width: 75%;}
+    .col-p-10 {width: 83.33%;}
+    .col-p-11 {width: 91.66%;}
+    .col-p-12 {
+        width: 96%;
+        padding: 2%;
+        float:left;
+
+    }
+    .center{float:center;}
+    .right{float:right;}
+    .left{float:left;}
+}
