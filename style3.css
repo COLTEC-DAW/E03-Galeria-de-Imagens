@@ -1,0 +1,82 @@
+html{
+  background-color: darkgray;
+}
+
+
+.container {
+  width: 50%;
+  margin: auto;
+  overflow: hidden;
+}
+
+title{
+    background: -moz-linear-gradient(black, gray, darkgray, white, darkgray);
+}
+.col_1, .col_2, .col_3, .col_4, .col_5, .col_6 {
+  float: left;
+  width: 30%;
+  margin: 1%;
+  align-content: center;
+
+  margin: 10px;
+    color: #333333;
+    position: relative;
+    border-radius: 10%;
+    animation: chegada;
+    animation-duration: 2s;
+}
+
+p{
+  text-align: center;
+}
+
+img{
+    margin-left: 17%;
+    border-radius: 10%;
+    border: 5px solid #333333;
+    width: 60%;
+    
+}
+
+img:hover{
+  zoom: 200%;
+}
+
+.col_1 {
+  margin-left: 4%;
+}
+
+.col_2 {
+}
+
+
+.col_3 {
+}
+
+
+.col_4 {
+  margin-left: 4%;
+}
+
+
+.col_5 {
+}
+
+.col_6 {
+  }
+
+h1, h2, h3, h4, h5, p{
+  font-family: 'Segoe UI Light', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@keyframes chegada{
+  from {right: 200%;}
+  to {right: 0%;}
+}
+
+
+
+h1, #abc{
+    text-align: center;
+    color: black;
+}
