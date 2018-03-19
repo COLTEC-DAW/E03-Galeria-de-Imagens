@@ -15,7 +15,7 @@ h1{
   border-radius: 25px;
 }
 
-@-webkit-keyframes mymove {
+/* @-webkit-keyframes mymove { 
   from {left: 0px;}
   to {left: 200px;}
 }
@@ -23,11 +23,8 @@ h1{
 @keyframes mymove {
   from {left: 0px;}
   to {left: 200px;}
-}
+} */
 
-div {
-
-}
 
 #total{
   float: left;
@@ -45,17 +42,19 @@ div {
 .margem{
   padding-left: 10%;
 }
+ 
+
 
 img{
   width: 50%;
   border: 7px solid;
   border-radius: 15px;
 
-  position: relative;
+ /* position: relative;
   -webkit-animation: mymove 5s infinite; 
   -webkit-animation-duration: 2s;
   animation: mymove 5s infinite;
-  animation-delay: 2s;
+  animation-delay: 2s; */
 }
 
 .row{
@@ -76,6 +75,10 @@ img{
   text-align: center;
 }  
   
+.col_3:hover{
+  transform: scale(2.0);
+}
+
 .col_4 {
   width: 33.33%;
 }
