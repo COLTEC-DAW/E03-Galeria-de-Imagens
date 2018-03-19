@@ -5,32 +5,56 @@ body{
 }
 
 .title{
-margin-left: 41.6%;
-width: 34%;
-padding: 1%;
+
+padding: 1%;  
+text-align: center;
+background: -moz-linear-gradient(black, darkred);
 font-family: 'Lato', sans-serif;
-color: whitesmoke;
+font-size: 50px;
+color: rgb(244, 248, 18);
 }
 p{
     color: whitesmoke;
+    margin-left: 20%; 
+    animation-name: movie;
+    animation-duration: 4s;
 }
-div{
 
+.d2{
+    position: relative;
+}
+
+@keyframes movie {
+    from {color: whitesmoke}
+    to {color: tomato}
 }
 
 img{
-    max-width: 75%;
+    display: block;
+    margin-right: auto;
+    margin-left:auto; 
+    width: 60%;
     border-radius: 15px;
+    border-style: solid;
+    border-color: whitesmoke;
+    -webkit-transition: width 2s, height 2s;
+    transition: width 2s, height 2s;
 }
+
+img:hover{
+    width: 80%;
+}
+
 
 .col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12 {
 float: left;
-padding: 3%;
+
 }
 
 .col_1 {
 width: 25%;
 margin-left: 6.5%;
+
 }
 
 
@@ -40,7 +64,8 @@ width: 16.6%;
 
 
 .col_3 {
-width: 25%;
+width: 30.3%;  
+padding:1.5%;
 }
 
 
