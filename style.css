@@ -1,0 +1,149 @@
+body{
+    background-color: #0D0D0D;   
+    font-size: 18px; 
+    color: white;
+}
+
+#titulo{
+    text-align: center;
+    border: 4px solid;
+    border-radius: 25px;
+    border-color: red;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 2.8em;
+    margin-bottom: 5%;
+    margin-top: 3%;
+    background-color: black;
+}
+
+.nome{
+    font-size: 1.3em;
+}
+
+.ano{
+    font-size: 1.15em;
+}
+
+h+p{
+    font-size: 1.6em;
+}
+
+.container{
+    width: 92%;
+    margin: auto;
+}
+
+.col_d9, .col_d3, .col_s12, .col_t4, col_t8{
+    float: left;
+ }
+
+@media screen and (min-width: 1024px){
+
+    .col_d4{
+        width: 31%;
+        margin: 1%;
+        text-align: center;
+        position: relative;
+        animation: mymove;
+        animation-duration: 2s;
+    }
+
+
+    .offset_d4{
+        padding-left: 0%;
+    }
+
+    .offset_d9{
+        padding-left: 16.7%;
+    }
+
+    .col_d9{
+        width: 75%;
+        margin: 1%;
+    }
+
+}
+
+@media screen and (min-width: 648px) and (max-width: 1023px){
+    .col_t4{
+        width: 41%;
+        margin: 1%;
+        text-align: center;
+        position: relative;
+        animation: mymove;
+        animation-duration: 2s;
+    }
+
+    .offset_t4{
+        padding-left: 15%; 
+    }
+
+    .col_t10{
+        width: 83%;
+    }
+
+    .offset_t10{
+        padding-left: 15%;
+    }
+}
+
+@media screen and (max-width: 647px){
+
+    .offset_s9{
+        padding-left: 16.7%;
+    }
+    .col_s9{
+        width: 75%;
+        margin: 1%;
+        text-align: center;
+        position: relative;
+        animation: mymove;
+        animation-duration: 2s;
+    }
+}
+
+img{
+    max-width: 70%;
+    max-height: 70%;
+    width: auto;
+    height: auto;
+    text-align: center;
+    border-radius: 25px;
+    border: 6px solid red;
+    transition: 1s;
+}
+
+
+img:hover{
+    max-width: 115%;
+    max-height: 115%;
+    width: auto;
+    height: auto;
+}
+
+@keyframes mymove{
+    from{right: 200%;}
+    to{right: 0%;}
+}
+
+mymove .offset_3{
+    padding-left: 0%;
+}
+
+footer{
+    vertical-align: 80%;
+    margin: 2.5em;
+}
+
+
+.row{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+  
+  .row:after{
+    content: "";
+    display: table;
+    clear: both;
+  }
