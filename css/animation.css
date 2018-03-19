@@ -1,15 +1,22 @@
 @keyframes mymove {
-    from{left: -1700px;}
-    to{left: 1700px;}
+    0%   { left: 0px; top: 0px;}
+    50%  { left: 240%; top: 0%;}
+    100% { left: 0px; top: 0px;}
 }
 
+
+
+
 .letreiro {
-    animation: mymove 10s infinite;
+    animation: mymove 5s infinite;
     position: relative;
     animation-timing-function: linear;
 }
 
-img:hover {
-    width: 20%;
-    height: 10%;
-}
+.cartaz img:hover {
+    transform: scale(2.1);
+    transition-duration: 2s;
+
+    } 
+
+    

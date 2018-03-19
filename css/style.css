@@ -1,3 +1,8 @@
+/* restringe o tamanho da media ao seu container */
+img, embed, object, video {
+    max-width: 100%; 
+
+}
 /* Arquivo contendo o Estilo da pagina*/
 .container{        
     width: 60%;
@@ -8,58 +13,63 @@
     border: 5px solid; 
 }
 
-/* Definindo espaçamento das colunas*/
-.col_1, .col_2, .col_3, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10 , .col_11, .col_12{
-    float: left;
+.grid{
+    padding: 10%;
+    font-family: 'Courier New';
     text-align: center;
-    margin: 1%;    
 }
 
+.subtitulo{
+    border: 5px solid;
+    border-radius: 45px;
+}
+
+    /* Definindo espaçamento das colunas*/
+    .col_1, .col_2, .col_3, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10 , .col_11, .col_12 {
+    float: left;
+    text-align: center;
+    padding: 1%;    
+    }
+
     .col_1{
-     width: 8%;
+     width: 10.133%;
     }
     .col_2{
-     width: 16%;
+     width: 20,266%;
     }
     .col_3{
      width: 30.42217%;             
     }
     .col_4{
-     width: 32%;                      
+     width: 40,729%;                      
     }
     .col_5{
-     width: 40%;       
+     width: 51,066%;       
     }
     .col_6{
-     width: 48%;           
+     width: 60,7998%;           
     }
     .col_7{
-     width: 56%;         
+     width: 70,9331%;         
     }
     .col_8{
-     width: 64%;
+     width: 81,0664%;
     }
     .col_9{
-     width: 72%;
+     width: 91,1997%;
     }
     .col_10{
-     width: 80%;
+     width: 101,333%;
     }
     .col_11{
-     width: 88%;
+     width: 111,4663%;
     }
     .col_12{
-     width: 96%;
+     width: 121,5996%;
     }
 
-h1{
-    font-family: 'Courier New';
-    text-align: center;
-}
-
 img{
-    max-width: 70000px;
-    max-height: 450px
+    width:100%;
 }
 
 img + p{
