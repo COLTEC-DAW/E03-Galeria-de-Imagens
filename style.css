@@ -1,0 +1,90 @@
+.container {
+    width: 90%;
+    margin: auto;
+}
+    
+.col_1, .col_2, .col_3{
+    float: left;
+    padding: 1%;
+    box-sizing: border-box;
+}
+  
+.col_1 {
+    width: 33%;
+}
+    
+.col_2 {
+    width: 66%;
+}
+    
+.col_3 {
+    width: 99%;
+}
+
+body{
+    background-color: black;
+    font-size: 16px;
+    color: #fff;
+}
+
+h1 {
+    border-radius: 0.5em;
+    background-color: #111;
+    font-family: sans-serif;
+    text-shadow: 5pt -3pt 2pt #b01;
+    color: #fff;
+    text-align: center;
+    font-size: 6em;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10pt;
+}
+
+.col_1 {
+    padding: 5%;
+}
+
+div{
+    background-color: inherit;
+}
+
+.cartao{
+    padding: 0px;
+    border: 5pt;
+    border-radius: 15pt;
+    border-style: solid;
+    border-color: #777;
+    animation: animacartao 8s -3s 1 none;
+    background-color: inherit;
+}
+
+.cartao:hover{
+    transform: scale(2,2);
+}
+
+@keyframes animacartao {
+    from{
+        margin-top: 500%;
+    }
+    to{
+        margin-top: 0%;
+    }
+}
+
+footer {
+    display: block;
+    width: 100%;
+    background: linear-gradient(black,#333,black);
+}
+
+p {
+    color: #fff;
+    padding: 1%;
+    text-align: center;
+}
+
+h1 + p {
+    font-size: 2em;
+}
