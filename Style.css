@@ -26,17 +26,17 @@ body{
 }
 
 div{
-    position: relative;
+    position: auto;
     margin-top: 20px;
     margin-left: 0px;
-   /* animation: mymove 5s infinite;*/
 
+   
   }
-
-/*@keyframes mymove {
-    from {left: 0px;}
-    to {left: 200px;}
-    */
+  
+   @keyframes mymove{
+   from {left: 0px;}
+   to {left: 1500px;}
+ } 
 
 #principal{
   width: 90%;
@@ -119,9 +119,11 @@ img{
     border: 4px solid black;
     padding: 0px;
     border-radius: 25px;
-
+    animation: mymove 3s reverse;
+    transition: width 1s, height 1s;
+  
 }
-
+    
 .zoom {
 
   transition: transform .2s; 
