@@ -1,0 +1,118 @@
+.col_1{
+    width:  8.3%;
+    float: left;
+}
+.col_2{
+    width:  16.6%;
+    float: left;
+}
+.col_3{
+    width:  24.9%;
+    float: left;
+}
+.col_4{
+    width:  24%;
+    float: left;
+    padding: 2%;
+}
+.col_5{
+    width:  41.5%;
+    float: left;
+}
+.col_6{
+    width:  49.8%;
+    float: left;
+}
+.col_7{
+    width:  58.1%;
+    float: left;
+}
+.col_8{
+    width:  66.4%;
+    float: left;
+}
+.col_9{
+    width:  74.7%;
+    float: left;
+}
+.col_10{
+    width:  83.0%;
+    float: left;
+}
+.col_11{
+    width:  91.3%;
+    float: left;
+}
+.col_12{
+    width:  99.6%;
+    float: left;
+}
+
+.rodape{
+    float: right;
+    font-family: 'Amatic SC', cursive;
+    font-size: 210%;
+    animation: mymove2;
+    animation-duration: 10s;
+}
+
+img{
+    width: 50%;
+    border: 5px solid red;
+    margin: 10%;
+    border-radius:20px;
+    box-shadow: 10px 10px 10px 5px black;
+}
+
+div{
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    -webkit-transition: width 2s, height 2s;
+    transition: width 2s, height 2s;
+    animation: mymove2;
+    animation-duration: 10s;
+}
+
+.offset{
+    padding-left: 10%;
+}
+
+.titulo{
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-size: 475%;
+    background-image: url("source.gif");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    animation: mymove2;
+    animation-duration: 10s;
+}
+
+.subtitulo{
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-size: 200%;
+    animation: mymove2;
+    animation-duration: 10s;
+}
+
+div:hover {
+    width: 30%;
+    height: 30%;
+  }
+
+@keyframes mymove{
+    from {background-color:black;}
+    to {background-color: white;}
+}
+
+@keyframes mymove2{
+    from {color:white;}
+    to {color: black;}
+}
+
+body{
+    animation: mymove;
+    animation-duration: 10s;
+}
