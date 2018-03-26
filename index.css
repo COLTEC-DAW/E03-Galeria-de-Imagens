@@ -1,7 +1,7 @@
 body{
   padding: 1%;
   background-color: #FC400B;
-  font-size: 100%;
+  font-size: 18px;
 }
 
 /* Desktop */
@@ -35,7 +35,7 @@ h1{
   font-family: 'Ruluko', sans-serif;
   text-align: center;
   /* font-size: 700%; */
-  font-size: 6.0em;
+  font-size: 2.8em;
   background-color: #3B0754;
   color: #FBFFFD;
   padding: 4%;
@@ -63,12 +63,17 @@ h1{
 
 .subtítulo{
   /* font-size: 200%; */
-  font-size: 2.0em; 
+  font-size: 1.6em; 
+}
+
+/* Muda apenas o "p" do ano do filme */
+p + p{
+  font-size: 1.15em;
 }
 
 .p{
   /* font-size: 120%; */
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 .margem{
