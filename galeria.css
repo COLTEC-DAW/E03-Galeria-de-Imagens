@@ -1,4 +1,5 @@
 body {
+    font-size: 18px;
     font-family: 'Ubuntu', sans-serif;
     background-color: azure;
     color: darkblue;
@@ -8,11 +9,15 @@ body {
     margin-left: 10%;
   }
 
+  .ano{
+    font-size: 1.15em;
+  }
+
   h1 {
+    font-size: 2.8em;
     text-align: center;
     font-family: FreeMono;
     color: #610B0B;
-    font-size: 50px;
     margin-top: 0px;
     margin-bottom: 0px;    
     padding-bottom: 10px;
@@ -24,7 +29,24 @@ body {
   p {
     text-align: center;
     line-height: 140%;
+
   }
+  p + p {
+    font-size: 1.15em;
+    color: #610B0B;
+  }
+
+
+  div > p {
+    font-size: 1.3em;
+    color: #610B0B;
+  }
+
+  h1 + p {
+    font-size: 1.6em;
+  }
+
+
 
   footer {
     text-align: center;
@@ -99,6 +121,26 @@ body {
 
   @keyframes mymove {
     from {left: 0px;}
-    to {left: 500px;}
+    to {left: 0px;}
     
+}
+
+
+
+@media screen and (min-width: 1024px){
+  .col4 {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 648px) and (max-width: 1023px) {
+  .col4 {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 648) {
+  .col4 {
+    width: 70%;
+  }
 }
