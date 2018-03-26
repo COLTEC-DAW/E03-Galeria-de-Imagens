@@ -3,40 +3,66 @@
 
 @import url('https://fonts.googleapis.com/css?family=Sigmar+One');
 
+
+/* For tablets */
+@media only screen and (min-width: 648px) and (max-width: 1023px) {
+    .quatro_colunas {
+        width: 48%  !important;
+        text-align: center;
+    }
+}
+
+/* For smatphones */
+@media only screen and (max-width: 647px) {
+    .quatro_colunas {
+        width: 99.99% !important;
+        text-align: center;
+        display: inline-block
+    }
+}
+
+
 body { background-color: rgb(209, 209, 209) }
 
 header { 
     text-align: center; 
     margin-bottom: 5%; 
+    padding: 4%;
     background-color: rgb(33, 79, 105);
     color: white
 }
 
-header h1 { font-size: 300%; font-family: 'Sigmar One', cursive }
+header h1 { 
+    font-size: 300%; 
+    font-family: 'Sigmar One', cursive !important 
+}
 
 header p { font-size: 150%; margin-top: -20px }
 
 
 img { 
-    height: 50%; width: 50%;
-    border: rgb(33, 79, 105) 10px ridge;
+    height: 450px; width: 300px;
     border-radius: 20px;
-    transition: all 0.3s
+    transition: all 0.3s;
+    z-index: 0
 }
 
 img:hover {
-    transform: scale(1.6)
+    transform: scale(1.6);
+    z-index: 999
 }
 
 
 #filmes { 
-    display: inline;
-    font-size: 200%
+    display: inline-block;
+    margin-bottom: 200px;
+    font-size: 200%;
+    z-index: 
 }
 
 .filmes {
-    -webkit-animation-duration: 0.7s; 
-    animation-duration: 0.7s; 
+    -webkit-animation-duration: 1s; 
+    animation-duration: 1s; 
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both; 
 }
@@ -44,7 +70,7 @@ img:hover {
 footer {
     background-color: teal;
     color: white;
-    padding: 4%;
+    padding: 4% 0 4% 0;
     text-align: left;
     font-size: 150%
 }
@@ -52,18 +78,19 @@ footer {
 
 /* Layout híbrido - 12 colunas */
 
-.uma_coluna     { width: 8.33%;  float: left}
-.duas_colunas   { width: 16.66%; float: left}
-.tres_colunas   { width: 24.99%; float: left}
-.quatro_colunas { width: 33.33%; float: left; text-align: center}
-.cinco_colunas  { width: 41.66%; float: left}
-.seis_colunas   { width: 49.99%; float: left}
-.sete_colunas   { width: 58.33%; float: left}
-.oito_colunas   { width: 66.66%; float: left}
-.nove_colunas   { width: 74.99%; float: left}
-.dez_colunas    { width: 83.33%; float: left}
-.onze_colunas   { width: 91.66%; float: left}
-.doze_colunas   { width: 100%;   float: left}
+.uma_coluna     { width: 8.33% ; float: left; text-align: center; }
+.duas_colunas   { width: 16.66%; float: left; text-align: center; }
+.tres_colunas   { width: 24.99%; float: left; text-align: center; }
+.quatro_colunas { width: 33.33%; float: left; text-align: center; }
+.cinco_colunas  { width: 41.66%; float: left; text-align: center; }
+.seis_colunas   { width: 49.99%; float: left; text-align: center; }
+.sete_colunas   { width: 58.33%; float: left; text-align: center; }
+.oito_colunas   { width: 66.66%; float: left; text-align: center; }
+.nove_colunas   { width: 74.99%; float: left; text-align: center; }
+.dez_colunas    { width: 83.33%; float: left; text-align: center; }
+.onze_colunas   { width: 91.66%; float: left; text-align: center; }
+.doze_colunas   { width: 100%  ; float: left; text-align: center; }
+
 
  
  @-webkit-keyframes bounceInLeft {
@@ -106,3 +133,41 @@ footer {
  }
 
 
+
+
+
+
+
+
+ /* For tablets
+@media only screen and (min-width: 648px) and (max-width: 1023px) {
+    .uma_coluna_m     { width: 8.33% ; float: left; text-align: center; }
+    .duas_colunas_m   { width: 16.66%; float: left; text-align: center; }
+    .tres_colunas_m   { width: 24.99%; float: left; text-align: center; }
+    .quatro_colunas_m { width: 33.33%; float: left; text-align: center; }
+    .cinco_colunas_m  { width: 41.66%; float: left; text-align: center; }
+    .seis_colunas_m   { width: 49.99%; float: left; text-align: center; }
+    .sete_colunas_m   { width: 58.33%; float: left; text-align: center; }
+    .oito_colunas_m   { width: 66.66%; float: left; text-align: center; }
+    .nove_colunas_m   { width: 74.99%; float: left; text-align: center; }
+    .dez_colunas_m    { width: 83.33%; float: left; text-align: center; }
+    .onze_colunas_m   { width: 91.66%; float: left; text-align: center; }
+    .doze_colunas_m   { width: 100%  ; float: left; text-align: center; }
+}
+
+/* For smatphones
+@media only screen and (max-width: 647px) {
+    .uma_coluna_s     { width: 8.33% ; float: left; text-align: center; }
+    .duas_colunas_s   { width: 16.66%; float: left; text-align: center; }
+    .tres_colunas_s   { width: 24.99%; float: left; text-align: center; }
+    .quatro_colunas_s { width: 33.33%; float: left; text-align: center; }
+    .cinco_colunas_s  { width: 41.66%; float: left; text-align: center; }
+    .seis_colunas_s   { width: 49.99%; float: left; text-align: center; }
+    .sete_colunas_s   { width: 58.33%; float: left; text-align: center; }
+    .oito_colunas_s   { width: 66.66%; float: left; text-align: center; }
+    .nove_colunas_s   { width: 74.99%; float: left; text-align: center; }
+    .dez_colunas_s    { width: 83.33%; float: left; text-align: center; }
+    .onze_colunas_s   { width: 91.66%; float: left; text-align: center; }
+    .doze_colunas_s   { width: 100%  ; float: left; text-align: center; }
+}
+ */
