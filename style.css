@@ -1,148 +1,23 @@
-body {
-    background-color: #F6F8DE;
-    font-size: 18px;
-}
+/*
+Errno::ENOENT: No such file or directory @ rb_sysopen - style.scss
 
-header {
-    color: #FFFFFF;
-    background-color: #3D9225;
-    padding: 10px;
-    margin-bottom:5%; 
-}
-
-header h1, footer {
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-}
-
-h1 {
-    font-size: 2.8em;
-}
-
-h1 + p {
-    font-size: 1.6em;
-}
-
-div > p {
-    font-size: 1.3em;
-}
-
-p + p {
-    font-size: 1.15em;
-}
-
-p {
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
-}
-
-img {
-    max-width: 75%;
-    max-height: 75%;
-    padding: 10px;
-    
-    border-radius: 17px; 
-}
-
-footer {
-    height: 40px;
-    padding-top: 20px;
-    margin-top: 5%;
-    background-color:#3D9225; 
-    color: #FFFFFF;
-}
-
-.box_filme {
-    background-color: #BBA2FB;
-    border: 4px solid #36C50D;
-    border-radius: 17px;   
-    
-    height: 450px;
-    width: auto;
-
-    box-shadow: 5px 10px #3D9225;
-    
-    -moz-transition: all 1s;
-	-webkit-transition: all 1s;
-    transition: all 1s;
-    
-    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
-    animation-name: example;
-    animation-duration: 4s;
-    animation-delay: 2s;
-    animation-iteration-count: infinite;
-}
-
-.box_filme:hover {
-    -moz-transform: scale(1.3);
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
-}
-
-.row {
-    display: block;
-}
-
-.col_4, .col_8, .col_12 {
-    float: left;   
-}
-
-.container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.col_12 {
-    width: 100%;
-}
-
-.col_8 {
-    width: 67%;
-}
-
-.offset_2 {
-    margin-left: 16.666667%;
-}
-
-@-webkit-keyframes example {
-    0%   {text-shadow: 1px 1px yellow; }
-    50%  {text-shadow: 1px 1px red; }
-    100% {text-shadow: 1px 1px yellow; }
-}
-
-/* Standard syntax */
-@keyframes example {
-    0%   {text-shadow: 1px 1px yellow; }
-    50%  {text-shadow: 1px 1px red; }
-    100% {text-shadow: 1px 1px yellow; }
-}
-
-@media screen and (min-width: 1024px) {
-    .col_4 {
-        width: 29%;
-        text-align: center;
-        margin: 1%;
-    }
-}
-
-@media screen and (min-width: 648px) and (max-width: 1023px) {
-    .col_4 {
-        width: 46%;
-        text-align: center;
-        margin: 1%;
-    }
-}
-
-@media screen and (max-width: 647px){
-    .col_4 {
-        width: 95%;
-        text-align: center;
-        margin: 1%;
-    } 
-}
+Backtrace:
+C:/tools/ruby22/lib/ruby/gems/2.2.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:454:in `read'
+C:/tools/ruby22/lib/ruby/gems/2.2.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:454:in `update_stylesheet'
+C:/tools/ruby22/lib/ruby/gems/2.2.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/tools/ruby22/lib/ruby/gems/2.2.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `each'
+C:/tools/ruby22/lib/ruby/gems/2.2.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/tools/ruby22/lib/ruby/gems/2.2.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:294:in `watch'
+C:/tools/ruby22/lib/ruby/gems/2.2.0/gems/sass-3.5.5/lib/sass/plugin.rb:109:in `method_missing'
+C:/tools/ruby22/lib/ruby/gems/2.2.0/gems/sass-3.5.5/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
+C:/tools/ruby22/lib/ruby/gems/2.2.0/gems/sass-3.5.5/lib/sass/exec/sass_scss.rb:51:in `process_result'
+C:/tools/ruby22/lib/ruby/gems/2.2.0/gems/sass-3.5.5/lib/sass/exec/base.rb:52:in `parse'
+C:/tools/ruby22/lib/ruby/gems/2.2.0/gems/sass-3.5.5/lib/sass/exec/base.rb:19:in `parse!'
+C:/tools/ruby22/lib/ruby/gems/2.2.0/gems/sass-3.5.5/bin/sass:13:in `<top (required)>'
+C:/tools/ruby22/bin/sass:23:in `load'
+C:/tools/ruby22/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - style.scss"; }
