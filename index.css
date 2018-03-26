@@ -1,0 +1,127 @@
+h1{
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+    font-size: 5em;
+    margin: 1%;
+    padding: 5%;
+    text-shadow: 5px 5px 5px #FF0000;
+}
+
+.sub{
+    font-size: 2em;
+    text-shadow: 5px 5px 5px #FF0000;
+    color: white;
+    text-align: center;
+}
+
+.ano{
+    font-size: 1.1em;
+}
+
+.nome{
+    font-size: 0.8em;
+}
+
+@media screen and (max-width: 648){
+    body{
+        background-color: black;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1024) {
+    body{
+        background: black;
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body{
+        background: black;
+        font-size: 18px;
+    }
+}
+
+.footer{
+    width: 300px;
+    margin: 5%;
+    text-shadow: 5px 5px 5px #FF0000;
+    color: white;
+    background: black;
+    border-radius: 25px;
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    float: left;
+}
+    
+img{
+    border-radius: 17px;
+    max-width: 100%;
+}
+    
+.div{
+    width: 300px;
+    margin: 8%;
+    border: 8px solid white;
+    text-shadow: 5px 5px 5px #FF0000;
+    color: white;
+    background: black;
+    border-radius: 25px;
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    float: left;
+    -webkit-animation: myfirst 3s 2;
+    -webkit-animation-direction: alternate;
+    animation: myfirst 3s 2;
+    animation-direction: alternate;
+}
+    
+@-webkit-keyframes myfirst {
+    0% {background: black; left: 0px; top: 0px;}
+    25% {background: darkgreen; left: 200px; top: 0px;}
+    50% {background: darkblue; left: 200px; top: 200px;}
+    75% {background: grey; left: 0px; top: 200px;}
+    100% {background: darkred; left: 0px; top: 0px;}
+}
+    
+@keyframes myfirst {
+    0% {background: black; left: 0px; top: 0px;}
+    25% {background: darkgreen; left: 200px; top: 0px;}
+    50% {background: darkblue; left: 200px; top: 200px;}
+    75% {background: grey; left: 0px; top: 200px;}
+    100% {background: darkred; left: 0px; top: 0px;}
+}
+    
+div:hover {
+    transform: scale(1.7, 1.7); 
+    z-index: 10;
+}
+    
+.col1{
+    max-width: 20%; 
+}
+    
+.col2{
+    max-width: 40%;
+}
+    
+.col3{
+    max-width: 60%;
+}
+    
+.col4{
+    max-width: 80%;
+}
+
+.col5{
+    max-width: 100%;
+}
+    
+.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12{
+    padding: 1%;
+    float: left;
+}  
