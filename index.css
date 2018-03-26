@@ -37,14 +37,15 @@ img {
   border-radius: 10px;
   border: 1px solid black; }
   .card .titulo {
-    font-size: 1.3em; }
+    font-size: 1.3em;
+    vertical-align: bottom; }
   .card .ano {
-    font-size: 1.15em; }
-
-.card:hover {
-  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.6);
-  transition: 0.2s;
-  transform: scale(1.2); }
+    font-size: 1.15em;
+    vertical-align: bottom; }
+  .card:hover {
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.6);
+    transition: 0.2s;
+    transform: scale(1.2); }
 
 footer {
   color: #333;
@@ -55,99 +56,99 @@ footer {
 
 @media screen and (min-width: 1024px) {
   .col-1-lg {
-    margin: 2%;
-    width: 3%; }
+    margin: 5%;
+    width: -3%; }
 
   .col-2-lg {
-    margin: 2%;
-    width: 11%; }
+    margin: 5%;
+    width: 5%; }
 
   .col-3-lg {
-    margin: 2%;
-    width: 20%; }
+    margin: 5%;
+    width: 14%; }
 
   .col-4-lg {
-    margin: 2%;
-    width: 28%; }
+    margin: 5%;
+    width: 22%; }
 
   .col-5-lg {
-    margin: 2%;
-    width: 36%; }
+    margin: 5%;
+    width: 30%; }
 
   .col-6-lg {
-    margin: 2%;
-    width: 45%; }
+    margin: 5%;
+    width: 39%; }
 
   .col-7-lg {
-    margin: 2%;
-    width: 53%; }
+    margin: 5%;
+    width: 47%; }
 
   .col-8-lg {
-    margin: 2%;
-    width: 61%; }
+    margin: 5%;
+    width: 55%; }
 
   .col-9-lg {
-    margin: 2%;
-    width: 70%; }
+    margin: 5%;
+    width: 64%; }
 
   .col-10-lg {
-    margin: 2%;
-    width: 78%; }
+    margin: 5%;
+    width: 72%; }
 
   .col-11-lg {
-    margin: 2%;
-    width: 86%; }
+    margin: 5%;
+    width: 80%; }
 
   .col-12-lg {
-    margin: 2%;
-    width: 95%; } }
+    margin: 5%;
+    width: 89%; } }
 @media screen and (min-width: 648px) and (max-width: 1023) {
   .col-1-md {
-    margin: 3%;
-    width: 7%; }
+    margin: 5%;
+    width: 1%; }
 
   .col-2-md {
-    margin: 3%;
-    width: 20%; }
+    margin: 5%;
+    width: 14%; }
 
   .col-3-md {
-    margin: 3%;
-    width: 32%; }
+    margin: 5%;
+    width: 26%; }
 
   .col-4-md {
-    margin: 3%;
-    width: 45%; }
+    margin: 5%;
+    width: 39%; }
 
   .col-5-md {
-    margin: 3%;
-    width: 57%; }
+    margin: 5%;
+    width: 51%; }
 
   .col-6-md {
-    margin: 3%;
-    width: 70%; }
+    margin: 5%;
+    width: 64%; }
 
   .col-7-md {
-    margin: 3%;
-    width: 82%; }
+    margin: 5%;
+    width: 76%; }
 
   .col-8-md {
-    margin: 3%;
-    width: 95%; } }
+    margin: 5%;
+    width: 89%; } }
 @media screen and (max-width: 647px) {
   .col-1-sm {
-    margin: 3%;
-    width: 20%; }
+    margin: 5%;
+    width: 14%; }
 
   .col-2-sm {
-    margin: 3%;
-    width: 45%; }
+    margin: 5%;
+    width: 39%; }
 
   .col-3-sm {
-    margin: 3%;
-    width: 70%; }
+    margin: 5%;
+    width: 64%; }
 
   .col-4-sm {
-    margin: 3%;
-    width: 95%; } }
+    margin: 5%;
+    width: 89%; } }
 
 /*# sourceMappingURL=index.css.map */
