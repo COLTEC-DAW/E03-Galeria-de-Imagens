@@ -56,99 +56,99 @@ footer {
 
 @media screen and (min-width: 1024px) {
   .col-1-lg {
-    margin: 5%;
-    width: -3%; }
+    margin: 4%;
+    width: -1%; }
 
   .col-2-lg {
-    margin: 5%;
-    width: 5%; }
+    margin: 4%;
+    width: 7%; }
 
   .col-3-lg {
-    margin: 5%;
-    width: 14%; }
+    margin: 4%;
+    width: 16%; }
 
   .col-4-lg {
-    margin: 5%;
-    width: 22%; }
+    margin: 4%;
+    width: 24%; }
 
   .col-5-lg {
-    margin: 5%;
-    width: 30%; }
+    margin: 4%;
+    width: 32%; }
 
   .col-6-lg {
-    margin: 5%;
-    width: 39%; }
+    margin: 4%;
+    width: 41%; }
 
   .col-7-lg {
-    margin: 5%;
-    width: 47%; }
+    margin: 4%;
+    width: 49%; }
 
   .col-8-lg {
-    margin: 5%;
-    width: 55%; }
+    margin: 4%;
+    width: 57%; }
 
   .col-9-lg {
-    margin: 5%;
-    width: 64%; }
+    margin: 4%;
+    width: 66%; }
 
   .col-10-lg {
-    margin: 5%;
-    width: 72%; }
+    margin: 4%;
+    width: 74%; }
 
   .col-11-lg {
-    margin: 5%;
-    width: 80%; }
+    margin: 4%;
+    width: 82%; }
 
   .col-12-lg {
-    margin: 5%;
-    width: 89%; } }
+    margin: 4%;
+    width: 91%; } }
 @media screen and (min-width: 648px) and (max-width: 1023) {
   .col-1-md {
-    margin: 5%;
-    width: 1%; }
+    margin: 4%;
+    width: 3%; }
 
   .col-2-md {
-    margin: 5%;
-    width: 14%; }
+    margin: 4%;
+    width: 16%; }
 
   .col-3-md {
-    margin: 5%;
-    width: 26%; }
+    margin: 4%;
+    width: 28%; }
 
   .col-4-md {
-    margin: 5%;
-    width: 39%; }
+    margin: 4%;
+    width: 41%; }
 
   .col-5-md {
-    margin: 5%;
-    width: 51%; }
+    margin: 4%;
+    width: 53%; }
 
   .col-6-md {
-    margin: 5%;
-    width: 64%; }
+    margin: 4%;
+    width: 66%; }
 
   .col-7-md {
-    margin: 5%;
-    width: 76%; }
+    margin: 4%;
+    width: 78%; }
 
   .col-8-md {
-    margin: 5%;
-    width: 89%; } }
+    margin: 4%;
+    width: 91%; } }
 @media screen and (max-width: 647px) {
   .col-1-sm {
-    margin: 5%;
-    width: 14%; }
+    margin: 4%;
+    width: 16%; }
 
   .col-2-sm {
-    margin: 5%;
-    width: 39%; }
+    margin: 4%;
+    width: 41%; }
 
   .col-3-sm {
-    margin: 5%;
-    width: 64%; }
+    margin: 4%;
+    width: 66%; }
 
   .col-4-sm {
-    margin: 5%;
-    width: 89%; } }
+    margin: 4%;
+    width: 91%; } }
 
 /*# sourceMappingURL=index.css.map */
