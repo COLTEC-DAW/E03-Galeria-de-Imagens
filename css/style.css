@@ -1,7 +1,29 @@
+@media screen and (min-width: 1024px) {
+  .col_4_lg {
+    width: 33%;
+    float: left;
+  }
+}
+@media screen and (min-width: 648px) and (max-width:1023px) {
+  .col_4_md {
+    width: 50%;
+    float: left;
+  }
+}
+@media screen and (min-width:0px) and (max-width:647px) {
+  .col_4_s {
+    width: 100%;
+    float: left;
+  }
+}
+.filmes{
+  width:100%;
+}
 body{
     background-color: #FFF;
     color: #FFF;
     font-family: 'Roboto', sans-serif;
+    font-size: 18px;
 }
 .container{
     width: 90%;
@@ -9,7 +31,12 @@ body{
     background-color: #131540;
     padding: 5px;
 }
-
+.filmes{
+  width:100%;
+}
+.ano{
+  font-size: 1.15em;
+}
 
 img {
     transition-duration: 0.3s
@@ -18,21 +45,38 @@ img {
 img:hover {
     transform: scale(1.1)
 }
-
-
-h1{
-    font-size: 80px;
+.filme-titulo{
+  font-size: 1.3em;
 }
+
 .subTitle p{
     font-size: 30px;
 }
 .title{
     text-align: center;
+    font-size: 2.8em;
 }
 .subTitle{
     text-align: center;
+    font-size: 1.6em;
 }
-.col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12 {
+img{
+  width: 90%;
+  height: 70%;
+  display:block;
+  margin:auto;
+  border: 5px yellow dotted;  
+}
+p{
+  text-align: center;
+}
+footer{
+  margin: 15px;
+  text-align: center;
+  width: 100%;
+}
+
+.col_1, .col_2, .col_3, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12 {
     float: left;
   }
   .col_1 {
@@ -49,10 +93,6 @@ h1{
     width: 24.9%;
   }
 
-
-  .col_4 {
-    width: 33%;
-  }
 
 
   .col_5 {
@@ -90,18 +130,3 @@ h1{
     width: 99.6%;
   }
 
-  img{
-      width: 450px;
-      height: 700px;
-      display:block;
-      margin:auto;
-      border: 5px yellow dotted;  
-  }
-  p{
-      text-align: center;
-  }
-  footer{
-      margin: 15px;
-      text-align: center;
-      width: 100%;
-  }
