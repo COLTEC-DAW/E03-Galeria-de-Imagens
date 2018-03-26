@@ -1,26 +1,33 @@
-#titulo{
+.titulo{
     text-align: center;
-    font-size: 100%;
     text-shadow: 0 0 0.2em black;
     background-color: #03396c;
     color: white;
     border: 1px solid;
     border-radius: 25px;
     font-family: 'Aclonica';
-    margin-top: 5%;
     padding: 1%;
+    font-size: 1.875em;
+    width: 80%;
+    margin: 5% auto 5%;
+}
+
+#titulo{
+    font-size: 1.5em;
+}
+
+#subtitulo{
+    font-size: 1.2em;
 }
 
 #filme{
-    float: left;
     text-align: center;
-    border-radius: 25px;
-    margin-left: 6.25%;
     border: 1px solid;
     border-radius: 25px;
     background-color: #005b96;
     animation-name: slidein;
     animation-duration: 1s;
+    font-size: 1.2em; 
 }
 
 #filme:hover{
@@ -29,45 +36,117 @@
 
 @keyframes slidein {
     from{
-        margin-left: 100%;
-        width: 100%;
+        margin-left: 200%;
+        width: 200%;
     }
     to{
-      width: 16.66%;
+      width: 100%;
     }
 }
 
-.offset{padding-left: 12.5%; padding-bottom: 2%;}
-.offset_2{padding-left: 25%; padding-bottom: 2%;}
+.col-1 {width: 8.33%; float: left;}
+.col-2{width: 16.66%; float: left;}
+.col-3 {width: 25%; float: left;}
+.col-4 {width: 33.33%; float: left;}
+.col-5 {width: 41.66%; float: left;}
+.col-6 {width: 50%; float: left;}
+.col-7 {width: 58.33%; float: left;}
+.col-8 {width: 66.66%; float: left;}
+.col-9 {width: 75%; float: left;}
+.col-10 {width: 83.33%; float: left;}
+.col-11 {width: 91.66%; float: left;}
+.col-12 {width: 100%; float: left;}
 
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
+.offset{
+    padding-left: 4.16%;
+    padding-right: 4.16%;
+    padding-bottom: 4.16%; 
+}
 .row::after{
-    content: "";
     clear: both;
-    display: table;
 }
 
-img{
-    margin-top: 2%;
-    width: 80%;
-    border: 1px solid;
-    border-radius: 25px;
+.imagem{
+    height: 500px;
+}
+
+.anoDoFilme{
+    font-size: 1.15em;
+}
+.nomeDoFilme{
+    font-size: 1.3em;
 }
 
 body{
     font-family: 'Roboto Condensed', sans-serif;
     background-color: #23272a;
     overflow-x: hidden;
+    font-size: 18px;
+}
+
+@media screen and (min-width: 1024px) {
+    .colg-1 {width: 8.33%; float: left;}
+    .colg-2{width: 16.66%; float: left;}
+    .colg-3 {width: 25%; float: left;}
+    .colg-4 {width: 33.33%; float: left;}
+    .colg-5 {width: 41.66%; float: left;}
+    .colg-6 {width: 50%; float: left;}
+    .colg-7 {width: 58.33%; float: left;}
+    .colg-8 {width: 66.66%; float: left;}
+    .colg-9 {width: 75%; float: left;}
+    .colg-10 {width: 83.33%; float: left;}
+    .colg-11 {width: 91.66%; float: left;}
+    .colg-12 {width: 100%; float: left;}
+    img{
+        margin-top: 2%;
+        width: 80%;
+        height: 90%;
+        border: 1px solid;
+        border-radius: 25px;
+    }
+}
+@media screen and (min-width: 648px) and (max-width:1024px){
+    .colm-1 {width: 8.33%; float: left;}
+    .colm-2{width: 16.66%; float: left;}
+    .colm-3 {width: 25%; float: left;}
+    .colm-4 {width: 33.33%; float: left;}
+    .colm-5 {width: 41.66%; float: left;}
+    .colm-6 {width: 50%; float: left;}
+    .colm-7 {width: 58.33%; float: left;}
+    .colm-8 {width: 66.66%; float: left;}
+    .colm-9 {width: 75%; float: left;}
+    .colm-10 {width: 83.33%; float: left;}
+    .colm-11 {width: 91.66%; float: left;}
+    .colm-12 {width: 100%; float: left;}
+    img{
+        margin-top: 2%;
+        width: 80%;
+        height: 90%;
+        border: 1px solid;
+        border-radius: 25px;
+    }
+}
+@media screen and (max-width: 648px){
+    .colp-1 {width: 8.33%; float: left;}
+    .colp-2{width: 16.66%; float: left;}
+    .colp-3 {width: 25%; float: left;}
+    .colp-4 {width: 33.33%; float: left;}
+    .colp-5 {width: 41.66%; float: left;}
+    .colp-6 {width: 50%; float: left;}
+    .colp-7 {width: 58.33%; float: left;}
+    .colp-8 {width: 66.66%; float: left;}
+    .colp-9 {width: 75%; float: left;}
+    .colp-10 {width: 83.33%; float: left;}
+    .colp-11 {width: 91.66%; float: left;}
+    .colp-12 {width: 100%; float: left;}
+    img{
+        margin-top: 2%;
+        width: 80%;
+        height: 90%;
+        border: 1px solid;
+        border-radius: 25px;
+    }
+    imagem{
+        height: 300px;
+    }
 }
