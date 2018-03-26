@@ -1,41 +1,62 @@
 @import url('https://fonts.googleapis.com/css?family=Karla');
 @import url('https://fonts.googleapis.com/css?family=Limelight');
 @import url('https://fonts.googleapis.com/css?family=Bree+Serif');
+   
 
-
-h1 {
-    font-size: 52px;
-    color:whitesmoke;
+    header {
+   
     background-color:black;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-right: 0px;
-    margin-left: 0px;
+
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
     font-family: 'Limelight', cursive;
-    /* border: 9px double #990000; */
-    border: 10px ridge #990000;       
-}
+    border: 9px double #990000;
+    /* border: 7px ridge #990000;        */
+    animation: mymove 1s; 
+  }
+    
+    header h1 {
+      margin: 0;
+      padding: 2% 2% 0% 2%;
+      text-transform: uppercase;
+      color:whitesmoke;
+      font-family: 'Limelight', cursive;
+      font-size: 2.8em; 
+    }
+    
+    header h2 {
+      text-transform: capitalize;
+      color:whitesmoke;
+      font-family: 'Limelight', cursive;
+      font-size: 1.6em;
+      
+
+     }
+
 
 body{
-  
+  display: block;
   background-color:wheat;
-  margin: 0%
+  margin: 0%;
+  font-size: 18px;
 }
 
 div{
     position: auto;
-    margin-top: 20px;
+    margin-top: 23px;
     margin-left: 0px;
-
+    display: block;
    
   }
   
    @keyframes mymove{
-   from {left: 0px;}
-   to {left: 1500px;}
+   from {
+     left: 0px;
+  }
+   to {
+     left: 1600px;
+    }
  } 
 
 #principal{
@@ -52,7 +73,11 @@ div{
   .col_1, .col_2, .col_3, .col_4, .col_5 , .col_6, .col_7,.col_8,.col_9,.col_10,.col_11,.col_12 {
     float: left;
   }
-   
+  
+  .col{
+    float: left;
+    
+  }
   .col_1 {
     width: 8.33%;
   }
@@ -71,6 +96,7 @@ div{
     width: 29.33%;
     float: left;
     padding: 2%;
+
  }
  
   .col_5 {
@@ -119,7 +145,7 @@ img{
     border: 4px solid black;
     padding: 0px;
     border-radius: 25px;
-    animation: mymove 3s reverse;
+    animation: mymove 1.5s reverse;
     transition: width 1s, height 1s;
   
 }
@@ -157,14 +183,96 @@ footer{
   text-align: center; 
   font-size:  20px;
   color:whitesmoke;
-  background-color:black;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-right: 0px;
-  margin-left: 0px;
+  background-color:black;  
   padding-top: 10px;
   padding-bottom: 10px;
   font-family: 'Bree Serif', serif;
    border: 9px double #990000; 
-/*  border: 10px ridge #990000; */      
+ /* border: 10px ridge #990000;       */
 }
+
+b{
+  font-size: 1em;
+}
+
+.ano{
+  font-size: 1.15em;
+}
+
+@media (max-width: 1024px) and (min-width: 648px) {
+  
+  header h1 {
+    font-size: 8vw; 
+  }
+
+  header h2 {
+    font-size: 3.6vw; 
+  }
+  
+  .col_4 {
+    width: 48%;
+    padding: 1%; 
+  } 
+}
+
+
+@media only screen and (max-width: 647px) {
+  
+  header h1 {
+    font-size: 8vw; 
+  }
+
+  header h2 {
+    font-size: 3.4vw; 
+  }
+
+  .col_4{
+    width: 100%;
+    padding: 1%;
+  }
+
+  img{
+    width: 170px;
+    height: 270px;
+    border-style: solid;
+    position:relative;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .7);
+    display: block;
+    margin:auto;
+    border: 4px solid black;
+    padding: 0px;
+    border-radius: 25px;
+    animation: mymove 1.5s reverse;
+    transition: width 1s, height 1s; 
+  }
+
+  footer{
+    max-width:100%;
+    background-color: black;
+    text-align: center; 
+    font-size:  15px;
+    color:whitesmoke;
+    background-color:black;  
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Bree Serif', serif;
+     border: 3px double #990000; 
+   /* border: 10px ridge #990000;       */
+  }
+
+
+  header {
+   
+    background-color:black;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: 'Limelight', cursive;
+    border: 3px double #990000;
+    /* border: 7px ridge #990000;        */
+    animation: mymove 1s; 
+  }
+}
+
+
