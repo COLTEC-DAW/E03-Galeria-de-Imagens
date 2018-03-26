@@ -1,0 +1,205 @@
+$body-color:#f6f8de;
+$body-font-size:18px;
+$header-font-color:#FFFFFF;
+$dark-primary-color: #3D9225;
+$primary-color:#36C50D;
+$card-color:#BBA2FB;
+$primary-font:'Raleway', sans-serif;
+$secondary-font: 'Open Sans', sans-serif;
+
+$title-font-size: 2.8em;
+$date-font-size: 1.15em;
+$subtitle-font-size: 1.6em;
+$caption-font-size: 1.3em;
+
+$border-radius: 17px;
+$col-margin:1%; 
+$separeted-margin:5%;
+
+@mixin scale-transformations($scale) {
+    -moz-transform: scale($scale);
+    -webkit-transform: scale($scale);
+    transform: scale($scale);
+  }
+
+  @mixin transitions($time) {
+    -moz-transition: all $time;
+    -webkit-transition: all $time;
+    transition: all $time;
+  }
+
+  @mixin webkit-animation($name, $duration, $count, $delay){
+    -webkit-animation-name: $name;
+    -webkit-animation-duration: $duration;
+    -webkit-animation-iteration-count: $count;
+    -webkit-animation-delay: $delay;
+
+    animation-name: $name;
+    animation-duration: $duration;
+    animation-iteration-count: $count;
+    animation-delay: $delay;
+  }
+  
+  @-webkit-keyframes shadow-text {
+    0% {
+      text-shadow: 1px 1px yellow;
+    }
+  
+    50% {
+      text-shadow: 1px 1px red;
+    }
+  
+    100% {
+      text-shadow: 1px 1px yellow;
+    }
+  }
+  
+  
+  /* Standard syntax */
+  @keyframes shadow-text {
+    0% {
+      text-shadow: 1px 1px yellow;
+    }
+  
+    50% {
+      text-shadow: 1px 1px red;
+    }
+  
+    100% {
+      text-shadow: 1px 1px yellow;
+    }
+  }
+
+  @media screen and (min-width:1024px) {
+    $col:12;
+    @for $i from 1 to $col + 1 {
+        $width: ($i/$col * 100%) - 4;
+        .col-l-#{$i} { 
+            text-align: center;
+            width: $width;
+            float: left;
+        }
+    
+        .offset-l-#{$i} {
+            margin-left: (100% - ($width - 2))/2;
+        }
+    }
+  }
+  
+  @media screen and (min-width: 648px) and (max-width: 1023px) {
+    $col:8;
+    @for $i from 1 to $col + 1 {
+        $width: ($i/$col * 100%) - 4;
+        .col-m-#{$i} { 
+            text-align: center;
+            width: $width;
+            float: left;
+        }
+      
+        .offset-m-#{$i} {
+            margin-left: (100% - ($width - 2))/2;
+        }
+    }
+  }
+  
+  @media screen and (max-width: 647px) {
+      $col:4;
+    @for $i from 1 to $col + 1 {
+        $width: ($i/$col * 100%) - 4;
+        .col-s-#{$i} { 
+            text-align: center;
+            width: $width;
+            float: left;
+        }
+      
+        .offset-s-#{$i} {
+            margin-left: (100% - ($width - 2))/2;
+        }
+    }
+  }
+
+body {
+    background-color: $body-color;
+    font-size: $body-font-size;
+  }
+  
+  header {
+    color: $header-font-color;
+    background-color: $dark-primary-color;
+    padding: 10px 0px 10px 0px;
+    margin-bottom: $separeted-margin;
+    h1 {
+      font-family: $primary-font;
+      text-align: center;
+    }
+  }
+  
+  footer {
+    font-family: $primary-font;
+    text-align: center;
+    display: block;
+  }
+  
+  h1 {
+    font-size: $title-font-size;
+     + p{
+      font-size: $subtitle-font-size;
+    }
+  }
+  
+  div > p {
+    font-size: $caption-font-size;
+  }
+  
+  p {
+    + p {
+      font-size: $date-font-size;
+    }
+    font-family: $secondary-font;
+    text-align: center;
+  }
+  
+  img {
+    max-width: 75%;
+    max-height: 75%;
+    padding: 10px;
+    border-radius: $border-radius;
+  }
+  
+  footer {
+    height: 40px;
+    padding: 25px 50px 0px 0px;
+
+    margin-top: $separeted-margin;
+    background-color: $dark-primary-color;
+    color: $header-font-color;
+  }
+  
+  .box_filme {
+    background-color: $card-color;
+    border: 4px solid $primary-color;
+    border-radius: $border-radius;
+    box-shadow: 5px 10px $dark-primary-color;
+   
+    height: 500px;
+
+    margin: $col-margin;
+    margin-bottom: $separeted-margin;
+    
+    @include transitions(1s);
+    @include webkit-animation(shadow-text, 4s, infinite, 2s);
+
+    &:hover {
+      @include scale-transformations(1.3);
+    }
+  }
+  
+  .row {
+    display: block;
+  }
+  
+  .container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
