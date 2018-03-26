@@ -64,15 +64,6 @@ img{
     box-shadow: 10px 10px 10px 5px black;
 }
 
-div{
-    text-align: center;
-    font-family: 'Open Sans Condensed', sans-serif;
-    -webkit-transition: width 2s, height 2s;
-    transition: width 2s, height 2s;
-    animation: mymove2;
-    animation-duration: 10s;
-}
-
 .offset{
     padding-left: 10%;
 }
@@ -80,7 +71,7 @@ div{
 .titulo{
     text-align: center;
     font-family: 'Amatic SC', cursive;
-    font-size: 475%;
+    font-size: 4.1em;
     background-image: url("source.gif");
     background-repeat: no-repeat;
     background-position-x: center;
@@ -92,7 +83,7 @@ div{
 .subtitulo{
     text-align: center;
     font-family: 'Amatic SC', cursive;
-    font-size: 200%;
+    font-size: 1.6em;
     animation: mymove2;
     animation-duration: 10s;
 }
@@ -113,6 +104,63 @@ div:hover {
 }
 
 body{
+    font-size: 18px;
     animation: mymove;
     animation-duration: 10s;
 }
+
+.ano{
+font-size: 1.15em;
+}
+
+.nome{
+font-size: 1.3em;
+}
+
+/* desktop */
+@media screen and (min-width: 1024px){
+    div{
+        text-align: center;
+        font-family: 'Open Sans Condensed', sans-serif;
+        -webkit-transition: width 2s, height 2s;
+        transition: width 2s, height 2s;
+        animation: mymove2;
+        animation-duration: 10s;
+        width:  24%;
+        float: left;
+        padding: 2%;
+        padding-left: 5%;
+    }
+    }
+    
+    /* tablet */
+    @media screen and (min-width: 648px) and (max-width: 1023px) {
+    div{
+        text-align: center;
+        font-family: 'Open Sans Condensed', sans-serif;
+        -webkit-transition: width 2s, height 2s;
+        transition: width 2s, height 2s;
+        animation: mymove2;
+        animation-duration: 10s;
+        width:  40%;
+        float: left;
+        padding: 2%;
+        padding-left: 5%;
+    }
+    }
+    
+    /* smartphone */
+    @media screen and (max-width: 648) {
+    div{
+        text-align: center;
+        font-family: 'Open Sans Condensed', sans-serif;
+        -webkit-transition: width 2s, height 2s;
+        transition: width 2s, height 2s;
+        animation: mymove2;
+        animation-duration: 10s;
+        width: 80%;
+        float: left;
+        padding: 30%;
+        padding-left: 30%;
+    }
+    }
