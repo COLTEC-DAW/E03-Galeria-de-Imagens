@@ -2,16 +2,48 @@ h1{
     text-align: center;
     font-family: sans-serif;
     color: white;
-    font-size: 500%;
+    font-size: 5em;
     margin: 1%;
     padding: 5%;
     text-shadow: 5px 5px 5px #FF0000;
 }
-    
-body{
-    background: black;
+
+.sub{
+    font-size: 2em;
+    text-shadow: 5px 5px 5px #FF0000;
+    color: white;
+    text-align: center;
 }
-    
+
+.ano{
+    font-size: 1.1em;
+}
+
+.nome{
+    font-size: 0.8em;
+}
+
+@media screen and (max-width: 648){
+    body{
+        background-color: black;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1024) {
+    body{
+        background: black;
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body{
+        background: black;
+        font-size: 18px;
+    }
+}
+
 .footer{
     width: 300px;
     margin: 5%;
@@ -70,21 +102,26 @@ div:hover {
 }
     
 .col1{
-    width: 12,5%; 
+    max-width: 20%; 
 }
     
 .col2{
-    width: 25%;
-    float: left;
+    max-width: 40%;
 }
     
 .col3{
-    width: 50%;
-    float: left;
+    max-width: 60%;
 }
     
 .col4{
-    width: 100%;
+    max-width: 80%;
+}
+
+.col5{
+    max-width: 100%;
 }
     
-    
+.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12{
+    padding: 1%;
+    float: left;
+}  
