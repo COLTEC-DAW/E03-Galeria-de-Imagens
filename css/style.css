@@ -1,0 +1,95 @@
+/* restringe o tamanho da media ao seu container */
+img, embed, object, video {
+    max-width: 100%; 
+
+}
+body {
+    font-size: 16px; /* tamanho padrão */
+}
+
+/* Arquivo contendo o Estilo da pagina*/
+.container{        
+    width: 65%;
+    margin: 0 auto;
+}
+
+.cartaz{
+    border: 5px solid; 
+}
+
+.grid{
+    padding: 10%;
+    text-align: center;
+}
+
+.titulo{
+    border: 5px solid;
+    border-radius: 45px;
+    font-family:'Cabin Sketch';
+}
+
+    /* Definindo espaçamento das colunas*/
+    .col_1, .col_2, .col_3, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10 , .col_11, .col_12 {
+    float: left;
+    text-align: center;
+    padding: 1%;    
+    }
+
+    .col_1{
+     width: 6.33333333333333%;
+    }
+    .col_2{
+     width: 14.6666666666667%;
+    }
+    .col_3{
+     width: 23%;             
+    }
+    .col_4{
+     width: 31.3333333333333%;                     
+    }
+    .col_5{
+     width: 39.6666666666667%;       
+    }
+    .col_6{
+     width: 48%;           
+    }
+    .col_7{
+     width: 56.3333333333333%;         
+    }
+    .col_8{
+     width: 64.6666666666667%;
+    }
+    .col_9{
+     width: 73%;
+    }
+    .col_10{
+     width: 81.3333333333333%;
+    }
+    .col_11{
+     width: 89.6666666666667%;
+    }
+    .col_12{
+     width: 98%;
+    }
+
+img{
+    width:100%;
+}
+
+img + p{
+    padding-top: 5%;
+    border-top: 5px solid;   
+}
+
+h1{
+     font-size: 2.8em;
+}
+h1+p{
+    font-size: 1.6em;
+}
+p{
+    font-size: 1.3em;
+}
+p+p {
+    font-size: 1.15em;
+}
