@@ -4,9 +4,6 @@
     100% { left: 0px; top: 0px;}
 }
 
-
-
-
 .letreiro {
     animation: mymove 5s infinite;
     position: relative;

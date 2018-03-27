@@ -3,9 +3,13 @@ img, embed, object, video {
     max-width: 100%; 
 
 }
+body {
+    font-size: 16px; /* tamanho padrão */
+}
+
 /* Arquivo contendo o Estilo da pagina*/
 .container{        
-    width: 60%;
+    width: 65%;
     margin: 0 auto;
 }
 
@@ -15,13 +19,13 @@ img, embed, object, video {
 
 .grid{
     padding: 10%;
-    font-family: 'Courier New';
     text-align: center;
 }
 
-.subtitulo{
+.titulo{
     border: 5px solid;
     border-radius: 45px;
+    font-family:'Cabin Sketch';
 }
 
     /* Definindo espaçamento das colunas*/
@@ -32,40 +36,40 @@ img, embed, object, video {
     }
 
     .col_1{
-     width: 10.133%;
+     width: 6.33333333333333%;
     }
     .col_2{
-     width: 20,266%;
+     width: 14.6666666666667%;
     }
     .col_3{
-     width: 30.42217%;             
+     width: 23%;             
     }
     .col_4{
-     width: 40,729%;                      
+     width: 31.3333333333333%;                     
     }
     .col_5{
-     width: 51,066%;       
+     width: 39.6666666666667%;       
     }
     .col_6{
-     width: 60,7998%;           
+     width: 48%;           
     }
     .col_7{
-     width: 70,9331%;         
+     width: 56.3333333333333%;         
     }
     .col_8{
-     width: 81,0664%;
+     width: 64.6666666666667%;
     }
     .col_9{
-     width: 91,1997%;
+     width: 73%;
     }
     .col_10{
-     width: 101,333%;
+     width: 81.3333333333333%;
     }
     .col_11{
-     width: 111,4663%;
+     width: 89.6666666666667%;
     }
     .col_12{
-     width: 121,5996%;
+     width: 98%;
     }
 
 img{
@@ -75,4 +79,17 @@ img{
 img + p{
     padding-top: 5%;
     border-top: 5px solid;   
+}
+
+h1{
+     font-size: 2.8em;
+}
+h1+p{
+    font-size: 1.6em;
+}
+p{
+    font-size: 1.3em;
+}
+p+p {
+    font-size: 1.15em;
 }
