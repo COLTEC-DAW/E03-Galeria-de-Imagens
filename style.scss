@@ -1,0 +1,145 @@
+$title_bg_color: black;
+$bg_color: #0D0D0D;
+$border_color: red;
+$text_color: white;
+
+body{
+    background-color: $bg_color;   
+    font-size: 18px; 
+    color: $text_color;
+}
+
+#titulo{
+    text-align: center;
+    border: 4px solid;
+    border-radius: 25px;
+    border-color: $border_color;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 2.8em;
+    margin-bottom: 5%;
+    margin-top: 3%;
+    background-color: $title_bg_color;
+}
+
+.nome{
+    font-size: 1.3em;
+}
+
+.ano{
+    font-size: 1.15em;
+}
+
+h+p{
+    font-size: 1.6em;
+}
+
+
+@mixin animation($nome){
+  animation: $nome;
+  animation-duration: 2s;
+}
+
+.colunas{
+  float: left;
+  @include animation(mymove); 
+  text-align: center;
+  position: relative;
+      
+}
+
+@media screen and (min-width: 1024px){
+  @for $i from 1 to 13{
+    .col_d#{$i} {
+      width: percentage(1/12 * $i);
+    }
+    
+    .offset_d#{$i}{
+      padding-left: percentage(1/12 * $i);
+    }
+  }
+  .offset_d0{
+    padding-left: 0%;
+  }
+  
+}
+
+@media screen and (min-width: 648px) and (max-width: 1023px){
+  @for $i from 1 to 13{
+    .col_t#{$i} {
+      width: percentage(1/12 * $i);
+    }
+    
+    .offset_t#{$i}{
+      padding-left: percentage(1/12 * $i);
+    }
+  }
+  
+  .offset_t0{
+    padding-left: 0%;
+  }
+}
+
+@media screen and (max-width: 647px){
+  @for $i from 1 to 13{
+    .col_s#{$i} {
+      width: percentage(1/12 * $i);
+    }
+    .offset_s#{$i}{
+      padding-left: percentage(1/12 * $i);
+    }
+  }
+  
+  .offset_s0{
+    padding-left: 0%;
+  }
+}
+
+
+.row{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+
+  &:after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+      
+img{
+    max-width: 360px;
+    max-height: 480px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    border-radius: 25px;
+    border: 6px solid $border_color;
+    transition: 1s;
+
+    &:hover{
+      max-width: 460px;
+      max-height: 580px;
+      width: auto;
+      height: auto;    
+    }
+}
+
+
+.mymove{
+  .offset_3{
+    padding-left: 0%;
+  }
+  
+  @keyframes mymove{
+    from{right: 200%;}
+    to{right: 0%;}
+  } 
+  
+}
+
+footer{
+    vertical-align: 80%;
+    margin: 2.5em;
+}
+
