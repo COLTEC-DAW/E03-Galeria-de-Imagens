@@ -1,3 +1,8 @@
+@-webkit-keyframes myMove {
+  from {
+    right: 20px; }
+  to {
+    right: 0px; } }
 /* DESKTOP */
 @media screen and (min-width: 1024px) {
   .col-g-1 {
@@ -214,6 +219,9 @@
   font-family: "Montserrat", sans-serif;
   height: 380px;
   box-shadow: 10px 10px #A63429; }
+  .filmes:hover {
+    transform: scale(1.2, 1.2);
+    duration: 1s; }
 
 .img {
   align-items: center;
@@ -225,25 +233,11 @@
   margin-top: 3%;
   position: relative;
   animation-direction: alternate;
-  -webkit-animation: mymove 2s;
-  /* Safari 4.0 - 8.0 */
-  animation: mymove 2s; }
+  -webkit-animation-name: myMove;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-delay: 0s; }
 
-.filmes:hover {
-  transform: scale(1.2, 1.2);
-  transition-duration: 1s; }
-
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes mymove {
-  from {
-    right: 0px; }
-  to {
-    right: 20px; } }
-@keyframes mymove {
-  from {
-    right: 0px; }
-  to {
-    right: 20px; } }
 .row {
   display: inline; }
 

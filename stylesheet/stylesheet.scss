@@ -9,8 +9,27 @@ $font-title: 1.3em;
 $font-subtitle: 0.8em;
 $font-year: 1.15em;
 
+@mixin scale($scale1, $scale2){
 
-/* DESKTOP */
+	transform: scale($scale1, $scale2);
+	duration: 1s;
+}
+
+@mixin webkit-animation($name, $duration, $count, $delay){
+    -webkit-animation-name: $name;
+    -webkit-animation-duration: $duration;
+    -webkit-animation-iteration-count: $count;
+    -webkit-animation-delay: $delay;
+
+}
+
+@-webkit-keyframes myMove {
+	from {
+    	right: 20px;
+	} to {
+	  right: 0px; }
+}
+
 
 @mixin multiple_column_size($size) {
 	@for $i from 1 to 13 {
@@ -22,6 +41,8 @@ $font-year: 1.15em;
 	}
 }
 
+
+/* DESKTOP */
 @media screen and (min-width: 1024px) {
 	@include multiple_column_size(g);
 }
@@ -72,6 +93,10 @@ $font-year: 1.15em;
     font-family: $secondary-font;
     height: 380px;
     box-shadow: 10px 10px $first-color;
+
+	&:hover {
+	  @include scale(1.2, 1.2);
+	}
 }
 
 .img {
@@ -84,24 +109,11 @@ $font-year: 1.15em;
     margin-top: 3%;
     position: relative;
     animation-direction: alternate;
-    -webkit-animation: mymove 2s; /* Safari 4.0 - 8.0 */
-    animation: mymove 2s;
-}
-.filmes:hover{
-    transform: scale(1.2, 1.2);
-    transition-duration: 1s;
+    @include webkit-animation(myMove, 4s, 1, 0s);
+
+
 }
 
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes mymove {
-    from {right: 0px;}
-    to {right: 20px;}
-}
-
-@keyframes mymove {
-    from {right: 0px;}
-    to {right: 20px;}
-}
 .row{
     display: inline;
 }
