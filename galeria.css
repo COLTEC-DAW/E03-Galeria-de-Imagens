@@ -1,3 +1,24 @@
+#titulo{
+    font-size: 1.5em;
+}
+
+#subtitulo{
+    font-size: 1.2em;
+}
+
+#filme{
+    text-align: center;
+    border: 1px solid;
+    border-radius: 25px;
+    background-color: #005b96;
+    animation: slidein 1s;
+    font-size: 1.2em;
+}
+
+#filme:hover{
+    transform: scale(1.2);
+}
+
 .titulo{
     text-align: center;
     text-shadow: 0 0 0.2em black;
@@ -12,55 +33,10 @@
     margin: 5% auto 5%;
 }
 
-#titulo{
-    font-size: 1.5em;
-}
-
-#subtitulo{
-    font-size: 1.2em;
-}
-
-#filme{
-    text-align: center;
-    border: 1px solid;
-    border-radius: 25px;
-    background-color: #005b96;
-    animation-name: slidein;
-    animation-duration: 1s;
-    font-size: 1.2em; 
-}
-
-#filme:hover{
-    transform: scale(1.2);
-}
-
-@keyframes slidein {
-    from{
-        margin-left: 200%;
-        width: 200%;
-    }
-    to{
-      width: 100%;
-    }
-}
-
-.col-1 {width: 8.33%; float: left;}
-.col-2{width: 16.66%; float: left;}
-.col-3 {width: 25%; float: left;}
-.col-4 {width: 33.33%; float: left;}
-.col-5 {width: 41.66%; float: left;}
-.col-6 {width: 50%; float: left;}
-.col-7 {width: 58.33%; float: left;}
-.col-8 {width: 66.66%; float: left;}
-.col-9 {width: 75%; float: left;}
-.col-10 {width: 83.33%; float: left;}
-.col-11 {width: 91.66%; float: left;}
-.col-12 {width: 100%; float: left;}
-
 .offset{
     padding-left: 4.16%;
     padding-right: 4.16%;
-    padding-bottom: 4.16%; 
+    padding-bottom: 4.16%;
 }
 .row::after{
     clear: both;
@@ -80,8 +56,15 @@
 body{
     font-family: 'Roboto Condensed', sans-serif;
     background-color: #23272a;
-    overflow-x: hidden;
     font-size: 18px;
+}
+
+img{
+    margin-top: 2%;
+    width: 80%;
+    height: 90%;
+    border: 1px solid;
+    border-radius: 25px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -97,13 +80,6 @@ body{
     .colg-10 {width: 83.33%; float: left;}
     .colg-11 {width: 91.66%; float: left;}
     .colg-12 {width: 100%; float: left;}
-    img{
-        margin-top: 2%;
-        width: 80%;
-        height: 90%;
-        border: 1px solid;
-        border-radius: 25px;
-    }
 }
 @media screen and (min-width: 648px) and (max-width:1024px){
     .colm-1 {width: 8.33%; float: left;}
@@ -118,13 +94,6 @@ body{
     .colm-10 {width: 83.33%; float: left;}
     .colm-11 {width: 91.66%; float: left;}
     .colm-12 {width: 100%; float: left;}
-    img{
-        margin-top: 2%;
-        width: 80%;
-        height: 90%;
-        border: 1px solid;
-        border-radius: 25px;
-    }
 }
 @media screen and (max-width: 648px){
     .colp-1 {width: 8.33%; float: left;}
@@ -139,14 +108,14 @@ body{
     .colp-10 {width: 83.33%; float: left;}
     .colp-11 {width: 91.66%; float: left;}
     .colp-12 {width: 100%; float: left;}
-    img{
-        margin-top: 2%;
-        width: 80%;
-        height: 90%;
-        border: 1px solid;
-        border-radius: 25px;
+}
+
+@keyframes slidein {
+    from{
+        margin-left: 200%;
+        width: 200%;
     }
-    imagem{
-        height: 300px;
+    to{
+      width: 100%;
     }
 }

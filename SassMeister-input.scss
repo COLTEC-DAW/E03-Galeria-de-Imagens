@@ -1,0 +1,65 @@
+// ----
+// Sass (v3.4.21)
+// Compass (v1.0.3)
+// ----
+
+$bodyBackground: #23272a;
+$tituloBackground: #03396c;
+$FilmesBackground: #005b96;
+
+body {
+  background-color: $bodyBackground;
+}
+.titulo {
+  background-color: $tituloBackground;
+}
+#filme {
+   background-color: $FilmesBackground;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+@mixin transform($scale) {
+  -webkit-transform: scale($scale);
+  -moz-transform: scale($scale);
+  -ms-transform: scale($scale);
+  transform: scale($scale);
+}
+@mixin animation($animation){
+  -webkit-animation: $animation;
+  -moz-animation: $animation;
+  -ms-animation: $animation;
+  animation: $animation;
+}
+
+#filme{
+  &:hover{
+    @include transform(1.2);
+  }
+  @include animation(slidein 1s);
+}
+
+#filme, .titulo, img {
+  @include border-radius(25px);
+}
+@mixin col($col){
+  @for $i from 1 to 12 {
+    .col#{$col}-#{$i} { width: 8.33% * $i + $i/2; float: left;}
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  @include col(g);
+}
+
+@media screen and (min-width: 648px) and (max-width: 1024px){
+  @include col(m);
+}
+
+@media screen and (max-width: 648px) {
+  @include col(p);
+}
