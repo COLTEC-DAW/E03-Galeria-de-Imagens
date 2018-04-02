@@ -1,117 +1,293 @@
 .container {
-    width: 90%;
-    margin: auto;
+  width: 90%;
+  margin: auto;
 }
-    
-.col_1, .col_2, .col_3{
+
+@media screen and (min-width: 1001px) {
+  .col1d {
+    width: 8.33333%;
     float: left;
-    padding: 1%;
+    padding: 5%;
     box-sizing: border-box;
+  }
+  .col2d {
+    width: 16.66667%;
+    float: left;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  .col3d {
+    width: 25%;
+    float: left;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  .col4d {
+    width: 33.33333%;
+    float: left;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  .col5d {
+    width: 41.66667%;
+    float: left;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  .col6d {
+    width: 50%;
+    float: left;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  .col7d {
+    width: 58.33333%;
+    float: left;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  .col8d {
+    width: 66.66667%;
+    float: left;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  .col9d {
+    width: 75%;
+    float: left;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  .col10d {
+    width: 83.33333%;
+    float: left;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  .col11d {
+    width: 91.66667%;
+    float: left;
+    padding: 5%;
+    box-sizing: border-box;
+  }
 }
 
-.col_1 {
-    width: 33%;
-}
-    
-.col_2 {
-    width: 66%;
-}
-    
-.col_3 {
-    width: 99%;
+@media screen and (max-width: 1000px) and (min-width: 649px) {
+  .col1t {
+    width: 8.33333%;
+    float: left;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  .col2t {
+    width: 16.66667%;
+    float: left;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  .col3t {
+    width: 25%;
+    float: left;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  .col4t {
+    width: 33.33333%;
+    float: left;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  .col5t {
+    width: 41.66667%;
+    float: left;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  .col6t {
+    width: 50%;
+    float: left;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  .col7t {
+    width: 58.33333%;
+    float: left;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  .col8t {
+    width: 66.66667%;
+    float: left;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  .col9t {
+    width: 75%;
+    float: left;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  .col10t {
+    width: 83.33333%;
+    float: left;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  .col11t {
+    width: 91.66667%;
+    float: left;
+    padding: 5%;
+    box-sizing: border-box;
+  }
 }
 
-@media screen and (max-width: 1024px){
-    .col_1{
-        width: 49%;
-    }
-    .col_2{
-        width: 99%;
-    }
+@media screen and (max-width: 648px) {
+  .col1c {
+    width: 8.33333%;
+    float: left;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  .col2c {
+    width: 16.66667%;
+    float: left;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  .col3c {
+    width: 25%;
+    float: left;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  .col4c {
+    width: 33.33333%;
+    float: left;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  .col5c {
+    width: 41.66667%;
+    float: left;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  .col6c {
+    width: 50%;
+    float: left;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  .col7c {
+    width: 58.33333%;
+    float: left;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  .col8c {
+    width: 66.66667%;
+    float: left;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  .col9c {
+    width: 75%;
+    float: left;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  .col10c {
+    width: 83.33333%;
+    float: left;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  .col11c {
+    width: 91.66667%;
+    float: left;
+    padding: 5%;
+    box-sizing: border-box;
+  }
 }
 
-@media screen and (max-width: 648px){
-    .col_1{
-        width: 99%;
-    }
-    .col_2{
-        width: 99%;
-    }
-}
-
-body{
-    background-color: black;
-    font-size: 18px;
-    color: #fff;
+body {
+  background-color: #000;
+  font-size: 18px;
+  color: #fff;
 }
 
 h1 {
-    border-radius: 0.5em;
-    background-color: #111;
-    font-family: sans-serif;
-    text-shadow: 5pt -3pt 2pt #b01;
-    color: #fff;
-    text-align: center;
-    font-size: 6em;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  border-radius: 0.5em;
+  background-color: #111;
+  font-family: sans-serif;
+  text-shadow: 5pt -3pt 2pt #b01;
+  color: #fff;
+  text-align: center;
+  font-size: 6em;
 }
 
 p + p {
-    font-size: 1.15em;
+  font-size: 1.15em;
 }
+
 p b {
-    font-size: 1.3em;
+  font-size: 1.3em;
 }
+
 h1 {
-    font-size: 5em;
+  font-size: 5em;
 }
+
 h1 + p {
-    font-size: 2em;
+  font-size: 2em;
 }
 
 img {
-    max-width: 100%;
-    border-radius: 10pt;
+  max-width: 100%;
+  -webkit-border-radius: 10pt;
+  -moz-border-radius: 10pt;
+  -ms-border-radius: 10pt;
+  border-radius: 10pt;
 }
 
-.col_1 {
-    padding: 5%;
+div {
+  background-color: inherit;
 }
 
-div{
-    background-color: inherit;
+.cartao {
+  height: 60vw;
+  padding: 0px;
+  border: 5pt;
+  border-radius: 15pt;
+  border-style: solid;
+  border-color: #777;
+  animation: animacartao 8s -3s 1 none;
+  background-color: inherit;
 }
 
-.cartao{
-    padding: 0px;
-    border: 5pt;
-    border-radius: 15pt;
-    border-style: solid;
-    border-color: #777;
-    animation: animacartao 8s -3s 1 none;
-    background-color: inherit;
-}
-
-.cartao:hover{
-    transform: scale(2,2);
+.cartao:hover {
+  transform: scale(2, 2);
 }
 
 @keyframes animacartao {
-    from{
-        margin-top: 500%;
-    }
-    to{
-        margin-top: 0%;
-    }
+  from {
+    margin-top: 500%;
+  }
+  to {
+    margin-top: 0%;
+  }
 }
 
 footer {
-    display: block;
-    width: 100%;
-    background: linear-gradient(black,#333,black);
+  background: linear-gradient(black, #333, black);
 }
 
 p {
-    color: #fff;
-    padding: 1%;
-    text-align: center;
+  color: #fff;
+  padding: 1%;
+  text-align: center;
 }
+/*# sourceMappingURL=style.css.map */
