@@ -1,0 +1,244 @@
+@-webkit-keyframes myMove {
+  from {
+    right: 20px; }
+  to {
+    right: 0px; } }
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+  .col-g-1 {
+    width: 4.33333%;
+    padding: 2%;
+    float: left; }
+
+  .col-g-2 {
+    width: 12.66667%;
+    padding: 2%;
+    float: left; }
+
+  .col-g-3 {
+    width: 21%;
+    padding: 2%;
+    float: left; }
+
+  .col-g-4 {
+    width: 29.33333%;
+    padding: 2%;
+    float: left; }
+
+  .col-g-5 {
+    width: 37.66667%;
+    padding: 2%;
+    float: left; }
+
+  .col-g-6 {
+    width: 46%;
+    padding: 2%;
+    float: left; }
+
+  .col-g-7 {
+    width: 54.33333%;
+    padding: 2%;
+    float: left; }
+
+  .col-g-8 {
+    width: 62.66667%;
+    padding: 2%;
+    float: left; }
+
+  .col-g-9 {
+    width: 71%;
+    padding: 2%;
+    float: left; }
+
+  .col-g-10 {
+    width: 79.33333%;
+    padding: 2%;
+    float: left; }
+
+  .col-g-11 {
+    width: 87.66667%;
+    padding: 2%;
+    float: left; }
+
+  .col-g-12 {
+    width: 96%;
+    padding: 2%;
+    float: left; } }
+/* TABLET */
+@media screen and (min-width: 648px) and (max-width: 1023px) {
+  .col-m-1 {
+    width: 4.33333%;
+    padding: 2%;
+    float: left; }
+
+  .col-m-2 {
+    width: 12.66667%;
+    padding: 2%;
+    float: left; }
+
+  .col-m-3 {
+    width: 21%;
+    padding: 2%;
+    float: left; }
+
+  .col-m-4 {
+    width: 29.33333%;
+    padding: 2%;
+    float: left; }
+
+  .col-m-5 {
+    width: 37.66667%;
+    padding: 2%;
+    float: left; }
+
+  .col-m-6 {
+    width: 46%;
+    padding: 2%;
+    float: left; }
+
+  .col-m-7 {
+    width: 54.33333%;
+    padding: 2%;
+    float: left; }
+
+  .col-m-8 {
+    width: 62.66667%;
+    padding: 2%;
+    float: left; }
+
+  .col-m-9 {
+    width: 71%;
+    padding: 2%;
+    float: left; }
+
+  .col-m-10 {
+    width: 79.33333%;
+    padding: 2%;
+    float: left; }
+
+  .col-m-11 {
+    width: 87.66667%;
+    padding: 2%;
+    float: left; }
+
+  .col-m-12 {
+    width: 96%;
+    padding: 2%;
+    float: left; } }
+/* SMARTPHONE */
+@media screen and (max-width: 647px) {
+  .col-p-1 {
+    width: 4.33333%;
+    padding: 2%;
+    float: left; }
+
+  .col-p-2 {
+    width: 12.66667%;
+    padding: 2%;
+    float: left; }
+
+  .col-p-3 {
+    width: 21%;
+    padding: 2%;
+    float: left; }
+
+  .col-p-4 {
+    width: 29.33333%;
+    padding: 2%;
+    float: left; }
+
+  .col-p-5 {
+    width: 37.66667%;
+    padding: 2%;
+    float: left; }
+
+  .col-p-6 {
+    width: 46%;
+    padding: 2%;
+    float: left; }
+
+  .col-p-7 {
+    width: 54.33333%;
+    padding: 2%;
+    float: left; }
+
+  .col-p-8 {
+    width: 62.66667%;
+    padding: 2%;
+    float: left; }
+
+  .col-p-9 {
+    width: 71%;
+    padding: 2%;
+    float: left; }
+
+  .col-p-10 {
+    width: 79.33333%;
+    padding: 2%;
+    float: left; }
+
+  .col-p-11 {
+    width: 87.66667%;
+    padding: 2%;
+    float: left; }
+
+  .col-p-12 {
+    width: 96%;
+    padding: 2%;
+    float: left; } }
+#title {
+  text-align: center;
+  color: black;
+  margin-bottom: 4%;
+  background-color: white;
+  border-radius: 30px;
+  border: 3px solid;
+  border-color: #A63429;
+  font-size: 1.3em;
+  font-style: oblique;
+  font-family: "Merriweather", serif; }
+
+#subtitle {
+  font-size: 0.8em;
+  font-style: italic; }
+
+#nomeFilme {
+  font-size: 1.3em; }
+
+#anoFilme {
+  font-size: 1.15em; }
+
+.filmes {
+  color: black;
+  border-radius: 3%;
+  border: 2px solid;
+  border-color: #A63429;
+  text-align: center;
+  margin-bottom: 3%;
+  padding-top: 15px;
+  font-family: "Montserrat", sans-serif;
+  height: 380px;
+  box-shadow: 10px 10px #A63429; }
+  .filmes:hover {
+    transform: scale(1.2, 1.2);
+    duration: 1s; }
+
+.img {
+  align-items: center;
+  width: 150px;
+  height: 200px;
+  border-radius: 3%;
+  border: 2px solid;
+  border-color: #A63429;
+  margin-top: 3%;
+  position: relative;
+  animation-direction: alternate;
+  -webkit-animation-name: myMove;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-delay: 0s; }
+
+.row {
+  display: inline; }
+
+/*# sourceMappingURL=stylesheet.css.map */

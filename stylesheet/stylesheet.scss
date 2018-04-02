@@ -1,0 +1,119 @@
+$primary-font: 'Merriweather', serif;
+$secondary-font: 'Montserrat', sans-serif;
+
+$first-color: #A63429;
+$second-color: black;
+$third-color: white;
+
+$font-title: 1.3em;
+$font-subtitle: 0.8em;
+$font-year: 1.15em;
+
+@mixin scale($scale1, $scale2){
+
+	transform: scale($scale1, $scale2);
+	duration: 1s;
+}
+
+@mixin webkit-animation($name, $duration, $count, $delay){
+    -webkit-animation-name: $name;
+    -webkit-animation-duration: $duration;
+    -webkit-animation-iteration-count: $count;
+    -webkit-animation-delay: $delay;
+
+}
+
+@-webkit-keyframes myMove {
+	from {
+    	right: 20px;
+	} to {
+	  right: 0px; }
+}
+
+
+@mixin multiple_column_size($size) {
+	@for $i from 1 to 13 {
+		.col-#{$size}-#{$i} {
+            width: (($i/12 *100 - 4)* 1%);
+			padding: 2%;
+			float: left;
+		}
+	}
+}
+
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+	@include multiple_column_size(g);
+}
+
+/* TABLET */
+@media screen and (min-width: 648px) and (max-width: 1023px) {
+	@include multiple_column_size(m);
+}
+
+/* SMARTPHONE */
+@media screen and (max-width: 647px) {
+	@include multiple_column_size(p);
+}
+
+
+#title {
+    text-align: center;
+    color: $second-color;
+    margin-bottom: 4%;
+    background-color: $third-color;
+    border-radius: 30px;
+    border: 3px solid;
+    border-color: $first-color;
+    font-size: $font-title;
+    font-style: oblique;
+    font-family: $primary-font;
+}
+#subtitle{
+    font-size: $font-subtitle;
+    font-style: italic;
+}
+
+#nomeFilme{
+    font-size: $font-title;
+}
+#anoFilme{
+    font-size: $font-year;
+}
+
+.filmes{
+    color: $second-color;
+    border-radius: 3%;
+    border: 2px solid;
+    border-color: $first-color;
+    text-align: center;
+    margin-bottom: 3%;
+    padding-top: 15px;
+    font-family: $secondary-font;
+    height: 380px;
+    box-shadow: 10px 10px $first-color;
+
+	&:hover {
+	  @include scale(1.2, 1.2);
+	}
+}
+
+.img {
+    align-items: center;
+    width: 150px;
+    height: 200px;
+    border-radius: 3%;
+    border: 2px solid;
+    border-color: $first-color;
+    margin-top: 3%;
+    position: relative;
+    animation-direction: alternate;
+    @include webkit-animation(myMove, 4s, 1, 0s);
+
+
+}
+
+.row{
+    display: inline;
+}
