@@ -1,0 +1,114 @@
+$font-stack: 'ubuntu', sans-serif;
+$primary-color: #000080;
+$fundo-azul-claro: #F0FFFF;
+$cor-vinho: #610B0B;
+$preto: #000000;
+$cinza: #808080;
+
+body {
+ font: 18px $font-stack;
+ color: $primary-color;
+ background-color: $fundo-azul-claro;
+ margin-top: 0px;
+ margin-bottom: 0px;
+ margin-right: 10%;
+ margin-left: 10%;
+}
+
+.ano {
+    font-size: 1.15em;
+  }
+  
+  h1 {
+    font-size: 2.8em;
+    text-align: center;
+    font-family: FreeMono;
+    color: $cor-vinho;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: $cinza;
+  }
+
+  p {
+    text-align: center;
+    line-height: 140%;
+    + p {
+      font-size: 1.15em;
+      color: $cor-vinho;
+    }
+  }
+  
+  div > p {
+    font-size: 0.9em; /*Nao coloquei 1.3 pois bugava*/
+    color: $cor-vinho;
+  }
+  
+  h1 + p {
+    font-size: 1.6em;
+  }
+  
+  footer {
+    text-align: center;
+    line-height: 140%;
+  }
+
+
+  @mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+            border-radius: $radius;
+  }
+  @mixin timeTransition($trans) {
+    -webkit-transition: $trans;
+    transition: $trans;
+  }
+
+
+  img{
+    @include border-radius(50px);
+    @include timeTransition(all 0.8s);
+    width: 10em;
+    height: 15em;
+    margin:auto;
+    border: 10px black solid;
+    display:block;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s; 
+    &:hover {
+        transform: scale(1.3);
+      }
+    }
+
+
+/*colocar na esquerda coluna 1 ate 12 (1 to 13)*/
+    @for $i from 1 to 13 { 
+        .col#{$i} { float: left; }
+    }
+
+    /*Definir os valores de widht para todas as colunas*/
+    @for $i from 1 to 13 { 
+        .col#{$i} { width: 8.33333333333 * $i; }
+    }
+
+
+   /*Responsividade*/ 
+@media screen and (min-width: 1024px){
+    .col4 {
+        width: 33.3333333333%;
+    }
+}
+
+@media screen and (min-width: 648px) and (max-width: 1023px) {  
+    .col4 {
+        width: 48%;
+    } 
+}
+
+@media screen and (max-width: 647px) {
+    .col4{
+        width: 100%;
+    }
+}
