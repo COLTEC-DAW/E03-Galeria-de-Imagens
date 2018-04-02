@@ -1,0 +1,183 @@
+body {
+  font: 18px "ubuntu", sans-serif;
+  color: #000080;
+  background-color: #F0FFFF;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.ano {
+  font-size: 1.15em;
+}
+
+h1 {
+  font-size: 2.8em;
+  text-align: center;
+  font-family: FreeMono;
+  color: #610B0B;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  background-color: #808080;
+}
+
+p {
+  text-align: center;
+  line-height: 140%;
+}
+p + p {
+  font-size: 1.15em;
+  color: #610B0B;
+}
+
+div > p {
+  font-size: 0.9em;
+  /*Nao coloquei 1.3 pois bugava*/
+  color: #610B0B;
+}
+
+h1 + p {
+  font-size: 1.6em;
+}
+
+footer {
+  text-align: center;
+  line-height: 140%;
+}
+
+img {
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  border-radius: 50px;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  width: 10em;
+  height: 15em;
+  margin: auto;
+  border: 10px black solid;
+  display: block;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+img:hover {
+  transform: scale(1.3);
+}
+
+/*colocar na esquerda coluna 1 ate 12 (1 to 13)*/
+.col1 {
+  float: left;
+}
+
+.col2 {
+  float: left;
+}
+
+.col3 {
+  float: left;
+}
+
+.col4 {
+  float: left;
+}
+
+.col5 {
+  float: left;
+}
+
+.col6 {
+  float: left;
+}
+
+.col7 {
+  float: left;
+}
+
+.col8 {
+  float: left;
+}
+
+.col9 {
+  float: left;
+}
+
+.col10 {
+  float: left;
+}
+
+.col11 {
+  float: left;
+}
+
+.col12 {
+  float: left;
+}
+
+/*Definir os valores de widht para todas as colunas*/
+.col1 {
+  width: 8.3333333333;
+}
+
+.col2 {
+  width: 16.6666666667;
+}
+
+.col3 {
+  width: 25;
+}
+
+.col4 {
+  width: 33.3333333333;
+}
+
+.col5 {
+  width: 41.6666666667;
+}
+
+.col6 {
+  width: 50;
+}
+
+.col7 {
+  width: 58.3333333333;
+}
+
+.col8 {
+  width: 66.6666666666;
+}
+
+.col9 {
+  width: 75;
+}
+
+.col10 {
+  width: 83.3333333333;
+}
+
+.col11 {
+  width: 91.6666666666;
+}
+
+.col12 {
+  width: 100;
+}
+
+/*Responsividade*/
+@media screen and (min-width: 1024px) {
+  .col4 {
+    width: 33.3333333333%;
+  }
+}
+@media screen and (min-width: 648px) and (max-width: 1023px) {
+  .col4 {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 647px) {
+  .col4 {
+    width: 100%;
+  }
+}
