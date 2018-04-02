@@ -57,7 +57,6 @@ body {
     width: 100%;
   }
 }
-
 /* Tablet */
 @media screen and (min-width: 648px) and (max-width: 1024px) {
   .colM_1 {
@@ -110,7 +109,6 @@ body {
     width: 100%;
   }
 }
-
 /* Smartphone */
 @media screen and (max-width: 648px) {
   .colP_1 {
@@ -163,7 +161,6 @@ body {
     text-align: center;
   }
 }
-
 h1 {
   font-family: 'Ruluko', sans-serif;
   text-align: center;
@@ -173,6 +170,9 @@ h1 {
   padding: 4%;
   text-shadow: 7px 7px 7px #FF9442;
   border: 5px solid;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
   border-radius: 25px;
 }
 
@@ -202,6 +202,9 @@ img {
   /* Borda arredondada e margem */
   width: 50%;
   border: 7px solid;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
   border-radius: 15px;
 }
 
