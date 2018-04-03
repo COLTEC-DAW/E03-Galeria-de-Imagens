@@ -1,0 +1,207 @@
+@charset "UTF-8";
+body {
+  padding: 1%;
+  background-color: #FC400B;
+  font-size: 18px;
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+  .colG_1 {
+    width: 8.33%;
+  }
+
+  .colG_2 {
+    width: 16.66%;
+  }
+
+  .colG_3 {
+    width: 24.99%;
+  }
+
+  .colG_4 {
+    width: 33.32%;
+  }
+
+  .colG_5 {
+    width: 41.65%;
+  }
+
+  .colG_6 {
+    width: 49.98%;
+  }
+
+  .colG_7 {
+    width: 58.31%;
+  }
+
+  .colG_8 {
+    width: 66.64%;
+  }
+
+  .colG_9 {
+    width: 74.97%;
+  }
+
+  .colG_10 {
+    width: 83.3%;
+  }
+
+  .colG_11 {
+    width: 91.63%;
+  }
+
+  .colG_12 {
+    width: 99.96%;
+  }
+}
+/* Tablet */
+@media screen and (min-width: 648px) and (max-width: 1024px) {
+  .colM_1 {
+    width: 8.33%;
+  }
+
+  .colM_2 {
+    width: 16.66%;
+  }
+
+  .colM_3 {
+    width: 24.99%;
+  }
+
+  .colM_4 {
+    width: 33.32%;
+  }
+
+  .colM_5 {
+    width: 41.65%;
+  }
+
+  .colM_6 {
+    width: 49.98%;
+  }
+
+  .colM_7 {
+    width: 58.31%;
+  }
+
+  .colM_8 {
+    width: 66.64%;
+  }
+
+  .colM_9 {
+    width: 74.97%;
+  }
+
+  .colM_10 {
+    width: 83.3%;
+  }
+
+  .colM_11 {
+    width: 91.63%;
+  }
+
+  .colM_12 {
+    width: 99.96%;
+  }
+}
+/* Smartphone */
+@media screen and (max-width: 648px) {
+  .colP_1 {
+    width: 8.33%;
+  }
+
+  .colP_2 {
+    width: 16.66%;
+  }
+
+  .colP_3 {
+    width: 24.99%;
+  }
+
+  .colP_4 {
+    width: 33.32%;
+  }
+
+  .colP_5 {
+    width: 41.65%;
+  }
+
+  .colP_6 {
+    width: 49.98%;
+  }
+
+  .colP_7 {
+    width: 58.31%;
+  }
+
+  .colP_8 {
+    width: 66.64%;
+  }
+
+  .colP_9 {
+    width: 74.97%;
+  }
+
+  .colP_10 {
+    width: 83.3%;
+  }
+
+  .colP_11 {
+    width: 91.63%;
+  }
+
+  .colP_12 {
+    width: 99.96%;
+  }
+}
+h1 {
+  font-family: 'Ruluko', sans-serif;
+  text-align: center;
+  font-size: 2.8em;
+  background-color: #3B0754;
+  color: #FBFFFD;
+  padding: 4%;
+  text-shadow: 7px 7px 7px #FF9442;
+  border: 5px solid;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  border-radius: 25px;
+}
+
+#total {
+  float: left;
+  display: inline;
+}
+
+.subtítulo {
+  font-size: 1.6em;
+}
+
+/* Muda apenas o "p" do ano do filme */
+p + p {
+  font-size: 1.15em;
+}
+
+.p {
+  font-size: 1.3em;
+}
+
+.margem {
+  padding-left: 10%;
+}
+
+img {
+  /* Borda arredondada e margem */
+  width: 50%;
+  border: 7px solid;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  border-radius: 15px;
+}
+
+.row {
+  clear: both;
+}
