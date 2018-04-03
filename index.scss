@@ -1,9 +1,9 @@
+
 //Variáveis para cores
 $fundo: #FC400B;
 $fundo-titulo: #3B0754;
 $titulo: #FBFFFD;
 $sombreado: #FF9442;
-
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
@@ -16,166 +16,27 @@ body{
     padding: 1%;
     background-color: $fundo;
     font-size: 18px;
-
   }
   
   /* Desktop */
   @media screen and (min-width: 1024px){
-    .colG_1 {
-        width: 8.33%; 
-    }
-         
-    .colG_2 {
-       width: 16.66%;
-    }
-     
-    .colG_3 {
-      width: 25%;
-      float: left;
-      text-align: center;
-    }
-  
-    .colG_4{
-       width: 33.33%;
-    }
-       
-    .colG_5 {
-       width: 41.66%;
-    }
-     
-    .colG_6{
-       width: 50%;  
-    }
-     
-    .colG_7{
-       width: 58.33%;
-    }
-     
-    .colG_8{
-       width: 66.66%;  
-    }
-     
-    .colG_9{
-       width: 75%;  
-    }
-     
-    .colG_10{
-       width: 83.33%;  
-    }
-     
-    .colG_11{
-       width: 91.66%;  
-    }
-     
-    .colG_12{
-       width: 100%;  
+    @for $i from 1 to 13 {
+      .colG_#{$i} { width: 8.33% * $i; }
     }
   }
   
   /* Tablet */
   @media screen and (min-width: 648px) and (max-width: 1024px){
-    .colM_1 {
-      width: 8.33%; 
-   }
-       
-   .colM_2 {
-     width: 16.66%;
-   }
-   
-   .colM_3 {
-    width: 25%;
-   }
-
-   .colM_4{
-     width: 33.33%;
-   }
-     
-   .colM_5 {
-     width: 41.66%;
-   }
-   
-   .colM_6{
-     width: 50%; 
-     float: left;
-     text-align: center; 
-   }
-   
-   .colM_7{
-     width: 58.33%;
-   }
-   
-   .colM_8{
-     width: 66.66%;  
-   }
-   
-   .colM_9{
-     width: 75%;  
-   }
-   
-   .colM_10{
-     width: 83.33%;  
-   }
-   
-   .colM_11{
-     width: 91.66%;  
-   }
-   
-   .colM_12{
-     width: 100%;  
-   }
+   @for $i from 1 to 13 {
+      .colM_#{$i} { width: 8.33% * $i; }
+    }
   }
   
   /* Smartphone */
   @media screen and (max-width: 648px){
-    .colP_1 {
-      width: 8.33%; 
-   }
-       
-   .colP_2 {
-     width: 16.66%;
-   }
-   
-   .colP_3 {
-    width: 25%;
-   }
-    
-   .colP_4{
-     width: 33.33%;
-   }
-     
-   .colP_5 {
-     width: 41.66%;
-   }
-   
-   .colP_6{
-     width: 50%;  
-   }
-   
-   .colP_7{
-     width: 58.33%;
-   }
-   
-   .colP_8{
-     width: 66.66%;  
-   }
-   
-   .colP_9{
-     width: 75%;  
-   }
-   
-   .colP_10{
-     width: 83.33%;  
-   }
-   
-   .colP_11{
-     width: 91.66%;  
-   }
-   
-   .colP_12{
-     width: 100%;
-     float: left;
-     text-align: center;
-   }
+   @for $i from 1 to 13 {
+      .colP_#{$i} { width: 8.33% * $i; }
+    }
   }
   
   h1{
@@ -223,3 +84,6 @@ body{
     clear: both;
   }
     
+
+
+
