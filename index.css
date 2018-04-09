@@ -1,0 +1,109 @@
+
+#titulo{
+    text-align: center;
+    font-size: 2.8em;
+}
+
+p{
+  display: block;
+  text-align: center;
+}
+
+#sub{
+  font-size: 1.6em;
+}
+
+img{
+    animation: myfirst 2.5s;
+    transition: width 1.5s, height 1.5s;
+    max-width: 75%;
+    display: block;
+    margin: auto;
+    border-radius: 5%;
+}
+
+.ano{
+  font-size: 1.15em;
+}
+
+.nome{
+  font-size: 1.3em;
+}
+
+footer{
+  text-align: center;
+}
+
+@keyframes myfirst {
+  from {width: 0px}
+  to {width: 1600px}
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  background-color: gainsboro;
+  font-size: 18px;
+}
+
+.col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12 {
+  float: left;
+  padding: 1%;
+}
+
+.offset_1, .offset_2, .offset_3, .offset_4, .offset_5, .offset_6, .offset_7, .offset_8, .offset_9, .offset_10, .offset_11, .offset_12{
+  float: left;
+  padding: 1%;
+}
+
+.col_2{
+  width: 19%;
+}
+
+.col_12{
+  width: 98%;
+}
+
+.offset_3{
+  padding-left: 20%;
+}
+
+.movie{
+  border: 6%;
+  padding-top: 5%;
+  margin-left: 3%;
+  padding-bottom: 2%;
+  background-color: gray;
+  border-radius: 10%;
+  z-index: 9999;
+}
+
+.zoom {
+  transition: transform .2s;
+}
+
+.zoom:hover {
+  transform: scale(1.5);
+}
+
+@media screen and (max-width: 647px) {
+  .col_s1, .col_s2, .col_s3, .col_s4, .col_s5, .col_s6, .col_s7, .col_s8, .col_s9, .col_s10, .col_s11, .col_s12{
+    float: left;
+    padding: 1%;
+  } 
+
+  .col_s12{
+    width: 98%;
+  }
+}
+
+@media screen and (min-width: 648px) and  (max-width: 1023px) {
+  .col_t1, .col_t2, .col_t3, .col_t4, .col_t5, .col_t6, .col_t7, .col_t8, .col_t9, .col_t10, .col_t11, .col_t12{
+    float: left;
+    padding: 1%;
+  } 
+
+  .col_t6{
+    width: 38%;
+  }
+}

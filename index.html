@@ -2,43 +2,61 @@
 <html>
     <head>
         <meta encoding="utf-8">
+        <link rel="stylesheet" type="text/css" href="index.css">
         <title>Galeria de Filmes: Quentin Tarantino</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
     </head>
-    <body>
-        <h1>Galeria do Tarantino</h1>
-        <p>Galeria de alguns dos filmes de Quentin Tarantino</p>
-
-        <div>
-            <img src="img/caes_de_aluguel.jpg" alt="">
-            <p><b>Cães de Aluguel</b></p>
-            <p>1992</p>
+    <body class= "container">
+        <h1 id="titulo">Galeria do Tarantino</h1>
+        <p id= "sub">Galeria de alguns dos filmes de Quentin Tarantino</p>
+        <div class="row">
+            <div class= "col_2 offset_3 col_s12 col_t6">
+                <div class= "movie zoom">
+                    <img src="img/django_livre.jpg" alt="">
+                    <p class = "nome"><b>Django Livre</b></p>
+                    <p class = "ano">2012</p>
+                </div>
+            </div>
+            <div class="col_2 col_s12 col_t6">
+                <div class= "movie zoom">
+                    <img src="img/pulp_fiction.jpg" alt="">
+                    <p class = "nome"><b>Pulp Fiction</b></p>
+                    <p class = "ano">1994</p>
+                </div>
+            </div>
+            <div class="col_2 col_s12 col_t6">
+                <div class= "movie zoom">
+                    <img src="img/os_oito_odiados.jpg" alt="">
+                    <p class = "nome"><b>Os Oito Odiados</b></p>
+                    <p class = "ano">2015</p>
+                </div>
+            </div>
+        </div>  
+        <div class="row">
+            <div class="col_2 offset_3 col_s12 col_t6">
+                <div class= "movie zoom">
+                    <img src="img/bastardos_inglorios.jpg" alt="">
+                    <p class = "nome"><b>Bastardos Inglórios</b></p>
+                    <p class = "ano">2009</p>
+                </div>
+            </div>
+            <div class="col_2 col_s12 col_t6">
+                <div class= "movie zoom ">
+                    <img src="img/kill_bill.jpg" alt="">
+                    <p class = "nome"><b>Kill Bill: Volume 1</b></p>
+                    <p class = "ano">2003</p>
+                </div>
+            </div>
+            <div class="col_2 col_s12 col_t6">
+                <div class= "movie zoom">
+                    <img src="img/caes_de_aluguel.jpg" alt="">
+                    <p class = "nome"><b>Cães de Aluguel</b></p>
+                    <p class = "ano">1992</p>
+                </div>
+                
+            </div>
         </div>
-        <div>
-            <img src="img/pulp_fiction.jpg" alt="">
-            <p><b>Pulp Fiction: Tempos de Violência</b></p>
-            <p>1994</p>
-        </div>
-        <div>
-            <img src="img/kill_bill.jpg" alt="">
-            <p><b>Kill Bill: Volume 1</b></p>
-            <p>2003</p>
-        </div>
-        <div>
-            <img src="img/bastardos_inglorios.jpg" alt="">
-            <p><b>Bastardos Inglórios</b></p>
-            <p>2009</p>
-        </div>
-        <div>
-            <img src="img/django_livre.jpg" alt="">
-            <p><b>Django Livre</b></p>
-            <p>2012</p>
-        </div>
-        <div>
-            <img src="img/os_oito_odiados.jpg" alt="">
-            <p><b>Os Oito Odiados</b></p>
-            <p>2015</p>
-        </div>
-        <footer>
+        <footer class = "col_12">
             Desenvolvimento de Aplicações Web - COLTEC/UFMG
         </footer>
     </body>
