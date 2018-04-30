@@ -1,0 +1,112 @@
+//Paleta
+$fundo:#000;
+$textoNormal: #fff;
+$sombraTitulo: #b01;
+$fundoTitulo: #111;
+$bordaCartao: #777;
+
+//variaveis
+$tamCelular: 648px;
+$tamTablet: 1000px;
+$tamDesktop: 1001px;
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+@media screen and (min-width: $tamDesktop){
+    @for $i from 1 to 12{
+        .col#{$i}d{ width: 100% / 12 * $i; float: left; padding: 5%; box-sizing: border-box;}
+    }
+}
+@media screen and (max-width: $tamTablet) and (min-width: $tamCelular + 1px){
+    @for $i from 1 to 12{
+        .col#{$i}t{ width: 100% / 12 * $i; float: left; padding: 5%; box-sizing: border-box;}
+    }
+}
+@media screen and (max-width: $tamCelular){
+    @for $i from 1 to 12{
+        .col#{$i}c{ width: 100% / 12 * $i; float: left; padding: 5%; box-sizing: border-box;}
+    }
+}
+
+body{
+    background-color: $fundo;
+    font-size: 18px;
+    color: $textoNormal;
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+            border-radius: $radius;
+}
+h1 {
+    @include border-radius(0.5em);
+    background-color: $fundoTitulo;
+    font-family: sans-serif;
+    text-shadow: 5pt -3pt 2pt $sombraTitulo;
+    color: $textoNormal;
+    text-align: center;
+    font-size: 6em;
+}
+
+p + p {
+    font-size: 1.15em;
+}
+p b {
+    font-size: 1.3em;
+}
+h1 {
+    font-size: 5em;
+}
+h1 + p {
+    font-size: 2em;
+}
+
+img {
+    max-width: 100%;
+    @include border-radius(10pt);
+}
+
+div{
+    background-color: inherit;
+}
+
+.cartao{
+    height: 60vw; //ajustar de acordo com media
+    padding: 0px;
+    border: 5pt;
+    border-radius: 15pt;
+    border-style: solid;
+    border-color: #777;
+    animation: animacartao 8s -3s 1 none;
+    background-color: inherit;
+}
+
+.cartao:hover{
+    transform: scale(2,2);
+}
+
+@keyframes animacartao {
+    from{
+        margin-top: 500%;
+    }
+    to{
+        margin-top: 0%;
+    }
+}
+
+footer {
+//    display: block;
+//    width: 100%;
+    background: linear-gradient(black,#333,black);
+}
+
+p {
+    color: $textoNormal;
+    padding: 1%;
+    text-align: center;
+}
