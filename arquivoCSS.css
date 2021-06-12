@@ -5,7 +5,8 @@
     align-content: center;
     text-align: center;
     margin-left: 9%;
- 
+    color:black;
+    background-color: black;
 }
 .col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .com9, .col_10, .col_11, .col_12{
     float: left;
@@ -65,10 +66,67 @@
 }
 .titulo, .subtitulo, .rodape{
     float: none;
+    color:darkorange;
 }
 
 .titulo{
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
     font-size:500%;
+}
+#reservoir_dogs{
+    background-color: floralwhite;
+}
+#pulp_fiction{
+    background-color:rgb(220, 16, 16);
+}
+#kill_bill{
+    
+    background-color: orange;
+}
+#inglourious_basterds{
+    background-color: gray;
+}
+#django_unchainded{
+    background-color: floralwhite;
+}
+#the_hateful_eight{
+    background-color: silver;
+}
+#cartaz1{
+    background-color:rgb(209, 23, 23);
+    
+}
+#cartaz2{
+    background-color:rgb(243, 208, 12);
+}
+#cartaz3{
+    background-color: black;
+}
+#cartaz4{
+    background-color: rgba(47, 72, 4, 0.489);
+}
+#cartaz5{
+    background-color: silver;
+}
+#cartaz6{
+    background-color:aliceblue;
+}
 
+.texto_cartaz1{
+    background-color:rgb(209, 23, 23);
+}
+.texto_cartaz2{
+    background-color:rgb(243, 208, 12);;
+}
+.texto_cartaz3{
+    background-color:rgb(243, 208, 12);
+}
+.texto_cartaz4{
+    background-color: rgba(47, 72, 4, 0.489);
+}
+.texto_cartaz5{
+    background-color: rgba(236, 4, 4, 0.836);
+}
+.texto_cartaz6{
+    background-color: aliceblue;
 }
