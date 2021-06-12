@@ -56,6 +56,7 @@
     border-radius: 25px; 
     margin: 1%;
 }
+
 .cartaz{
     height: 300px;
     padding: 15%;
@@ -129,4 +130,31 @@
 }
 .texto_cartaz6{
     background-color: aliceblue;
+}
+#reservoir_dogs, #inglourious_basterds  {
+    position: relative;
+    animation: mymove1 1.5s;
+    animation-fill-mode: forwards;
+}
+#pulp_fiction, #django_unchainded  {
+    position: relative;
+    animation: mymove2 1.5s;
+    animation-fill-mode: forwards;
+}
+#kill_bill, #the_hateful_eight  {
+    position: relative;
+    animation: mymove3 1.5s;
+    animation-fill-mode: forwards;
+}  
+@keyframes mymove1 {
+    from {left: -30px;}
+    to {left: 0px;}
+}
+@keyframes mymove2 {
+    from {bottom: -20px;}
+    to {bottom: 0px;}
+}
+@keyframes mymove3 {
+    from {right: -30px;}
+    to {right: 0px;}
 }
