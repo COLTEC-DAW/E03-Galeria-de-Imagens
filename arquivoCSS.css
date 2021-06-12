@@ -1,0 +1,67 @@
+.canvas{
+    width: 100%;
+    margin:auto;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin-left: 9%;
+}
+.col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .com9, .col_10, .col_11, .col_12{
+    float: left;
+    padding: 1%;
+}
+.col_1{
+    width: 6.25%; 
+}
+.col_2{
+    width: 14.5%;
+}
+.col_3{
+    width: 22.75%;
+}
+.col_4{
+    width: 31%;     
+}
+.col_5{
+    width: 39.25%;
+}
+.col_6{
+    width: 47.5%;
+}
+.col_7{
+    width: 55.75%;
+}
+.col_8{
+    width: 56%;
+}
+.col_9{
+    width: 64%;
+}
+.col_10{
+    width: 72.25%;
+}
+.col_11{
+    width: 80.5%;
+}
+.col_12{
+    width: 88.75%;
+}
+
+.quadros{
+    border-color: black;
+    border-style:solid;
+    border: 2%;
+    border-radius: 25px; 
+    margin: 1%;
+}
+.cartaz{
+    height: 300px;
+    padding: 15%;
+}
+
+.texto{
+    text-align: center;
+}
+.titulo, .subtitulo, .rodape{
+    float: none;
+}
