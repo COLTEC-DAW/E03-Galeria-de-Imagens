@@ -7,6 +7,7 @@
     margin-left: 9%;
     color:black;
     background-color: black;
+    background-color: crimson;
 }
 .col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .com9, .col_10, .col_11, .col_12{
     float: left;
