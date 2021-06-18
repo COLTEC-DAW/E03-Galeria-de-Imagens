@@ -42,5 +42,8 @@ img{
 /* DEMAIS CONFIGURAÇÕES DE COLUNAS FORAM DELETADAS PORQUE NÃO SERIAM UTILIZADAS */
 .col3{
     width: 28%;
+    border:4px solid;
+    border-radius:40px;
+    background-color:blanchedalmond;
 }
 .col12{ width: 99.90%; }
