@@ -13,12 +13,12 @@ h1{
 .NomeDoFilme{ text-align: center; }
 
 img{
-    width: 90%;
-    height: 90%;
+    width: 80%;
+    height: 80%;
 
     display: block;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .container{
@@ -38,12 +38,19 @@ img{
     margin: 1%;
 }
 
-
 /* DEMAIS CONFIGURAÇÕES DE COLUNAS FORAM DELETADAS PORQUE NÃO SERIAM UTILIZADAS */
+
+@keyframes mymove {
+    from {top:-100px;}
+    to {top: 0px;}
+}
 .col3{
     width: 28%;
     border:4px solid;
     border-radius:40px;
     background-color:blanchedalmond;
+
+    position: relative;
+    animation: mymove 5s 1;
 }
 .col12{ width: 99.90%; }
