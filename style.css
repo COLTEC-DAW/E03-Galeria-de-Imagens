@@ -1,0 +1,47 @@
+h1{
+    text-align: center;
+}
+
+.subtitulo{
+    text-align:left;
+}
+
+.AnoDoFilme{
+    text-align: center;
+}
+.NomeDoFilme{
+    text-align: center; 
+}
+
+img{
+    width: 90%;
+    height: 90%;
+
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.container{
+    width:98%;
+    margin:auto;
+    border:1px solid;
+    border-radius:50px;
+    
+    overflow:hidden;
+}
+
+.col1, .col2, .col3,  .col4,  .col5,  .col6, 
+.col7, .col8, .col9, .col10, .col11, .col12{
+    float:left;
+    padding:1%;
+
+    margin: 1%;
+}
+
+
+/* DEMAIS CONFIGURAÇÕES DE COLUNAS FORAM DELETADAS PORQUE NÃO SERIAM UTILIZADAS */
+.col3{
+    width: 28%;
+}
+.col12{ width: 99.90%; }
