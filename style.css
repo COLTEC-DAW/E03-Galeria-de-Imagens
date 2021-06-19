@@ -1,3 +1,6 @@
+body{
+    font-size: 18px;
+}
 h1{
     text-align: center;
     font-family: 'Lato', sans-serif;
@@ -5,13 +8,22 @@ h1{
     color:black;
     text-shadow: 5px 5px 5px #FF0000;
 
-    font-size: 2em;
+    font-size: 2.8em;
 }
 
-h1 + p{text-align:left;}
+h1 + p{
+    text-align:left;
+    font-size: 1.6em;
+}
 
-.AnoDoFilme{ text-align: center; }
-.NomeDoFilme{ text-align: center; }
+.AnoDoFilme{ 
+    text-align: center; 
+    font-size: 1.15em;
+}
+.NomeDoFilme{ 
+    text-align: center; 
+    font-size: 1.3em;
+}
 
 img{
     width: 75%;
