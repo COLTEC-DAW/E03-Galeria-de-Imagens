@@ -1,0 +1,101 @@
+div{
+    text-align: center;
+}
+
+.container{
+    width: 92%;
+    margin: auto;
+}
+
+.container img {
+    width: 50%;
+    height: auto;
+}
+
+.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10,.col11,.col12{
+    float: left;
+    padding: 2%;
+}
+
+.col1{
+    width: 6%;
+}
+
+.col2{
+    width: 16%;
+}
+
+.col3{
+    width: 24%;
+}
+
+.col4{
+    width: 32%;
+}
+
+.col5{
+    width: 40%;
+}
+
+.col6{
+    width: 48%;
+}
+
+.col7{
+    width: 56%;
+}
+
+.col8{
+    width: 64%;
+}
+
+.col9{
+    width: 72%;
+}
+
+.col10{
+    width: 80%;
+}
+
+.col11{
+    width: 88%;
+}
+
+.col12{
+    width: 96%;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+div{
+    float: center;
+    box-shadow: 3px 3px 10px black;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 16px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:#dbdbdb;
+    border-radius: 25px;
+    border: 4px solid #ffffff;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(167, 167, 167);
+  }
