@@ -1,20 +1,97 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+
 div{
+    float: center;
     text-align: center;
+}
+
+h1{
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    font-size: 525%;
+    color: rgb(229, 9, 20);
+    margin-top: auto;
+    margin-bottom: auto;
+    background: linear-gradient(360deg, rgba(23,23,23,1) 0%, rgba(26,26,26,1) 100%);
+}
+
+h2{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 175%;
+    font-weight: lighter;
+    text-align: center;
+    background-color: rgb(23, 23, 23);
+    background: linear-gradient(180deg, rgba(23,23,23,1) 0%, rgba(20,20,20,1) 100%);
+}
+
+#data{
+    font-size: 75%;
 }
 
 .container{
     width: 92%;
     margin: auto;
+    overflow-x: hidden;
 }
 
 .container img {
-    width: 50%;
+    width: 80%;
     height: auto;
+    border-radius: 1.5%;
+    transition: 0.25s;
+}
+
+.container img:hover{
+    width: 100%;
+    height: auto;
+}
+
+@keyframes esquerda {
+    0% {right:-1000%; opacity: 0%;}
+    50%{right:8%; opacity: 50%;}
+    100% {right: 0%; opacity: 100%;}
+}
+
+.imagemesquerda{
+    position: relative;
+    animation: esquerda 2s;
+}
+
+@keyframes centro {
+    0% {right:-1000%; opacity: 0%;}
+    50%{right:8%; opacity: 50%;}
+    100% {right: 0%; opacity: 100%;}
+}
+
+.imagemcentro{
+    position: relative;
+    animation: centro 2.75s;
+}
+
+@keyframes direita {
+    0% {right:-1000%; opacity: 0%;}
+    50%{right:8%; opacity: 50%;}
+    80% {right: 0%; opacity: 100%;}
+}
+
+.imagemdireita{
+    position: relative;
+    animation: direita 3.5s;
+}
+
+footer{
+    text-align: center;
+    background: linear-gradient(180deg, rgba(20,20,20,1) 0%, rgba(26,26,26,1) 100%);
 }
 
 .col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10,.col11,.col12{
     float: left;
-    padding: 2%;
+    padding: 1%;
 }
 
 .col1{
@@ -22,15 +99,15 @@ div{
 }
 
 .col2{
-    width: 16%;
+    width: 15%;
 }
 
 .col3{
-    width: 24%;
+    width: 23%;
 }
 
 .col4{
-    width: 32%;
+    width: 31%;
 }
 
 .col5{
@@ -46,36 +123,23 @@ div{
 }
 
 .col8{
-    width: 64%;
+    width: 65%;
 }
 
 .col9{
-    width: 72%;
+    width: 73%;
 }
 
 .col10{
-    width: 80%;
+    width: 81%;
 }
 
 .col11{
-    width: 88%;
+    width: 90%;
 }
 
 .col12{
-    width: 96%;
-}
-
-h1{
-    text-align: center;
-}
-
-h2{
-    text-align: center;
-}
-
-div{
-    float: center;
-    box-shadow: 3px 3px 10px black;
+    width: 98%;
 }
 
 /* width */
@@ -85,17 +149,17 @@ div{
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: #ffffff;
+    background: rgb(20, 20, 20);
   }
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background:#dbdbdb;
+    background:#585858;
     border-radius: 25px;
-    border: 4px solid #ffffff;
+    border: 4px solid rgb(20, 20, 20);
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: rgb(167, 167, 167);
+    background: rgb(124, 124, 124);
   }
