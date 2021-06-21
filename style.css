@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 .container {
     width: 92%;
     margin: auto;
     text-align: center;
-    align-items: center;
-    align-content: center;
+    justify-content: center;
+} 
+
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-  
   
 .col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12{
     float: left;
@@ -60,14 +64,17 @@
     width: 94%;
 }
 
-#titulo, #subtitulo{
-    text-align: center;
-}
-
 img{
     width: 60%;
 } 
 
-footer {
-    text-align: center;
+#titulo{
+    font-family: 'Anton', sans-serif;
+    font-size: 50px;
+    margin-bottom: 5px;
+
+}
+
+#subtitulo{
+    margin-top: 3px;
 }
