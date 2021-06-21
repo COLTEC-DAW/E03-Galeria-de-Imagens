@@ -1,16 +1,17 @@
 body{
     font-family: 'Times New Roman', Times, serif;
+    background-color: rgba(10, 10, 10, 0.775);
 }
 
 .container{
-    width: 92%;
+    width: 96%;
     margin: auto;
     
 }
 
 .col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10,.col11,.col12{
     float: left;
-    padding: 2%;
+    padding: 1%;
 }
 
 .col1{
@@ -18,67 +19,81 @@ body{
 }
 
 .col2{
-    width: 16%;
+    width: 14%;
 }
 
 .col3{
-    width: 24%;
+    width: 22%;
 }
 
 .col4{
-    width: 32%;
+    width: 30%;
 }
 
 .col5{
-    width: 40%;
+    width: 38%;
 }
 
 .col6{
-    width: 48%;
+    width: 46%;
 }
 
 .col7{
-    width: 56%;
+    width: 54%;
 }
 
 .col8{
-    width: 64%;
+    width: 62%;
 }
 
 .col9{
-    width: 72%;
+    width: 70%;
 }
 
 .col10{
-    width: 80%;
+    width: 78%;
 }
 
 .col11{
-    width: 88%;
+    width: 86%;
 }
 
 .col12{
-    width: 96%;
+    width: 94%;
 }
 
 h1{
     text-align: center;
     font-size: 2.5rem;
-    color: black;
-
-    border-style: solid;
+    color: red;
 }
 
 #Resumopag{
-    text-align: left;
+    text-align: center;
+    color: black;
+    font-size: 22px;
+}
+
+.col4 p{
+
+    text-align: center;
+}
+
+p{
+    color: black;
 }
 
 div{
-    
-    float: center;
     box-shadow: 3px 3px 10px black;
 }
 
 img{
-    width: 50%;
+    width: 60%;
+    padding: 20%;
+    height: auto;
+    float: center;
+}
+
+#finalpag{
+    color: black;
 }
