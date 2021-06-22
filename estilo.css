@@ -6,10 +6,34 @@
 
 .titulo{
 
+    
     text-align: center;
     padding: 1%;
     margin-left: 15%;
     margin-right: 15%;
+
+    background: rgb(7,57,179);
+    background: linear-gradient(90deg, rgba(7,57,179,1) 0%, rgba(27,43,92,1) 9%, rgb(37, 36, 54) 24%, rgb(37, 36, 54) 76%, rgba(27,43,92,1) 91%, rgba(7,57,179,1) 100%);
+    border-color: transparent;
+    border-radius: 10px;
+}
+
+.titulo > h1 {
+
+    font-family: 'Saira Condensed', sans-serif;
+    color:white;
+    text-shadow: 2px 2px rgb(134, 44, 44);
+    font-size: 300%;
+    margin-bottom: 1%;
+    margin-top: 0.5%;
+}
+
+.titulo > p{
+
+    color:rgb(175, 62, 62);
+    margin-top: -20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
 }
 
 .conteudo{
@@ -22,6 +46,8 @@
 }
 
 p{
+    font-family: 'Raleway', sans-serif;
+    color: rgb(0, 0, 0);
     text-align: center;
     margin-left: 2%;
     margin-right: 2%;
@@ -37,13 +63,13 @@ img{
 
 div{
 
-    background-color: rgb(194, 194, 194);
-    border-color: white;
-    border-radius: 10px;
+
     margin: 2%;
     padding: 1%;
 
 }
+
+
 
 div.col12{
 
