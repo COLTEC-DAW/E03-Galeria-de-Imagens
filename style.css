@@ -1,0 +1,50 @@
+
+    .container{
+        width: 88%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .col{
+        display: block;
+        padding: 0.65%;
+    }
+    
+    ._4{
+        width: 32%;
+    }
+    ._1{
+        width: 8%;
+    }
+    ._2{
+        width: 16%;
+    }
+    ._3{
+        width: 24%;
+    }
+    ._5{
+        width: 40%;
+    }
+    ._6{
+        width: 48%;
+    }
+    ._7{
+        width: 56%;
+    }
+    ._8{
+        width: 64%;
+    }
+    ._9{
+        width: 72%;
+    }
+    ._10{
+        width: 80%;
+    }
+    ._11{
+        width: 88%;
+    }
+    ._12{
+        width: 96%;
+    }
+
+
