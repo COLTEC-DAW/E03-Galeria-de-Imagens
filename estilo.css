@@ -97,11 +97,14 @@ img{
 
 
 div{
-
-
     margin: 2%;
     padding: 1%;
+}
 
+p {
+
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 div.conteudo > div > div {
@@ -113,11 +116,13 @@ div.conteudo > div > div {
 
 }
 
-div.conteudo > div :hover {
+div.conteudo > div :hover{
 
-    background-color: rgb(42, 42, 78);
+    background-color: rgba(27,43,92,1);
+    transform: scale(110%);
 
 }
+
 
 div.conteudo > div > div {
 
