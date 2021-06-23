@@ -111,13 +111,29 @@ div.conteudo > div > div {
     border-radius: 10px;
     box-shadow: 5px 5px rgb(134, 44, 44);
 
-
 }
-
 
 div.conteudo > div :hover {
 
     background-color: rgb(42, 42, 78);
+
+}
+
+div.conteudo > div > div {
+
+    animation: shake .7s;
+    animation-iteration-count: 1;
+
+}
+
+
+@keyframes shake {
+
+    0% { transform: rotate(-2deg);}
+    25% { transform: rotate(2deg);}
+    50% { transform: rotate(2deg);}
+    50% { transform: rotate(-2deg);}
+    
 
 }
 
