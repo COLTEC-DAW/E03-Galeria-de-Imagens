@@ -4,6 +4,41 @@
     padding: 0.5%;
 }
 
+body{
+
+    background: rgb(37, 36, 54);
+    margin: 0px;
+    padding: 0px;
+}
+
+.fitaesq {
+
+    background: rgb(134, 44, 44);
+    background-image: url(img/fita\ pagina\ css.png);
+    background-size: 100%;
+    width: 8%;
+    height: 1500px;
+    margin: 0px;
+    margin-right: -3%;
+    margin-top: -2%;
+    padding: 0px;
+    float: left;
+}
+
+.fitadir {
+
+    background: rgb(134, 44, 44);
+    background-image: url(img/fita\ pagina\ css.png);
+    background-size: 100%;
+    width: 8%;
+    height: 1500px;
+    margin: 0px;
+    margin-left: -3%;
+    margin-top: -2%;
+    padding: 0px;
+    float: right;
+}
+
 .titulo{
 
     
@@ -11,7 +46,6 @@
     padding: 1%;
     margin-left: 15%;
     margin-right: 15%;
-
     background: rgb(7,57,179);
     background: linear-gradient(90deg, rgba(7,57,179,1) 0%, rgba(27,43,92,1) 9%, rgb(37, 36, 54) 24%, rgb(37, 36, 54) 76%, rgba(27,43,92,1) 91%, rgba(7,57,179,1) 100%);
     border-color: transparent;
@@ -22,16 +56,17 @@
 
     font-family: 'Saira Condensed', sans-serif;
     color:white;
-    text-shadow: 2px 2px rgb(134, 44, 44);
+    text-shadow: 3px 2px rgb(134, 44, 44);
     font-size: 300%;
     margin-bottom: 1%;
     margin-top: 0.5%;
+
 }
 
 .titulo > p{
 
     color:rgb(175, 62, 62);
-    margin-top: -20px;
+    margin-top: -2%;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
 }
@@ -41,13 +76,13 @@
     text-align: center;
     align-content: center;
     align-self: center;
-    margin-left: 16.5%;
-    margin-right: 11.5%;
+    margin-left: 12%;
+    margin-right: 5%;
 }
 
 p{
     font-family: 'Raleway', sans-serif;
-    color: rgb(0, 0, 0);
+    color: white;
     text-align: center;
     margin-left: 2%;
     margin-right: 2%;
@@ -69,7 +104,27 @@ div{
 
 }
 
+div.conteudo > div > div {
 
+    background-color: rgb(29, 29, 34);
+    border-color: transparent;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgb(134, 44, 44);
+
+
+}
+
+
+div.conteudo > div :hover {
+
+    background-color: rgb(42, 42, 78);
+
+}
+
+div.conteudo > div > div > :nth-child(2){
+
+    font-size: 120%;
+}
 
 div.col12{
 
@@ -79,9 +134,20 @@ div.col12{
 
 footer{
 
+    margin-top: 4%;
+    float: left;
     text-align: center;
+    background: rgb(7,57,179);
+    background: linear-gradient(0deg, rgba(7,57,179,1) 13%, rgba(23,52,124,1) 37%, rgba(35,50,93,1) 66%, rgba(37,36,54,1) 100%);
+    margin-left: 7.5%;
+    margin-right: 0%;
+    margin-bottom: -10px;
 }
 
+footer > p {
+
+    padding-top: 3.5%;
+}
 
 .col1{
 
