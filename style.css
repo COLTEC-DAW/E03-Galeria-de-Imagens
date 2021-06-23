@@ -4,7 +4,7 @@
     width: 92%;
     margin: auto;
     text-align: center;
-    justify-content: center;
+    margin-left: 5%;
 } 
 
 p {
@@ -13,7 +13,8 @@ p {
   
 .col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12{
     float: left;
-    padding: 1%;
+    padding: 0.5%;
+    margin: 0.5%;
 }
   
 .col_1 {
@@ -64,15 +65,10 @@ p {
     width: 94%;
 }
 
-img{
-    width: 60%;
-} 
-
 #titulo{
     font-family: 'Anton', sans-serif;
-    font-size: 50px;
-    margin-bottom: 5px;
-
+    font-size: 40px;
+    margin-bottom: 3px;
 }
 
 #subtitulo{

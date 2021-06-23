@@ -1,0 +1,26 @@
+.movies{
+    border-radius: 30px;
+    border: 2px solid;
+    background-color: rgb(32, 32, 32);
+    color: white;
+    position: relative;
+    animation: mymove 8s infinite alternate linear; 
+}
+
+img{
+    width: 65%;
+    height: 65%;
+    border-radius: 10px;
+    background-size: cover;
+    transition: ease 0.3s;
+} 
+
+img:hover{
+    width: 85%;
+    height: auto;
+}
+
+@keyframes mymove {
+    from {left: -80px;}
+    to {left: 100px;}
+}
