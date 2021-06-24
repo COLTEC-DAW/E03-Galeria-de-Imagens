@@ -1,0 +1,47 @@
+h1{
+    text-align: center;
+}
+
+.subtitulo{
+    text-align: left;
+}
+
+.ano{
+    text-align: center;
+}
+
+.nome{
+    text-align: center;
+}
+
+img{
+    width: 60%;
+    height: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container{
+    width: 98%;
+    margin: auto;
+    border: 1px solid;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.c1, .c2, .c3, .c4, .c5, .c5, .c6,
+.c7, .c8, .c9, .c10, .c11, .c12{
+    float: left;
+    padding: 1%;
+    margin: 1%;
+    width: 25%;
+} 
+
+.c13{
+    width: 20%
+}
+
+.c12{
+    width: 99.90%;
+}
