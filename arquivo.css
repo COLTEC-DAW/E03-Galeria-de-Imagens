@@ -1,0 +1,66 @@
+* {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align:center; 
+    background-color: #F7F8DF;
+}
+.container{
+    width: 92%;
+    margin: auto;
+}
+
+.col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12 {
+    float: left;
+    padding: 1%;
+}
+
+.col_1{
+    width: 6%;
+}
+.col_2{
+    width: 14%;
+}
+.col_3{
+    width: 22%;
+}
+.col_4{
+    width: 30%;
+}
+.col_5{
+    width: 38%;
+}
+.col_6{
+    width: 46%;
+}
+.col_7{
+    width: 54%;
+}
+.col_8{
+    width: 62%;
+}
+.col_9{
+    width: 70%;
+}
+.col_10{
+    width: 78%;
+}
+.col_11{
+    width: 86%;
+}
+.col_12{
+    width: 94%;
+}
+
+.figuras {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    border-radius: 10px;
+    border-style:groove;
+    border-color: black;
+}
+#titulo {
+    padding: 10px;
+    font-size: 2.1rem;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
