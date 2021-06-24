@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 .container {
     width: 92%;
     margin: auto;
     text-align: center;
     margin-left: 5%;
-} 
-
-p {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
 }
   
 .col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12{
@@ -67,10 +68,35 @@ p {
 
 #titulo{
     font-family: 'Anton', sans-serif;
-    font-size: 40px;
-    margin-bottom: 3px;
+    font-size: 2.8em;
 }
 
 #subtitulo{
-    margin-top: 3px;
+    font-size: 1.6em;
+}
+
+.nome_filme{
+    font-size: 1.3em;
+}
+
+.ano_filme{
+    font-size: 1.15em;
+}
+
+@media screen and (min-width: 1024px) {
+    .col_4{
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 628px) and (max-width: 1024px) {
+    .col_4{
+        width: 43%;
+    }
+}
+
+@media screen and (max-width: 628px) {
+    .col_4{
+        width: 86%;
+    }
 }

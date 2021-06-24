@@ -8,15 +8,16 @@
 }
 
 img{
+    max-width: 90%;
     width: 65%;
     height: 65%;
     border-radius: 10px;
     background-size: cover;
-    transition: ease 0.3s;
+    transition: ease 0.5s;
 } 
 
 img:hover{
-    width: 85%;
+    width: 90%;
     height: auto;
 }
 
