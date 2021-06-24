@@ -1,32 +1,95 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+    body{
+        background-image: url("img/walppaper.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 90%;
+    }
     .container{
-        width: 88%;
+        width: 90%;
         margin-left: auto;
         margin-right: auto;
+        align-items: center;
     }
-    
+    @keyframes text {
+        from {letter-spacing: 0;}
+        to {letter-spacing: 1.2rem;}
+      }
+    h1{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 600%;
+        text-align: center;
+        color: darkred;
+        letter-spacing: 1.2rem;
+        animation: text 2s;
+    }
+    p{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 15px;
+    }
+    .subt{
+        background-color: darkred;
+        border-radius: 15px;
+        font-size: 1.2rem;
+        text-align: center;
+        border-color: grey;
+        color: honeydew;
+    }
     .col{
         display: block;
-        padding: 0.65%;
+        padding: 1%;
     }
-    
-    ._4{
-        width: 32%;
+    .galeria{
+        justify-content: center;
+    }
+    @keyframes mymove {
+        from {opacity: 0%;}
+        to {opacity: 90%;}
+      }
+    .filme{
+        background-color: gray;
+        border-radius: 10px;
+        border-color: black;
+        border-width: thin;
+        border-style: double;
+        margin-inline: 2%;
+        margin-block: 2%;
+        text-align: center;
+        opacity: 80%;
+        animation: mymove 1s;
+    }
+    .filme:hover{
+        opacity: 100%;
+    }
+    .capa{
+        height: 55vh;
+        width: fit-content;
+        margin: auto;
+        -webkit-transition: width 2s, height 2s;
+        transition: width 2s, height 2s;
+    }
+    .filme:hover .capa{
+        width: 90%;
+        height: 90%;
     }
     ._1{
-        width: 8%;
+        width: 6.33333%;
     }
     ._2{
-        width: 16%;
+        width: 12.66666%;
     }
     ._3{
-        width: 24%;
+        width: 19%;
+    }
+    ._4{
+        width: 25.3333%;
     }
     ._5{
-        width: 40%;
+        width: 31.333333%;
     }
     ._6{
-        width: 48%;
+        width: 37.66666%;
     }
     ._7{
         width: 56%;
@@ -47,4 +110,12 @@
         width: 96%;
     }
 
-
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color:gray;
+        color: white;
+        text-align: center;
+      }
