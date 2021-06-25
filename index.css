@@ -5,6 +5,7 @@ h1{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+
 #titulo1{
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -13,6 +14,8 @@ h1{
 }
 
 .container {
+    background-color: gray;
+    color: white;
     width: 92%;
     margin: auto;
 }
@@ -77,8 +80,29 @@ h1{
   img{
       width: 60%;
       height: auto;
+    animation: mymove 5s;
+    transition: ease 0.5s;
   }
 
 #filmes{
     text-align: center;
+}
+
+.filme1{
+    background-color: black;
+    border: 2px solid;
+    border-radius: 20px;
+    
+    position: relative;
+
+}
+
+img:hover {
+    width: 65%;
+    height: auto;
+  }
+
+@keyframes mymove {
+    0% {left: 0px;}
+    100% {left: 200px;}
 }
