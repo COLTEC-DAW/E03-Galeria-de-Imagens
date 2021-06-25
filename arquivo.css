@@ -1,8 +1,10 @@
-* {
+*{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align:center; 
-    background-color: #F7F8DF;
+    background-color: black;
+    color: white;
 }
+
 .container{
     width: 92%;
     margin: auto;
@@ -12,55 +14,68 @@
     float: left;
     padding: 1%;
 }
-
-.col_1{
-    width: 6%;
-}
-.col_2{
-    width: 14%;
-}
-.col_3{
-    width: 22%;
-}
-.col_4{
-    width: 30%;
-}
-.col_5{
-    width: 38%;
-}
-.col_6{
-    width: 46%;
-}
-.col_7{
-    width: 54%;
-}
-.col_8{
-    width: 62%;
-}
-.col_9{
-    width: 70%;
-}
-.col_10{
-    width: 78%;
-}
-.col_11{
-    width: 86%;
-}
-.col_12{
-    width: 94%;
-}
+.col_1{ width: 6%; }
+.col_2{ width: 14%; }
+.col_3{ width: 22%; }
+.col_4{ width: 30%; }
+.col_5{ width: 38%; }
+.col_6{ width: 46%; }
+.col_7{ width: 54%; }
+.col_8{ width: 62%; }
+.col_9{ width: 70%; }
+.col_10{ width: 78%; }
+.col_11{ width: 86%; }
+.col_12{ width: 94%; }
 
 .figuras {
-    display: block;
     margin: auto;
     max-width: 100%;
+    max-height: 100%;
     border-radius: 10px;
-    border-style:groove;
-    border-color: black;
+    border-style: groove;
+    border-color: white;
+    padding: 0%;
 }
+
 #titulo {
-    padding: 10px;
-    font-size: 2.1rem;
-    margin-top: 30px;
-    margin-bottom: 5px;
+    background: initial; /* 'initial' serve para que volte as propriedades naturias/iniciais. */
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    font-size: 7rem;
+    margin: 0%;
+    color: white;
+}
+
+#subtitulo{
+    background: initial;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0px;
+    color: white;
+}
+
+/* Essa classe serve para fazer o efeito parallax */
+.cabecalho{
+    background-image: url(../E03-Galeria-de-Imagens/img/fundo-01.jpg);
+    background-position: center top; /* 'center top' para que ela fique no centro e comece do topo do site. */
+    background-repeat: no-repeat; /* para que a imagem não fique se repetindo pelo site inteiro. */
+    background-size: cover; /* 'cover' serve para que a imagem cubra de leste a oeste sem sobrar espaço em branco. */
+    background-attachment: fixed; /* 'fixed' para que a imagem não mexa quando você descer, se fosse por exemplo, 
+    'scroll' a imagem ficaria parada e se mexesse pra cima ela tbm.  */
+    color: white; /* para deixar as letras dessa parte brancas. */
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+
+.linha-filmes{
+    padding-top: 50px;
+    padding-bottom: 700px;
+    padding-left: 45px;
+}
+#PulpFiction-escritas{
+    margin-top: 28px;
+    margin-bottom: 30px;
+}
+#caesDeAluguel-escrita{
+    margin-bottom: 25px;
+    margin-top: 27px;
 }
