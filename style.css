@@ -1,0 +1,68 @@
+.container {
+    width: 92%;
+    margin: auto;
+    text-align: center;
+}
+  
+  
+.col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12 {
+    float: left;
+    padding: 1%;
+}
+
+.col_1 {
+    width: 6.3%;
+}
+
+.col_2 {
+    width: 14.3%;
+}
+
+.col_3 {
+    width: 22.3%;
+}
+
+.col_4 {
+    width: 30.3%;
+}
+
+.col_5 {
+    width: 38.3%;
+}
+
+.col_6 {
+    width: 46.3%;
+}
+
+.col_7 {
+    width: 54.3%;
+}
+
+.col_8 {
+    width: 62.3%;
+}
+
+.col_9 {
+    width: 70.3%;
+}
+
+.col_10 {
+    width: 78.3%;
+}
+
+.col_11 {
+    width: 86.3%;
+}
+
+.col_12 {
+    width: 94.3%;
+}
+
+#titulo {
+    text-align: center;
+    font-weight: bold;
+}
+
+img {
+    width: 55%;
+}
