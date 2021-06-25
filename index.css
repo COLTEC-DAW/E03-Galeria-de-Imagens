@@ -2,6 +2,7 @@ h1{
     border: 2px solid;
     border-radius: 25px;
     text-align: center;
+    font-size: 2.8em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -10,10 +11,12 @@ h1{
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border: 2px solid;
+    font-size: 1.6em;
     border-radius: 25px;
 }
 
 .container {
+    font-size: 18px;
     background-color: gray;
     color: white;
     width: 92%;
@@ -105,4 +108,24 @@ img:hover {
 @keyframes mymove {
     0% {left: 0px;}
     100% {left: 200px;}
+}
+
+@media screen and (min-width: 648px) and (max-width: 1024px){
+    .col_4{
+        width: 46%; 
+    } 
+}
+
+@media screen and (max-width: 648px){
+    .col_4{
+        width: 94%; 
+    } 
+}
+
+#Nome{
+    font-size: 1.3em;
+}
+
+#Data{
+    font-size: 1.15em;
 }
