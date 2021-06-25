@@ -1,0 +1,53 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;   
+}
+
+.container{
+    width: 96%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.Subtitulo{
+    text-align: left;
+}
+
+.AnoFilme{
+    text-align: center;
+}
+
+.NomeFilme{
+    text-align: center;
+}
+
+#header{
+    text-align: center;
+    margin-left: 13%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+    border: 1px solid;
+    border-radius: 0.7rem;
+}
+
+.col_1, .col_2, .col_3,  .col_4,  .col_5,  .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12{
+    float:left;
+    padding:1%;
+    margin-left: 8%;
+    margin-bottom: 5%;
+}
+
+.col_3{
+    width: 24%;
+}
+
+.col_12{
+    width: 96%;
+}
+
+img{
+    width: 50%;
+    border: 0.2rem solid;
+    border-radius: 1rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
