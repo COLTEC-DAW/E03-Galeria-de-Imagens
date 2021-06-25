@@ -1,0 +1,49 @@
+
+.titulo{
+    font-size: 450%;
+    text-align: center;
+}
+
+.subtitulo{
+    font-size: 250%;
+    text-align: center;
+}
+
+footer{
+    font-size: 150%;
+    text-align: center;
+}
+
+.container {
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+img {
+    width: 85%;
+    height: 85%;
+
+    margin: auto;
+    
+}
+
+.col_1, .col_2,.col_4, .col_3, .col_5, .col_6, .col_7,
+.col_8, .col_9, .col_10, .col_11, .col_12{
+    float: left;
+    padding: 1%;
+    padding-bottom: 1%;
+    margin-bottom: 0.5%;
+}
+.col_3{
+    float: left;
+    padding: 4.51%;
+}
+
+.border {
+
+    border: #E6E6FA;
+    border-style: solid;
+    border-radius: 50px;
+
+}
