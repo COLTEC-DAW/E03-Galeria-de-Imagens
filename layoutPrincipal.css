@@ -27,9 +27,7 @@ p {
 .container {
     width: 92%;
     margin: auto;
-    @@ -12,
-    55+14,
-    68 @@ float: left;
+    float: left;
     padding: 1%;
 }
 
