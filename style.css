@@ -19,7 +19,11 @@
     background-color: rgb(8, 8, 8);
     background-position: center;
     color: rgb(228, 211, 211);
+
+
 }  
+
+
 
 .col_1{
     width: 6%;
@@ -31,8 +35,25 @@
 
 .col_3{
     width: 22%;
+    -webkit-animation: myfirst 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 5s;
+    animation: myfirst 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
 }
-
+@-webkit-keyframes myfirst {
+    from {background: rgb(8, 8, 8);}
+    to {background: brown;}
+    from{border-color: brown;}
+    to{border-color: rgb(8, 8, 8);}
+  }
+  @keyframes myfirst {
+    from {background: rgb(8, 8, 8);}
+    to {background: brown;}
+    from{border-color: brown;}
+    to{border-color: rgb(8, 8, 8);}
+  }
 .col_4{
     width: 30%;
 }
@@ -80,7 +101,29 @@ img{
     border: 1px solid;
     border-radius: 1.1rem;
     border-color: brown;
+
+    -webkit-animation: tex 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 5s;
+    animation: tex 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+    
 }
+
+@-webkit-keyframes tex {
+    from {background: brown;}
+    to {background: black;}
+    from{border-color: brown;}
+    to{border-color: rgb(8, 8, 8);}
+  }
+  @keyframes tex {
+    from {background: brown;}
+    to {background: black;}
+    from{border-color: brown;}
+    to{border-color: rgb(8, 8, 8);}
+  }
+
 
 #header{
     text-align: center;
