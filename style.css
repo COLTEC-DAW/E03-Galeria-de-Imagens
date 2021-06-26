@@ -14,19 +14,19 @@
     }
     @keyframes text {
         from {letter-spacing: 0;}
-        to {letter-spacing: 1.2rem;}
+        to {letter-spacing: 0.5em;}
       }
     h1{
         font-family: 'Bebas Neue', cursive;
-        font-size: 600%;
         text-align: center;
         color: darkred;
-        letter-spacing: 1.2rem;
         animation: text 2s;
+        font-size: 2.8em;
+        letter-spacing: 0.5em;
     }
     p{
         font-family: 'Open Sans', sans-serif;
-        font-size: 15px;
+        font-size: 1.6em;
     }
     .subt{
         background-color: darkred;
@@ -63,53 +63,63 @@
         opacity: 100%;
     }
     .capa{
-        height: 55vh;
         width: fit-content;
         margin: auto;
         -webkit-transition: width 2s, height 2s;
         transition: width 2s, height 2s;
+        width: 80%;
     }
     .filme:hover .capa{
         width: 90%;
         height: 90%;
     }
-    ._1{
-        width: 6.33333%;
+    .titulo{
+        font-size: 1.3em;
     }
-    ._2{
-        width: 12.66666%;
+    .ano{
+        font-size: 1.15em;
     }
-    ._3{
-        width: 19%;
+    @media screen and (min-width: 1024px){
+        .filme{
+            width: 25.3333%;
+        }
     }
-    ._4{
-        width: 25.3333%;
+    @media screen and (min-width: 1190px){
+        .filme{
+            height: 100vh;
+        }
     }
-    ._5{
-        width: 31.333333%;
+    @media screen and (min-width: 1024px) and (max-width: 1190px) {
+        .filme{
+            height: 90vh;
+        }
     }
-    ._6{
-        width: 37.66666%;
+    @media screen and (min-width: 648px) and (max-width: 1024px) {
+        .filme{
+            width: 38%;
+        }
     }
-    ._7{
-        width: 56%;
+    @media screen and (min-width: 906px) and (max-width: 1024px){
+        .filme{
+            height: 100vh;
+        }
     }
-    ._8{
-        width: 64%;
+    @media screen and (min-width: 756px) and (max-width: 906px){
+        .filme{
+            height: 90vh;
+        }
     }
-    ._9{
-        width: 72%;
+    @media screen and (min-width: 648px) and (max-width: 756px){
+        .filme{
+            height: 80vh;
+        }
     }
-    ._10{
-        width: 80%;
+    @media screen and (max-width: 648px) {
+        .filme{
+            width: 95%;
+        }
     }
-    ._11{
-        width: 88%;
-    }
-    ._12{
-        width: 96%;
-    }
-
+    
     footer {
         position: fixed;
         left: 0;
