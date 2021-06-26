@@ -9,14 +9,146 @@ body{
     background: rgb(37, 36, 54);
     margin: 0px;
     padding: 0px;
+    height: 100%;
+    text-align: center;
 }
+
+
+@media screen and (max-width: 540px) {
+    
+    body {
+
+        font-size: 107%;
+    }
+    .filme {
+
+        height: 400px;
+        width: 65%;
+    }
+    .conteudo {
+
+        margin-left: 25%;
+        margin-right: 0%;
+    }
+    .fitadir{
+        width: 9%;
+    }
+    .fitaesq{
+        width: 9%;
+    }
+    
+}
+
+@media screen and (min-width: 540px) and (max-width: 648px) {
+    
+    body {
+
+        font-size: 107%;
+    }
+    .filme {
+
+        height: 450px;
+        width: 65%;
+    }
+    .conteudo {
+
+        margin-left: 25%;
+        margin-right: 0%;
+    }
+    .fitadir{
+        width: 9%;
+    }
+    .fitaesq{
+        width: 9%;
+    }
+    
+}
+
+@media screen and (min-width: 648px) and (max-width: 1024px) {
+    body {
+
+        font-size: 105%;
+    }    
+    .filme {
+
+        height: 425px;
+        width: 35%;
+    }
+    .conteudo {
+
+        margin-left: 15%;
+        margin-right: 0%;
+    }
+    .fitadir{
+        width: 6%;
+    }
+    .fitaesq{
+        width: 6%;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1400px) {
+    body {
+
+        font-size: 100%;
+    }
+
+    .filme {
+
+        width: 24%;
+        height: 410px;
+    }
+    .conteudo {
+
+        margin-left: 12%;
+        margin-right: 5%;
+    }
+    .fitadir{
+        width: 6%;
+    }
+    .fitaesq{
+        width: 6%;
+    }
+    
+}
+
+@media screen and (min-width: 1400px) {
+    body {
+
+        font-size: 100%;
+    }
+
+    .filme {
+
+        width: 24%;
+        height: 450px;
+    }
+    .conteudo {
+
+        margin-left: 12%;
+        margin-right: 5%;
+    }
+    .fitadir{
+        width: 6%;
+    }
+    .fitaesq{
+        width: 6%;
+    }
+    
+}
+
+.filme {
+
+    float: left;
+}
+
 
 .fitaesq {
 
     background: rgb(134, 44, 44);
     background-image: url(img/fita\ pagina\ css.png);
     background-size: 100%;
-    width: 8%;
     height: 1500px;
     margin: 0px;
     margin-right: -3%;
@@ -30,7 +162,6 @@ body{
     background: rgb(134, 44, 44);
     background-image: url(img/fita\ pagina\ css.png);
     background-size: 100%;
-    width: 8%;
     height: 1500px;
     margin: 0px;
     margin-left: -3%;
@@ -59,16 +190,19 @@ body{
     text-shadow: 3px 2px rgb(134, 44, 44);
     font-size: 300%;
     margin-bottom: 1%;
-    margin-top: 0.5%;
+    margin-top: 2%;
+    line-height: 50px;
 
 }
 
 .titulo > p{
 
     color:rgb(175, 62, 62);
-    margin-top: -2%;
+    margin-top: 2%;
+    margin-bottom: 1%;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
+
 }
 
 .conteudo{
@@ -76,8 +210,6 @@ body{
     text-align: center;
     align-content: center;
     align-self: center;
-    margin-left: 12%;
-    margin-right: 5%;
 }
 
 p{
@@ -107,7 +239,7 @@ p {
     margin-right: 10%;
 }
 
-div.conteudo > div > div {
+div.conteudo > div {
 
     background-color: rgb(29, 29, 34);
     border-color: transparent;
@@ -116,7 +248,7 @@ div.conteudo > div > div {
 
 }
 
-div.conteudo > div :hover{
+div.conteudo :hover{
 
     background-color: rgba(27,43,92,1);
     transform: scale(110%);
@@ -124,7 +256,7 @@ div.conteudo > div :hover{
 }
 
 
-div.conteudo > div > div {
+div.conteudo > div {
 
     animation: shake .7s;
     animation-iteration-count: 1;
@@ -142,7 +274,7 @@ div.conteudo > div > div {
 
 }
 
-div.conteudo > div > div > :nth-child(2){
+div.conteudo > div > :nth-child(2){
 
     font-size: 120%;
 }
@@ -160,9 +292,9 @@ footer{
     text-align: center;
     background: rgb(7,57,179);
     background: linear-gradient(0deg, rgba(7,57,179,1) 13%, rgba(23,52,124,1) 37%, rgba(35,50,93,1) 66%, rgba(37,36,54,1) 100%);
-    margin-left: 7.5%;
+    margin-left: 10%;
     margin-right: 0%;
-    margin-bottom: -10px;
+    margin-bottom: -20px;
 }
 
 footer > p {
