@@ -1,5 +1,7 @@
 *{
     text-align: center;
+    color: white;
+    background-color: black;
 }
 .container{
     width: 92%;
@@ -47,9 +49,21 @@
 }
 .foto{
     border-style:groove;
-    border-color: black;
+    border-color: white;
     max-width: 100%;
     border-radius: 10px;
     margin: auto; 
     display: block;
+    
+}
+#titulo{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(236, 71, 65);
+    border-style: double;
+    border-width: 7px;
+    border-color: black;
+    color: white;
+}
+div{
+    background-color: rgb(66, 65, 65);
 }
