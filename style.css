@@ -47,6 +47,10 @@
 .col_12{
     width: 94%;
 }
+@keyframes animação{
+    from {background-color: black; color: black;}
+    to {background-color: rgb(236, 71, 65); color: white;}
+}
 .foto{
     border-style:groove;
     border-color: white;
@@ -54,7 +58,6 @@
     border-radius: 10px;
     margin: auto; 
     display: block;
-    
 }
 #titulo{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -63,7 +66,7 @@
     border-width: 7px;
     border-color: black;
     color: white;
+    animation-name: animação;
+    animation-duration: 20s;
 }
-div{
-    background-color: rgb(66, 65, 65);
-}
+
