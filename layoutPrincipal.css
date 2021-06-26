@@ -1,0 +1,82 @@
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    border-style: double;
+    border-width: 8px;
+    padding: 15px 10px 15px 15px;
+    color: red;
+}
+
+h2 {
+    color: rgb(116, 2, 2)
+}
+
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+p {
+    text-align: left;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.container {
+    width: 92%;
+    margin: auto;
+    @@ -12,
+    55+14,
+    68 @@ float: left;
+    padding: 1%;
+}
+
+.col_1 {
+    width: 6%;
+}
+
+.col_2 {
+    width: 14%;
+}
+
+.col_3 {
+    width: 22%;
+}
+
+.col_4 {
+    width: 30%;
+}
+
+.col_5 {
+    width: 38%;
+}
+
+.col_6 {
+    width: 46%;
+}
+
+.col_7 {
+    width: 54%;
+}
+
+.col_8 {
+    width: 62%;
+}
+
+.col_9 {
+    width: 70%;
+}
+
+.col_10 {
+    width: 78%;
+}
+
+.col_11 {
+    width: 86%;
+}
+
+.col_12 {
+    width: 94%;
+}
