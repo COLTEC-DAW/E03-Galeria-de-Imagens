@@ -54,22 +54,48 @@
                 width: 100%;
             }
         }
-    
-        p.s {
-            border: 2px solid;
-            border-radius: 8px;
-            margin-left: 3%;
-            margin-right: 3%;
-            text-align: center;
-        }
-        
         
         div.col-3 {
             float: left;
-            border: 2px solid;
+            border: 4px solid;
             border-radius: 8px;
             margin-top: 3%;
             margin-left: 2%;
+            transition: 2s;
+        }
+
+        div.col-3:hover {
+            background-color: #a1a1d3;
+            border-color: rgb(214, 95, 39);
+        }
+
+        div.caes {
+            border-color: #FF080B;
+            background-color: #FFE81C;
+        }
+
+        div.pulp {
+            background-color: #61FFB8;
+        }
+
+        div.kill {
+            border-color: #87FFA4;
+            background-color: #343CFF;
+        }
+
+        div.bastardos {
+            border-color: #5A2CFF;
+            background-color: #C8FF74;
+        }
+
+        div.django {
+            border-color: #45FF5B;
+            background-color: #996311;
+        }
+
+        div.odiados {
+            border-color: #D9D5BD;
+            background-color: #994318;
         }
 
         div.col-12 {
@@ -80,11 +106,40 @@
             display: block;
             margin: auto;
             padding: 4%;
+            animation-name: entrada;
+            animation-duration: 1s;
         }
 
         p {
             text-align: center;
         }
+
+        h1 {
+            font-family: cursive;
+            animation-duration: 1s;
+            animation-name: entrada;
+        }
+
+        @keyframes entrada {
+            from {
+                margin-left: 100%;
+                width: 300%;
+            }
+
+            to {
+                margin-left: 0%;
+                width: 100%;
+            }
+        }
+
+        img:hover {
+            width: 75%;
+            height: 75%;
+
+            margin-left: auto;
+            margin-right: auto;
+        }
+
         </style>
     </head>
     <body>
@@ -92,44 +147,41 @@
             <h1>Galeria do Tarantino</h1>
         </div>
         <div class="col-12">
-            <p>Galeria de alguns dos filmes de Quentin Tarantino</p>
+            <p class="s">Galeria de alguns dos filmes de Quentin Tarantino</p>
         </div>
 
-        <div class="col-3">
+        <div class="col-3 caes">
             <img src="img/caes_de_aluguel260.jpg" alt="">
             <p><b>Cães de Aluguel</b></p>
             <p>1992</p>
         </div>
-        <div class="col-3">
+        <div class="col-3 pulp">
             <img src="img/pulp_fiction260.jpg" alt="">
             <p><b>Pulp Fiction: Tempos de Violência</b></p>
             <p>1994</p>
         </div>
-        <div class="col-3">
+        <div class="col-3 kill">
             <img src="img/kill_bill260.jpg" alt="">
             <p><b>Kill Bill: Volume 1</b></p>
             <p>2003</p>
         </div>
-        <div class="col-3">
+        <div class="col-3 bastardos">
             <img src="img/bastardos_inglorios260.jpg" alt="">
             <p><b>Bastardos Inglórios</b></p>
             <p>2009</p>
         </div>
-        <div class="col-3">
+        <div class="col-3 django">
             <img src="img/django_livre260.jpg" alt="">
             <p><b>Django Livre</b></p>
             <p>2012</p>
         </div>
-        <div class="col-3">
+        <div class="col-3 odiados">
             <img src="img/os_oito_odiados260.jpg" alt="">
             <p><b>Os Oito Odiados</b></p>
             <p>2015</p>
         </div>
-    
-        <div class="col-12 col-s-12">
-            <footer>
-                Desenvolvimento de Aplicações Web - COLTEC/UFMG
-            </footer>
-        </div>
+        <footer>
+            Desenvolvimento de Aplicações Web - COLTEC/UFMG
+        </footer>
     </body>
 </html>
