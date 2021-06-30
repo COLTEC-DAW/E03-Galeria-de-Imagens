@@ -1,0 +1,79 @@
+$grayColor : rgb(70, 70, 70);
+$blackColor: #000;
+$redColor  : rgb(180, 5, 5);
+$whiteColor: rgb(255, 255, 255);
+
+@keyframes animacao{
+    from{transform: scale(1.1);}
+    to{transform: scale(2.1);}
+}
+
+.col1, .col2, .col3, .col4, .col5{
+    padding: 5%;
+}
+
+.col1
+{
+    width: 15%;
+}
+.col2
+{
+    width: 35%;
+}
+.col3
+{
+    
+    width: 55%;
+}
+.col4
+{
+    width: 75%;
+}
+.col5
+{
+    width: 95%;
+}
+
+h1{
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
+    font-family: Cookie;
+    font-size: 90px;
+}
+
+body{
+    background-color: $blackColor;
+    color: $whiteColor;
+    text-align: center;
+}
+
+div.col1{
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    img:hover{
+        animation: animacao;
+        animation-duration: 0.5s;
+        transform: scale(2.1);
+        border-radius: 16px;
+        }
+        a{
+            color: $whiteColor;
+        }
+    min-width: 100px;
+    display: inline-block;
+    margin: 1%;
+    text-align: center
+    ;
+    word-wrap: break-word;
+    margin-bottom: 0px;
+    border-radius: 10%;
+    padding-bottom: 0px;
+    background-color: $grayColor;
+}
+
+a:link{
+    text-decoration: none;        
+}

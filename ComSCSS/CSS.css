@@ -1,0 +1,95 @@
+@-webkit-keyframes animacao {
+  from {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  to {
+    -webkit-transform: scale(2.1);
+            transform: scale(2.1);
+  }
+}
+
+@keyframes animacao {
+  from {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  to {
+    -webkit-transform: scale(2.1);
+            transform: scale(2.1);
+  }
+}
+
+.col1, .col2, .col3, .col4, .col5 {
+  padding: 5%;
+}
+
+.col1 {
+  width: 15%;
+}
+
+.col2 {
+  width: 35%;
+}
+
+.col3 {
+  width: 55%;
+}
+
+.col4 {
+  width: 75%;
+}
+
+.col5 {
+  width: 95%;
+}
+
+h1 {
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: center;
+  font-family: Cookie;
+  font-size: 90px;
+}
+
+body {
+  background-color: #000;
+  color: white;
+  text-align: center;
+}
+
+div.col1 {
+  min-width: 100px;
+  display: inline-block;
+  margin: 1%;
+  text-align: center;
+  word-wrap: break-word;
+  margin-bottom: 0px;
+  border-radius: 10%;
+  padding-bottom: 0px;
+  background-color: #464646;
+}
+
+div.col1 img {
+  width: 100%;
+  height: 100%;
+}
+
+div.col1 img:hover {
+  -webkit-animation: animacao;
+          animation: animacao;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-transform: scale(2.1);
+          transform: scale(2.1);
+  border-radius: 16px;
+}
+
+div.col1 a {
+  color: white;
+}
+
+a:link {
+  text-decoration: none;
+}
+/*# sourceMappingURL=CSS.css.map */
