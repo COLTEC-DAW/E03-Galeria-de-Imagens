@@ -51,6 +51,8 @@
     margin-bottom: 5%;
     border: 1px solid;
     border-radius: 0.7rem;
+    font-family: 'Akaya Kanadaka', cursive;
+    background-image: linear-gradient(to right, rgb(81, 238, 81),rgb(88, 88, 235));
 }
 .col_3.cartaz{
     text-align: center;
@@ -58,7 +60,12 @@
     margin-bottom: 5%;
     border: 1px solid;
     border-radius: 0.7rem;
+    padding-top: 2rem;
+
 }
 img + p{
     border-top: 1px solid;
+}
+#header>h1{
+    font-size: 5rem;
 }
