@@ -1,6 +1,7 @@
 * {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: rgb(29, 29, 29);
+    color: #242424;
+    background-color: rgb(182, 182, 182);
 }
 
 .container {
@@ -69,12 +70,40 @@
     font-size: 2rem;
 }
 
+h1 {
+    font-family:'Courier New', Courier, monospace;
+    color: rgb(252, 203, 223);
+    text-shadow: 2px 2px #242424;
+}
+
+@keyframes myFirst{
+    from{bottom: -300px;}
+    to{bottom: 0px;}
+}
+
+div {
+    background-color:rgb(252, 203, 223);
+    border-width: 1px;
+    border-color: #242424;
+    border-radius: 40px;
+    position: relative;
+    animation: myFirst 1s 3s;
+    -webkit-transition: width 5s, height 5s;
+    transition: width 5s, height 5s;
+}
+
+div:hover {
+    width: 200%;
+    height: 200%;
+}
+
 img{
-    width: 65%;
-    height: 65%;
+    width: 14em;
+    height: 20em;
+    border-radius: 10px;
 } 
 
 footer{
     text-align: center;
-    color: blue;
+    color: rgb(255, 59, 213);
 }
