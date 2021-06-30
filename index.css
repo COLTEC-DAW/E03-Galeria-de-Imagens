@@ -1,9 +1,14 @@
-
+p{
+    font-size: 1.15em;
+}
+b{
+    font-size: 1.3em;
+}
 body{
     font-size: 18px;
 }
 .titulo{
-
+    font-size: 2.8em;
     color:yellow;
     font-size: 450%;
     text-align: center;
@@ -11,6 +16,7 @@ body{
 }
 
 .subtitulo{
+    font-size: 1.6em;
     color:yellow;
     font-size: 250%;
     text-align: center;
@@ -67,4 +73,28 @@ img:hover{
 }
 body{
     background-color: #141414;
+}
+@media screen and (max-width:648px){
+    .col3{
+        width: 75%;
+        border:4px solid;
+        border-radius:20px;
+    }
+}
+
+@media screen and (max-width:1024px) and (min-width:648px){
+    .col3{
+        width: 37.5%;
+        border:4px solid;
+        border-radius:40px;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .col3{
+        height:auto;
+        width: 25%;
+        border:4px solid;
+        border-radius:40px;
+    }
 }
