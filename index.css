@@ -103,6 +103,21 @@ img{
     border-radius: 10px;
 } 
 
+@media screen and (max-width: 648px) {
+    div {
+        width: 98%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 648px) {
+    div {
+        width: 37%;
+        text-align: center;
+        margin: 3%;
+    }
+}
+
 footer{
     text-align: center;
     color: rgb(255, 59, 213);
