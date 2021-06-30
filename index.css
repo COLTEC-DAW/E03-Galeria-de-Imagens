@@ -1,6 +1,6 @@
-body{
-    font-family: 'Times New Roman', Times, serif;
-    background-color: rgba(10, 10, 10, 0.775);
+@font-face {
+    font-family: Big Shoulders Stencil Display;
+    src: local(Big Shoulders Stencil Display), url(./Big_Shoulders_Stencil_Display/BigShouldersStencilDisplay-Regular.ttf);
 }
 
 .container{
@@ -62,15 +62,24 @@ body{
     width: 94%;
 }
 
+body{
+    background-color: rgb(63, 56, 56);
+}
+
 h1{
+    font-family: Big Shoulders Stencil Display;
     text-align: center;
-    font-size: 2.5rem;
-    color: red;
+    font-size: 5.5rem;
+    box-shadow: 3px 3px 10px red;
+    background-color: rgb(36, 28, 28);
+    color: rgb(245, 226, 226);
+    -webkit-animation: imganime 3s;
+    -webkit-animation-iteration-count: 1;
 }
 
 #Resumopag{
     text-align: center;
-    color: black;
+    color: rgb(245, 226, 226);
     font-size: 22px;
 }
 
@@ -80,11 +89,25 @@ h1{
 }
 
 p{
-    color: black;
+    color: rgb(245, 226, 226);
 }
 
 div{
-    box-shadow: 3px 3px 10px black;
+    box-shadow: 3px 3px 10px red;
+    background-color: rgb(36, 28, 28);
+    -webkit-animation: imganime 3s;
+    -webkit-animation-iteration-count: 1;
+    
+}
+
+@-webkit-keyframes imganime{
+    0%{background: red;}
+    100%{ background: rgb(36, 28, 28)}
+}
+
+div:hover{
+    
+    background-color: red;
 }
 
 img{
@@ -95,5 +118,5 @@ img{
 }
 
 #finalpag{
-    color: black;
+    color: rgb(245, 226, 226);
 }
