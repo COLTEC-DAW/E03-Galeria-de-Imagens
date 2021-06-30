@@ -1,12 +1,20 @@
 
+body{
+    font-size: 18px;
+}
 .titulo{
+
+    color:yellow;
     font-size: 450%;
     text-align: center;
+    font-family:'Courier New', Courier, monospace;
 }
 
 .subtitulo{
+    color:yellow;
     font-size: 250%;
     text-align: center;
+    font-family:'Courier New', Courier, monospace;
 }
 
 footer{
@@ -16,34 +24,47 @@ footer{
 
 .container {
     margin: auto;
-    width: 100%;
+    width: auto;
     overflow: hidden;
+    color:ghostwhite;
+
 }
 
 img {
-    width: 85%;
-    height: 85%;
-
+    width: 90%;
+    height: 90%;
     margin: auto;
-    
 }
 
+@keyframes mymove{
+    from {left: 0px;}
+    to {left: 100px;}
+}
 .col_1, .col_2,.col_4, .col_3, .col_5, .col_6, .col_7,
 .col_8, .col_9, .col_10, .col_11, .col_12{
-    float: left;
-    padding: 1%;
-    padding-bottom: 1%;
-    margin-bottom: 0.5%;
+    float:left;
+    padding:1%;
+    margin: 1%;
+    position: relative;
+    animation: mymove 5s ;
+    animation-fill-mode: forwards;
 }
 .col_3{
-    float: left;
-    padding: 4.51%;
+    width: 28%;
 }
 
-.border {
+img:hover{
+    width: 100%;
+    height: 100%;
 
-    border: #E6E6FA;
+}
+.border{
+
+    border: lavender ;
     border-style: solid;
-    border-radius: 50px;
+    border-radius: 50px; 
 
+}
+body{
+    background-color: #141414;
 }
