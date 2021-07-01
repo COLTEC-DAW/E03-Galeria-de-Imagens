@@ -49,7 +49,6 @@
     margin: 0%;
     color: white;
 }
-
 #subtitulo{
     background: initial;
     font-weight: bold;
@@ -71,8 +70,86 @@
     padding-bottom: 300px;
 }
 
-/* Parte dos links */
-/*link não visistado*/
+/* 
+ *  Parte do layout responsivo 
+ *
+**/
+
+@media (min-width: 1024px){
+    body{
+        font-size: 1.125em;
+    }
+    #titulo{
+        font-size: 2.8em;
+    }
+    #subtitulo{
+        font-size: 1.6em;
+    }
+    .ano-filme{
+        font-size: 1.15em;
+    }
+    .nome-filme{
+        font-size: 1.3em;
+    }
+    .linha-filmes{
+        padding-top: 2em;
+        padding-bottom: 35em;
+    }
+}
+@media (max-width: 648px){
+    .col_4{ /* para mostrar apenas 1 por vez. */
+        width: 95%;
+    }
+    body{
+        font-size: 1.125em;
+    }
+    #titulo{
+        font-size: 2.8em;
+    }
+    #subtitulo{
+        font-size: 1.6em;
+    }
+    .ano-filme{
+        font-size: 1.15em;
+    }
+    .nome-filme{
+        font-size: 1.3em;
+    }
+    .linha-filmes{
+        padding-top: 2em;
+    }
+}
+@media (max-width: 1024px) and (min-width: 648px){
+    /*
+    // tentei colocar dois filmes por coluna, mas por algum motivo não funcionou.
+    .col_4{
+        width: 40%;
+    }*/
+    body{
+        font-size: 1.125em;
+    }
+    .ano-filme{
+        font-size: 1.15em;
+    }
+    .nome-filme{
+        font-size: 1.3em;
+    }
+    #titulo{
+        font-size: 2.8em;
+    }
+    #subtitulo{
+        font-size: 1.6em;
+    }
+    .linha-filmes{
+        padding-top: 2em;
+        padding-bottom: 25em;
+    }
+}
+
+/* 
+ *  Parte de links
+ *
+**/
 a:link{ /* essa parte funciona só para links internos, que será que errei? */
     color: green;
     text-decoration: none;
@@ -92,76 +169,3 @@ a:active{
     color: yellow;
     text-decoration: none;
 }
-/* text-decoration: none   -->  retira a linha embaixo dos links */
-
-@mixin body-media{
-    font-size: 1.125em;
-}
-/* Parte do layout responsivo */
-@media (min-width: 1024px){
-    @include body-media;
-    .ano-filme{
-        font-size: 1.15em;
-    }
-    .nome-filme{
-        font-size: 1.3em;
-    }
-    #titulo{
-        font-size: 2.8em;
-    }
-    #subtitulo{
-        font-size: 1.6em;
-    }
-    .linha-filmes{
-        padding-top: 2em;
-        padding-bottom: 40em;
-    }
-}
-
-@media (max-width: 648px){
-    .col_4{
-        width: 95%;
-    }
-    @include body-media;
-    .ano-filme{
-        font-size: 1.15em;
-    }
-    .nome-filme{
-        font-size: 1.3em;
-    }
-    #titulo{
-        font-size: 2.8em;
-    }
-    #subtitulo{
-        font-size: 1.6em;
-    }
-    .linha-filmes{
-        padding-top: 2em;
-        padding-bottom: 40em;
-    }
-}
-@media (max-width: 1024px) and (min-width: 648px){
-    /*
-    // tentei colocar dois filmes por coluna, mas por algum motivo não funcionou.
-    .col_4{
-        width: 40%;
-    }*/
-    @include body-media;
-    .ano-filme{
-        font-size: 1.15em;
-    }
-    .nome-filme{
-        font-size: 1.3em;
-    }
-    #titulo{
-        font-size: 2.8em;
-    }
-    #subtitulo{
-        font-size: 1.6em;
-    }
-    .linha-filmes{
-        padding-top: 2em;
-        padding-bottom: 35em;
-    }
-}
-
