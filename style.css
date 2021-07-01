@@ -94,3 +94,22 @@ img{
     from {background-image: linear-gradient(to left,#141414,#A31925  );}
     to {background-image: linear-gradient(to right,#141414,#A31925  );}
 }
+
+
+@media screen and (min-width: 1024px) {
+    .col_3{
+        width: 24%;
+    }
+}
+
+@media screen and (min-width: 628px) and (max-width: 1024px) {
+    .col_3{
+        width: 36%;
+    }
+}
+
+@media screen and (max-width: 628px) {
+    .col_3{
+        width: 80%;
+    }
+}
