@@ -79,7 +79,18 @@ img{
 
 }
 
+.col_3.Filme:hover{
+    width: 28%;
+    animation: Gradiante2 3s;
+    animation-iteration-count: infinite;
+}
+
 @keyframes Gradiante{
     from {background-image: linear-gradient(to left,#0FEBED,#57FF80  );}
     to {background-image: linear-gradient(to right,#0FEBED,#57FF80  );}
+}
+
+@keyframes Gradiante2{
+    from {background-image: linear-gradient(to left,#141414,#A31925  );}
+    to {background-image: linear-gradient(to right,#141414,#A31925  );}
 }
