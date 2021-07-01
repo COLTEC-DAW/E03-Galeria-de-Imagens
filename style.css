@@ -4,6 +4,7 @@
     text-align: center;
     color: white;
     background-color: black;
+    font-size: 18px;
 }
   
   
@@ -26,27 +27,6 @@
 
 .col_4 {
     width: 30.3%;
-}
-
-.filme {
-    width: 29.5%;
-    height: 450px;
-    border: 1px solid red;
-    border-radius: 25px;
-    margin: 15px 10px;
-    box-shadow: 5px 5px 5px #FF0000;
-    animation: myfirst 3s;
-    transition: transform .2s;
-}
-
-@keyframes myfirst {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-.filme:hover {
-    transform: scale(1.2);
-    background-color: black;
 }
 
 .col_5 {
@@ -81,11 +61,20 @@
     width: 94.3%;
 }
 
-#titulo {
+#titulo, #subtitulo {
     text-align: center;
     font-weight: bold;
     font-family:'Courier New', Courier, monospace;
     text-shadow: 5px 5px 5px red;
+    padding-left: 2.5%;
+}
+
+#titulo {
+    font-size: 2.8em;
+}
+
+#subtitulo {
+    font-size: 1.6em;
 }
 
 img {
@@ -93,3 +82,59 @@ img {
     border-radius: 15px;
 }
 
+.filmes {
+    margin: 0 1%;
+    padding-left: 1.5%;
+    padding-right: 1%;
+}
+
+.filme {
+    border: 1px solid red;
+    border-radius: 25px;
+    margin: 15px 10px;
+    padding-top: 1%;
+    box-shadow: 5px 5px 5px #FF0000;
+    animation: myfirst 3s;
+    transition: transform .2s;
+}
+
+@keyframes myfirst {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.filme:hover {
+    transform: scale(1.2);
+    background-color: black;
+}
+
+@media screen and (min-width: 1024px) {
+    .col_4{
+        width: 28.3%;
+    }
+ }
+
+  @media screen and (min-width: 648px) and (max-width: 1024px) {
+    .col_4{
+        width: 42%;
+    }
+ }
+
+  @media screen and (max-width: 648px) {
+    .col_4{
+        width: 71%;
+        margin-left: 10%;
+    }
+}
+
+.ano-filme{
+    font-size: 1.15em;
+}
+
+.nome-filme {
+    font-size: 1.3em;
+}
+ 
+#pulp {
+    margin-bottom: -1px!important;
+}
