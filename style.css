@@ -1,7 +1,10 @@
+/* Parte geral da página, com tipo de fonte geral e background geral. */
+
 *
 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: black;
+    font-size: 100%;
     
 }
 body
@@ -10,30 +13,28 @@ body
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: darken;
+    font-size: 18px;
 
 }
 
+/***************************************************************************************************************************************/
 
-
-#caes, #pulp, #kill, #eight, #bastardos, #django
-{
-    color: rgb(255, 0, 0);
-    text-shadow: 10px 10px 10px rgb(102, 7, 7);
-
-}
+/* Parte referente às estilizações do titulo e subtítulo da página. */
 
 @font-face 
 {
     font-family:"myfont";
     src: "./Castoro";
 }
+
+
 #Title
 {
     font-family: myfont;
     font-style: italic;
     text-align: center;
     text-shadow: 5px 5px 5px rgb(224, 10, 10);
-    font-size: 4rem;
+    font-size: 4em;
     padding: 2%;
     margin-bottom: 2%;
     background-color: rgb(0, 0, 0);
@@ -48,10 +49,37 @@ body
 {
     color: red;
     text-align: center;
-    font-size: 2rem;
+    font-size: 2em;
     padding: 2%;
     text-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
+
+/***************************************************************************************************************************************/
+
+/* Parte que altera as características dos nomes e datas de lançamento dos filmes. */
+
+
+#caes, #pulp, #kill, #eight, #bastardos, #django, #caesYEAR, #pulpYEAR, #killYEAR, #eightYEAR, #bastardosYEAR, #djangoYEAR
+{
+    color: rgb(255, 0, 0);
+    text-shadow: 10px 10px 10px rgb(102, 7, 7);
+
+}
+
+#caes, #pulp, #kill, #eight, #bastardos, #django
+{
+    font-size: 1.3em;
+}
+
+#caesYEAR, #pulpYEAR, #killYEAR, #eightYEAR, #bastardosYEAR, #djangoYEA
+{
+    font-size: 1.15em;
+}
+
+
+/***************************************************************************************************************************************/
+
+/* Parte do container e suas colunas. */
 
 .container 
 {
@@ -104,8 +132,15 @@ body
     width: 90%;
 }
 
+
+/***************************************************************************************************************************************/
+
+/* Parte com as estilizações, transformações e animações das imagens. */
+
 img
 {
+    max-width: 100%;
+    max-height: 100%;
     width: 70%;
     height: 70%;
     border: 2px solid white;
@@ -138,6 +173,41 @@ img:hover
         transform: rotate(360deg);
     }
 }
+
+/***************************************************************************************************************************************/
+
+/* Parte para alterar a forma de visualização em diferentes dispositivos. */
+
+@media screen and (max-width: 647px) 
+/*For smartphones*/
+{
+    .col_3
+    {
+        width: 90%;
+    }
+}
+@media screen and (min-width: 648px) and (max-width: 1024px) 
+/*For tablets*/
+{
+    .col_3
+    {
+        width: 45%;
+    }
+}
+
+@media screen and (min-width: 1025px) 
+/*For devices*/
+{
+    .col_3
+    {
+        width: 30%;
+    }
+}
+
+
+/***************************************************************************************************************************************/
+/* Rodapé da página. */
+
 footer
 {
     text-align: right;
