@@ -95,3 +95,21 @@ img + p{
             transform: scale(1) rotateZ(360deg);
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .col_3{
+        width: 24%;
+    }
+}
+
+@media screen and (min-width: 628px) and (max-width: 1024px) {
+    .col_3{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 628px) {
+    .col_3{
+        width: 80%;
+    }
+}
