@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+$font-stack: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+$card-color: rgb(32, 32, 32);
+$font-color: white;
+$font-title: 'Anton', sans-serif;
+
+*{
+    font-family: $font-stack;
+}
+
+.movies{
+    border-radius: 30px;
+    border: 2px solid;
+    background-color: $card-color;
+    color: $font-color;
+    position: relative;
+    animation: mymove 8s infinite alternate linear; 
+}
+
+img{
+    max-width: 90%;
+    width: 65%;
+    height: 65%;
+    border-radius: 10px;
+    background-size: cover;
+    transition: ease 0.5s;
+} 
+
+img:hover{
+    width: 90%;
+    height: auto;
+}
+
+@keyframes mymove {
+    from {left: -80px;}
+    to {left: 100px;}
+}
+
+#titulo{
+    font-family: $font-title;
+    font-size: 2.8em;
+}
+
+#subtitulo{
+    font-size: 1.6em;
+}
+
+.nome_filme{
+    font-size: 1.3em;
+}
+
+.ano_filme{
+    font-size: 1.15em;
+}
+

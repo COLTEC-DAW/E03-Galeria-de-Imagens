@@ -1,102 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+* {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; }
 
-*{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
+.movies {
+  border-radius: 30px;
+  border: 2px solid;
+  background-color: #202020;
+  color: white;
+  position: relative;
+  animation: mymove 8s infinite alternate linear; }
 
-.container {
-    width: 92%;
-    margin: auto;
-    text-align: center;
-    margin-left: 5%;
-    font-size: 18px;
-}
-  
-.col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12{
-    float: left;
-    padding: 0.5%;
-    margin: 0.5%;
-}
-  
-.col_1 {
-    width: 6%;
-}
+img {
+  max-width: 90%;
+  width: 65%;
+  height: 65%;
+  border-radius: 10px;
+  background-size: cover;
+  transition: ease 0.5s; }
 
-.col_2 {
-    width: 14%;
-}
-  
-.col_3 {
-    width: 22%;
-}
-  
-.col_4 {
-    width: 30%;
-}
-  
-.col_5 {
-    width: 38%;
-}
+img:hover {
+  width: 90%;
+  height: auto; }
 
-.col_6{
-    width: 46%;
-}
+@keyframes mymove {
+  from {
+    left: -80px; }
+  to {
+    left: 100px; } }
+#titulo {
+  font-family: "Anton", sans-serif;
+  font-size: 2.8em; }
 
-.col_7{
-    width: 54%;
-}
+#subtitulo {
+  font-size: 1.6em; }
 
-.col_8{
-    width: 62%;
-}
+.nome_filme {
+  font-size: 1.3em; }
 
-.col_9 {
-    width: 70%;
-}
+.ano_filme {
+  font-size: 1.15em; }
 
-.col_10{
-    width: 78%;
-}
-
-.col_11 {
-    width: 86%;
-}
-
-.col_12 {
-    width: 94%;
-}
-
-#titulo{
-    font-family: 'Anton', sans-serif;
-    font-size: 2.8em;
-}
-
-#subtitulo{
-    font-size: 1.6em;
-}
-
-.nome_filme{
-    font-size: 1.3em;
-}
-
-.ano_filme{
-    font-size: 1.15em;
-}
-
-@media screen and (min-width: 1024px) {
-    .col_4{
-        width: 30%;
-    }
-}
-
-@media screen and (min-width: 628px) and (max-width: 1024px) {
-    .col_4{
-        width: 43%;
-    }
-}
-
-@media screen and (max-width: 628px) {
-    .col_4{
-        width: 86%;
-    }
-}
+/*# sourceMappingURL=style.css.map */
