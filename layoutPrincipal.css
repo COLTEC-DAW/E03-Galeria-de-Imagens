@@ -19,14 +19,31 @@ h2 {
 }
 
 p {
-    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
     text-transform: uppercase;
     font-style: italic;
 }
 
 .container {
-    width: 92%;
+    width: 88%;
     margin: auto;
+    float: center;
+    padding: 1%;
+}
+
+.col_1,
+.col_2,
+.col_3,
+.col_4,
+.col_5,
+.col_6,
+.col_7,
+.col_8,
+.col_9,
+.col_10,
+.col_11,
+.col_12 {
     float: left;
     padding: 1%;
 }
@@ -77,4 +94,36 @@ p {
 
 .col_12 {
     width: 94%;
+}
+
+img {
+    max-width: 100%;
+    width: 50%;
+    height: 50%;
+    border-radius: 30px;
+}
+
+img:hover {
+    width: 100%;
+    height: auto;
+}
+
+@keyframes movimento {
+    from {
+        left: -50px;
+    }
+    to {
+        left: 50px;
+    }
+}
+
+.filme {
+    border-radius: 1px;
+    border: 3px solid;
+    background-color: rgb(44, 35, 35);
+    color: rgb(116, 2, 2);
+    position: relative;
+    animation: movimento 5s infinite alternate linear;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.66, 1);
+    animation-iteration-count: 3;
 }
