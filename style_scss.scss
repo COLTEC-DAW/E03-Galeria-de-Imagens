@@ -1,21 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
+/*
+* Criando paleta da página
+*/
+
 $font-stack: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 $card-color: rgb(32, 32, 32);
 $font-color: white;
 $font-title: 'Anton', sans-serif;
+
+/*----------------------------------*/
+
+/*
+* Mixins
+*/
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin animation($movie-animation){
+    -webkit-animation: $movie-animation;
+    -moz-animation: $movie-animation;
+    -ms-animation: $movie-animation;
+    animation: $movie-animation; 
+}
+
+@mixin transition($img-transition) {
+    -webkit-transition: $img-transition;
+    -moz-transition: $img-transition;
+    -ms-transition: $img-transition;
+    transition: $img-transition; 
+}
+
+/*------------------------------------*/
 
 *{
     font-family: $font-stack;
 }
 
 .movies{
-    border-radius: 30px;
+    @include border-radius(30px);
     border: 2px solid;
     background-color: $card-color;
     color: $font-color;
     position: relative;
-    animation: mymove 8s infinite alternate linear; 
+    @include animation(mymove 8s infinite alternate linear);
 }
 
 img{
@@ -24,7 +57,7 @@ img{
     height: 65%;
     border-radius: 10px;
     background-size: cover;
-    transition: ease 0.5s;
+    @include transition(ease 0.5s)
 } 
 
 img:hover{
@@ -53,4 +86,3 @@ img:hover{
 .ano_filme{
     font-size: 1.15em;
 }
-

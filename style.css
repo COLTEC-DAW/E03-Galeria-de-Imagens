@@ -1,13 +1,28 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+/*
+* Criando paleta da página
+*/
+/*----------------------------------*/
+/*
+* Mixins
+*/
+/*------------------------------------*/
 * {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; }
 
 .movies {
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
   border-radius: 30px;
   border: 2px solid;
   background-color: #202020;
   color: white;
   position: relative;
+  -webkit-animation: mymove 8s infinite alternate linear;
+  -moz-animation: mymove 8s infinite alternate linear;
+  -ms-animation: mymove 8s infinite alternate linear;
   animation: mymove 8s infinite alternate linear; }
 
 img {
@@ -16,6 +31,9 @@ img {
   height: 65%;
   border-radius: 10px;
   background-size: cover;
+  -webkit-transition: ease 0.5s;
+  -moz-transition: ease 0.5s;
+  -ms-transition: ease 0.5s;
   transition: ease 0.5s; }
 
 img:hover {
