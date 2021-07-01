@@ -1,0 +1,394 @@
+@use '../css/all' as *;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+$primaryColor: rgb(170, 0, 0);
+$unfocusColor: rgb(124, 0, 0);
+$focusColor: rgb(230, 0, 0);
+$focusColorTransparent: rgba(230, 0, 0, .3);
+$backgroundColor: black;
+$fontColor: white;
+$cardWidth: 200px;
+$cardHeight: 285px;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    position: relative;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    padding-bottom: 100px;
+    background-color: $backgroundColor;
+    position: relative;
+
+    font: {     
+        family: 'Poppins', sans-serif;
+        //size: 18px;
+    }
+
+    color: $fontColor;
+}
+
+body::after {
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    opacity: .3;
+    background: {
+        repeat: repeat;
+        image: url(../img/beanstalk-dark.png);
+        position: center center;
+    }
+}
+
+
+header,
+footer {
+    background-color: $primaryColor;
+    width: 100%;
+    z-index: 100;
+}
+
+header {
+    position: sticky;
+    text-align: center;
+    box-shadow: 0px 5px 3px 2px $primaryColor;
+    margin-bottom: 2.5vh;
+
+    @media screen and (max-width: 428px) {
+        box-shadow: 0px 1px 3px 2px $primaryColor;
+
+        &:hover{
+            p{
+                visibility: visible;
+                display: block;
+            }
+        }
+    }
+
+    h1 {
+        font: {
+            family: 'Bebas Neue', cursive;
+            size: 2.8rem;
+            weight: 500;
+            style: bold;
+        }
+    }
+
+    p {
+        font: {
+            size: 1.4em;
+            style: none;
+        }
+
+        @media screen and (max-width: 648px) {
+            font: {
+                size: 1.0em;
+                style: none;
+            }
+        }
+
+        @media screen and (max-width: 428px) {
+            font-size: 0.84em;
+            visibility: hidden;
+            display: none;
+        }
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    overflow: hidden;
+    text-align: right;
+
+    font: {
+        size: 0.8em;
+        style: none;
+    }
+
+    box-shadow: 0px -1px 2px 2px $primaryColor;
+
+    @media screen and (max-width: 488px) {
+        text-align: center;
+    }
+}
+
+a,
+:hover,
+:focus,
+:visited {
+    color: $fontColor;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.card-container {
+    position: relative;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    row-gap: 3%;
+    column-gap: 1%;
+    justify-content: start;
+    justify-items: start;
+
+    @media screen and (max-width: 488px){
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: space-around;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: -15%;
+    }
+
+    @media screen and (max-width: 768px){
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 2%;
+    }
+
+    @media screen and (min-width: 768px){ 
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1000px;
+        margin-bottom: -3%;
+    }
+
+    .card {
+        justify-self: center;
+        height: auto;
+        position: relative;
+        background-color: $primaryColor;
+        border-radius: 8px;
+        box-shadow: 0px 0px 0px 4px $primaryColor;
+        transition: background-color .2s ease-in-out, box-shadow .2s ease-in-out;
+
+        @media screen and (max-width: 488px) {
+            width: $cardWidth * 1.2;
+        }
+
+        @media screen and  (min-width: 488px) and (max-width: 648px){
+            width: $cardWidth * 0.9;
+        }
+
+        @media screen and (min-width: 648px) and (max-width: 1024px){
+            width: $cardWidth * 1.0;
+        }
+
+        @media screen and (min-width: 1024px){
+            width: $cardWidth * 1.2;
+        }
+
+        img,
+        ::after,
+        ::before {
+            border-radius: 8px;
+
+            @media screen and (max-width: 488px){
+                width: $cardWidth * 1.2;
+                height: $cardHeight * 1.2;
+            }
+
+            @media screen and (min-width: 488px) and (max-width: 648px){
+                width: $cardWidth * 0.9;
+                height: $cardHeight * 0.9;
+            }
+
+            @media screen and (min-width: 648px) and (max-width: 1024px){
+                width: $cardWidth * 1.0;
+                height: $cardHeight * 1.0;
+            }
+
+            @media screen and (min-width: 1024px){
+                width: $cardWidth * 1.2;
+                height: $cardHeight * 1.2;
+            }
+        }
+
+        img {
+            z-index: 0;
+            opacity: .9;
+            position: relative;
+            transition: opacity .3s;
+            background-color: black;
+        }
+
+        ::before,
+        ::after {
+            content: "";
+            pointer-events: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        ::after {
+            z-index: 1;
+            transform: scale(0);
+            transition: transform .2s ease-in-out;
+            background-color: $focusColorTransparent;
+            opacity: .1;
+        }
+
+        ::before {
+            z-index: 2;
+            box-shadow: inset 0 0 12px 0 rgba(0, 0, 0, .6);
+            transition: box-shadow .3s;
+        }
+
+        p {
+            margin-left: 5px;
+            overflow: hidden;
+            
+            &.card-movie-title {
+                @media screen and (min-width: 648px) {
+                    font-size: 1.15em;
+                }
+
+                @media screen and (max-width: 648px) {
+                    font-size: 1em;
+                }
+            }
+
+            &.card-movie-year { 
+                @media screen and (min-width: 648px) {
+                    font-size: 0.95em;
+                }
+
+                @media screen and (max-width: 648px) {
+                    font-size: 0.8em;
+                }
+            }
+        }
+
+        &:hover{
+            background-color: $focusColor;
+            box-shadow: 0px 0px 0px 5px $focusColor;
+            transition: background-color .2s ease-in-out, box-shadow .2s ease-in-out;
+    
+            img {
+                opacity: 1;
+                transition: opacity .3s;
+            }
+    
+            ::after {
+                transform: scale(1);
+                transition: transform .2s ease-in-out;
+            }
+    
+            ::before {
+                box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, .4);
+                transition: box-shadow .3s;
+            }  
+        }
+
+        &-unfocused{
+            background-color: $unfocusColor !important;
+            box-shadow: 0px 0px 0px 4px $unfocusColor;
+        }
+    }
+}
+
+.lightbox {
+    visibility: hidden;
+    display: none;
+    opacity: 0;
+
+    &-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        
+        img {
+            position: relative;
+            width: auto;
+            height: 80%;
+            box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, .3);
+            transform: scale(1);
+            transition: transform .3s ease-in-out;
+        }
+
+        img:hover{
+            transform: scale(1.1);
+            transition: transform .3s ease-in-out;
+        }
+
+        a.button {
+            position: absolute;
+            color: white;
+            z-index: 10;
+        }
+
+        a.button[href=""] {
+            color: grey;
+            pointer-events: none;
+        }
+    }
+}
+
+.lightbox:target {
+    z-index: 9999;
+    visibility: visible;
+    position: fixed;
+    display: block;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(10, 10, 10, 0.7);
+    transition: opacity 1s ease-in-out;
+}
+
+#previous, #next, #close{
+    i{
+        font-size: 2em;
+        @extend .fas;
+    }
+}
+
+#previous{
+    top: 50%;
+    left: 5%;
+
+    i{
+        @extend .fa-chevron-circle-left;
+    }
+}
+
+#next{
+    top: 50%;
+    right: 5%;
+
+    i{
+        @extend .fa-chevron-circle-right;
+    }
+    
+}
+
+#close{
+    color: white;
+    top: 1%;
+    right: 1%;
+
+    i{
+        @extend .fa-times-circle;
+    }
+}
+
