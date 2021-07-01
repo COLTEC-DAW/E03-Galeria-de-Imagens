@@ -7,16 +7,21 @@
 .Subtitulo{
     text-align: left;
     border: 0.1rem solid;
+    
 }
 
 .AnoFilme{
     text-align: center;
     border: 0.2rem solid;
+    border-color: black;
+    color: white;
 }
 
 .NomeFilme{
     text-align: center;
     border: 0.2rem solid;
+    border-color: black;
+    color: white;
 }
 
 #header{
@@ -63,6 +68,11 @@ img{
     margin-bottom: 2%;
     text-align: center;
     border: 0.2rem solid;
+    border-radius: 2rem;
     padding-top: 4rem;
+    
+    background-image: linear-gradient(to right,#141414,#A31925  );
+    box-shadow: 0px 0px 0px 5px #A0A0A0, inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #A31925, 10px 10px 11px 3px #57FF80;
 
 }
+
