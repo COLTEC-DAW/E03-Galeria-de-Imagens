@@ -101,13 +101,13 @@
 
 img{
     width: 50%;
-    border: 0.4rem solid;
+    border: 0.1rem solid;
     border-radius: 1.1rem;
     border-color: brown;
 }
 
 .col_3 > p{
-    border: 0.4rem solid;
+    border: 0.1rem solid;
     border-radius: 1.1rem;
     border-color: brown;
 
@@ -148,9 +148,27 @@ img{
 }
 
 #header > p{
+    font-size: 1.6em;
     color: white;
     text-shadow: rgba(255, 0, 0, 0.74);
 }
+
+body{
+    font-size: 14px;
+}
+
+.nomefilme{
+    font-size: 1.0em;
+}
+
+.datafilme{
+    font-size: 1.15em;
+}
+
+h1{
+    font-size: 2.8em;
+}
+
 
 
 
@@ -178,3 +196,7 @@ img{
         width: 80%;
     }
 } 
+
+body{
+   
+}
