@@ -13,49 +13,8 @@
     float: left;
     padding: 1%;
 }
-
-.col1{
-    width: 6%;
-}
-
-.col2{
-    width: 14%;
-}
-
-.col3{
-    width: 22%;
-}
-
 .col4{
     width: 30%;
-}
-
-.col5{
-    width: 38%;
-}
-
-.col6{
-    width: 46%;
-}
-
-.col7{
-    width: 54%;
-}
-
-.col8{
-    width: 62%;
-}
-
-.col9{
-    width: 70%;
-}
-
-.col10{
-    width: 78%;
-}
-
-.col11{
-    width: 86%;
 }
 
 .col12{
@@ -64,12 +23,13 @@
 
 body{
     background-color: rgb(63, 56, 56);
+    font-size: 18px;
 }
 
 h1{
     font-family: Big Shoulders Stencil Display;
     text-align: center;
-    font-size: 5.5rem;
+    font-size: 2.8em;
     box-shadow: 3px 3px 10px red;
     background-color: rgb(36, 28, 28);
     color: rgb(245, 226, 226);
@@ -80,7 +40,7 @@ h1{
 #Resumopag{
     text-align: center;
     color: rgb(245, 226, 226);
-    font-size: 22px;
+    font-size: 1.6em;
 }
 
 .col4 p{
@@ -113,10 +73,38 @@ div:hover{
 img{
     width: 60%;
     padding: 20%;
-    height: auto;
+    height: 40%;
     float: center;
 }
 
 #finalpag{
     color: rgb(245, 226, 226);
+}
+
+.AnoFilme{
+
+    font-size: 1.15em;
+}
+
+.NomeFilme{
+
+    font-size: 1.3em;
+}
+
+@media screen and(max-width:1024px){
+    
+    img{
+
+        width: 200px;
+        height: 285px;
+ 
+    }
+}
+
+@media screen and (max-width:648){
+
+    img{
+        width: 240px;
+        height: 342px;
+    }
 }
