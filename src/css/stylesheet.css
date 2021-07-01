@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  position: relative;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  padding-bottom: 100px;
+  background-color: black;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.3;
+  background-repeat: repeat;
+  background-image: url(../img/beanstalk-dark.png);
+  background-position: center center;
+}
+
+header,
+footer {
+  background-color: #aa0000;
+  width: 100%;
+  z-index: 100;
+}
+
+header {
+  position: sticky;
+  text-align: center;
+  box-shadow: 0px 5px 3px 2px #aa0000;
+  margin-bottom: 2.5vh;
+}
+
+header h1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 2.8rem;
+  font-weight: 500;
+  font-style: bold;
+}
+
+header p {
+  font-size: 1.4em;
+  font-style: none;
+}
+
+@media screen and (max-width: 428px) {
+  header {
+    box-shadow: 0px 1px 3px 2px #aa0000;
+    line-height: 1.1;
+  }
+
+  header p {
+    font-size: 0.84em;
+    visibility: hidden;
+    display: none;
+  }
+
+  header:hover p {
+    visibility: visible;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 648px) {
+  header p {
+    font-size: 1em;
+    font-style: none;
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  font-size: 0.8em;
+  font-style: none;
+  box-shadow: 0px -1px 2px 2px #aa0000;
+  overflow: hidden;
+  text-align: right;
+}
+
+@media screen and (max-width: 488px) {
+  footer{
+    text-align: center;
+  }
+}
+
+a,
+:hover,
+:focus,
+:visited {
+  color: white;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.card-container {
+  position: relative;
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1%;
+  row-gap: 3%;
+  column-gap: 1%;
+  justify-content: start;
+  justify-items: start;
+}
+
+@media screen and (max-width: 488px) {
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: -15%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1000px;
+    margin-bottom: -3%;
+  }
+}
+
+.card-container .card {
+  justify-self: center;
+  height: auto;
+  position: relative;
+  background-color: #aa0000;
+  border-radius: 8px;
+  box-shadow: 0px 0px 0px 4px #aa0000;
+  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 488px) {
+  .card-container .card {
+    width: 240px;
+  }
+}
+
+@media screen and (min-width: 488px) and (max-width: 648px) {
+  .card-container .card {
+    width: 180px;
+  }
+}
+
+@media screen and (min-width: 648px) and (max-width: 1024px) {
+  .card-container .card {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card-container .card {
+    width: 240px;
+  }
+}
+
+.card-container .card img,
+.card-container .card ::after,
+.card-container .card ::before {
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 488px) {
+  
+  .card-container .card img,
+  .card-container .card ::after,
+  .card-container .card ::before {
+    width: 240px;
+    height: 342px;
+  }
+}
+
+@media screen and (min-width: 488px) and (max-width: 648px) {
+  
+  .card-container .card img,
+  .card-container .card ::after,
+  .card-container .card ::before {
+    width: 180px;
+    height: 256.5px;
+  }
+}
+
+@media screen and (min-width: 648px) and (max-width: 1024px) {
+  .card-container .card img,
+  .card-container .card ::after,
+  .card-container .card ::before {
+    width: 200px;
+    height: 285px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card-container .card img,
+  .card-container .card ::after,
+  .card-container .card ::before {
+    width: 240px;
+    height: 342px;
+  }
+}
+
+.card-container .card img {
+  z-index: 0;
+  opacity: 0.9;
+  position: relative;
+  transition: opacity 0.3s;
+  background-color: black;
+}
+
+.card-container .card ::before,
+.card-container .card ::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card-container .card ::after {
+  z-index: 1;
+  transform: scale(0);
+  transition: transform 0.2s ease-in-out;
+  background-color: rgba(230, 0, 0, 0.3);
+  opacity: 0.1;
+}
+
+.card-container .card ::before {
+  z-index: 2;
+  box-shadow: inset 0 0 12px 0 rgba(0, 0, 0, 0.6);
+  transition: box-shadow 0.3s;
+}
+
+.card-container .card p {
+  margin-left: 5px;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 648px) {
+  .card-container .card p.card-movie-title {
+    font-size: 1.15em;
+  }
+}
+
+@media screen and (max-width: 648px) {
+  .card-container .card p.card-movie-title {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 648px) {
+  .card-container .card p.card-movie-year {
+    font-size: 0.95em;
+  }
+}
+
+@media screen and (max-width: 648px) {
+  .card-container .card p.card-movie-year {
+    font-size: 0.8em;
+  }
+}
+
+.card-container .card:hover {
+  background-color: #e60000;
+  box-shadow: 0px 0px 0px 5px #e60000;
+  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card-container .card:hover img {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.card-container .card:hover ::after {
+  transform: scale(1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card-container .card:hover ::before {
+  box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, 0.4);
+  transition: box-shadow 0.3s;
+}
+
+.card-container .card-unfocused {
+  background-color: #7c0000 !important;
+  box-shadow: 0px 0px 0px 4px #7c0000;
+}
+
+.lightbox {
+  visibility: hidden;
+  display: none;
+  opacity: 0;
+}
+
+.lightbox-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.lightbox-card img {
+  position: relative;
+  width: auto;
+  height: 80%;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.lightbox-card img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.lightbox-card a.button {
+  position: absolute;
+  color: white;
+  z-index: 10;
+}
+
+.lightbox-card a.button[href=""] {
+  color: grey;
+  pointer-events: none;
+}
+
+.lightbox:target {
+  z-index: 9999;
+  visibility: visible;
+  position: fixed;
+  display: block;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(10, 10, 10, 0.7);
+  transition: opacity 1s ease-in-out;
+}
+
+#previous i,
+#next i,
+#close i {
+font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 2em;
+}
+
+#previous {
+  top: 50%;
+  left: 5%;
+}
+
+#next {
+  top: 50%;
+  right: 5%;
+}
+
+#close {
+  color: white;
+  top: 1%;
+  right: 1%;
+}
+
