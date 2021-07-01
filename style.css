@@ -52,6 +52,7 @@
     border: 1px solid;
     border-radius: 0.7rem;
     font-family: 'Akaya Kanadaka', cursive;
+    border-color: rgb(70, 154, 238) ;;
     background-image: linear-gradient(to right, rgb(81, 238, 81),rgb(88, 88, 235));
 }
 .col_3.cartaz{
@@ -60,8 +61,10 @@
     margin-bottom: 5%;
     border: 1px solid;
     border-radius: 0.7rem;
+    border-color: rgb(70, 154, 238) ;
     padding-top: 2rem;
-
+    box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 50px 50px 0px 49px rgba(0,0,0,0);
+    background-image: linear-gradient(to right, rgb(101, 233, 101),rgb(81, 173, 226));
 }
 img + p{
     border-top: 1px solid;
