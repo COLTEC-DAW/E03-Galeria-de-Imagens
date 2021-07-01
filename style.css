@@ -27,7 +27,7 @@
 #header{
     font-family: 'Yellowtail', cursive;
     font-size: 1.5rem;
-    color: rgba(255, 0, 0, 0.74);
+    color: black;
     
     text-align: center;
     margin-left: 13%;
@@ -35,6 +35,9 @@
     margin-bottom: 5%;
     border: 0.2rem solid;
     border-radius: 1rem;
+
+    animation: Gradiante 3s;
+    animation-iteration-count: infinite;
     
 }
 
@@ -76,3 +79,7 @@ img{
 
 }
 
+@keyframes Gradiante{
+    from {background-image: linear-gradient(to left,#0FEBED,#57FF80  );}
+    to {background-image: linear-gradient(to right,#0FEBED,#57FF80  );}
+}
