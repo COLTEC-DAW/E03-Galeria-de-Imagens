@@ -35,10 +35,9 @@ img {
   -moz-transition: ease 0.5s;
   -ms-transition: ease 0.5s;
   transition: ease 0.5s; }
-
-img:hover {
-  width: 90%;
-  height: auto; }
+  img:hover {
+    width: 90%;
+    height: auto; }
 
 @keyframes mymove {
   from {
@@ -57,5 +56,197 @@ img:hover {
 
 .ano_filme {
   font-size: 1.15em; }
+
+.container {
+  width: 92%;
+  margin: auto;
+  text-align: center;
+  margin-left: 5%;
+  font-size: 18px; }
+
+/*
+* Recriando Layout responsivo.
+*/
+@media screen and (min-width: 1024px) {
+  .col-d-1 {
+    float: left;
+    padding: 1%;
+    width: 6%; }
+
+  .col-d-2 {
+    float: left;
+    padding: 1%;
+    width: 14%; }
+
+  .col-d-3 {
+    float: left;
+    padding: 1%;
+    width: 22%; }
+
+  .col-d-4 {
+    float: left;
+    padding: 1%;
+    width: 30%; }
+
+  .col-d-5 {
+    float: left;
+    padding: 1%;
+    width: 38%; }
+
+  .col-d-6 {
+    float: left;
+    padding: 1%;
+    width: 46%; }
+
+  .col-d-7 {
+    float: left;
+    padding: 1%;
+    width: 54%; }
+
+  .col-d-8 {
+    float: left;
+    padding: 1%;
+    width: 62%; }
+
+  .col-d-9 {
+    float: left;
+    padding: 1%;
+    width: 70%; }
+
+  .col-d-10 {
+    float: left;
+    padding: 1%;
+    width: 78%; }
+
+  .col-d-11 {
+    float: left;
+    padding: 1%;
+    width: 86%; }
+
+  .col-d-12 {
+    float: left;
+    padding: 1%;
+    width: 94%; } }
+@media screen and (min-width: 628px) and (max-width: 1023px) {
+  .col-t-1 {
+    float: left;
+    padding: 1%;
+    width: 6%; }
+
+  .col-t-2 {
+    float: left;
+    padding: 1%;
+    width: 14%; }
+
+  .col-t-3 {
+    float: left;
+    padding: 1%;
+    width: 22%; }
+
+  .col-t-4 {
+    float: left;
+    padding: 1%;
+    width: 30%; }
+
+  .col-t-5 {
+    float: left;
+    padding: 1%;
+    width: 38%; }
+
+  .col-t-6 {
+    float: left;
+    padding: 1%;
+    width: 46%; }
+
+  .col-t-7 {
+    float: left;
+    padding: 1%;
+    width: 54%; }
+
+  .col-t-8 {
+    float: left;
+    padding: 1%;
+    width: 62%; }
+
+  .col-t-9 {
+    float: left;
+    padding: 1%;
+    width: 70%; }
+
+  .col-t-10 {
+    float: left;
+    padding: 1%;
+    width: 78%; }
+
+  .col-t-11 {
+    float: left;
+    padding: 1%;
+    width: 86%; }
+
+  .col-t-12 {
+    float: left;
+    padding: 1%;
+    width: 94%; } }
+@media screen and (max-width: 627px) {
+  .col-s-1 {
+    float: left;
+    padding: 1%;
+    width: 6%; }
+
+  .col-s-2 {
+    float: left;
+    padding: 1%;
+    width: 14%; }
+
+  .col-s-3 {
+    float: left;
+    padding: 1%;
+    width: 22%; }
+
+  .col-s-4 {
+    float: left;
+    padding: 1%;
+    width: 30%; }
+
+  .col-s-5 {
+    float: left;
+    padding: 1%;
+    width: 38%; }
+
+  .col-s-6 {
+    float: left;
+    padding: 1%;
+    width: 46%; }
+
+  .col-s-7 {
+    float: left;
+    padding: 1%;
+    width: 54%; }
+
+  .col-s-8 {
+    float: left;
+    padding: 1%;
+    width: 62%; }
+
+  .col-s-9 {
+    float: left;
+    padding: 1%;
+    width: 70%; }
+
+  .col-s-10 {
+    float: left;
+    padding: 1%;
+    width: 78%; }
+
+  .col-s-11 {
+    float: left;
+    padding: 1%;
+    width: 86%; }
+
+  .col-s-12 {
+    float: left;
+    padding: 1%;
+    width: 94%; } }
+/*---------------------------------------------*/
 
 /*# sourceMappingURL=style.css.map */

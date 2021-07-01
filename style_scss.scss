@@ -9,6 +9,17 @@ $card-color: rgb(32, 32, 32);
 $font-color: white;
 $font-title: 'Anton', sans-serif;
 
+$font-s-titulo: 2.8em;
+$font-s-filme:  1.3em;
+$font-s-subtitulo: 1.6em;
+$font-s-ano: 1.15em;
+
+$screens: (
+    desktop: "(min-width: 1024px)",
+    tablet: "(min-width: 628px) and (max-width: 1023px)",
+    smartphone: "(max-width: 627px)"
+);
+
 /*----------------------------------*/
 
 /*
@@ -57,13 +68,12 @@ img{
     height: 65%;
     border-radius: 10px;
     background-size: cover;
-    @include transition(ease 0.5s)
+    @include transition(ease 0.5s);
+    &:hover{
+        width: 90%;
+        height: auto;
+    }
 } 
-
-img:hover{
-    width: 90%;
-    height: auto;
-}
 
 @keyframes mymove {
     from {left: -80px;}
@@ -72,17 +82,57 @@ img:hover{
 
 #titulo{
     font-family: $font-title;
-    font-size: 2.8em;
+    font-size: $font-s-titulo;
 }
 
 #subtitulo{
-    font-size: 1.6em;
+    font-size: $font-s-subtitulo;
 }
 
 .nome_filme{
-    font-size: 1.3em;
+    font-size: $font-s-filme;
 }
 
 .ano_filme{
-    font-size: 1.15em;
+    font-size: $font-s-ano;
 }
+
+.container {
+    width: 92%;
+    margin: auto;
+    text-align: center;
+    margin-left: 5%;
+    font-size: 18px;
+}
+
+/*
+* Recriando Layout responsivo.
+*/
+
+@mixin column_sizes($size){
+    @for $i from 1 to 13 {
+        .col-#{$size}-#{$i} {
+            float: left;
+            margin: 0.5%;
+            padding: 0.5%;
+            width: (8% * $i) - 2%;
+        }
+    }
+}
+
+
+@each $screen-type, $value in $screens {
+    @media screen and #{$value}{
+        @if $screen-type == desktop{
+            @include column_sizes(d) /*d = desktop*/
+        }
+        @else if $screen-type == tablet{
+            @include column_sizes(t) /*t = tablet*/
+        }
+        @else if $screen-type == smartphone{
+            @include column_sizes(s) /*s = smartphone*/
+        }
+    }
+}
+
+/*---------------------------------------------*/
