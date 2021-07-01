@@ -79,3 +79,28 @@
     margin-bottom: 25px;
     margin-top: 27px;
 }
+
+
+/* Parte dos links */
+
+/*link não visistado*/
+a:link{ /* essa parte funciona só para links internos, que será que errei? */
+    color: green;
+    text-decoration: none;
+}
+/*link visitado*/
+a:visited{ 
+    color: blue;
+    text-decoration: none;
+}
+/* quando o mouse passa por cima */
+a:hover{
+    color: pink;
+    text-decoration: none;
+}
+/* link ativado/selecionado */
+a:active{ 
+    color: yellow;
+    text-decoration: none;
+}
+/* text-decoration: none   -->  retira a linha embaixo dos links */

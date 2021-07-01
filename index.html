@@ -11,12 +11,12 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@900&display=swap" rel="stylesheet">
-        
     </head>
 
     <body>
+        <a name="Topo"></a>
         <section class="cabecalho">
-            <h1 class="col_12" id="titulo">Galeria do Tarantino</h1>
+            <h1 class="col_12" id="titulo">Galeria do Tarantino </h1>
             <p class="col_12" id="subtitulo"> Melhores filmes de Quentin Tarantino </p>            
         </section>
         
@@ -24,34 +24,34 @@
             <section class="linha-filmes">
 
                 <div class="col_4">
-                    <img class="figuras" src="img/caes_de_aluguel.jpg" alt="">
+                    <img class="figuras" src="img/caes_de_aluguel.jpg" alt="" title="Cães de Aluguel">
                     <p><b>Cães de Aluguel</b></p>
                     <p id="caesDeAluguel-escrita"> 1992 </p>
                 </div>
                 <div class="col_4">
-                    <img class="figuras" src="img/pulp_fiction.jpg" alt="">
+                    <img class="figuras" src="img/pulp_fiction.jpg" alt="" title="Tempos de Vioência">
                     <p><b>Pulp Fiction: Tempos de Violência</b></p>
                     <p id="PulpFiction-escritas"> 1994 </p>
                 </div>
                 <div class="col_4">
-                    <img class="figuras" src="img/kill_bill.jpg" alt="">
+                    <img class="figuras" src="img/kill_bill.jpg" alt="" title="kill Bill: Volume 1">
                     <p><b>Kill Bill: Volume 1</b></p>
                     <p>2003</p>
                 </div>
             </section>
             <section class="linha-filmes">
                 <div class="col_4">
-                    <img class="figuras" src="img/bastardos_inglorios.jpg" alt="">
+                    <img class="figuras" src="img/bastardos_inglorios.jpg" alt="" title="bastardos Inglorios">
                     <p><b>Bastardos Inglórios</b></p>
                     <p>2009</p>
                 </div>
                 <div class="col_4">
-                    <img class="figuras" src="img/django_livre.jpg" alt="">
+                    <img class="figuras" src="img/django_livre.jpg" alt="" title="Django Livre">
                     <p><b>Django Livre</b></p>
                     <p>2012</p>
                 </div>
                 <div class="col_4">
-                    <img class="figuras" src="img/os_oito_odiados.jpg" alt="">
+                    <img class="figuras" src="img/os_oito_odiados.jpg" alt="" title="Oito Odiados">
                     <p><b>Os Oito Odiados</b></p>
                     <p>2015</p>
                 </div>    
@@ -60,7 +60,27 @@
         </div>
 
         <footer class="col_12">
+            <p>
+                Seja direcionado a página 
+                <a href="https://tableless.com.br/o-poder-do-atributo-alt/" target="_blank"> teste </a>
+                <!-- target="_blank" faz com que o link abra uma nova aba na mesma janela. -->
+                </br>
+                outro 
+                <a href="https://www.homehost.com.br/blog/tutoriais/links-html/" target="_blank"> teste </a>
+                </br>
+                
             Desenvolvimento de Aplicações Web - COLTEC/UFMG
+            </br>
+            Volte ao 
+                <a href="#Topo"> topo </a>
+            </p>
         </footer>
     </body>
 </html>
+
+
+<!--
+    Ao usar a tag <a></a> da pra se colocar links âncoras, que seria uma espécie de link para seções da mesma página. 
+    Como por exemplo, ao coloar a tag  <a name="inicio"> no titulo, e colocar <a href="#inicio"> topo </a> em outra 
+    parte do código, conseguimos retornar ao 'inicio' quando clicamos no link. 
+-->
