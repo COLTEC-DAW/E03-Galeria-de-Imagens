@@ -127,3 +127,30 @@ img:hover {
     animation-timing-function: cubic-bezier(0.165, 0.84, 0.66, 1);
     animation-iteration-count: 3;
 }
+
+
+/*Desktop*/
+
+@media screen and (min-width: 1024px) {
+    .col_4 {
+        width: 30%;
+    }
+}
+
+
+/*Tablet*/
+
+@media screen and (min-width: 648px) and (max-width: 1024px) {
+    .col_4 {
+        width: 45%;
+    }
+}
+
+
+/*Smartphone*/
+
+@media screen and (max-width: 648px) {
+    .col_4 {
+        width: 90%;
+    }
+}
