@@ -7,7 +7,7 @@
 .Subtitulo{
     text-align: left;
     border: 0.1rem solid;
-    
+    font-size: 1.6em;
 }
 
 .AnoFilme{
@@ -15,6 +15,7 @@
     border: 0.2rem solid;
     border-color: black;
     color: white;
+    font-size: 1.15em;
 }
 
 .NomeFilme{
@@ -22,11 +23,12 @@
     border: 0.2rem solid;
     border-color: black;
     color: white;
+    font-size: 1.3em;
 }
 
 #header{
     font-family: 'Yellowtail', cursive;
-    font-size: 1.5rem;
+    font-size: 2.8em;
     color: black;
     
     text-align: center;
@@ -39,6 +41,11 @@
     animation: Gradiante 3s;
     animation-iteration-count: infinite;
     
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: 18px;
 }
 
 .col_1, .col_2, .col_3,  .col_4,  .col_5,  .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12{
@@ -104,12 +111,12 @@ img{
 
 @media screen and (min-width: 628px) and (max-width: 1024px) {
     .col_3{
-        width: 36%;
+        width: 34%;
     }
 }
 
 @media screen and (max-width: 628px) {
     .col_3{
-        width: 80%;
+        width: 72%;
     }
 }
