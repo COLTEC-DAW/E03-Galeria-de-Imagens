@@ -2,6 +2,8 @@
     width: 92%;
     margin: auto;
     text-align: center;
+    color: white;
+    background-color: black;
 }
   
   
@@ -24,6 +26,27 @@
 
 .col_4 {
     width: 30.3%;
+}
+
+.filme {
+    width: 29.5%;
+    height: 450px;
+    border: 1px solid red;
+    border-radius: 25px;
+    margin: 15px 10px;
+    box-shadow: 5px 5px 5px #FF0000;
+    animation: myfirst 3s;
+    transition: transform .2s;
+}
+
+@keyframes myfirst {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.filme:hover {
+    transform: scale(1.2);
+    background-color: black;
 }
 
 .col_5 {
@@ -61,8 +84,12 @@
 #titulo {
     text-align: center;
     font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+    text-shadow: 5px 5px 5px red;
 }
 
 img {
-    width: 55%;
+    width: 65%;
+    border-radius: 15px;
 }
+
