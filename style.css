@@ -70,6 +70,9 @@
     width: 30%;
 }
 
+body{
+    font-size: 18px;
+}
 
 img + p{
     border-top: 1px solid;
@@ -113,3 +116,17 @@ img + p{
         width: 80%;
     }
 }
+
+.titulo{
+    font-size: 2.8em;
+}
+.subtitulo{
+    font-size: 1.6em;
+}
+.nomeFilme{
+    font-size: 1.3em;
+}
+.ano{
+    font-size: 1.15em;
+}
+
