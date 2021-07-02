@@ -1,0 +1,131 @@
+$backgroundColor: black;
+$fontColor: white;
+$fontTitle: 'Courier New', Courier, monospace;
+$shadow: 5px 5px 5px red;
+$borderColor: red;
+
+$numCols: 12;
+$padding: 1%;
+
+$fontSizeBody: 18px;
+$fontSizeYear: 1.15em;
+$fontSizeName: 1.3em;
+$fontSizeTitle: 2.8em;
+$fontSizeSubtitle: 1.6em;
+
+$widths: ("(min-width: 1024px)", 4), ("(min-width: 648px) and (max-width: 1024px)", 6), ("(max-width: 648px)", 11);
+
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+
+@mixin animation ($type) {
+    -webkit-animation: $type;
+    -moz-animation: $type;
+    -ms-animation: $type;
+    animation: $type;
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin transition($type) {
+    -webkit-transition: $type;
+    -moz-transition: $type;
+    -ms-transition: $type;
+    transition: $type;
+}
+
+@mixin titulos {
+    text-align: center;
+    font-weight: bold;
+    font-family: $fontTitle;
+    text-shadow: $shadow;
+    padding-left: 2.5%;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+
+.container {
+    width: 92%;
+    margin: auto;
+    margin-left: 6.2%;
+    text-align: center;
+    color: $fontColor;
+    background-color: $backgroundColor;
+    font-size: $fontSizeBody;
+}
+
+@mixin coluna ($i) {
+    float: left;
+    padding: $padding;
+    width: ((8 * $i) - $padding * 2) - 2%;
+}
+
+@for $i from 1 to 13 {
+    .col_#{$i} {
+        @include coluna($i);
+    }
+}
+
+#titulo {
+    @include titulos();
+    font-size: $fontSizeTitle;
+}
+
+#subtitulo {
+    @include titulos();
+    font-size: $fontSizeSubtitle;
+}
+
+img {
+    width: 65%;
+    @include border-radius(15px);
+    max-width: 100%;
+}
+
+.filmes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.filme {
+    border: 1px solid $borderColor;
+    @include border-radius(25px);
+    margin: 3% 0;
+    padding-top: 2%!important;
+    box-shadow: $shadow;
+    @include animation(myfirst 3s);
+    @include transition(transform .2s);
+    
+    &:hover {
+        transform: scale(1.2);
+        background-color: $backgroundColor;
+    }
+}
+
+@keyframes myfirst {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@each $size, $width in $widths{
+    @media screen and #{$size} {
+        .filme {
+            @include coluna($width);
+        }
+    }
+}
+
+.ano-filme{
+    font-size: $fontSizeYear;
+}
+
+.nome-filme {
+    font-size: $fontSizeName;
+}
+
+
