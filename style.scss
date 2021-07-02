@@ -1,29 +1,45 @@
+$body-font-size: 18px;
+$body-backgroun-color: white;
+
+$default-text-align: center;
+$default-font-family: 'Lato', sans-serif;
+
+$h1-color: black;
+$h1-font-style: italic;
+$h1-font-size: 2.8em;
+$h1_p-font-size: 1.6em;
+
+$AnoFilme-font-size: 1.15em;
+$NomeFilme-font-size: 1.3em;
+
+$card-background-color: blanchedalmond;
+
 body{
-    font-size: 18px;
-    background:white;
+    font-size: $body-font-size;
+    background:$body-backgroun-color;
 }
 h1{
-    text-align: center;
-    font-family: 'Lato', sans-serif;
-    font-style: italic;
-    color:black;
+    text-align: $default-text-align;
+    font-family: $default-font-family;
+    font-style: $h1-font-style;
+    color:$h1-color;
     text-shadow: 5px 5px 5px #FF0000;
 
-    font-size: 2.8em;
+    font-size: $h1-font-size;
 }
 
 h1 + p{
     text-align:left;
-    font-size: 1.6em;
+    font-size: $h1_p-font-size;
 }
 
 .AnoDoFilme{ 
-    text-align: center; 
-    font-size: 1.15em;
+    text-align: $default-text-align; 
+    font-size: $AnoFilme-font-size;
 }
 .NomeDoFilme{ 
-    text-align: center; 
-    font-size: 1.3em;
+    text-align: $default-text-align; 
+    font-size: $NomeFilme-font-size;
 }
 
 img{
@@ -66,7 +82,7 @@ img:hover{
         width: 75%;
         border:4px solid;
         border-radius:20px;
-        background-color:blanchedalmond;
+        background-color: $card-background-color;
     
         position: relative;
         animation: mymove 5s 1;
@@ -80,7 +96,7 @@ img:hover{
         width: 37.5%;
         border:4px solid;
         border-radius:40px;
-        background-color: blanchedalmond;
+        background-color: $card-background-color;
     
         position: relative;
         animation: mymove 5s 1;
@@ -95,7 +111,7 @@ img:hover{
         width: 25%;
         border:4px solid;
         border-radius:40px;
-        background-color:blanchedalmond;
+        background-color: $card-background-color;
 
         position: relative;
         animation: mymove 5s 1;
@@ -106,5 +122,3 @@ img:hover{
 
 /* DEMAIS CONFIGURAÇÕES DE COLUNAS FORAM DELETADAS PORQUE NÃO SERIAM UTILIZADAS */
 .col12{ width: 99.90%; }
-
-/*# sourceMappingURL=style.css.map */
