@@ -14,6 +14,39 @@ $NomeFilme-font-size: 1.3em;
 
 $card-background-color: blanchedalmond;
 
+@mixin border($bd){
+
+    -webkit-border: $bd;
+    -moz-border: $bd;
+    -ms-border: $bd;
+    border: $bd;
+
+}
+@mixin border-radius($radius){
+
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+    
+}
+@mixin animation($anime){
+
+    -webkit-animation: $anime;
+    -moz-animation: $anime;
+    -ms-animation: $anime;
+    animation: $anime;
+
+}
+@mixin position($ps){
+
+    -webkit-position: $ps;
+    -moz-position: $ps;
+    -ms-position: $ps;
+    position: $ps;
+
+}
+
 body{
     font-size: $body-font-size;
     background:$body-backgroun-color;
@@ -61,8 +94,9 @@ img:hover{
 .container{
     width:98%;
     margin:auto;
-    border:2px solid;
-    border-radius:50px;
+    
+    @include border(2px solid);
+    @include border-radius(50px);
     
     overflow:hidden;
 }
@@ -79,13 +113,14 @@ img:hover{
 }
 @media screen and (max-width:648px){
     .col3{
+        height:auto;
         width: 75%;
-        border:4px solid;
-        border-radius:20px;
         background-color: $card-background-color;
-    
-        position: relative;
-        animation: mymove 5s 1;
+        
+        @include border(4px solid);
+        @include border-radius(20px);
+        @include animation(mymove 5s 1);
+        @include position(relative);
 
         margin: 9%;
     }
@@ -93,14 +128,15 @@ img:hover{
 
 @media screen and (max-width:1024px) and (min-width:648px){
     .col3{
+        height:auto;
         width: 37.5%;
-        border:4px solid;
-        border-radius:40px;
         background-color: $card-background-color;
-    
-        position: relative;
-        animation: mymove 5s 1;
-
+        
+        @include border(4px solid);
+        @include border-radius(40px);
+        @include animation(mymove 5s 1);
+        @include position(relative);
+        
         margin: 2.5%;
     }
 }
@@ -109,13 +145,13 @@ img:hover{
     .col3{
         height:auto;
         width: 25%;
-        border:4px solid;
-        border-radius:40px;
         background-color: $card-background-color;
-
-        position: relative;
-        animation: mymove 5s 1;
-
+        
+        @include border(4px solid);
+        @include border-radius(40px);
+        @include animation(mymove 5s 1);
+        @include position(relative);
+        
         margin: 2.5%;
     }
 }
