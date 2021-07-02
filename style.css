@@ -1,18 +1,20 @@
 * {
-    background-color: #302f2f;
-    color: #dddddd;
+    background-color: lightblue;
 }
 
 /*--------------------------------------------------------*/
 
 .titulo{
-    font-size: 450%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 500%;
+    text-shadow: 3px 3px 0px #dddddd;
     text-align: center;
 }
 
 .subtitulo{
     font-size: 250%;
     text-align: center;
+    text-shadow: 1px 1px 0px #dddddd;
 }
 
 footer{
@@ -24,57 +26,64 @@ footer{
     margin: auto;
     width: 92%;
     overflow: hidden;
+    animation: fadeInFilmes 2s;
+    animation-iteration-count: 1;
 }
 
 img {
     width: 85%;
     height: 85%;
 
+    box-shadow: -5px 5px 0px rgb(64, 79, 85);;
+    animation: mymove 5s infinite;
+
     margin: auto;
     display: block;
 }
-
 /*--------------------------------------------------------*/
 
 .col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7,
 .col_8, .col_9, .col_10, .col_11, .col_12{
     float: left;
     padding: 0.75%;
+    background-color: rgb(104, 129, 138);
     
-    padding-bottom: 99999px;
-    margin-bottom: -99999px;
+    padding-bottom: 100px;
+    margin-bottom: -100px;
 }
 
 .border {
     
     border: #dddddd;
-    border-style: solid;
-    border-radius: 5px;
+    border-style: outset;
+    border-radius: 1px;
+}
 
+.border > p, b:not(.subtitulo){
+    background-color: rgb(104, 129, 138);
+    text-align: center;
+    font-size: 120%;
 }
 
 /*--------------------------------------------------------*/
 
-.col_1 { max-width: 6%; }
+/* Col Filmes */
+.col_4 { max-width: 30%;
+    transition: transform 0s, padding-bottom 0s, margin-botton 0s;
+    
+}
+.col_4:hover{
+    transform: scale(1.2, 1.2);
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
 
-.col_2 { max-width: 14%; }
-
-.col_3 { max-width: 22%; }
-
-.col_4 { max-width: 30%; }
-
-.col_5 { max-width: 38%; }
-
-.col_6 { max-width: 46%; }
-
-.col_7 { max-width: 54%; }
-
-.col_8 { max-width: 62%; }
-
-.col_9 { max-width: 70%; }
-
-.col_10 { max-width: 78%; }
-
-.col_11 { max-width: 86%; }
-
+/* Col Footer*/
 .col_12 { max-width: 94%; }
+
+/*--------------------------------------------------------*/
+
+@keyframes fadeInFilmes {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
