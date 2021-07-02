@@ -112,49 +112,70 @@ img:hover{
     to {top: 0px;}
 }
 @media screen and (max-width:648px){
-    .col3{
-        height:auto;
-        width: 75%;
-        background-color: $card-background-color;
-        
-        @include border(4px solid);
-        @include border-radius(20px);
-        @include animation(mymove 5s 1);
-        @include position(relative);
 
-        margin: 9%;
+    @for $i from 1 to 13 {
+        @if $i != 3{
+            .col#{$i} { width: 7.91% * $i; }
+        }@else{
+            .col#{$i} { 
+                height:auto;
+                width: 75%;
+                background-color: $card-background-color;
+                
+                @include border(4px solid);
+                @include border-radius(20px);
+                @include animation(mymove 5s 1);
+                @include position(relative);
+
+                margin: 9%;
+            }    
+        }
     }
+
 }
 
 @media screen and (max-width:1024px) and (min-width:648px){
-    .col3{
-        height:auto;
-        width: 37.5%;
-        background-color: $card-background-color;
-        
-        @include border(4px solid);
-        @include border-radius(40px);
-        @include animation(mymove 5s 1);
-        @include position(relative);
-        
-        margin: 2.5%;
+
+    @for $i from 1 to 13 {
+        @if $i != 3{
+            .col#{$i} { width: 7.91% * $i; }
+        }@else{
+            .col#{$i} { 
+                height:auto;
+                width: 37.5%;
+                background-color: $card-background-color;
+                
+                @include border(4px solid);
+                @include border-radius(20px);
+                @include animation(mymove 5s 1);
+                @include position(relative);
+
+                margin: 2.5%;
+            }    
+        }
     }
+
 }
 
 @media screen and (min-width:1024px){
-    .col3{
-        height:auto;
-        width: 25%;
-        background-color: $card-background-color;
-        
-        @include border(4px solid);
-        @include border-radius(40px);
-        @include animation(mymove 5s 1);
-        @include position(relative);
-        
-        margin: 2.5%;
-    }
-}
 
-/* DEMAIS CONFIGURAÇÕES DE COLUNAS FORAM DELETADAS PORQUE NÃO SERIAM UTILIZADAS */
-.col12{ width: 99.90%; }
+    @for $i from 1 to 13 {
+        @if $i != 3{
+            .col#{$i} { width: 7.91% * $i; }
+        }@else{
+            .col#{$i} { 
+                height:auto;
+                width: 25%;
+                background-color: $card-background-color;
+                
+                @include border(4px solid);
+                @include border-radius(20px);
+                @include animation(mymove 5s 1);
+                @include position(relative);
+
+                margin: 2.5%;
+            }    
+        }
+    }
+
+}
