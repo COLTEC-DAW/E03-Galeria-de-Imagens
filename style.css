@@ -73,6 +73,9 @@
 body{
     font-size: 18px;
 }
+img, embed, object, video {
+    max-width: 100%;
+}
 
 img + p{
     border-top: 1px solid;
