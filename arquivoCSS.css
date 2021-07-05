@@ -6,7 +6,7 @@
     text-align: center;
     color:black;
     background-color: crimson;
-    font-size: 100%;
+    font-size: 18px;
 }
 
 .col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .com9, .col_10, .col_11, .col_12{
@@ -83,9 +83,6 @@
     text-align: center;
 }
 
-#galeria{
-}
-
 #reservoir_dogs{
     margin-left: 7%;
     background-color: floralwhite;
@@ -148,6 +145,13 @@
 }
 .texto_cartaz6{
     background-color: aliceblue;
+}
+
+.nome_filme{
+    font-size: 1.3em;
+}
+.ano_filme{
+    font-size: 1.15;
 }
 
 #reservoir_dogs, #inglourious_basterds  {
