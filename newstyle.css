@@ -1,0 +1,196 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "myfont";
+  src: "./Castoro";
+}
+
+/***************************************************************************************************************************************/
+/* Parte geral da página, com tipo de fonte geral e background geral. */
+* {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: black;
+  font-size: 100%;
+}
+
+body {
+  background: url(https://conteudo.imguol.com.br/c/entretenimento/cc/2020/01/06/quentin-tarantino-no-globo-de-ouro-1578292356096_v2_1920x1269.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 18px;
+}
+
+/***************************************************************************************************************************************/
+/* Parte referente às estilizações do titulo e subtítulo da página. */
+#Title {
+  font-family: myfont;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 5px 5px 5px #e00a0a;
+  font-size: 4em;
+  padding: 2%;
+  margin-bottom: 2%;
+  background-color: black;
+  color: white;
+  border-color: #9c9898;
+  border-style: double;
+  border-width: 7px;
+}
+
+#Subtitle {
+  color: red;
+  text-align: center;
+  font-size: 2em;
+  padding: 2%;
+  text-shadow: 5px 5px 5px black;
+}
+
+/***************************************************************************************************************************************/
+/* Parte que altera as características dos nomes e datas de lançamento dos filmes. */
+.imgNAME, .imgYEAR {
+  color: red;
+  text-shadow: 10px 10px 10px #660707;
+  font-size: 1.3em;
+}
+
+.imgYEAR {
+  font-size: 1.15em;
+}
+
+/***************************************************************************************************************************************/
+/* Parte do container e suas colunas. */
+.container {
+  width: 96%;
+  margin: auto;
+  text-align: center;
+}
+
+.col, .col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9 {
+  float: left;
+  padding: 1%;
+}
+
+.col_1 {
+  width: 10%;
+}
+
+.col_2 {
+  width: 20%;
+}
+
+.col_3 {
+  width: 30%;
+}
+
+.col_4 {
+  width: 40%;
+}
+
+.col_5 {
+  width: 50%;
+}
+
+.col_6 {
+  width: 60%;
+}
+
+.col_7 {
+  width: 70%;
+}
+
+.col_8 {
+  width: 80%;
+}
+
+.col_9 {
+  width: 90%;
+}
+
+/***************************************************************************************************************************************/
+/* Parte com as estilizações, transformações e animações das imagens. */
+img {
+  max-width: 100%;
+  max-height: 100%;
+  width: 70%;
+  height: 70%;
+  border: 2px solid white;
+  padding: 5px;
+  -webkit-box-shadow: 5px 10px red;
+  -ms-box-shadow: 5px 10px red;
+  -o-box-shadow: 5px 10px red;
+  box-shadow: 5px 10px red;
+  -webkit-transition: width 2s, height 2s;
+  transition: width 2s, height 2s;
+  -webkit-animation-name: myanimation;
+  animation-name: myanimation;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-interation-count: 1;
+  animation-iteration-count: 1;
+}
+
+img:hover {
+  width: 100%;
+  height: 100%;
+  image-orientation: inherit;
+}
+
+@-webkit-keyframes myanimation {
+  0% {
+    width: 30%;
+    height: 30%;
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    width: 70%;
+    height: 70%;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes myanimation {
+  0% {
+    width: 30%;
+    height: 30%;
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    width: 70%;
+    height: 70%;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/***************************************************************************************************************************************/
+/* Parte para alterar a forma de visualização em diferentes dispositivos. */
+@media screen and (max-width: 647px) {
+  .col_3 {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 648px) and (max-width: 1024px) {
+  .col_3 {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .col_3 {
+    width: 30%;
+  }
+}
+
+/***************************************************************************************************************************************/
+/* Rodapé da página. */
+footer {
+  text-align: right;
+  font-size: 1.2rem;
+  color: #b3abab;
+}
+/*# sourceMappingURL=newstyle.css.map */

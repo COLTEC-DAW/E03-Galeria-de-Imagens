@@ -1,0 +1,328 @@
+$font-family-default: Georgia, 'Times New Roman', Times, serif;
+$color-default: black;
+$font-size-default: 100%;
+$background: url(https://conteudo.imguol.com.br/c/entretenimento/cc/2020/01/06/quentin-tarantino-no-globo-de-ouro-1578292356096_v2_1920x1269.jpg);
+$background-size: cover;
+$background-repeat: no-repeat;
+$font-size: 18px;
+
+@font-face 
+{
+    font-family:"myfont";
+    src: "./Castoro";
+}
+$font-style-title: italic;
+$text-align-title: center;
+$text-shadow-title: 5px 5px 5px rgb(224, 10, 10);
+$font-size-title: 4em;
+$padding-title: 2%;
+$margin-bottom-title: 2%;
+$background-color-title: rgb(0, 0, 0);
+$color-title: rgb(255, 255, 255);
+$border-color-title: rgb(156, 152, 152);
+$border-style-title: double;
+$border-width-title: 7px;
+
+$color-subtitle: red;
+$text-align-subtitle: center;
+$font-size-subtitle: 2em;
+$padding-subtitle: 2%;
+$text-shadow-subtitle: 5px 5px 5px rgb(0, 0, 0);
+
+
+$color-img-text: rgb(255, 0, 0);
+$text-shadow-img-text: 10px 10px 10px rgb(102, 7, 7);
+$font-size-imgNAME: 1.3em;
+$font-size-imgYEAR: 1.15em;
+
+
+$width-container: 96%;
+$margin-container:auto;
+$text-align-container: center;
+
+$text-align-footer: right;
+$font-size-footer: 1.2rem;
+$color-footer: rgb(179, 171, 171);
+
+
+/***************************************************************************************************************************************/
+/* Parte geral da página, com tipo de fonte geral e background geral. */
+
+
+*{
+    font-family: $font-family-default;
+    color: $color-default;
+    font-size: $font-size-default;
+    
+}
+body
+{
+    background: $background;
+    background-size: $background-size;
+    background-repeat: $background-repeat;
+    font-size: $font-size;
+
+}
+
+/***************************************************************************************************************************************/
+
+/* Parte referente às estilizações do titulo e subtítulo da página. */
+
+#Title
+{
+    font-family: myfont;
+    font-style: $font-style-title;
+    text-align: $text-align-title;
+    text-shadow: $text-shadow-title;
+    font-size: $font-size-title;
+    padding: $padding-title;
+    margin-bottom: $margin-bottom-title;
+    background-color: $background-color-title;
+    color: $color-title;
+    border-color: $border-color-title;
+    border-style: $border-style-title;
+    border-width: $border-width-title;
+    
+}
+
+#Subtitle
+{
+    color: $color-subtitle;
+    text-align: $text-align-subtitle;
+    font-size: $font-size-subtitle;
+    padding: $padding-subtitle;
+    text-shadow: $text-shadow-subtitle;
+}
+
+/***************************************************************************************************************************************/
+
+/* Parte que altera as características dos nomes e datas de lançamento dos filmes. */
+
+.imgNAME
+{
+    color: $color-img-text;
+    text-shadow: $text-shadow-img-text;
+    font-size: $font-size-imgNAME;
+}
+.imgYEAR
+{
+    @extend .imgNAME;
+    font-size: $font-size-imgYEAR;
+}
+
+/***************************************************************************************************************************************/
+
+/* Parte do container e suas colunas. */
+
+.container 
+{
+    width: $width-container;
+    margin: $margin-container;
+    text-align: $text-align-container;
+}
+
+.col
+{
+    float: left;
+    padding: 1%;
+}
+
+@for $i from 1 to 10
+{
+        .col_#{$i}
+    {
+        @extend .col;
+        width: (10% * $i); 
+    }
+}
+
+/***************************************************************************************************************************************/
+/* Parte com as estilizações, transformações e animações das imagens. */
+
+
+@mixin img-visual ($box-shadow: 5px 10px red, $witdh-tran: width 2s, $height-tran: height 2s, $duration: 2s, $count: 1)
+{
+    -webkit-box-shadow: $box-shadow;
+    -moz-box-shadow:$box-shadow;
+    -ms-box-shadow:$box-shadow;
+    -o-box-shadow:$box-shadow;
+    box-shadow: $box-shadow;
+
+    -webkit-transition: $witdh-tran, $height-tran;
+    -moz-transition: $witdh-tran, $height-tran;
+    -ms-transition: $witdh-tran, $height-tran;
+    -o-transition: $witdh-tran, $height-tran;
+    transition: $witdh-tran, $height-tran;
+
+    -webkit-animation-name: myanimation;
+    -moz-animation-name: myanimation;
+    -ms-animation-name: myanimation;
+    -o-animation-name: myanimation;
+    animation-name: myanimation;
+
+    -webkit-animation-duration: $duration;
+    -moz-animation-duration: $duration;
+    -ms-animation-duration: $duration;
+    -o-animation-duration: $duration;
+    animation-duration: $duration;
+
+    -webkit-animation-iteration-count: $count;
+    -moz-animation-iteration-count: $count;
+    -ms-animation-interation-count:$count;
+    -o-animation-iteration-count: $count;
+    animation-iteration-count: $count;
+}
+
+img 
+{
+    max-width: 100%;
+    max-height: 100%;
+    width: 70%;
+    height: 70%;
+    border: 2px solid white;
+    padding: 5px;
+    @include img-visual;
+
+  &:hover 
+  {
+    width: 100%;
+    height: 100%;
+    image-orientation: inherit;
+  }
+}
+
+@mixin rotation 
+{
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+}
+
+@mixin rotation2
+{
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+@-o-keyframes myanimation
+{
+    0% 
+    {
+        width: 30%;
+        height: 30%;
+        @include rotation;
+    }
+    100% 
+    {
+        width: 70%;
+        height: 70%;
+        @include rotation2;
+    }
+}
+  
+@-ms-keyframes myanimation
+{
+    0% 
+    {
+        width: 30%;
+        height: 30%;
+        @include rotation;
+    }
+    100% 
+    {
+        width: 70%;
+        height: 70%;
+        @include rotation2;
+    }
+}
+
+@-moz-keyframes myanimation
+{
+    0% 
+    {
+        width: 30%;
+        height: 30%;
+        @include rotation;
+    }
+    100% 
+    {
+        width: 70%;
+        height: 70%;
+        @include rotation2;
+    }
+}
+
+@-webkit-keyframes myanimation 
+{
+    0% 
+    {
+        width: 30%;
+        height: 30%;
+        @include rotation;
+    }
+    100% 
+    {
+        width: 70%;
+        height: 70%;
+        @include rotation2;
+    }
+}
+
+
+@keyframes myanimation 
+{
+    0% 
+    {
+        width: 30%;
+        height: 30%;
+        @include rotation;
+    }
+    100% 
+    {
+        width: 70%;
+        height: 70%;
+        @include rotation2;
+    }
+}
+/***************************************************************************************************************************************/
+
+/* Parte para alterar a forma de visualização em diferentes dispositivos. */
+
+.col_3
+{
+    @media screen and (max-width: 647px) 
+    /*For smartphones*/
+    {       
+        width: 90%;
+    }
+    @media screen and (min-width: 648px) and (max-width: 1024px) 
+    /*For tablets*/
+    {
+        width: 45%;
+    }
+
+    @media screen and (min-width: 1025px) 
+    /*For devices*/
+    {
+        width: 30%;
+    }
+}
+
+/***************************************************************************************************************************************/
+/* Rodapé da página. */
+
+footer
+{
+    text-align: $text-align-footer;
+    font-size: $font-size-footer;
+    color: $color-footer;
+}
+
+
+
+

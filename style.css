@@ -59,19 +59,19 @@ body
 /* Parte que altera as características dos nomes e datas de lançamento dos filmes. */
 
 
-#caes, #pulp, #kill, #eight, #bastardos, #django, #caesYEAR, #pulpYEAR, #killYEAR, #eightYEAR, #bastardosYEAR, #djangoYEAR
+.imgNAME, .imgYEAR
 {
     color: rgb(255, 0, 0);
     text-shadow: 10px 10px 10px rgb(102, 7, 7);
 
 }
 
-#caes, #pulp, #kill, #eight, #bastardos, #django
+.imgNAME
 {
     font-size: 1.3em;
 }
 
-#caesYEAR, #pulpYEAR, #killYEAR, #eightYEAR, #bastardosYEAR, #djangoYEA
+.imgYEAR
 {
     font-size: 1.15em;
 }
