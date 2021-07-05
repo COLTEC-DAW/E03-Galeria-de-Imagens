@@ -1,0 +1,37 @@
+$padding: 1%;
+$num-cols: 12;
+
+.container{
+    max-width: 1400px;
+    width: 96%;
+    margin: auto;
+    
+}
+
+@mixin colum_size($size) {
+    @for $i from 0 to 13 {
+        .col_#{$size}_#{$i}{
+            @extend .col;
+            width: ($i / $num-cols) * 100% - $padding * 2;
+        }
+        
+    }
+}
+
+.col{
+
+    padding: $padding;
+    float: left;
+}
+
+@include colum_size(lg);
+
+@media screen and (max-width: 1080px) {
+    @include colum_size(md);
+    
+}
+
+@media screen and (max-width: 580px) {
+    @include colum_size(sm);
+    
+}

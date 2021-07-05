@@ -3,24 +3,6 @@
     src: local(Big Shoulders Stencil Display), url(./Big_Shoulders_Stencil_Display/BigShouldersStencilDisplay-Regular.ttf);
 }
 
-.container{
-    width: 96%;
-    margin: auto;
-    
-}
-
-.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10,.col11,.col12{
-    float: left;
-    padding: 1%;
-}
-.col4{
-    width: 30%;
-}
-
-.col12{
-    width: 94%;
-}
-
 body{
     background-color: rgb(63, 56, 56);
     font-size: 18px;
@@ -89,22 +71,4 @@ img{
 .NomeFilme{
 
     font-size: 1.3em;
-}
-
-@media screen and(max-width:1024px){
-    
-    img{
-
-        width: 200px;
-        height: 285px;
- 
-    }
-}
-
-@media screen and (max-width:648){
-
-    img{
-        width: 240px;
-        height: 342px;
-    }
 }
