@@ -6,6 +6,39 @@ $p_font_size: 1.15em;
 $b_font_size: 1.3em;
 $title_font_size: 2.8em;
 $subtitle_font_size: 1.6em;
+@mixin border($bd){
+
+    -webkit-border: $bd;
+    -moz-border: $bd;
+    -ms-border: $bd;
+    border: $bd;
+
+}
+@mixin border-radius($radius){
+
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+    
+}
+@mixin animation($anime){
+
+    -webkit-animation: $anime;
+    -moz-animation: $anime;
+    -ms-animation: $anime;
+    animation: $anime;
+
+}
+@mixin position($ps){
+
+    -webkit-position: $ps;
+    -moz-position: $ps;
+    -ms-position: $ps;
+    position: $ps;
+
+}
+
 p{
     font-size: $p_font_size;
 }
@@ -25,7 +58,7 @@ body{
 }
 
 .subtitulo{
-    font-size: $subtitle_font_size;
+    font-size: $subtitle_font_size  ;
     color:$title_color;
     font-size: 250%;
     text-align: center;
@@ -38,9 +71,11 @@ footer{
 
 .container {
     margin: auto;
-    width: auto;
+    width: 98%;
     overflow: hidden;
     color:$container_color;
+    @include border(2px solid);
+    @include border-radius(50px);
 
 }
 
@@ -84,25 +119,42 @@ body{
 }
 @media screen and (max-width:648px){
     .col3{
+        height:auto;
         width: 75%;
         border:4px solid;
         border-radius:20px;
+        @include border(4px solid);
+        @include border-radius(20px);
+        @include animation(mymove 5s);
+        @include position(relative);
+        margin: 9%;
     }
 }
 
 @media screen and (max-width:1024px) and (min-width:648px){
     .col3{
         width: 37.5%;
+        height:auto;
         border:4px solid;
-        border-radius:40px;
+        border-radius:20px;
+        @include border(4px solid);
+        @include border-radius(20px);
+        @include animation(mymove 5s);
+        @include position(relative);
+        margin: 2.5%;
     }
 }
 
 @media screen and (min-width:1024px){
     .col3{
-        height:auto;
         width: 25%;
+        height:auto;
         border:4px solid;
-        border-radius:40px;
+        border-radius:20px;
+        @include border(4px solid);
+        @include border-radius(20px);
+        @include animation(mymove 5s);
+        @include position(relative);
+        margin: 2.5%;
     }
 }
