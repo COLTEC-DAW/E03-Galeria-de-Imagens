@@ -118,43 +118,62 @@ body{
     background-color: #141414;
 }
 @media screen and (max-width:648px){
-    .col3{
-        height:auto;
-        width: 75%;
-        border:4px solid;
-        border-radius:20px;
-        @include border(4px solid);
-        @include border-radius(20px);
-        @include animation(mymove 5s);
-        @include position(relative);
-        margin: 9%;
+    @for $i from 1 to 13 {
+        @if $i != 3{
+            .col#{$i} { width: 7.91% * $i; }
+        }@else{
+            .col#{$i} { 
+                height:auto;
+                width: 75%;   
+                @include border(4px solid);
+                @include border-radius(20px);
+                @include position(relative);
+                @include animation(mymove 5s);
+                @include animation-fill-mode(forwards);
+                margin: 9%;
+            }    
+        }
     }
 }
 
 @media screen and (max-width:1024px) and (min-width:648px){
-    .col3{
-        width: 37.5%;
-        height:auto;
-        border:4px solid;
-        border-radius:20px;
-        @include border(4px solid);
-        @include border-radius(20px);
-        @include animation(mymove 5s);
-        @include position(relative);
-        margin: 2.5%;
+    @for $i from 1 to 13 {
+        @if $i != 3{
+            .col#{$i} { width: 7.91% * $i; }
+        }@else{
+            .col#{$i} { 
+                height:auto;
+                width: 37.5%;
+                background-color: $card-background-color;
+                
+                @include border(4px solid);
+                @include border-radius(20px);
+                @include position(relative);
+                @include animation(mymove 5s);
+                @include animation-fill-mode(forwards);
+                margin: 2.5%;
+            }    
+        }
     }
 }
 
 @media screen and (min-width:1024px){
-    .col3{
-        width: 25%;
-        height:auto;
-        border:4px solid;
-        border-radius:20px;
-        @include border(4px solid);
-        @include border-radius(20px);
-        @include animation(mymove 5s);
-        @include position(relative);
-        margin: 2.5%;
+    @for $i from 1 to 13 {
+        @if $i != 3{
+            .col#{$i} { width: 7.91% * $i; }
+        }@else{
+            .col#{$i} { 
+                height:auto;
+                width: 25%;
+                background-color: $card-background-color;
+                
+                @include border(4px solid);
+                @include border-radius(20px);
+                @include position(relative);
+                @include animation(mymove 5s);
+                @include animation-fill-mode(forwards);
+                margin: 2.5%;
+            }    
+        }
     }
 }
