@@ -1,0 +1,187 @@
+$font: 'arial';
+$cardBackground: rgb(32, 32, 32);
+
+$fonttitulo: 2.8em;
+$fontfilme:  1.3em;
+$fontsubtitulo: 1.6em;
+$fontano: 1.15em;
+
+$telas: (
+    desktop: "(min-width: 1024px)",
+    tablet: "(min-width: 628px) and (max-width: 1023px)",
+    smartphone: "(max-width: 627px)"
+);
+
+@mixin raio-borda($raio) {
+    -webkit-border-radius: $raio;
+    -moz-border-radius: $raio;
+    -ms-border-radius: $raio;
+    border-radius: $raio;
+}
+
+@mixin animacao($animatioN){
+    -webkit-animation: $animatioN;
+    -moz-animation: $animatioN;
+    -ms-animation: $animatioN;
+    animation: $animatioN; 
+}
+
+@mixin transition($transition) {
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -ms-transition: $transition;
+    transition: $transition; 
+}
+
+@mixin column_sizes($size){
+    @for $i from 1 to 13 {
+        .col-#{$size}-#{$i} {
+            float: left;
+            margin: 0.5%;
+            padding: 0.5%;
+            width: (8% * $i) - 2%;
+        }
+    }
+}
+
+
+
+*{
+
+    font-family: $font;
+
+}
+
+
+.container {
+    width: 92%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    background: $cardBackground;
+    background: linear-gradient(180deg, rgba(2,0,36,1) 22%, rgba(9,9,121,1) 63%, rgba(0,212,255,1) 80%, rgba(0,203,249,1) 94%);
+    
+}
+
+.movies {
+    @include raio-borda(30px);
+    width: 29.5%;
+    height: 450px;
+    border: 1px solid blue;
+    border-radius: 25px;
+    margin: 15px 10px;
+    box-shadow: 5px 5px 5px #07b7ec;
+    position: relative;
+    @include animacao( animatioN 2s alternate);
+    background-color: $cardBackground;
+    @include transition(ease 0.3s);
+    &:hover{
+        width: 30%;
+        height: auto;
+    }
+}
+
+.name {
+
+    font-size: $fonttitulo;
+
+}
+
+.year{
+
+    font-size: $fontano;
+
+}
+
+@media screen and (min-width: 1024px) {
+    @include column_sizes(desktop)
+}
+
+@media screen and (min-width: 628px) and (max-width: 1024px) {
+    @include column_sizes(tablet)
+}
+
+@media screen and (max-width: 628px) {
+    @include column_sizes(smartphone)
+
+} 
+
+
+
+.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12{
+    float: left;
+    padding: 1%;
+}
+
+.col1 {
+    width: 6%;
+}
+
+.col2 {
+    width: 14%;
+}
+
+.col3 {
+    width: 22%;
+}
+
+.col4 {
+    width: 30%;
+}
+
+.col5 {
+    width: 38%;
+}
+
+.col6{
+    width: 46%;
+}
+
+.col7{
+    width: 54%;
+}
+
+.col8{
+    width: 62%;
+}
+
+.col9 {
+    width: 70%;
+}
+
+.col10{
+    width: 78%;
+}
+
+.col11 {
+    width: 86%;
+}
+
+.col12 {
+    width: 94%;
+}
+
+#titulo{
+    color: rgb(184, 154, 255);
+    font-size: $fontsubtitulo
+}
+#subtitulo{
+    color: rgb(83, 36, 255);
+    font-size: $fonttitulo
+}
+
+img{
+    width: 60%; 
+    transition: ease 0.3s;
+
+} 
+
+footer {
+    text-align: center;
+}
+
+@keyframes animatioN{
+    from {top: 250px}
+    to {top: -0px}
+}
