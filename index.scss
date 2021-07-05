@@ -1,0 +1,108 @@
+$title_color: #ffff00;
+$font_geral: 'Courier New', Courier, monospace;
+$container_color: #f8f8ff;
+$lavander_color: #e6e6fa;
+$p_font_size: 1.15em;
+$b_font_size: 1.3em;
+$title_font_size: 2.8em;
+$subtitle_font_size: 1.6em;
+p{
+    font-size: $p_font_size;
+}
+
+b{
+    font-size: $b_font_size;
+}
+body{
+    font-size: 18px;
+}
+.titulo{
+    font-size: $title_font_size;
+    color:$title_color;
+    font-size: 450%;
+    text-align: center;
+    font-family:$font_geral
+}
+
+.subtitulo{
+    font-size: $subtitle_font_size;
+    color:$title_color;
+    font-size: 250%;
+    text-align: center;
+    font-family:$font_geral
+
+footer{
+    font-size: 150%;
+    text-align: center;
+}
+
+.container {
+    margin: auto;
+    width: auto;
+    overflow: hidden;
+    color:$container_color;
+
+}
+
+img {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+}
+
+@keyframes mymove{
+    from {left: 0px;}
+    to {left: 100px;}
+}
+.col_1, .col_2,.col_4, .col_3, .col_5, .col_6, .col_7,
+.col_8, .col_9, .col_10, .col_11, .col_12{
+    float:left;
+    padding:1%;
+    margin: 1%;
+    position: relative;
+    animation: mymove 5s ;
+    animation-fill-mode: forwards;
+}
+.col_3{
+    width: 28%;
+}
+
+img:hover{
+    width: 100%;
+    height: 100%;
+
+}
+.border{
+
+    border: $lavander_color ;
+    border-style: solid;
+    border-radius: 50px; 
+
+}
+body{
+    background-color: #141414;
+}
+@media screen and (max-width:648px){
+    .col3{
+        width: 75%;
+        border:4px solid;
+        border-radius:20px;
+    }
+}
+
+@media screen and (max-width:1024px) and (min-width:648px){
+    .col3{
+        width: 37.5%;
+        border:4px solid;
+        border-radius:40px;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .col3{
+        height:auto;
+        width: 25%;
+        border:4px solid;
+        border-radius:40px;
+    }
+}
