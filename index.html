@@ -4,223 +4,9 @@
         <meta encoding="utf-8">
         <title>Galeria de Filmes: Quentin Tarantino</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-    
-    /*Smartphone*/
-    @media only screen and (max-width: 648px) {
-        .col-ss-3 {
-            width: 96%;
-        }
-    }
-    
-    @media only screen and (min-width: 648px) and (max-width: 1024px) /*Tablet*/ {
-            .col-s-1 {
-                width: 8%;
-            }
+<link rel="stylesheet" href="estilo.css">
+<link rel="stylesheet" href="style.css">
 
-            .col-s-2 {
-                width: 10%;
-            }
-
-            .col-s-3 {
-                width: 45%;
-            }
-
-            .col-s-4 {
-                width: 50%;
-            }
-
-            .col-s-5 {
-                width: 55%;
-            }
-
-            .col-s-6 {
-                width: 65%;
-            }
-
-            .col-s-7 {
-                width: 70%;
-            }
-
-            .col-s-8 {
-                width: 76%;
-            }
-            
-            .col-s-9 {
-                width: 79%;
-            }
-        
-            .col-s-10 {
-                width: 85%;
-            }
-
-            .col-s-11 {
-                width: 90%;
-            }
-
-            .col-s-12 {
-                width: 100%;
-            }
-        }
-
-        @media only screen and (min-width: 1024px) /*Desktop*/ {
-            .col-1 {
-                width: 8%;
-            }
-    
-            .col-2 {
-                width: 10%;
-            }
-    
-            .col-3 {
-                width: 30%;
-            }
-    
-            .col-4 {
-                width: 50%;
-            }
-    
-            .col-5 {
-                width: 55%;
-            }
-    
-            .col-6 {
-                width: 65%;
-            }
-    
-            .col-7 {
-                width: 70%;
-            }
-    
-            .col-8 {
-                width: 76%;
-            }
-            
-            .col-9 {
-                width: 79%;
-            }
-            
-            .col-10 {
-                width: 85%;
-            }
-    
-            .col-11 {
-                width: 90%;
-            }
-    
-            .col-12 {
-                width: 100%;
-            }
-        }
-        
-        div.col-3 {
-            float: left;
-            border: 4px solid;
-            border-radius: 8px;
-            margin-top: 3%;
-            margin-left: 2%;
-            transition: 2s;
-        }
-
-        div.col-3:hover {
-            background-color: #a1a1d3;
-            border-color: rgb(214, 95, 39);
-        }
-
-        div.caes {
-            border-color: #FF080B;
-            background-color: #FFE81C;
-        }
-
-        div.pulp {
-            background-color: #61FFB8;
-        }
-
-        div.kill {
-            border-color: #87FFA4;
-            background-color: #343CFF;
-        }
-
-        div.bastardos {
-            border-color: #5A2CFF;
-            background-color: #C8FF74;
-        }
-
-        div.django {
-            border-color: #45FF5B;
-            background-color: #996311;
-        }
-
-        div.odiados {
-            border-color: #D9D5BD;
-            background-color: #994318;
-        }
-
-        div.col-12 {
-            text-align: center;
-        }
-
-        img {
-            display: block;
-            margin: auto;
-            padding: 4%;
-            animation-name: entrada;
-            animation-duration: 1s;
-        }
-
-        h1 {
-            font-family: cursive;
-            font-size: 2.8em;
-            animation-duration: 1s;
-            animation-name: entrada;
-        }
-
-        @keyframes entrada {
-            from {
-                margin-left: 100%;
-                width: 300%;
-            }
-
-            to {
-                margin-left: 0%;
-                width: 100%;
-            }
-        }
-
-        p {
-            text-align: center;
-        }
-
-        img:hover {
-            width: 85%;
-            height: 75%;
-
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .container {
-            width: 98%;
-            margin: auto;
-            overflow: hidden;
-        }
-
-        body {
-            font-size: 18px;
-        }
-
-        p.fonteaumentada {
-            font-size: 1.15em;
-        }
-
-        p.fontenome {
-            font-size: 1.3em;
-        }
-
-        p.s {
-            font-size: 1.6em;
-        }
-        </style>
     </head>
     <body>
         <div class="container">
@@ -230,37 +16,37 @@
             <div class="col-12">
                 <p class="s">Galeria de alguns dos filmes de Quentin Tarantino</p>
             </div>
-            <div class="col-3 col-s-3 col-ss-3 caes">
+            <div class="col_lg_3 col_md_4 col_sm_8 caes">
                 <img src="img/caes_de_aluguel260.jpg" alt="">
                 <p class="fontenome"><b>Cães de Aluguel</b></p>
                 <p class="fonteaumentada">1992</p>
             </div>
-            <div class="col-3 col-s-3 col-ss-3 pulp">
+            <div class="col_lg_3 col_md_4 col_sm_8 pulp">
                 <img src="img/pulp_fiction260.jpg" alt="">
                 <p class="fontenome"><b>Pulp Fiction: Tempos de Violência</b></p>
                 <p class="fonteaumentada">1994</p>
             </div>
-            <div class="col-3 col-s-3 col-ss-3 kill">
+            <div class="col_lg_3 col_md_4 col_sm_8 kill">
                 <img src="img/kill_bill260.jpg" alt="">
                 <p class="fontenome"><b>Kill Bill: Volume 1</b></p>
                 <p class="fonteaumentada">2003</p>
             </div>
-            <div class="col-3 col-s-3 col-ss-3 bastardos">
+            <div class="col_lg_3 col_md_4 col_sm_8 bastardos">
                 <img src="img/bastardos_inglorios260.jpg" alt="">
                 <p class="fontenome"><b>Bastardos Inglórios</b></p>
                 <p class="fonteaumentada">2009</p>
             </div>
-            <div class="col-3 col-s-3 col-ss-3 django">
+            <div class="col_lg_3 col_md_4 col_sm_8 django">
                 <img src="img/django_livre260.jpg" alt="">
                 <p class="fontenome"><b>Django Livre</b></p>
                 <p class="fonteaumentada">2012</p>
             </div>
-            <div class="col-3 col-s-3 col-ss-3 odiados">
+            <div class="col_lg_3 col_md_4 col_sm_8 odiados">
                 <img src="img/os_oito_odiados260.jpg" alt="">
                 <p class="fontenome"><b>Os Oito Odiados</b></p>
                 <p class="fonteaumentada">2015</p>
             </div>
-                <footer class="col-12">
+            <footer class="col_lg_12 col_md_12 col_sm_12">
                 Desenvolvimento de Aplicações Web - COLTEC/UFMG
             </footer>
         </div>
