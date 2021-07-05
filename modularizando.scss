@@ -1,0 +1,161 @@
+//Criando paleta da página
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+$font-stack: 'Dancing Script', cursive;
+$fonth1-color: darkred;
+$fonth1-weight: bold;
+$backgroundContainer-color: pink;
+
+//Mixins
+@mixin border-radius($radius){
+
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+    
+}
+
+@mixin animation($animation){
+
+    -webkit-animation: $animation;
+    -moz-animation: $animation;
+    -ms-animation: $animation;
+    animation: $animation;
+
+}
+@mixin position($position){
+
+    -webkit-position: $position;
+    -moz-position: $position;
+    -ms-position: $position;
+    position: $position;
+
+}
+
+body{
+    font-size: 18px;
+}
+
+h1{
+    font-family: $font-stack;
+    color: $fonth1-color;
+    font-weight: $fonth1-weight;
+    text-align: center;
+    font-size: 2.8em;
+}
+
+h1 + p{
+    text-align: center;
+    font-weight: lighter;
+    font-size: 1.6em;
+}
+
+@keyframes minhaAnimacao{
+    from{top: -100px;}
+    to{top: 0px;}
+}
+
+div.c3:hover{
+    width: 500px;
+    height: 550px;
+}
+
+.subtitulo{
+    text-align: left;
+}
+
+.ano{
+    text-align: center;
+    font-size: 1.15em;
+}
+
+.nome{
+    text-align: center;
+    font-size: 1.3em;
+}
+
+img{
+    width: 80%;
+    height: 85%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container{
+    width: 98%;
+    margin: auto;
+    border: 1px solid;
+    border-radius: 50px;
+    overflow: hidden;
+    background-color: pink;
+    background-color: $backgroundContainer-color;
+    @include border-radius(50px)
+}
+
+.c1, .c2, .c3, .c4, .c5, .c5, .c6,
+.c7, .c8, .c9, .c10, .c11, .c12{
+    float: left;
+    padding: 1%;
+    margin: 1%;
+    width: 25%;
+} 
+
+.c13{
+    width: 20%
+}
+
+.c12{
+    width: 99.90%;
+}
+
+@media screen and (max-width: 648px) {
+    @for $i from 1 to 10{
+        @if $i != 3{
+            .c#{$i} {width: 8% * $i;}
+        }@else{
+            .c#{$i} {
+                width: 75%;
+                height: auto;
+                @include border-radius(20px);
+                @include position(relative);
+                @include animation(minhaAnimacao 1s 6s);
+        
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 648px) {
+    @for $i from 1 to 10{
+        @if $i != 3{
+            .c#{$i} {width: 8% * $i;}
+        }@else{
+            .c#{$i} {
+                width: 37%;
+                height: auto;
+                @include border-radius(20px);
+                @include position(relative);
+                @include animation(minhaAnimacao 1s 6s);
+        
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    @for $i from 1 to 10{
+        @if $i != 3{
+            .c#{$i} {width: 8% * $i;}
+        }@else{
+            .c#{$i} {
+                width: 350px;
+                height: 550px;
+                @include border-radius(20px);
+                @include position(relative);
+                @include animation(minhaAnimacao 1s 6s);
+        
+            }
+        }
+    }
+}
