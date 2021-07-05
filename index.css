@@ -1,131 +1,275 @@
-h1{
-    border: 2px solid;
-    border-radius: 25px;
-    text-align: center;
-    font-size: 2.8em;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+.filme1 {
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  border-radius: 30px;
+  color: black;
+  border: 2px solid;
+  background-color: white(32, 32, 32);
+  position: relative;
+  -webkit-animation: mymove 5s ease 0.5s;
+  -moz-animation: mymove 5s ease 0.5s;
+  -ms-animation: mymove 5s ease 0.5s;
+  animation: mymove 5s ease 0.5s; }
 
+body {
+  font-family: "arial"; }
 
-#titulo1{
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    border: 2px solid;
-    font-size: 1.6em;
-    border-radius: 25px;
-}
-
-.container {
-    font-size: 18px;
-    background-color: gray;
-    color: white;
-    width: 92%;
-    margin: auto;
-}
-
-.col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12{
-    float: left;
-    padding: 1%;
-  }
-  
-  .col_1 {
-    width: 6%;
-  }
-  
-  
-  .col_2 {
-    width: 14%;
-  }
-  
-  
-  .col_3 {
-    width: 22%;
-  }
-  
-  
-  .col_4 {
-    width: 30%;
-  }
-  
-  
-  .col_5 {
-    width: 38%;
-  }
-
-  .col_6 {
-    width: 46%;
-  }
-
-  .col_7 {
-    width: 54%;
-  }
-
-  .col_8 {
-    width: 62%;
-  }
-
-  .col_9 {
-    width: 70%;
-  }
-
-  .col_10 {
-    width: 78%;
-  }
-
-  .col_11 {
-    width: 86%;
-  }
-
-  .col_12 {
-    width: 94%;
-  }
-
-  img{
-      width: 60%;
-      height: auto;
-    animation: mymove 5s;
-    transition: ease 0.5s;
-  }
-
-#filmes{
-    text-align: center;
-}
-
-.filme1{
-    background-color: black;
-    border: 2px solid;
-    border-radius: 20px;
-    
-    position: relative;
-
-}
-
-img:hover {
-    width: 65%;
-    height: auto;
-  }
+img {
+  max-width: 90%;
+  width: 65%;
+  height: 65%;
+  border-radius: 10px;
+  background-size: cover;
+  -webkit-transition: ease 0.5s;
+  -moz-transition: ease 0.5s;
+  -ms-transition: ease 0.5s;
+  transition: ease 0.5s; }
+  img:hover {
+    width: 90%;
+    height: auto; }
 
 @keyframes mymove {
-    0% {left: 0px;}
-    100% {left: 200px;}
-}
+  0% {
+    left: 0px; }
+  100% {
+    left: 200px; } }
+#Nome {
+  font-family: "arial", sans-serif;
+  font-size: 2.8em; }
 
-@media screen and (min-width: 648px) and (max-width: 1024px){
-    .col_4{
-        width: 46%; 
-    } 
-}
+#filme1 {
+  background-color: black;
+  border: 2px solid;
+  border-radius: 20px;
+  position: relative; }
 
-@media screen and (max-width: 648px){
-    .col_4{
-        width: 94%; 
-    } 
-}
+#Data {
+  font-family: "arial", sans-serif;
+  font-size: 2.8em; }
 
-#Nome{
-    font-size: 1.3em;
-}
+.container {
+  font-size: 18px;
+  background-color: gray;
+  color: white;
+  width: 92%;
+  margin: auto; }
 
-#Data{
-    font-size: 1.15em;
-}
+.col-desktop_-1 {
+  float: left;
+  margin: 0.5%;
+  padding: 0.5%;
+  width: 6%; }
+
+.col-desktop_-2 {
+  float: left;
+  margin: 0.5%;
+  padding: 0.5%;
+  width: 14%; }
+
+.col-desktop_-3 {
+  float: left;
+  margin: 0.5%;
+  padding: 0.5%;
+  width: 22%; }
+
+.col-desktop_-4 {
+  float: left;
+  margin: 0.5%;
+  padding: 0.5%;
+  width: 30%; }
+
+.col-desktop_-5 {
+  float: left;
+  margin: 0.5%;
+  padding: 0.5%;
+  width: 38%; }
+
+.col-desktop_-6 {
+  float: left;
+  margin: 0.5%;
+  padding: 0.5%;
+  width: 46%; }
+
+.col-desktop_-7 {
+  float: left;
+  margin: 0.5%;
+  padding: 0.5%;
+  width: 54%; }
+
+.col-desktop_-8 {
+  float: left;
+  margin: 0.5%;
+  padding: 0.5%;
+  width: 62%; }
+
+.col-desktop_-9 {
+  float: left;
+  margin: 0.5%;
+  padding: 0.5%;
+  width: 70%; }
+
+.col-desktop_-10 {
+  float: left;
+  margin: 0.5%;
+  padding: 0.5%;
+  width: 78%; }
+
+.col-desktop_-11 {
+  float: left;
+  margin: 0.5%;
+  padding: 0.5%;
+  width: 86%; }
+
+.col-desktop_-12 {
+  float: left;
+  margin: 0.5%;
+  padding: 0.5%;
+  width: 94%; }
+
+@media screen and (min-width: 648px) and (max-width: 1024px) {
+  .col-tablet_-1 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 6%; }
+
+  .col-tablet_-2 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 14%; }
+
+  .col-tablet_-3 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 22%; }
+
+  .col-tablet_-4 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 30%; }
+
+  .col-tablet_-5 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 38%; }
+
+  .col-tablet_-6 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 46%; }
+
+  .col-tablet_-7 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 54%; }
+
+  .col-tablet_-8 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 62%; }
+
+  .col-tablet_-9 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 70%; }
+
+  .col-tablet_-10 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 78%; }
+
+  .col-tablet_-11 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 86%; }
+
+  .col-tablet_-12 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 94%; } }
+@media screen and (max-width: 648px) {
+  .col-smartphone_-1 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 6%; }
+
+  .col-smartphone_-2 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 14%; }
+
+  .col-smartphone_-3 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 22%; }
+
+  .col-smartphone_-4 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 30%; }
+
+  .col-smartphone_-5 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 38%; }
+
+  .col-smartphone_-6 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 46%; }
+
+  .col-smartphone_-7 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 54%; }
+
+  .col-smartphone_-8 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 62%; }
+
+  .col-smartphone_-9 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 70%; }
+
+  .col-smartphone_-10 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 78%; }
+
+  .col-smartphone_-11 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 86%; }
+
+  .col-smartphone_-12 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 94%; } }
+
+/*# sourceMappingURL=index.css.map */

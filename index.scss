@@ -1,0 +1,116 @@
+
+$font-stack: 'arial';
+$card-color: white(32, 32, 32);
+$font-color: black;
+$font-title: 'arial', sans-serif;
+
+$font-s-titulo: 2.8em;
+$font-s-filme:  1.3em;
+$font-s-subtitulo: 1.6em;
+$font-s-ano: 1.15em;
+
+$screens: (
+    desktop: "(min-width: 1024px)",
+    tablet: "(min-width: 628px) and (max-width: 1023px)",
+    smartphone: "(max-width: 627px)"
+);
+
+@mixin border-radius($border) {
+    border-radius: $border;
+    -webkit-border-radius: $border;
+    -moz-border-radius: $border;
+    -ms-border-radius: $border;
+}
+
+@mixin animation($animation){
+    -ms-animation: $animation;
+     animation: $animation;
+    -webkit-animation: $animation;
+    -moz-animation: $animation; 
+}
+
+@mixin transition($transition) {
+    -webkit-transition: $transition; 
+    transition: $transition; 
+    -moz-transition: $transition; 
+    -ms-transition: $transition; 
+} 
+
+.filme1{
+    @include border-radius(30px);
+    color: $font-color;
+    border: 2px solid;
+    background-color: $card-color;
+    position: relative;
+    @include animation(mymove 5s ease 0.5s);
+}
+
+body{
+    font-family: $font-stack;
+}
+
+img{
+    max-width: 90%;
+    width: 65%;
+    height: 65%;
+    border-radius: 10px;
+    background-size: cover;
+    &:hover{
+        width: 90%;
+        height: auto;
+    }
+    @include transition(ease 0.5s);
+} 
+
+@keyframes mymove {
+    0% {left: 0px;}
+    100% {left: 200px;}
+}
+
+#Nome{
+    font-family: $font-title;
+    font-size: $font-s-titulo;
+}
+
+#filme1{
+    background-color: black;
+    border: 2px solid;
+    border-radius: 20px;
+    
+    position: relative;
+
+}
+
+#Data{
+    font-family: $font-title;
+    font-size: $font-s-titulo;
+}
+
+.container {
+    font-size: 18px;
+    background-color: gray;
+    color: white;
+    width: 92%;
+    margin: auto;
+}
+
+@mixin column_sizes($size){
+    @for $i from 1 to 13 {
+        .col-#{$size}-#{$i} {
+            float: left;
+            margin: 0.5%;
+            padding: 0.5%;
+            width: (8% * $i) - 2%;
+        }
+    }
+}
+
+@include column_sizes(desktop_);
+
+@media screen and (min-width: 648px) and (max-width: 1024px){
+    @include column_sizes(tablet_); 
+}
+
+@media screen and (max-width: 648px){
+    @include column_sizes(smartphone_);  
+}
