@@ -1,0 +1,223 @@
+/*Fontes:*/
+$fontFamily: Arial, Helvetica, sans-serif;
+$fontTitle: "Anton", sans-serif;
+
+/*Cores*/
+$backgroundColor: white;
+$fontColor: black;
+$CartaoColor: rgb(8, 8, 8);
+$borderColor: brown;
+$titleColor: rgba(255, 0, 0, 0.74);
+
+/*Tamanhos*/
+$fontTitleSize: 2.8em;
+$fontSubtitleSize: 1.6;
+$fontSizeBody: 14px;
+$fontSizeNomefilme: 1em;
+$fontSizeFilmeYear: 1.15em;
+
+.container{
+    width: 98%;
+    font-family:$fontFamily;
+    
+
+}
+
+.col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12{
+    float: left;
+
+    text-align: center;
+    margin-left: 8%;
+    margin-bottom: 5%;
+    border: 0.4rem solid;
+    border-radius: 3rem;
+    border-color:$borderColor;
+
+    background-color: $fontColor;
+    background-position: center;
+    color: $backgroundColor;
+
+
+}  
+
+
+
+.col_1{
+    width: 6%;
+}
+
+.col_2{
+    width: 14%;
+}
+
+.col_3{
+    width: 22%;
+    -webkit-animation: myfirst 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 5s;
+    animation: myfirst 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+
+    -webkit-transition: width 2s, height 2s;
+    transition: width 2s, height 2s;
+}
+
+@-webkit-keyframes myfirst {
+    from {background: $fontColor;}
+    to {background: $borderColor;}
+    from{border-color: $borderColor;}
+    to{border-color: $fontColor;}
+  }
+  @keyframes myfirst {
+    from {background: $fontColor;}
+    to {background: $borderColor;}
+    from{border-color: $borderColor;}
+    to{border-color: $fontColor;}
+  }
+
+
+.col_3:hover{
+    width: 30%;
+    height: 30%;
+}
+.col_4{
+    width: 30%;
+}
+
+.col_5{
+    width: 38%;
+}
+
+.col_6{
+    width: 46%;
+}
+
+.col_7{
+    width: 54%;
+}
+
+.col_8{
+    width: 62%;
+}
+
+.col_9{
+    width: 70%;
+}
+
+.col_10{
+    width: 78%;
+}
+
+.col_11{
+    width: 86%;
+}
+
+.col_12{
+    width: 94%;
+}
+
+img{
+    width: 50%;
+    border: 0.1rem solid;
+    border-radius: 1.1rem;
+    border-color: $borderColor;
+}
+
+.col_3 > p{
+    border: 0.1rem solid;
+    border-radius: 1.1rem;
+    border-color: $borderColor;
+
+    -webkit-animation: tex 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 5s;
+    animation: tex 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+    
+}
+
+@-webkit-keyframes tex {
+    from {background: $borderColor;}
+    to {background: $fontColor;}
+    from{border-color: $borderColor;}
+    to{border-color: $fontColor;}
+  }
+  @keyframes tex {
+    from {background: $borderColor;}
+    to {background: $fontColor;}
+    from{border-color: $borderColor;}
+    to{border-color: $fontColor;}
+  }
+
+
+#header{
+    text-align: center;
+    background-color: $fontColor;
+
+}
+
+#header > h1{
+    font-family:$fontTitle;
+    font-size: $fontTitleSize;
+    color: $titleColor;
+
+}
+
+#header > p{
+    font-size: $fontSubtitleSize;
+    color: $backgroundColor;
+    text-shadow: $titleColor;
+}
+
+body{
+    font-size: $fontSizeBody;
+}
+
+.nomefilme{
+    font-size: $fontSizeNomefilme;
+}
+
+.datafilme{
+    font-size: $fontSizeFilmeYear;
+}
+
+h1{
+    font-size: $fontTitleSize;
+}
+
+
+
+
+#foot{
+    text-align: center;
+}
+
+@media screen and (min-width: 1024px){
+    .col_3{
+        width: 22%;
+    }
+}
+
+
+@media screen and (min-width: 628px) and (max-width: 1024px) {
+    .col_3{
+        font-size: 80%;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 628px) {
+    .col_3{
+        font-size: 70%;
+        width: 80%;
+    }
+} 
+
+body{
+   
+}
+
+
+
