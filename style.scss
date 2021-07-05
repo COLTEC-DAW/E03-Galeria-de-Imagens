@@ -23,6 +23,28 @@ $fontSizeFilmeYear: 1.15em;
 
 }
 
+
+@mixin animation ($type) {
+    -webkit-animation:  $type;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 5s;
+    animation: $type;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+}
+
+@mixin transition {
+    -webkit-transition: width 2s, height 2s;
+    transition: width 2s, height 2s;
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
 .col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12{
     float: left;
 
@@ -30,7 +52,7 @@ $fontSizeFilmeYear: 1.15em;
     margin-left: 8%;
     margin-bottom: 5%;
     border: 0.4rem solid;
-    border-radius: 3rem;
+    @include border-radius(3rem);
     border-color:$borderColor;
 
     background-color: $fontColor;
@@ -52,15 +74,9 @@ $fontSizeFilmeYear: 1.15em;
 
 .col_3{
     width: 22%;
-    -webkit-animation: myfirst 1s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-delay: 5s;
-    animation: myfirst 5s;
-    animation-iteration-count: infinite;
-    animation-delay: 5s;
+    @include animation(myfirst 5s);
 
-    -webkit-transition: width 2s, height 2s;
-    transition: width 2s, height 2s;
+    @include transition();
 }
 
 @-webkit-keyframes myfirst {
@@ -120,21 +136,15 @@ $fontSizeFilmeYear: 1.15em;
 img{
     width: 50%;
     border: 0.1rem solid;
-    border-radius: 1.1rem;
-    border-color: $borderColor;
+    @include border-radius(1.1rem);
 }
 
 .col_3 > p{
     border: 0.1rem solid;
-    border-radius: 1.1rem;
+    @include border-radius(1.1rem);
     border-color: $borderColor;
 
-    -webkit-animation: tex 1s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-delay: 5s;
-    animation: tex 5s;
-    animation-iteration-count: infinite;
-    animation-delay: 5s;
+    @include animation(tex 5s)
     
 }
 
