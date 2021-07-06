@@ -1,0 +1,161 @@
+$backgroundColor: black;
+$titleColor: #8b0000;
+$imageColor: #900;
+$letterColor: white;
+$screens: (
+    tablet: "(min-width: 628px) and (max-width: 1023px)",
+    smartphone: "(max-width: 627px)"
+);
+
+.container{
+    width: 80%;
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+body{
+    font-size: 18px;
+    color: $letterColor;
+    background-color: $backgroundColor;
+}
+
+.nome{
+    font-size: 1.3em;
+}
+
+.ano{
+    font-size: 1.15em;
+}
+
+h1{
+    text-shadow: 5px 5px 5px $titleColor;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.8em;
+}
+
+h2{
+    font-size: 1.6em;
+}
+
+.image{
+    width: 50%;
+    height: 50%;
+    background: $imageColor;
+    padding: 75px;
+    position: relative;
+    animation-name: anime;
+    animation-duration: 4s;
+}
+
+@mixin animation-mixin($name, $from, $to) {
+    
+    @-webkit-keyframes #{$name} {
+        0% {transform: translate3d($from, 0, 0); }
+      100% {transform: translate3d($to, 0, 0); }
+    }
+
+    @-moz-keyframes #{$name} {
+        0% {transform: translate3d($from, 0, 0); }
+      100% {transform: translate3d($to, 0, 0); }
+    }
+
+    @-ms-keyframes #{$name} {
+        0% {transform: translate3d($from, 0, 0); }
+      100% {transform: translate3d($to, 0, 0); }
+    }
+
+    @keyframes #{$name} {
+        0% {transform: translate3d($from, 0, 0); }
+      100% {transform: translate3d($to, 0, 0); }
+    }
+  }
+  
+.box{
+    @include animation-mixin(anime, 100px, 0px)
+}
+
+
+
+.image:hover{
+    width: 60%;
+    height: 60%;
+}
+
+.col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12{
+    float: left;
+    padding: 1%;
+}
+  
+.col_1 {
+    width: 6%;
+}
+
+.col_2 {
+    width: 14%;
+}
+  
+.col_3 {
+    width: 22%;
+}
+  
+.col_4 {
+    width: 30%;
+    
+}
+  
+.col_5 {
+    width: 38%;
+}
+
+.col_6{
+    width: 46%;
+}
+
+.col_7{
+    width: 54%;
+}
+
+.col_8{
+    width: 62%;
+}
+
+.col_9 {
+    width: 70%;
+}
+
+.col_10{
+    width: 78%;
+}
+
+.col_11 {
+    width: 86%;
+}
+
+.col_12 {
+    width: 94%;
+}
+
+@media screen and (min-width: 648px) and (max-width: 1024px) {
+    .col_4{
+        
+    }
+}
+
+@media screen and (max-width: 648px) {
+    .col_4{
+        
+    }
+}
+
+@each $screen-type, $value in $screens {
+    @media screen and #{$value}{
+        @if $screen-type == tablet{
+            .col_4{
+            width: 46%;
+            }
+        }
+        @else if $screen-type == smartphone{
+            .col_4{width: 94%;}
+        }
+    }
+}    
