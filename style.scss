@@ -15,6 +15,10 @@ $BorderS: 0.2rem solid;
     animation-iteration-count: infinite;
 }
 
+@mixin BorderRadius ($Radius){
+    border-radius: $Radius;
+}
+
 .container{
     width: 96%;
     margin: auto;
@@ -53,7 +57,7 @@ $BorderS: 0.2rem solid;
     margin-right: 15%;
     margin-bottom: 5%;
     border: $BorderS;
-    border-radius: 1rem;
+    @include BorderRadius(1rem);
 
     @include Animation(Gradiante 3s);
 }
@@ -83,7 +87,7 @@ body{
 img{
     width: 50%;
     border: $BorderS;
-    border-radius: 1rem;
+    @include BorderRadius(1rem);
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -93,7 +97,7 @@ img{
     margin-bottom: 2%;
     text-align: $TextAlign;
     border: $BorderS;
-    border-radius: 2rem;
+    @include BorderRadius(2rem);
     padding-top: 4rem;
     
     background-image: linear-gradient(to right,#141414,#A31925  );
@@ -103,7 +107,7 @@ img{
 
 .col_3.Filme:hover{
     width: 28%;
-    @include Animation(Gradiante2 3s);
+    @include Animation(Gradiante2 1.5s);
 }
 
 @keyframes Gradiante{

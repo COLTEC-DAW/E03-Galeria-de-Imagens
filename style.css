@@ -92,8 +92,8 @@ img {
 
 .col_3.Filme:hover {
   width: 28%;
-  -webkit-animation: Gradiante2 3s;
-          animation: Gradiante2 3s;
+  -webkit-animation: Gradiante2 1.5s;
+          animation: Gradiante2 1.5s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
