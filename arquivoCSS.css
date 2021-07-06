@@ -4,12 +4,11 @@
     align-items: center;
     align-content: center;
     text-align: center;
-    color:black;
     background-color: crimson;
     font-size: 18px;
 }
 
-.col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .com9, .col_10, .col_11, .col_12{
+.col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12{
     float: left;
     padding: 1%;
 }
@@ -151,7 +150,7 @@
     font-size: 1.3em;
 }
 .ano_filme{
-    font-size: 1.15;
+    font-size: 1.15em;
 }
 
 #reservoir_dogs, #inglourious_basterds  {

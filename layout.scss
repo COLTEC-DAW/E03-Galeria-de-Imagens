@@ -6,7 +6,6 @@ $fontSize-titulo: 2.8em;
 $fontSize-subtitulo: 1.6em;
 $fontFamily-titulo: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
 $border-color: black;
-$border-radius: 25px;
 $heightCartaz: 300px;
 $nomeFilme-fontSize: 1.3em;
 $anoFilme-fontSize:1.15em;
@@ -58,12 +57,17 @@ $texto_cartaz6-backgroundColor: aliceblue;
 .rodape{
     @extend .texto-destaque;
 }
-
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+            border-radius: $radius;
+}
 .quadros{
     border-color: $border-color;
     border-style:solid;
     border: 2%;
-    border-radius: $border-radius; 
+    @include border-radius(25px);
     margin: 1%;
 }
 
@@ -137,6 +141,59 @@ $texto_cartaz6-backgroundColor: aliceblue;
 .texto_cartaz6{
     background-color: $texto_cartaz6-backgroundColor;
 }
+.cartaz{
+    height: $heightCartaz;
+    padding: 15%;
+}
+
+.texto{
+    text-align: center;
+}
+
+#reservoir_dogs, #inglourious_basterds  {
+    position: relative;
+    animation: mymove1 1.5s;
+    animation-fill-mode: forwards;
+}
+#pulp_fiction, #django_unchainded  {
+    position: relative;
+    animation: mymove2 1.5s;
+    animation-fill-mode: forwards;
+}
+#kill_bill, #the_hateful_eight  {
+    position: relative;
+    animation: mymove3 1.5s;
+    animation-fill-mode: forwards;
+}  
+@keyframes mymove1 {
+    from {left: -30px;}
+    to {left: 0px;}
+}
+@keyframes mymove2 {
+    from {bottom: -20px;}
+    to {bottom: 0px;}
+}
+@keyframes mymove3 {
+    from {right: -30px;}
+    to {right: 0px;}
+}
+@mixin transition($duracao){
+    -moz-transition: all $duracao;
+    -webkit-transition: all $duracao;
+    transition: all $duracao;
+}
+@mixin transform($escala){
+    -moz-transform: scale($escala);
+    -webkit-transform: scale($escala);
+    transform: scale($escala);
+}
+#reservoir_dogs:hover, #pulp_fiction:hover,#kill_bill:hover, #inglourious_basterds:hover, #django_unchainded:hover, #the_hateful_eight:hover {
+    max-width: 100%;
+    @include transition(0.3s);
+    @include transform(2);
+    overflow: hidden;
+    
+}
 
 .col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12{
     float: left;
@@ -193,53 +250,7 @@ $texto_cartaz6-backgroundColor: aliceblue;
         width: 100%;
     }
 }
-.cartaz{
-    height: $heightCartaz;
-    padding: 15%;
-}
 
-.texto{
-    text-align: center;
-}
-
-#reservoir_dogs, #inglourious_basterds  {
-    position: relative;
-    animation: mymove1 1.5s;
-    animation-fill-mode: forwards;
-}
-#pulp_fiction, #django_unchainded  {
-    position: relative;
-    animation: mymove2 1.5s;
-    animation-fill-mode: forwards;
-}
-#kill_bill, #the_hateful_eight  {
-    position: relative;
-    animation: mymove3 1.5s;
-    animation-fill-mode: forwards;
-}  
-@keyframes mymove1 {
-    from {left: -30px;}
-    to {left: 0px;}
-}
-@keyframes mymove2 {
-    from {bottom: -20px;}
-    to {bottom: 0px;}
-}
-@keyframes mymove3 {
-    from {right: -30px;}
-    to {right: 0px;}
-}
-
-#reservoir_dogs:hover, #pulp_fiction:hover,#kill_bill:hover, #inglourious_basterds:hover, #django_unchainded:hover, #the_hateful_eight:hover {
-    max-width: 100%;
-    -moz-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-    overflow: hidden;
-    -moz-transform: scale(2);
-    -webkit-transform: scale(2);
-    transform: scale(2);
-}
 @media screen and (min-width: 649px) and ( max-width: 1023px) {
     .col_1{
         
