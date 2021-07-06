@@ -7,23 +7,28 @@
   -ms-border-radius: 30px;
   border-radius: 30px;
   border: 2px solid;
+  height: 500px;
   background-color: black;
   color: #740202;
   position: relative;
   animation: movimento 5s infinite alternate linear;
   animation-timing-function: cubic-bezier(0.165, 0.84, 0.66, 1);
-  animation-iteration-count: 3; }
+  animation-iteration-count: 3;
+  transition: 0.2s; }
+
+.filmes:hover {
+  transform: scale(1.2);
+  z-index: 5; }
 
 img {
   max-width: 100%;
-  width: 50%;
-  height: 50%;
+  height: 80%;
   border-radius: 30px; }
 
-img:hover {
-  width: 100%;
-  height: auto; }
-
+/*img:hover {
+    width: 100%;
+    height: auto;
+}*/
 @keyframes movimento {
   from {
     left: -50px; }
