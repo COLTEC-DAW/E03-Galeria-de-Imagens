@@ -20,3 +20,30 @@ $font_cartazes: Arial, Helvetica, sans-serif;
         width: ($i/$num-cols) * 100% - $padding * 2;
    }
 }
+
+@mixin keyframes($name) {
+    @-webkit-keyframes #{$name} {
+        @content;
+    }
+    @-moz-keyframes #{$name} {
+        @content;
+    }
+    @-ms-keyframes #{$name} {
+        @content;
+    }
+    @keyframes #{$name} {
+        @content;
+    }
+}
+
+@include keyframes(rotate-scale-up){
+    0% {
+        transform: scale(1) rotateZ(0);
+    }
+    50% {
+        transform: scale(1.5) rotateZ(180deg);
+    }
+    100% {
+        transform: scale(1) rotateZ(360deg);
+   }
+}
