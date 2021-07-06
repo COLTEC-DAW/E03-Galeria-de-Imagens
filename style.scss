@@ -15,6 +15,11 @@ $fontSubtitleSize: 1.6;
 $fontSizeBody: 14px;
 $fontSizeNomefilme: 1em;
 $fontSizeFilmeYear: 1.15em;
+$fontSizeMobile: 70%;
+$fontSizeTablet: 80%;
+$ColumnSizePC: 22%;
+$ColumnSizeMobile: 80%;
+$ColumnSizeTablet: 40%;
 
 .container{
     width: 98%;
@@ -60,20 +65,22 @@ $fontSizeFilmeYear: 1.15em;
     color: $backgroundColor;
 
 
+}
+
+@mixin Coluna ($i) {
+    float: left;
+    width: (( 6 + (($i - 1) * 8))* 1%);
 }  
 
-
-
-.col_1{
-    width: 6%;
+@for $i from 1 to 12 {
+    .col_#{$i} {
+        @include Coluna($i);
+    }
 }
 
-.col_2{
-    width: 14%;
-}
+
 
 .col_3{
-    width: 22%;
     @include animation(myfirst 5s);
 
     @include transition();
@@ -96,41 +103,6 @@ $fontSizeFilmeYear: 1.15em;
 .col_3:hover{
     width: 30%;
     height: 30%;
-}
-.col_4{
-    width: 30%;
-}
-
-.col_5{
-    width: 38%;
-}
-
-.col_6{
-    width: 46%;
-}
-
-.col_7{
-    width: 54%;
-}
-
-.col_8{
-    width: 62%;
-}
-
-.col_9{
-    width: 70%;
-}
-
-.col_10{
-    width: 78%;
-}
-
-.col_11{
-    width: 86%;
-}
-
-.col_12{
-    width: 94%;
 }
 
 img{
@@ -204,24 +176,26 @@ h1{
     text-align: center;
 }
 
+
+
 @media screen and (min-width: 1024px){
     .col_3{
-        width: 22%;
+        width: $ColumnSizePC;
     }
 }
 
 
 @media screen and (min-width: 628px) and (max-width: 1024px) {
     .col_3{
-        font-size: 80%;
-        width: 40%;
+        font-size: $fontSizeTablet;
+        width: $ColumnSizeTablet;
     }
 }
 
 @media screen and (max-width: 628px) {
     .col_3{
-        font-size: 70%;
-        width: 80%;
+        font-size: $ColumnSizeMobile;
+        width: $ColumnSizeMobile;
     }
 } 
 
