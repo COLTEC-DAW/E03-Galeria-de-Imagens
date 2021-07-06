@@ -1,0 +1,396 @@
+.canvas {
+  max-width: 100%;
+  margin: auto;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  background-color: crimson;
+  font-size: 18px;
+}
+
+.texto-destaque, .rodape, .subtitulo, .titulo {
+  float: block;
+  color: darkorange;
+  width: 100%;
+  text-align: center;
+}
+
+.titulo {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 2.8em;
+}
+
+.subtitulo {
+  font-size: 1.6em;
+}
+
+.quadros {
+  border-color: black;
+  border-style: solid;
+  border: 2%;
+  border-radius: 25px;
+  margin: 1%;
+}
+
+.nome_filme {
+  font-size: 1.3em;
+}
+
+.ano_filme {
+  font-size: 1.15em;
+}
+
+#reservoir_dogs {
+  margin-left: 7%;
+  background-color: floralwhite;
+}
+
+#pulp_fiction {
+  background-color: #dc1010;
+}
+
+#kill_bill {
+  background-color: orange;
+}
+
+#inglourious_basterds {
+  margin-left: 7%;
+  background-color: gray;
+}
+
+#django_unchainded {
+  background-color: floralwhite;
+}
+
+#the_hateful_eight {
+  background-color: silver;
+}
+
+#cartaz1 {
+  background-color: #d11717;
+  width: 65%;
+}
+
+#cartaz2 {
+  background-color: #f3d00c;
+  width: 65%;
+}
+
+#cartaz3 {
+  background-color: black;
+  width: 65%;
+}
+
+#cartaz4 {
+  background-color: rgba(47, 72, 4, 0.489);
+  width: 65%;
+}
+
+#cartaz5 {
+  background-color: silver;
+  width: 65%;
+}
+
+#cartaz6 {
+  background-color: aliceblue;
+  width: 65%;
+}
+
+.texto_cartaz1 {
+  background-color: #d11717;
+}
+
+.texto_cartaz2 {
+  background-color: #f3d00c;
+}
+
+.texto_cartaz3 {
+  background-color: #f3d00c;
+}
+
+.texto_cartaz4 {
+  background-color: rgba(47, 72, 4, 0.489);
+}
+
+.texto_cartaz5 {
+  background-color: rgba(236, 4, 4, 0.836);
+}
+
+.texto_cartaz6 {
+  background-color: aliceblue;
+}
+
+.col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12 {
+  float: left;
+  padding: 1%;
+}
+
+@media screen and (min-width: 1024px) {
+  .col_1 {
+    width: 8%;
+  }
+
+  .col_2 {
+    width: 16%;
+  }
+
+  .col_3 {
+    width: 25%;
+  }
+
+  .col_4 {
+    width: 33%;
+  }
+
+  .col_5 {
+    width: 41%;
+  }
+
+  .col_6 {
+    width: 50%;
+  }
+
+  .col_7 {
+    width: 58%;
+  }
+
+  .col_8 {
+    width: 66%;
+  }
+
+  .col_9 {
+    width: 75%;
+  }
+
+  .col_10 {
+    width: 83%;
+  }
+
+  .col_11 {
+    width: 91%;
+  }
+
+  .col_12 {
+    width: 100%;
+  }
+}
+.cartaz {
+  height: 300px;
+  padding: 15%;
+}
+
+.texto {
+  text-align: center;
+}
+
+#reservoir_dogs, #inglourious_basterds {
+  position: relative;
+  animation: mymove1 1.5s;
+  animation-fill-mode: forwards;
+}
+
+#pulp_fiction, #django_unchainded {
+  position: relative;
+  animation: mymove2 1.5s;
+  animation-fill-mode: forwards;
+}
+
+#kill_bill, #the_hateful_eight {
+  position: relative;
+  animation: mymove3 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes mymove1 {
+  from {
+    left: -30px;
+  }
+  to {
+    left: 0px;
+  }
+}
+@keyframes mymove2 {
+  from {
+    bottom: -20px;
+  }
+  to {
+    bottom: 0px;
+  }
+}
+@keyframes mymove3 {
+  from {
+    right: -30px;
+  }
+  to {
+    right: 0px;
+  }
+}
+#reservoir_dogs:hover, #pulp_fiction:hover, #kill_bill:hover, #inglourious_basterds:hover, #django_unchainded:hover, #the_hateful_eight:hover {
+  max-width: 100%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  overflow: hidden;
+  -moz-transform: scale(2);
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}
+
+@media screen and (min-width: 649px) and (max-width: 1023px) {
+  .col_1 {
+    width: 16%;
+  }
+
+  .col_2 {
+    width: 16%;
+  }
+
+  .col_3 {
+    width: 33%;
+  }
+
+  .col_4 {
+    width: 33%;
+  }
+
+  .col_5 {
+    width: 50%;
+  }
+
+  .col_6 {
+    width: 50%;
+  }
+
+  .col_7 {
+    width: 66%;
+  }
+
+  .col_8 {
+    width: 66%;
+  }
+
+  .col_9 {
+    width: 83%;
+  }
+
+  .col_10 {
+    width: 83%;
+  }
+
+  .col_11 {
+    width: 100%;
+  }
+
+  .col_12 {
+    width: 100%;
+  }
+
+  #reservoir_dogs {
+    margin-left: 14%;
+    background-color: floralwhite;
+  }
+
+  #pulp_fiction {
+    background-color: #dc1010;
+  }
+
+  #kill_bill {
+    margin-left: 14%;
+    background-color: orange;
+  }
+
+  #inglourious_basterds {
+    margin: 1%;
+    background-color: gray;
+  }
+
+  #django_unchainded {
+    margin-left: 14%;
+    background-color: floralwhite;
+  }
+
+  #the_hateful_eight {
+    background-color: silver;
+  }
+}
+@media screen and (max-width: 648px) {
+  .col_1 {
+    width: 50%;
+  }
+
+  .col_2 {
+    width: 50%;
+  }
+
+  .col_3 {
+    width: 50%;
+  }
+
+  .col_4 {
+    width: 50%;
+  }
+
+  .col_5 {
+    width: 50%;
+  }
+
+  .col_6 {
+    width: 50%;
+  }
+
+  .col_7 {
+    width: 100%;
+  }
+
+  .col_8 {
+    width: 100%;
+  }
+
+  .col_9 {
+    width: 100%;
+  }
+
+  .col_10 {
+    width: 100%;
+  }
+
+  .col_11 {
+    width: 100%;
+  }
+
+  .col_12 {
+    width: 100%;
+  }
+
+  #reservoir_dogs {
+    margin-left: 25%;
+    background-color: floralwhite;
+  }
+
+  #pulp_fiction {
+    margin-left: 25%;
+    background-color: #dc1010;
+  }
+
+  #kill_bill {
+    margin-left: 25%;
+    background-color: orange;
+  }
+
+  #inglourious_basterds {
+    margin-left: 25%;
+    background-color: gray;
+  }
+
+  #django_unchainded {
+    margin-left: 25%;
+    background-color: floralwhite;
+  }
+
+  #the_hateful_eight {
+    margin-left: 25%;
+    background-color: silver;
+  }
+}
+
+/*# sourceMappingURL=layout.css.map */
