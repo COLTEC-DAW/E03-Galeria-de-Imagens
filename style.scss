@@ -9,6 +9,12 @@ $TextAlign: center;
 /*Borda*/
 $BorderS: 0.2rem solid;
 
+/* Animação Subtitulo */
+@mixin Animation ($type) {
+    animation: $type;
+    animation-iteration-count: infinite;
+}
+
 .container{
     width: 96%;
     margin: auto;
@@ -49,9 +55,7 @@ $BorderS: 0.2rem solid;
     border: $BorderS;
     border-radius: 1rem;
 
-    animation: Gradiante 3s;
-    animation-iteration-count: infinite;
-    
+    @include Animation(Gradiante 3s);
 }
 
 body{
@@ -99,8 +103,7 @@ img{
 
 .col_3.Filme:hover{
     width: 28%;
-    animation: Gradiante2 3s;
-    animation-iteration-count: infinite;
+    @include Animation(Gradiante2 3s);
 }
 
 @keyframes Gradiante{
