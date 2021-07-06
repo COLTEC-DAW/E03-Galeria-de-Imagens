@@ -1,44 +1,4 @@
 
-$cor-texto: white;
-$cor-fundo: rgb(37, 36, 54);
-$cor-cartoes: rgb(29, 29, 34);
-$cor-detalhes: rgb(134, 44, 44);
-$cor-fundo-componentes: rgb(7,57,179);
-$cor-hover: rgba(27,43,92,1);
-
-$gradiente-1: rgba(7,57,179,1);
-$gradiente-2: rgba(27,43,92,1);
-$gradiente-3: rgb(37, 36, 54);
-
-@mixin border-radius($radius) {
-
-    -webkit-border-radius: $radius;
-    -moz-border-radius: $radius;
-    -ms-border-radius: $radius;
-    border-radius: $radius;
-}
-
-@mixin animacao($iter, $time){
-
-    -webkit-animation: shake $time;
-    -webkit-animation-iteration-count: $iter;
-    -moz-animation: shake $time;
-    -moz-animation-iteration-count: $iter;
-    -ms-animation: shake $time;
-    -ms-animation-iteration-count: $iter;
-    animation: shake $time;
-    animation-iteration-count: $iter;
-}
-
-@mixin transf-scale ($scale){
-
-    -webkit-transform: scale($scale);
-    -moz-transform: scale($scale);
-    -ms-transform: scale($scale);
-    transform: scale($scale);
-}
-
-
 .col1, .col2, .col3, .col4, .col6, .col8, .col9, .col10, .col12 {
 
     float: left;
@@ -47,65 +7,102 @@ $gradiente-3: rgb(37, 36, 54);
 
 body{
 
-    background: $cor-fundo;
-    margin: 0%;
-    padding: 0%;
+    background: rgb(37, 36, 54);
+    margin: 0px;
+    padding: 0px;
     height: 100%;
     text-align: center;
     font-size: 18px;
 }
 
-@media screen and (max-width: 540px) {   
-    body { font-size: 107%;}
+
+@media screen and (max-width: 540px) {
+    
+    body {
+
+        font-size: 107%;
+    }
     .filme {
+
         height: 400px;
         width: 65%;
     }
     .conteudo {
+
         margin-left: 25%;
         margin-right: 0%;
     }
-    .fitadir { width: 9%;}
-    .fitaesq { width: 9%;} 
+    .fitadir{
+        width: 9%;
+    }
+    .fitaesq{
+        width: 9%;
+    }
+    
 }
 
-@media screen and (min-width: 540px) and (max-width: 648px) {  
-    body { font-size: 107%;}
+@media screen and (min-width: 540px) and (max-width: 648px) {
+    
+    body {
+
+        font-size: 107%;
+    }
     .filme {
+
         height: 450px;
         width: 65%;
     }
     .conteudo {
+
         margin-left: 25%;
         margin-right: 0%;
     }
-    .fitadir { width: 9%;}
-    .fitaesq { width: 9%;}   
+    .fitadir{
+        width: 9%;
+    }
+    .fitaesq{
+        width: 9%;
+    }
+    
 }
 
 @media screen and (min-width: 648px) and (max-width: 1024px) {
-    body { font-size: 105%;}    
+    body {
+
+        font-size: 105%;
+    }    
     .filme {
+
         height: 425px;
         width: 35%;
     }
     .conteudo {
+
         margin-left: 15%;
         margin-right: 0%;
     }
-    .fitadir { width: 6%;}
-    .fitaesq { width: 6%;}  
+    .fitadir{
+        width: 6%;
+    }
+    .fitaesq{
+        width: 6%;
+    }
+    
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1400px) {
     body {
+
         font-size: 100%;
     }
+
     .filme {
+
         width: 24%;
         height: 410px;
     }
     .conteudo {
+
         margin-left: 12%;
         margin-right: 5%;
     }
@@ -114,18 +111,23 @@ body{
     }
     .fitaesq{
         width: 6%;
-    }  
+    }
+    
 }
 
 @media screen and (min-width: 1400px) {
     body {
+
         font-size: 100%;
     }
+
     .filme {
+
         width: 24%;
         height: 450px;
     }
     .conteudo {
+
         margin-left: 12%;
         margin-right: 5%;
     }
@@ -135,6 +137,7 @@ body{
     .fitaesq{
         width: 6%;
     }
+    
 }
 
 .filme {
@@ -142,63 +145,67 @@ body{
     float: left;
 }
 
+
 .fitaesq {
 
-    background: $cor-detalhes;
+    background: rgb(134, 44, 44);
     background-image: url(img/fita\ pagina\ css.png);
     background-size: 100%;
     height: 1500px;
-    margin: 0%;
+    margin: 0px;
     margin-right: -3%;
     margin-top: -2%;
-    padding: 0%;
+    padding: 0px;
     float: left;
 }
 
 .fitadir {
 
-    background: $cor-detalhes;
+    background: rgb(134, 44, 44);
     background-image: url(img/fita\ pagina\ css.png);
     background-size: 100%;
     height: 1500px;
-    margin: 0%;
+    margin: 0px;
     margin-left: -3%;
     margin-top: -2%;
-    padding: 0%;
+    padding: 0px;
     float: right;
 }
 
 .titulo{
 
+    
     text-align: center;
     padding: 1%;
     margin-left: 15%;
     margin-right: 15%;
-    background: $cor-fundo-componentes;
-    background: linear-gradient(90deg, $gradiente-1 0%, $gradiente-2 9%, $gradiente-3 24%, $gradiente-3 76%, $gradiente-2 91%, $gradiente-1 100%);
+    background: rgb(7,57,179);
+    background: linear-gradient(90deg, rgba(7,57,179,1) 0%, rgba(27,43,92,1) 9%, rgb(37, 36, 54) 24%, rgb(37, 36, 54) 76%, rgba(27,43,92,1) 91%, rgba(7,57,179,1) 100%);
     border-color: transparent;
-    @include border-radius(10px);
+    border-radius: 10px;
 }
 
 .titulo > h1 {
 
     font-family: 'Saira Condensed', sans-serif;
-    color: $cor-texto;
-    text-shadow: 3px 2px $cor-detalhes;
+    color:white;
+    text-shadow: 3px 2px rgb(134, 44, 44);
     font-size: 3em;
     margin-bottom: 1%;
     margin-top: 2%;
-    line-height: 100%;
+    line-height: 50px;
+
 }
 
 .titulo > p{
 
-    color:$cor-detalhes;
+    color:rgb(175, 62, 62);
     margin-top: 1%;
     margin-bottom: 1%;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     font-size: 1.35em;
+
 }
 
 .conteudo{
@@ -210,7 +217,7 @@ body{
 
 p{
     font-family: 'Raleway', sans-serif;
-    color: $cor-texto;
+    color: white;
     text-align: center;
     margin-left: 2%;
     margin-right: 2%;
@@ -222,6 +229,7 @@ img{
     margin: 5%;
     margin-top: 10%;
 }
+
 
 div{
     margin: 2%;
@@ -236,25 +244,28 @@ p {
 
 div.conteudo > div {
 
-    background-color: $cor-cartoes;
+    background-color: rgb(29, 29, 34);
     border-color: transparent;
-    @include border-radius(10px);
-    box-shadow: 5px 5px $cor-detalhes;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgb(134, 44, 44);
 
 }
 
 div.conteudo :hover{
 
-    background-color: $cor-hover;
-    @include transf-scale(110%)
+    background-color: rgba(27,43,92,1);
+    transform: scale(110%);
 
 }
+
 
 div.conteudo > div {
 
-    @include animacao(1, 0.7s);
+    animation: shake .7s;
+    animation-iteration-count: 1;
 
 }
+
 
 @keyframes shake {
 
@@ -262,6 +273,7 @@ div.conteudo > div {
     25% { transform: rotate(2deg);}
     50% { transform: rotate(2deg);}
     50% { transform: rotate(-2deg);}
+    
 
 }
 
@@ -279,13 +291,14 @@ div.col12{
     background-color: transparent;
 }
 
+
 footer{
 
     margin-top: 4%;
     float: left;
     text-align: center;
-    background: $cor-fundo-componentes;
-    background: linear-gradient(0deg, $gradiente-1 37%, $gradiente-2 66%, $cor-fundo 100%);
+    background: rgb(7,57,179);
+    background: linear-gradient(0deg, rgba(7,57,179,1) 13%, rgba(23,52,124,1) 37%, rgba(35,50,93,1) 66%, rgba(37,36,54,1) 100%);
     margin-left: 10%;
     margin-right: 0%;
     margin-bottom: -20px;
@@ -296,7 +309,43 @@ footer > p {
     padding-top: 3.5%;
 }
 
-@for $i from 1 to 13 {
+.col1{
 
-    .col#{$i} { width: percentage((($i * 7.33) + ($i - 1))/100); }
+    width: 7.33%;
 }
+
+.col2{
+
+    width: 15.66%;
+}
+.col3{
+
+    width: 24%;
+}
+.col4{
+
+    width: 32.33%;
+}
+.col6{
+
+    width: 49%;
+}
+.col8{
+
+    width: 65.66%;
+}
+
+.col9{
+
+    width: 74%;
+}
+.col10{
+
+    width: 82.33%;
+}
+.col12{
+
+    width: 99%;
+}
+
+
