@@ -135,17 +135,7 @@ h2{
     width: 94%;
 }
 
-@media screen and (min-width: 648px) and (max-width: 1024px) {
-    .col_4{
-        
-    }
-}
 
-@media screen and (max-width: 648px) {
-    .col_4{
-        
-    }
-}
 
 @each $screen-type, $value in $screens {
     @media screen and #{$value}{
