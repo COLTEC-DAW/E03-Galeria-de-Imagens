@@ -2,7 +2,6 @@
     width: 96%;
     margin:auto;
     overflow: hidden;
-    
 }
 .col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12{
     float: left;
@@ -44,6 +43,9 @@
 .col_12{
     width: 96%;
 }
+*{
+    color: black;
+}
 #header{
     text-align: center;
     margin-left: 13%;
@@ -52,7 +54,7 @@
     border: 1px solid;
     border-radius: 0.7rem;
     font-family: 'Akaya Kanadaka', cursive;
-    border-color: rgb(70, 154, 238) ;;
+    border-color: rgb(70, 154, 238);
     background-image: linear-gradient(to right, rgb(81, 238, 81),rgb(88, 88, 235));
 }
 .col_3.cartaz{

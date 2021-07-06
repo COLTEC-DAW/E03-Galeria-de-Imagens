@@ -1,0 +1,20 @@
+$num-cols: 12;
+$padding: 1%;
+
+/* Paleta de cores */
+$fundo_principal: linear-gradient(to right, rgb(81, 238, 81),rgb(88, 88, 235));
+$border_color: rgb(70, 154, 238);
+$font_color: black;
+
+.col {
+    padding-left: $padding;
+    padding-right: $padding;
+    float: left;
+}
+
+@for $i from 1 to $num-cols + 1 {
+    .col_#{$i}{
+        @extend .col;
+        width: ($i/$num-cols) * 100% - $padding * 2;
+   }
+}

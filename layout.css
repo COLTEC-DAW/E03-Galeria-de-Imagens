@@ -1,0 +1,43 @@
+/* Paleta de cores */
+.col, .col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12 {
+  padding-left: 1%;
+  padding-right: 1%;
+  float: left; }
+
+.col_1 {
+  width: 6.3333333333%; }
+
+.col_2 {
+  width: 14.6666666667%; }
+
+.col_3 {
+  width: 23%; }
+
+.col_4 {
+  width: 31.3333333333%; }
+
+.col_5 {
+  width: 39.6666666667%; }
+
+.col_6 {
+  width: 48%; }
+
+.col_7 {
+  width: 56.3333333333%; }
+
+.col_8 {
+  width: 64.6666666667%; }
+
+.col_9 {
+  width: 73%; }
+
+.col_10 {
+  width: 81.3333333333%; }
+
+.col_11 {
+  width: 89.6666666667%; }
+
+.col_12 {
+  width: 98%; }
+
+/*# sourceMappingURL=layout.css.map */
