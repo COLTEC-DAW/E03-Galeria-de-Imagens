@@ -1,0 +1,34 @@
+$cor-primaria: white;
+$cor-background: black;
+
+.body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 100%;
+    text-align: center; 
+    background-color: $cor-background;
+    color: $cor-primaria;
+    font-size: 1.125em;
+}
+#titulo{
+    background: initial; /* 'initial' serve para que volte as propriedades naturias/iniciais. */
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    font-size: 2.8em;
+    margin: 0%;
+    color: $cor-primaria;
+}
+#subtitulo{
+    background: initial;
+    font-weight: bold;
+    font-size: 1.6em;
+    margin: 0px;
+    color: $cor-primaria;
+}
+.ano-filme{
+    font-size: 1.15em;
+}
+.nome-filme{
+    font-size: 1.3em;
+}
+.linha-filmes{
+    padding-top: 2em;
+}
