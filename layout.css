@@ -1,4 +1,9 @@
 /* Paleta de cores */
+/* Fontes*/
+/* Tamanhos */
+* {
+  color: black; }
+
 .col, .col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12 {
   padding-left: 1%;
   padding-right: 1%;
@@ -68,5 +73,54 @@
     transform: scale(1.5) rotateZ(180deg); }
   100% {
     transform: scale(1) rotateZ(360deg); } }
+#header {
+  text-align: center;
+  margin-left: 13%;
+  margin-right: 15%;
+  margin-bottom: 5%;
+  border: 1px solid;
+  border-radius: 0.7rem;
+  font-family: "Akaya Kanadaka", cursive;
+  border-color: #469aee;
+  background-image: linear-gradient(to right, #51ee51, #5858eb); }
+  #header h1 {
+    font-size: 5em; }
+
+.col_3.cartaz {
+  text-align: center;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  border: 1px solid;
+  border-radius: 0.7rem;
+  border-color: #469aee;
+  padding-top: 2rem;
+  box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 50px 50px 0px 49px rgba(0, 0, 0, 0);
+  background-image: linear-gradient(to right, #51ee51, #5858eb); }
+  .col_3.cartaz:hover {
+    width: 30%; }
+
+body {
+  font-size: 18px; }
+
+img, embed, object, video {
+  max-width: 100%; }
+
+img + p {
+  border-top: 1px solid; }
+
+.animaCartaz {
+  animation: rotate-scale-up 1s linear both; }
+
+.titulo {
+  font-size: 2.8em; }
+
+.subtitulo {
+  font-size: 1.6; }
+
+.nomeFilme {
+  font-size: 1em; }
+
+.ano {
+  font-size: 1.15em; }
 
 /*# sourceMappingURL=layout.css.map */

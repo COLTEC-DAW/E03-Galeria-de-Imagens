@@ -5,9 +5,25 @@ $padding: 1%;
 $fundo_principal: linear-gradient(to right, rgb(81, 238, 81),rgb(88, 88, 235));
 $border_color: rgb(70, 154, 238);
 $font_color: black;
+
+/* Fontes*/
 $fonte_titulo: 'Akaya Kanadaka', cursive;
 $font_cartazes: Arial, Helvetica, sans-serif;
 
+/* Tamanhos */
+$titleSize: 2.8em;
+$subtitleSize: 1.6;
+$fontSizeBody: 18px;
+$fontSizeFilme: 1em;
+$fontSizeAnoFilme: 1.15em;
+$fontSizeh1:5em;
+
+$curvaBorda: 0.7rem;
+$borda: 1px solid;
+
+*{
+    color: $font_color;
+}
 .col {
     padding-left: $padding;
     padding-right: $padding;
@@ -46,4 +62,63 @@ $font_cartazes: Arial, Helvetica, sans-serif;
     100% {
         transform: scale(1) rotateZ(360deg);
    }
+}
+
+#header{
+    text-align: center;
+    margin-left: 13%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+    border: $borda;
+    border-radius: $curvaBorda;
+    font-family: $fonte_titulo;
+    border-color: $border_color;
+    background-image: $fundo_principal;
+
+    h1{
+        font-size: $fontSizeh1;
+    }
+}
+.col_3.cartaz{
+    text-align: center;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    border: $borda;
+    border-radius: $curvaBorda;
+    border-color: $border_color;
+    padding-top: 2rem;
+    box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 50px 50px 0px 49px rgba(0,0,0,0);
+    background-image: $fundo_principal;
+
+    &:hover{
+        width: 30%;
+    }
+}
+
+body{
+    font-size: $fontSizeBody;
+}
+img, embed, object, video {
+    max-width: 100%;
+}
+
+img + p{
+    border-top: 1px solid;
+}
+
+.animaCartaz{
+    animation: rotate-scale-up 1s linear both;
+}
+
+.titulo{
+    font-size: $titleSize;
+}
+.subtitulo{
+    font-size: $subtitleSize;
+}
+.nomeFilme{
+    font-size: $fontSizeFilme;
+}
+.ano{
+    font-size: $fontSizeAnoFilme;
 }
