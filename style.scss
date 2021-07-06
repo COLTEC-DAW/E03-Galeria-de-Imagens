@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+$font-stack: 'Bebas Neue', cursive;
+$card-color: gray;
+$font-color: darkred;
+$font-text:  'Open Sans', sans-serif;
+$font-s-titulo: 2.8em;
+$font-s-filme: 1.3em;
+$font-s-subtitulo: 1.6em;
+$font-s-ano: 1.15em;
+$align: 'center';
+
+    body{
+        background-image: url("img/walppaper.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 90%;
+    }
+    .container{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+    }
+    @keyframes text {
+        from {letter-spacing: 0;}
+        to {letter-spacing: 0.5em;}
+      }
+    h1{
+        font-family: $font-stack;
+        text-align: center;
+        color: $font-color;
+        animation: text 2s;
+        font-size: $font-s-titulo;
+        letter-spacing: 0.5em;
+    }
+    p{
+        font-family: $font-text;
+        font-size: $font-s-subtitulo;
+    }
+    .subt{
+        background-color: $font-color;
+        border-radius: 15px;
+        font-size: 1.2rem;
+        text-align: center;
+        border-color: $card-color;
+        color: honeydew;
+    }
+    .col{
+        display: block;
+        padding: 1%;
+    }
+    .galeria{
+        justify-content: center;
+    }
+    @keyframes mymove {
+        from {opacity: 0%;}
+        to {opacity: 90%;}
+      }
+    .filme{
+        background-color: $card-color;
+        border-radius: 10px;
+        border-color: black;
+        border-width: thin;
+        border-style: double;
+        margin-inline: 2%;
+        margin-block: 2%;
+        text-align: center;
+        opacity: 80%;
+        animation: mymove 1s;
+        &:hover{
+            opacity: 100%;
+            &.capa{
+                width: 90%;
+                height: 90%;
+            }
+        }
+        @media screen and (min-width: 1024px){
+                width: 25.3333%;
+        }
+        @media screen and (min-width: 1190px){
+                height: 100vh;
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1190px) {
+                height: 90vh;
+        }
+        @media screen and (min-width: 648px) and (max-width: 1024px) {
+                width: 38%;
+        }
+        @media screen and (min-width: 906px) and (max-width: 1024px){
+                height: 100vh;
+        }
+        @media screen and (min-width: 756px) and (max-width: 906px){
+                height: 90vh;
+        }
+        @media screen and (min-width: 648px) and (max-width: 756px){
+                height: 80vh;
+        }
+        @media screen and (max-width: 648px) {
+                width: 95%;
+        }
+    }
+    .capa{
+        width: fit-content;
+        margin: auto;
+        -webkit-transition: width 2s, height 2s;
+        transition: width 2s, height 2s;
+        width: 80%;
+    }
+    .titulo{
+        font-size: $font-s-filme;
+    }
+    .ano{
+        font-size: $font-s-ano;
+    }
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color:gray;
+        color: white;
+        text-align: center;
+      }
