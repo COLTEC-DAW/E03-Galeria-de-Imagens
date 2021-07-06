@@ -1,0 +1,133 @@
+/* Cores */
+$BorderColor: black;
+$TextColor: white;
+
+/*Text*/
+$TextAlignSubtitle: left;
+$TextAlign: center;
+
+/*Borda*/
+$BorderS: 0.2rem solid;
+
+.container{
+    width: 96%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.Subtitulo{
+    text-align: $TextAlignSubtitle;
+    border: $BorderS;
+    font-size: 1.6em;
+}
+
+.AnoFilme{
+    text-align: $TextAlign;
+    border: $BorderS;
+    border-color: $BorderColor;
+    color: $TextColor;
+    font-size: 1.15em;
+}
+
+.NomeFilme{
+    text-align: $TextAlign;
+    border: $BorderS;
+    border-color: $BorderColor;
+    color: $TextColor;
+    font-size: 1.3em;
+}
+
+#header{
+    font-family: 'Yellowtail', cursive;
+    font-size: 2.8em;
+    color: black;
+    
+    text-align: $TextAlign;
+    margin-left: 13%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+    border: $BorderS;
+    border-radius: 1rem;
+
+    animation: Gradiante 3s;
+    animation-iteration-count: infinite;
+    
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: 18px;
+}
+
+.col_1, .col_2, .col_3,  .col_4,  .col_5,  .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12{
+    float:left;
+    padding:1%;
+}
+
+.col_3{
+    width: 24%;
+}
+
+.col_9{
+    width: 72%;
+}
+
+.col_12{
+    width: 96%;
+}
+
+img{
+    width: 50%;
+    border: $BorderS;
+    border-radius: 1rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.col_3.Filme{
+    margin-left: 5%;
+    margin-bottom: 2%;
+    text-align: $TextAlign;
+    border: $BorderS;
+    border-radius: 2rem;
+    padding-top: 4rem;
+    
+    background-image: linear-gradient(to right,#141414,#A31925  );
+    box-shadow: 0px 0px 0px 5px #A0A0A0, inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #A31925, 10px 10px 11px 3px #57FF80;
+
+}
+
+.col_3.Filme:hover{
+    width: 28%;
+    animation: Gradiante2 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Gradiante{
+    from {background-image: linear-gradient(to left,#0FEBED,#57FF80  );}
+    to {background-image: linear-gradient(to right,#0FEBED,#57FF80  );}
+}
+
+@keyframes Gradiante2{
+    from {background-image: linear-gradient(to left,#141414,#A31925  );}
+    to {background-image: linear-gradient(to right,#141414,#A31925  );}
+}
+
+
+@media screen and (min-width: 1024px) {
+    .col_3{
+        width: 24%;
+    }
+}
+
+@media screen and (min-width: 628px) and (max-width: 1024px) {
+    .col_3{
+        width: 34%;
+    }
+}
+
+@media screen and (max-width: 628px) {
+    .col_3{
+        width: 72%;
+    }
+}

@@ -1,122 +1,160 @@
-.container{
-    width: 96%;
-    margin: auto;
-    overflow: hidden;
+/* Cores */
+/*Text*/
+/*Borda*/
+.container {
+  width: 96%;
+  margin: auto;
+  overflow: hidden;
 }
 
-.Subtitulo{
-    text-align: left;
-    border: 0.1rem solid;
-    font-size: 1.6em;
+.Subtitulo {
+  text-align: left;
+  border: 0.2rem solid;
+  font-size: 1.6em;
 }
 
-.AnoFilme{
-    text-align: center;
-    border: 0.2rem solid;
-    border-color: black;
-    color: white;
-    font-size: 1.15em;
+.AnoFilme {
+  text-align: center;
+  border: 0.2rem solid;
+  border-color: black;
+  color: white;
+  font-size: 1.15em;
 }
 
-.NomeFilme{
-    text-align: center;
-    border: 0.2rem solid;
-    border-color: black;
-    color: white;
-    font-size: 1.3em;
+.NomeFilme {
+  text-align: center;
+  border: 0.2rem solid;
+  border-color: black;
+  color: white;
+  font-size: 1.3em;
 }
 
-#header{
-    font-family: 'Yellowtail', cursive;
-    font-size: 2.8em;
-    color: black;
-    
-    text-align: center;
-    margin-left: 13%;
-    margin-right: 15%;
-    margin-bottom: 5%;
-    border: 0.2rem solid;
-    border-radius: 1rem;
-
-    animation: Gradiante 3s;
-    animation-iteration-count: infinite;
-    
+#header {
+  font-family: 'Yellowtail', cursive;
+  font-size: 2.8em;
+  color: black;
+  text-align: center;
+  margin-left: 13%;
+  margin-right: 15%;
+  margin-bottom: 5%;
+  border: 0.2rem solid;
+  border-radius: 1rem;
+  -webkit-animation: Gradiante 3s;
+          animation: Gradiante 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
-body{
-    font-family: Arial, Helvetica, sans-serif ;
-    font-size: 18px;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
 }
 
-.col_1, .col_2, .col_3,  .col_4,  .col_5,  .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12{
-    float:left;
-    padding:1%;
+.col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12 {
+  float: left;
+  padding: 1%;
 }
 
-.col_3{
-    width: 24%;
+.col_3 {
+  width: 24%;
 }
 
-.col_9{
-    width: 72%;
+.col_9 {
+  width: 72%;
 }
 
-.col_12{
-    width: 96%;
+.col_12 {
+  width: 96%;
 }
 
-img{
-    width: 50%;
-    border: 0.2rem solid;
-    border-radius: 1rem;
-    margin-left: 5%;
-    margin-right: 5%;
+img {
+  width: 50%;
+  border: 0.2rem solid;
+  border-radius: 1rem;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
-.col_3.Filme{
-    margin-left: 5%;
-    margin-bottom: 2%;
-    text-align: center;
-    border: 0.2rem solid;
-    border-radius: 2rem;
-    padding-top: 4rem;
-    
-    background-image: linear-gradient(to right,#141414,#A31925  );
-    box-shadow: 0px 0px 0px 5px #A0A0A0, inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #A31925, 10px 10px 11px 3px #57FF80;
-
+.col_3.Filme {
+  margin-left: 5%;
+  margin-bottom: 2%;
+  text-align: center;
+  border: 0.2rem solid;
+  border-radius: 2rem;
+  padding-top: 4rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(#141414), to(#A31925));
+  background-image: linear-gradient(to right, #141414, #A31925);
+  -webkit-box-shadow: 0px 0px 0px 5px #A0A0A0, inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #A31925, 10px 10px 11px 3px #57FF80;
+          box-shadow: 0px 0px 0px 5px #A0A0A0, inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #A31925, 10px 10px 11px 3px #57FF80;
 }
 
-.col_3.Filme:hover{
-    width: 28%;
-    animation: Gradiante2 3s;
-    animation-iteration-count: infinite;
+.col_3.Filme:hover {
+  width: 28%;
+  -webkit-animation: Gradiante2 3s;
+          animation: Gradiante2 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
-@keyframes Gradiante{
-    from {background-image: linear-gradient(to left,#0FEBED,#57FF80  );}
-    to {background-image: linear-gradient(to right,#0FEBED,#57FF80  );}
+@-webkit-keyframes Gradiante {
+  from {
+    background-image: -webkit-gradient(linear, right top, left top, from(#0FEBED), to(#57FF80));
+    background-image: linear-gradient(to left, #0FEBED, #57FF80);
+  }
+  to {
+    background-image: -webkit-gradient(linear, left top, right top, from(#0FEBED), to(#57FF80));
+    background-image: linear-gradient(to right, #0FEBED, #57FF80);
+  }
 }
 
-@keyframes Gradiante2{
-    from {background-image: linear-gradient(to left,#141414,#A31925  );}
-    to {background-image: linear-gradient(to right,#141414,#A31925  );}
+@keyframes Gradiante {
+  from {
+    background-image: -webkit-gradient(linear, right top, left top, from(#0FEBED), to(#57FF80));
+    background-image: linear-gradient(to left, #0FEBED, #57FF80);
+  }
+  to {
+    background-image: -webkit-gradient(linear, left top, right top, from(#0FEBED), to(#57FF80));
+    background-image: linear-gradient(to right, #0FEBED, #57FF80);
+  }
 }
 
+@-webkit-keyframes Gradiante2 {
+  from {
+    background-image: -webkit-gradient(linear, right top, left top, from(#141414), to(#A31925));
+    background-image: linear-gradient(to left, #141414, #A31925);
+  }
+  to {
+    background-image: -webkit-gradient(linear, left top, right top, from(#141414), to(#A31925));
+    background-image: linear-gradient(to right, #141414, #A31925);
+  }
+}
+
+@keyframes Gradiante2 {
+  from {
+    background-image: -webkit-gradient(linear, right top, left top, from(#141414), to(#A31925));
+    background-image: linear-gradient(to left, #141414, #A31925);
+  }
+  to {
+    background-image: -webkit-gradient(linear, left top, right top, from(#141414), to(#A31925));
+    background-image: linear-gradient(to right, #141414, #A31925);
+  }
+}
 
 @media screen and (min-width: 1024px) {
-    .col_3{
-        width: 24%;
-    }
+  .col_3 {
+    width: 24%;
+  }
 }
 
 @media screen and (min-width: 628px) and (max-width: 1024px) {
-    .col_3{
-        width: 34%;
-    }
+  .col_3 {
+    width: 34%;
+  }
 }
 
 @media screen and (max-width: 628px) {
-    .col_3{
-        width: 72%;
-    }
+  .col_3 {
+    width: 72%;
+  }
 }
+/*# sourceMappingURL=style.css.map */
