@@ -2,7 +2,68 @@
 /* Cores */
 /*Text*/
 /*Borda*/
+/* Devices */
 /* Animação Subtitulo */
+.col_1 {
+  float: left;
+  width: 8%;
+}
+
+.col_2 {
+  float: left;
+  width: 16%;
+}
+
+.col_3 {
+  float: left;
+  width: 24%;
+}
+
+.col_4 {
+  float: left;
+  width: 32%;
+}
+
+.col_5 {
+  float: left;
+  width: 40%;
+}
+
+.col_6 {
+  float: left;
+  width: 48%;
+}
+
+.col_7 {
+  float: left;
+  width: 56%;
+}
+
+.col_8 {
+  float: left;
+  width: 64%;
+}
+
+.col_9 {
+  float: left;
+  width: 72%;
+}
+
+.col_10 {
+  float: left;
+  width: 80%;
+}
+
+.col_11 {
+  float: left;
+  width: 88%;
+}
+
+.col_12 {
+  float: left;
+  width: 96%;
+}
+
 .container {
   width: 96%;
   margin: auto;
@@ -55,18 +116,6 @@ body {
 .col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12 {
   float: left;
   padding: 1%;
-}
-
-.col_3 {
-  width: 24%;
-}
-
-.col_9 {
-  width: 72%;
-}
-
-.col_12 {
-  width: 96%;
 }
 
 img {

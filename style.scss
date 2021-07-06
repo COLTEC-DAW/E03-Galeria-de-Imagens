@@ -9,6 +9,11 @@ $TextAlign: center;
 /*Borda*/
 $BorderS: 0.2rem solid;
 
+/* Devices */
+$ColumnSizeComputer: 24%;
+$ColumnSizeMobile: 72%;
+$ColumnSizeTablet: 34%;
+
 /* Animação Subtitulo */
 @mixin Animation ($type) {
     animation: $type;
@@ -17,6 +22,17 @@ $BorderS: 0.2rem solid;
 
 @mixin BorderRadius ($Radius){
     border-radius: $Radius;
+}
+
+@mixin Coluna ($i) {
+    float: left;
+    width: ( ($i * 8)* 1%);
+} 
+
+@for $i from 1 to 12+1 {
+    .col_#{$i} {
+        @include Coluna($i);
+    }
 }
 
 .container{
@@ -72,18 +88,6 @@ body{
     padding:1%;
 }
 
-.col_3{
-    width: 24%;
-}
-
-.col_9{
-    width: 72%;
-}
-
-.col_12{
-    width: 96%;
-}
-
 img{
     width: 50%;
     border: $BorderS;
@@ -123,18 +127,18 @@ img{
 
 @media screen and (min-width: 1024px) {
     .col_3{
-        width: 24%;
+        width: $ColumnSizeComputer;
     }
 }
 
 @media screen and (min-width: 628px) and (max-width: 1024px) {
     .col_3{
-        width: 34%;
+        width: $ColumnSizeTablet;
     }
 }
 
 @media screen and (max-width: 628px) {
     .col_3{
-        width: 72%;
+        width: $ColumnSizeMobile;
     }
 }
