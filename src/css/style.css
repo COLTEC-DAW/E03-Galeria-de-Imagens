@@ -1,5 +1,6 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 /*!
  * Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -6141,6 +6142,14 @@ readers do not read off random characters that represent icons */
   font-weight: 900;
 }
 
+@keyframes containerMove {
+  from {
+    top: 100px;
+  }
+  to {
+    top: 0px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -6156,11 +6165,12 @@ body {
 }
 
 body {
+  position: relative;
   padding-bottom: 100px;
   background-color: black;
-  position: relative;
-  font-family: "Poppins", sans-serif;
   color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
 }
 
 body::after {
@@ -6171,9 +6181,9 @@ body::after {
   bottom: 0;
   right: 0;
   z-index: -1;
-  opacity: 0.3;
-  background-repeat: repeat;
+  opacity: 0.52;
   background-image: url(../img/beanstalk-dark.png);
+  background-repeat: repeat;
   background-position: center center;
 }
 
@@ -6187,10 +6197,24 @@ footer {
 header {
   position: sticky;
   text-align: center;
-  box-shadow: 0px 5px 3px 2px #aa0000;
   margin-bottom: 2.5vh;
 }
-@media screen and (max-width: 428px) {
+@media screen and (min-width: 1024px) {
+  header {
+    box-shadow: 0px 5px 3px 2px #aa0000;
+  }
+}
+@media screen and (min-width: 628px) and (max-width: 1024px) {
+  header {
+    box-shadow: 0px 5px 3px 2px #aa0000;
+  }
+}
+@media screen and (min-width: 488px) and (max-width: 648px) {
+  header {
+    box-shadow: 0px 5px 3px 2px #aa0000;
+  }
+}
+@media screen and (max-width: 488px) {
   header {
     box-shadow: 0px 1px 3px 2px #aa0000;
   }
@@ -6201,23 +6225,33 @@ header {
 }
 header h1 {
   font-family: "Bebas Neue", cursive;
-  font-size: 2.8rem;
+  font-size: 2.8em;
   font-weight: 500;
   font-style: bold;
 }
-header p {
-  font-size: 1.4em;
-  font-style: none;
-}
-@media screen and (max-width: 648px) {
-  header p {
-    font-size: 1em;
-    font-style: none;
+@media screen and (max-width: 488px) {
+  header h1 {
+    padding-top: 5px;
   }
 }
-@media screen and (max-width: 428px) {
+@media screen and (min-width: 1024px) {
   header p {
-    font-size: 0.84em;
+    font-size: 1.6em;
+  }
+}
+@media screen and (min-width: 628px) and (max-width: 1024px) {
+  header p {
+    font-size: 1.6em;
+  }
+}
+@media screen and (min-width: 488px) and (max-width: 648px) {
+  header p {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 488px) {
+  header p {
+    font-size: 0.88em;
     visibility: hidden;
     display: none;
   }
@@ -6225,11 +6259,12 @@ header p {
 
 footer {
   position: absolute;
-  bottom: 0px;
+  left: 0;
+  bottom: 0;
   width: 100%;
   overflow: hidden;
   text-align: right;
-  font-size: 0.8em;
+  font-size: 0.86em;
   font-style: none;
   box-shadow: 0px -1px 2px 2px #aa0000;
 }
@@ -6258,6 +6293,10 @@ a,
   column-gap: 1%;
   justify-content: start;
   justify-items: start;
+  -webkit-animation: containerMove 0.7s linear;
+  -moz-animation: containerMove 0.7s linear;
+  -ms-animation: containerMove 0.7s linear;
+  animation: containerMove 0.7s linear;
 }
 @media screen and (max-width: 488px) {
   .card-container {
@@ -6284,17 +6323,28 @@ a,
   }
 }
 .card-container .card {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px;
   justify-self: center;
   height: auto;
   position: relative;
   background-color: #aa0000;
-  border-radius: 8px;
   box-shadow: 0px 0px 0px 4px #aa0000;
-  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  -webkit-transition: box-shadow, background-color;
+  -moz-transition: box-shadow, background-color;
+  -ms-transition: box-shadow, background-color;
+  transition: box-shadow, background-color;
 }
-@media screen and (max-width: 488px) {
+@media screen and (min-width: 1024px) {
   .card-container .card {
     width: 240px;
+  }
+}
+@media screen and (min-width: 628px) and (max-width: 1024px) {
+  .card-container .card {
+    width: 200px;
   }
 }
 @media screen and (min-width: 488px) and (max-width: 648px) {
@@ -6302,12 +6352,7 @@ a,
     width: 180px;
   }
 }
-@media screen and (min-width: 648px) and (max-width: 1024px) {
-  .card-container .card {
-    width: 200px;
-  }
-}
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 488px) {
   .card-container .card {
     width: 240px;
   }
@@ -6315,46 +6360,52 @@ a,
 .card-container .card img,
 .card-container .card ::after,
 .card-container .card ::before {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
   border-radius: 8px;
 }
-@media screen and (max-width: 488px) {
+@media screen and (min-width: 1024px) {
   .card-container .card img,
 .card-container .card ::after,
 .card-container .card ::before {
-    width: 240px;
     height: 342px;
+    width: 240px;
+  }
+}
+@media screen and (min-width: 628px) and (max-width: 1024px) {
+  .card-container .card img,
+.card-container .card ::after,
+.card-container .card ::before {
+    height: 285px;
+    width: 200px;
   }
 }
 @media screen and (min-width: 488px) and (max-width: 648px) {
   .card-container .card img,
 .card-container .card ::after,
 .card-container .card ::before {
-    width: 180px;
     height: 256.5px;
+    width: 180px;
   }
 }
-@media screen and (min-width: 648px) and (max-width: 1024px) {
+@media screen and (max-width: 488px) {
   .card-container .card img,
 .card-container .card ::after,
 .card-container .card ::before {
-    width: 200px;
-    height: 285px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .card-container .card img,
-.card-container .card ::after,
-.card-container .card ::before {
-    width: 240px;
     height: 342px;
+    width: 240px;
   }
 }
 .card-container .card img {
   z-index: 0;
   opacity: 0.9;
   position: relative;
-  transition: opacity 0.3s;
   background-color: black;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -ms-transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
 .card-container .card ::before,
 .card-container .card ::after {
@@ -6367,13 +6418,19 @@ a,
 .card-container .card ::after {
   z-index: 1;
   transform: scale(0);
-  transition: transform 0.2s ease-in-out;
   background-color: rgba(230, 0, 0, 0.3);
   opacity: 0.1;
+  -webkit-transition: transform 0.2s ease-in-out;
+  -moz-transition: transform 0.2s ease-in-out;
+  -ms-transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 .card-container .card ::before {
   z-index: 2;
   box-shadow: inset 0 0 12px 0 rgba(0, 0, 0, 0.6);
+  -webkit-transition: box-shadow 0.3s;
+  -moz-transition: box-shadow 0.3s;
+  -ms-transition: box-shadow 0.3s;
   transition: box-shadow 0.3s;
 }
 .card-container .card p {
@@ -6382,39 +6439,51 @@ a,
 }
 @media screen and (min-width: 648px) {
   .card-container .card p.card-movie-title {
-    font-size: 1.15em;
+    font-size: 1.3em;
   }
 }
 @media screen and (max-width: 648px) {
   .card-container .card p.card-movie-title {
-    font-size: 1em;
+    font-size: 1.092em;
   }
 }
 @media screen and (min-width: 648px) {
   .card-container .card p.card-movie-year {
-    font-size: 0.95em;
+    font-size: 1.15em;
   }
 }
 @media screen and (max-width: 648px) {
   .card-container .card p.card-movie-year {
-    font-size: 0.8em;
+    font-size: 0.966em;
   }
 }
 .card-container .card:hover {
   background-color: #e60000;
   box-shadow: 0px 0px 0px 5px #e60000;
-  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  -webkit-transition: background-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+  -moz-transition: background-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+  -ms-transition: background-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
 }
 .card-container .card:hover img {
   opacity: 1;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -ms-transition: opacity 0.3s;
   transition: opacity 0.3s;
 }
 .card-container .card:hover ::after {
   transform: scale(1);
+  -webkit-transition: transform 0.2s ease-in-out;
+  -moz-transition: transform 0.2s ease-in-out;
+  -ms-transition: transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out;
 }
 .card-container .card:hover ::before {
   box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, 0.4);
+  -webkit-transition: box-shadow 0.3s;
+  -moz-transition: box-shadow 0.3s;
+  -ms-transition: box-shadow 0.3s;
   transition: box-shadow 0.3s;
 }
 .card-container .card-unfocused {
@@ -6427,35 +6496,6 @@ a,
   display: none;
   opacity: 0;
 }
-.lightbox-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
-.lightbox-card img {
-  position: relative;
-  width: auto;
-  height: 80%;
-  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
-  transform: scale(1);
-  transition: transform 0.3s ease-in-out;
-}
-.lightbox-card img:hover {
-  transform: scale(1.1);
-  transition: transform 0.3s ease-in-out;
-}
-.lightbox-card a.button {
-  position: absolute;
-  color: white;
-  z-index: 10;
-}
-.lightbox-card a.button[href=""] {
-  color: grey;
-  pointer-events: none;
-}
-
 .lightbox:target {
   z-index: 9999;
   visibility: visible;
@@ -6467,7 +6507,45 @@ a,
   top: 0;
   left: 0;
   background-color: rgba(10, 10, 10, 0.7);
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
+}
+.lightbox-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.lightbox-card img {
+  position: relative;
+  max-width: 100%;
+  max-height: 80%;
+  height: auto;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
+  transform: scale(1);
+  -webkit-transition: transform 0.3s ease-in-out;
+  -moz-transition: transform 0.3s ease-in-out;
+  -ms-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+.lightbox-card img:hover {
+  transform: scale(1.1);
+  -webkit-transition: transform 0.3s ease-in-out;
+  -moz-transition: transform 0.3s ease-in-out;
+  -ms-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+.lightbox-card a.button {
+  position: absolute;
+  color: white;
+  z-index: 10;
+}
+.lightbox-card a.button[href=""] {
+  color: grey;
+  pointer-events: none;
 }
 
 #previous i, #next i, #close i {

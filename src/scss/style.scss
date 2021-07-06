@@ -1,14 +1,43 @@
 @use '../css/all' as *;
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@use 'mixins' as *;
+@use 'animations' as *;
+@use "sass:map";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
+// TEXTURE 
+$bgImage: url(../img/beanstalk-dark.png);
+
+// DESIGN COLOR 
 $primaryColor: rgb(170, 0, 0);
 $unfocusColor: rgb(124, 0, 0);
 $focusColor: rgb(230, 0, 0);
 $focusColorTransparent: rgba(230, 0, 0, .3);
 $backgroundColor: black;
+
+// FONT SETUP
 $fontColor: white;
+$fontStack: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+$fontSize: 14px;
+$fontBodyFamily: 'Poppins', sans-serif;
+$fontTitleFamily: 'Bebas Neue', cursive;
+$fontSizeTitle: 2.8em;
+$fontSizeSubtitle: 1.6em;
+$fontSizeMovieTitle:  1.3em;
+$fontSizeMovieYear: 1.15em;
+$fontSizeFooter: .86em;
+
+// CARD SETUP
 $cardWidth: 200px;
 $cardHeight: 285px;
+$cardBorderRadius: 8px;
+
+$screens: (
+    desktop: "(min-width: 1024px)",
+    tablet: "(min-width: 628px) and (max-width: 1024px)",
+    low-res-tablet: "(min-width: 488px) and (max-width: 648px)",
+    smartphone: "(max-width: 488px)"
+);
 
 * {
     margin: 0;
@@ -25,16 +54,14 @@ body {
 }
 
 body {
+    position: relative;
     padding-bottom: 100px;
     background-color: $backgroundColor;
-    position: relative;
-
-    font: {     
-        family: 'Poppins', sans-serif;
-        //size: 18px;
-    }
-
     color: $fontColor;
+    font: {
+        family: $fontBodyFamily;
+        size: $fontSize;
+    }
 }
 
 body::after {
@@ -45,10 +72,10 @@ body::after {
     bottom: 0;
     right: 0;
     z-index: -1;
-    opacity: .3;
+    opacity: .52;
     background: {
+        image: $bgImage;
         repeat: repeat;
-        image: url(../img/beanstalk-dark.png);
         position: center center;
     }
 }
@@ -64,65 +91,73 @@ footer {
 header {
     position: sticky;
     text-align: center;
-    box-shadow: 0px 5px 3px 2px $primaryColor;
     margin-bottom: 2.5vh;
 
-    @media screen and (max-width: 428px) {
-        box-shadow: 0px 1px 3px 2px $primaryColor;
+    @each $screen-type, $value in $screens {
+        @media screen and #{$value}{
+            @if $screen-type == smartphone{
+                box-shadow: 0px 1px 3px 2px $primaryColor;
 
-        &:hover{
-            p{
-                visibility: visible;
-                display: block;
+                &:hover{
+                    p{
+                        visibility: visible;
+                        display: block;
+                    }
+                }
+
+            }@else{
+                box-shadow: 0px 5px 3px 2px $primaryColor;
             }
         }
     }
 
     h1 {
         font: {
-            family: 'Bebas Neue', cursive;
-            size: 2.8rem;
+            family: $fontTitleFamily;
+            size: $fontSizeTitle;
             weight: 500;
             style: bold;
+        }
+
+        @media screen and #{map.get($screens, "smartphone")} {
+            padding-top: 5px;
         }
     }
 
     p {
-        font: {
-            size: 1.4em;
-            style: none;
-        }
-
-        @media screen and (max-width: 648px) {
-            font: {
-                size: 1.0em;
-                style: none;
+        @each $screen-type, $value in $screens {
+            @media screen and #{$value}{
+                @if $screen-type == low-res-tablet{
+                    font-size: $fontSizeSubtitle * .625;
+                }
+                @else if $screen-type == smartphone{
+                    font-size: $fontSizeSubtitle * .55;
+                    visibility: hidden;
+                    display: none;
+                }@else{
+                    font-size: $fontSizeSubtitle;
+                }
             }
-        }
-
-        @media screen and (max-width: 428px) {
-            font-size: 0.84em;
-            visibility: hidden;
-            display: none;
         }
     }
 }
 
 footer {
     position: absolute;
-    bottom: 0px;
+    left: 0;
+    bottom: 0;
     width: 100%;
     overflow: hidden;
     text-align: right;
 
     font: {
-        size: 0.8em;
+        size: $fontSizeFooter;
         style: none;
     }
-
+    
     box-shadow: 0px -1px 2px 2px $primaryColor;
 
-    @media screen and (max-width: 488px) {
+    @media screen and #{map.get($screens, "smartphone")} {
         text-align: center;
     }
 }
@@ -147,6 +182,8 @@ a,
     justify-content: start;
     justify-items: start;
 
+    @include animation(containerMove .7s linear);
+
     @media screen and (max-width: 488px){
         display: flex;
         flex-direction: column;
@@ -169,53 +206,56 @@ a,
     }
 
     .card {
+        @include border-radius($cardBorderRadius);
         justify-self: center;
         height: auto;
         position: relative;
         background-color: $primaryColor;
-        border-radius: 8px;
         box-shadow: 0px 0px 0px 4px $primaryColor;
-        transition: background-color .2s ease-in-out, box-shadow .2s ease-in-out;
+        @include transition(box-shadow, background-color);
+        
 
-        @media screen and (max-width: 488px) {
-            width: $cardWidth * 1.2;
-        }
-
-        @media screen and  (min-width: 488px) and (max-width: 648px){
-            width: $cardWidth * 0.9;
-        }
-
-        @media screen and (min-width: 648px) and (max-width: 1024px){
-            width: $cardWidth * 1.0;
-        }
-
-        @media screen and (min-width: 1024px){
-            width: $cardWidth * 1.2;
+        @each $screen-type, $value in $screens {
+            @media screen and #{$value}{
+                @if $screen-type == desktop{
+                    width: $cardWidth * 1.2;
+                }
+                @else if $screen-type == tablet{
+                    width: $cardWidth * 1;
+                }
+                @else if $screen-type == low-res-tablet{
+                    width: $cardWidth * .9;
+                }
+                @else if $screen-type == smartphone{
+                    width: $cardWidth * 1.2;
+                }
+            }
         }
 
         img,
         ::after,
         ::before {
-            border-radius: 8px;
-
-            @media screen and (max-width: 488px){
-                width: $cardWidth * 1.2;
-                height: $cardHeight * 1.2;
-            }
-
-            @media screen and (min-width: 488px) and (max-width: 648px){
-                width: $cardWidth * 0.9;
-                height: $cardHeight * 0.9;
-            }
-
-            @media screen and (min-width: 648px) and (max-width: 1024px){
-                width: $cardWidth * 1.0;
-                height: $cardHeight * 1.0;
-            }
-
-            @media screen and (min-width: 1024px){
-                width: $cardWidth * 1.2;
-                height: $cardHeight * 1.2;
+            @include border-radius($cardBorderRadius);
+            
+            @each $screen-type, $value in $screens {
+                @media screen and #{$value}{
+                    @if $screen-type == desktop{
+                        height: $cardHeight * 1.2;
+                        width: $cardWidth * 1.2;
+                    }
+                    @else if $screen-type == tablet{
+                        height: $cardHeight * 1;
+                        width: $cardWidth * 1;
+                    }
+                    @else if $screen-type == low-res-tablet{
+                        height: $cardHeight * .9;
+                        width: $cardWidth * .9;
+                    }
+                    @else if $screen-type == smartphone{
+                        height: $cardHeight * 1.2;
+                        width: $cardWidth * 1.2;
+                    }
+                }
             }
         }
 
@@ -223,8 +263,8 @@ a,
             z-index: 0;
             opacity: .9;
             position: relative;
-            transition: opacity .3s;
             background-color: black;
+            @include transition(opacity .3s);
         }
 
         ::before,
@@ -238,16 +278,16 @@ a,
 
         ::after {
             z-index: 1;
-            transform: scale(0);
-            transition: transform .2s ease-in-out;
+            transform: scale(0);       
             background-color: $focusColorTransparent;
             opacity: .1;
+            @include transition(transform .2s ease-in-out);
         }
 
         ::before {
             z-index: 2;
             box-shadow: inset 0 0 12px 0 rgba(0, 0, 0, .6);
-            transition: box-shadow .3s;
+            @include transition(box-shadow .3s);
         }
 
         p {
@@ -256,21 +296,21 @@ a,
             
             &.card-movie-title {
                 @media screen and (min-width: 648px) {
-                    font-size: 1.15em;
+                    font-size: $fontSizeMovieTitle;
                 }
 
                 @media screen and (max-width: 648px) {
-                    font-size: 1em;
+                    font-size: $fontSizeMovieTitle * .84;
                 }
             }
 
             &.card-movie-year { 
                 @media screen and (min-width: 648px) {
-                    font-size: 0.95em;
+                    font-size: $fontSizeMovieYear;
                 }
 
                 @media screen and (max-width: 648px) {
-                    font-size: 0.8em;
+                    font-size: $fontSizeMovieYear * .84;
                 }
             }
         }
@@ -278,21 +318,21 @@ a,
         &:hover{
             background-color: $focusColor;
             box-shadow: 0px 0px 0px 5px $focusColor;
-            transition: background-color .2s ease-in-out, box-shadow .2s ease-in-out;
+            @include transition(background-color .1s ease-in-out, box-shadow .1s ease-in-out);
     
             img {
                 opacity: 1;
-                transition: opacity .3s;
+                @include transition(opacity .3s);
             }
     
             ::after {
                 transform: scale(1);
-                transition: transform .2s ease-in-out;
+                @include transition(transform .2s ease-in-out);
             }
     
             ::before {
                 box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, .4);
-                transition: box-shadow .3s;
+                @include transition(box-shadow .3s);
             }  
         }
 
@@ -308,6 +348,20 @@ a,
     display: none;
     opacity: 0;
 
+    &:target {
+        z-index: 9999;
+        visibility: visible;
+        position: fixed;
+        display: block;
+        opacity: 1;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(10, 10, 10, 0.7);
+        @include transition(opacity 1s ease-in-out);
+    }
+
     &-card {
         display: flex;
         justify-content: center;
@@ -317,16 +371,17 @@ a,
         
         img {
             position: relative;
-            width: auto;
-            height: 80%;
+            max-width: 100%;
+            max-height: 80%;
+            height: auto;
             box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, .3);
             transform: scale(1);
-            transition: transform .3s ease-in-out;
+            @include transition(transform .3s ease-in-out);
         }
 
         img:hover{
             transform: scale(1.1);
-            transition: transform .3s ease-in-out;
+            @include transition(transform .3s ease-in-out);
         }
 
         a.button {
@@ -340,20 +395,6 @@ a,
             pointer-events: none;
         }
     }
-}
-
-.lightbox:target {
-    z-index: 9999;
-    visibility: visible;
-    position: fixed;
-    display: block;
-    opacity: 1;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(10, 10, 10, 0.7);
-    transition: opacity 1s ease-in-out;
 }
 
 #previous, #next, #close{
