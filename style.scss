@@ -135,8 +135,6 @@ h2{
     width: 94%;
 }
 
-
-
 @each $screen-type, $value in $screens {
     @media screen and #{$value}{
         @if $screen-type == tablet{
