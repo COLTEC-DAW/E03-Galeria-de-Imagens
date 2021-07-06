@@ -1,0 +1,108 @@
+
+$primary-color: red;
+$secondary-color: orange;
+$text-color: black;
+$shadow-color: black;
+$default-font-family: 'Secular One', sans-serif;
+
+@mixin entrance-animation($duration) {
+    animation: entrance $duration ease-out;
+}
+
+@keyframes entrance {
+    from {
+        left: -80em;
+    }
+    to {
+        left: 0px;
+    }
+}
+
+body {
+    font-size: 18px;
+}
+
+.container {
+    width: 80%;
+    max-width: 1000px;
+    
+    padding: 5%;
+    margin: auto;
+}
+
+.footer {
+    float: none;
+}
+
+.p {
+    color: $text-color;
+}
+
+#titulo {
+    font-family: $default-font-family;
+    font-size: 2.8em;
+    color: $primary-color;
+    text-shadow: 0px 0px 15px $secondary-color;
+}
+
+#subtitulo {
+    font-family: $default-font-family;
+    font-size: 1.6em;
+}
+
+.cover {
+    float: left;
+    width: 98%;
+    padding: 1%;
+    text-align: center;
+    position: relative;
+
+    @include entrance-animation(1s);
+}
+
+.movie {
+    float: left;
+    padding: 1%;
+    text-align: center;
+
+    position: relative;
+    @include entrance-animation(1.5s);
+
+    img {
+        max-width: 100%;
+        box-shadow: 0px 0px 50px $shadow-color;
+        position: relative;
+    }
+
+    @media screen and (min-width: 1024px) {
+        width: 31%;
+        height: 40rem;
+        
+        img {
+            transition: 0.5s;
+            
+            &:hover {
+                z-index: 1;
+                max-width: 200%;
+                width: 200%;
+            }
+        }
+    }
+    
+    @media screen and (min-width: 648px) and (max-width: 1024px) {
+        width: 48%;
+        height: 42rem;
+    }
+    
+    @media screen and (max-width: 648px) {
+        width: 98%;
+    }
+
+    .ano {
+        font-size: 1.15em;
+    }
+    
+    .nome {
+        font-size: 1.3em;
+    }
+}

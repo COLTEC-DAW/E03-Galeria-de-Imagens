@@ -1,0 +1,93 @@
+@keyframes entrance {
+  from {
+    left: -80em;
+  }
+  to {
+    left: 0px;
+  }
+}
+body {
+  font-size: 18px;
+}
+
+.container {
+  width: 80%;
+  max-width: 1000px;
+  padding: 5%;
+  margin: auto;
+}
+
+.footer {
+  float: none;
+}
+
+.p {
+  color: black;
+}
+
+#titulo {
+  font-family: "Secular One", sans-serif;
+  font-size: 2.8em;
+  color: red;
+  text-shadow: 0px 0px 15px orange;
+}
+
+#subtitulo {
+  font-family: "Secular One", sans-serif;
+  font-size: 1.6em;
+}
+
+.cover {
+  float: left;
+  width: 98%;
+  padding: 1%;
+  text-align: center;
+  position: relative;
+  animation: entrance 1s ease-out;
+}
+
+.movie {
+  float: left;
+  padding: 1%;
+  text-align: center;
+  position: relative;
+  animation: entrance 1.5s ease-out;
+}
+.movie img {
+  max-width: 100%;
+  box-shadow: 0px 0px 50px black;
+  position: relative;
+}
+@media screen and (min-width: 1024px) {
+  .movie {
+    width: 31%;
+    height: 40rem;
+  }
+  .movie img {
+    transition: 0.5s;
+  }
+  .movie img:hover {
+    z-index: 1;
+    max-width: 200%;
+    width: 200%;
+  }
+}
+@media screen and (min-width: 648px) and (max-width: 1024px) {
+  .movie {
+    width: 48%;
+    height: 42rem;
+  }
+}
+@media screen and (max-width: 648px) {
+  .movie {
+    width: 98%;
+  }
+}
+.movie .ano {
+  font-size: 1.15em;
+}
+.movie .nome {
+  font-size: 1.3em;
+}
+
+/*# sourceMappingURL=style.css.map */
