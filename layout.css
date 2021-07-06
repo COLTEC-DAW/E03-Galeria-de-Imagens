@@ -1,0 +1,282 @@
+* {
+  font-family: "Times New Roman", serif; }
+
+.filmes {
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  border-radius: 30px;
+  border: 2px solid;
+  background-color: black;
+  color: #740202;
+  position: relative;
+  animation: movimento 5s infinite alternate linear;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.66, 1);
+  animation-iteration-count: 3; }
+
+img {
+  max-width: 100%;
+  width: 50%;
+  height: 50%;
+  border-radius: 30px; }
+
+img:hover {
+  width: 100%;
+  height: auto; }
+
+@keyframes movimento {
+  from {
+    left: -50px; }
+  to {
+    left: 50px; } }
+#titulo {
+  text-align: center;
+  font-size: 2.5rem;
+  border-style: double;
+  border-width: 8px;
+  padding: 15px 10px 15px 15px;
+  color: red; }
+
+#subtitulo {
+  color: #740202;
+  font-size: 1.6em; }
+
+.nome {
+  text-align: center;
+  font-family: italic;
+  font-size: 1.3em; }
+
+.ano {
+  text-align: center;
+  font-family: bold;
+  font-size: 1.15em; }
+
+.container {
+  background-color: black;
+  width: 92%;
+  margin: auto;
+  text-align: center;
+  margin-left: 5%;
+  font-size: 18px; }
+
+/*Desktop*/
+@media screen and (min-width: 1024px) {
+  .col-b-1 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 6%; }
+
+  .col-b-2 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 14%; }
+
+  .col-b-3 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 22%; }
+
+  .col-b-4 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 30%; }
+
+  .col-b-5 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 38%; }
+
+  .col-b-6 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 46%; }
+
+  .col-b-7 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 54%; }
+
+  .col-b-8 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 62%; }
+
+  .col-b-9 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 70%; }
+
+  .col-b-10 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 78%; }
+
+  .col-b-11 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 86%; }
+
+  .col-b-12 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 94%; } }
+/*Tablet*/
+@media screen and (min-width: 648px) and (max-width: 1024px) {
+  .col-m-1 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 6%; }
+
+  .col-m-2 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 14%; }
+
+  .col-m-3 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 22%; }
+
+  .col-m-4 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 30%; }
+
+  .col-m-5 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 38%; }
+
+  .col-m-6 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 46%; }
+
+  .col-m-7 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 54%; }
+
+  .col-m-8 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 62%; }
+
+  .col-m-9 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 70%; }
+
+  .col-m-10 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 78%; }
+
+  .col-m-11 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 86%; }
+
+  .col-m-12 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 94%; } }
+/*Smartphone*/
+@media screen and (max-width: 648px) {
+  .col-s-1 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 6%; }
+
+  .col-s-2 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 14%; }
+
+  .col-s-3 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 22%; }
+
+  .col-s-4 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 30%; }
+
+  .col-s-5 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 38%; }
+
+  .col-s-6 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 46%; }
+
+  .col-s-7 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 54%; }
+
+  .col-s-8 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 62%; }
+
+  .col-s-9 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 70%; }
+
+  .col-s-10 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 78%; }
+
+  .col-s-11 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 86%; }
+
+  .col-s-12 {
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 94%; } }
+
+/*# sourceMappingURL=layout.css.map */

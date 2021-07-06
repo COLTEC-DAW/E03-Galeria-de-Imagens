@@ -1,0 +1,133 @@
+$font-stack: 'Times New Roman',
+serif;
+$card-color: black;
+$font-color: rgb(116, 2, 2);
+$font-title: 'Arial',
+sans-serif;
+$font-s-titulo: 2.8em;
+$font-s-filme: 1.3em;
+$font-s-subtitulo: 1.6em;
+$font-s-ano: 1.15em;
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin animation($movie-animation) {
+    -webkit-animation: $movie-animation;
+    -moz-animation: $movie-animation;
+    -ms-animation: $movie-animation;
+    animation: $movie-animation;
+}
+
+@mixin transition($img-transition) {
+    -webkit-transition: $img-transition;
+    -moz-transition: $img-transition;
+    -ms-transition: $img-transition;
+    transition: $img-transition;
+}
+
+* {
+    font-family: $font-stack;
+}
+
+.filmes {
+    @include border-radius(30px);
+    border: 2px solid;
+    background-color: $card-color;
+    color: $font-color;
+    position: relative;
+    animation: movimento 5s infinite alternate linear;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.66, 1);
+    animation-iteration-count: 3;
+}
+
+img {
+    max-width: 100%;
+    width: 50%;
+    height: 50%;
+    border-radius: 30px;
+}
+
+img:hover {
+    width: 100%;
+    height: auto;
+}
+
+@keyframes movimento {
+    from {
+        left: -50px;
+    }
+    to {
+        left: 50px;
+    }
+}
+
+#titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    border-style: double;
+    border-width: 8px;
+    padding: 15px 10px 15px 15px;
+    color: red;
+}
+
+#subtitulo {
+    color: rgb(116, 2, 2);
+    font-size: $font-s-subtitulo;
+}
+
+.nome {
+    text-align: center;
+    font-family: italic;
+    font-size: $font-s-filme;
+}
+
+.ano {
+    text-align: center;
+    font-family: bold;
+    font-size: $font-s-ano;
+}
+
+.container {
+    background-color: black;
+    width: 92%;
+    margin: auto;
+    text-align: center;
+    margin-left: 5%;
+    font-size: 18px;
+}
+
+@mixin column_sizes($size) {
+    @for $i from 1 to 13 {
+        .col-#{$size}-#{$i} {
+            float: left;
+            margin: 0.5%;
+            padding: 0.5%;
+            width: (8% * $i) - 2%;
+        }
+    }
+}
+
+
+/*Desktop*/
+
+@media screen and (min-width: 1024px) {
+    @include column_sizes(b)
+}
+
+
+/*Tablet*/
+
+@media screen and (min-width: 648px) and (max-width: 1024px) {
+    @include column_sizes(m)
+}
+
+
+/*Smartphone*/
+
+@media screen and (max-width: 648px) {
+    @include column_sizes(s)
+}
