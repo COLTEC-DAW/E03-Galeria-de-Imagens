@@ -1,0 +1,160 @@
+$preto: rgb(20, 20, 20);
+$quasepreto: rgba(23,23,23,1);
+$quasequasepreto: rgba(26,26,26,1);
+$branco: white;
+$vermelho: rgb(229, 9, 20);
+$cinza: #585858;
+$cinzaclaro: rgb(124, 124, 124);
+
+@mixin animacao ($nome, $ultimo){
+    @keyframes #{$nome} {
+        0% {right: -1000%; opacity: 0%;}
+        50%{right:8%; opacity: 50%;}
+        #{$ultimo} {right: 0%; opacity: 100%;}
+    }
+}
+
+@mixin transition($transicao) {
+    -webkit-transition: $transicao;
+    -moz-transition: $transicao;
+    -ms-transition: $transicao;
+    transition: $transicao; 
+}
+
+@mixin border-radius($radio) {
+    -webkit-border-radius: $radio;
+    -moz-border-radius: $radio;
+    -ms-border-radius: $radio;
+    border-radius: $radio;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: $preto;
+    color: $branco;
+    font-size: 100%;
+}
+
+div{
+    float: center;
+    text-align: center;
+}
+
+h1{
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    font-size: 4em;
+    font-weight: 500;
+    color: $vermelho;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: linear-gradient(360deg, $quasepreto 0%, $quasequasepreto 100%);
+}
+
+h2{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 150%;
+    font-weight: lighter;
+    text-align: center;
+    background-color: rgb(23, 23, 23);
+    background: linear-gradient(180deg, $quasepreto 0%, $preto 100%);
+}
+
+#data{
+    font-size: 75%;
+}
+
+.container{
+    width: 92%;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+.container img {
+    width: 80%;
+    height: auto;
+    border-radius: 1.5%;
+    @include border-radius(1.5%);
+    max-width: 100%;
+    @include transition(0.25s);
+    &:hover{
+        width: 100%;
+        height: auto;
+    }
+}
+
+.imagemesquerda{
+    position: relative;
+    @include animacao(esquerda, 100%);
+    animation: esquerda 2s;
+}
+
+.imagemcentro{
+    position: relative;
+    @include animacao(esquerda, 100%);
+    animation: esquerda 2.75s;
+}
+
+.imagemdireita{
+    position: relative;
+    @include animacao(direita, 80%);
+    animation: direita 3.5s;
+}
+
+footer{
+    text-align: center;
+    background: linear-gradient(180deg, $preto 0%, $quasequasepreto 100%);
+}
+
+@mixin colunas(){
+    @for $i from 1 to 13 {
+        .col#{$i} {
+            float: left;
+            padding: 1%;
+            width: (8% * $i - 2%);
+        }
+    }
+
+    @media screen and (min-width: 648px) and (max-width: 1024px) {
+        .col4{
+            float: left;
+            padding: 1%;
+            width: 46%;
+        }
+    }
+    
+    @media screen and (max-width: 648px) {
+        .col4{
+            float: left;
+            padding: 1%;
+            width: 98%;
+        }
+    }
+}
+
+@media screen{
+    @include colunas();
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 16px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: $preto;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $cinza;
+    border-radius: 25px;
+    border: 4px solid $preto;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $cinzaclaro;
+  }

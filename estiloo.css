@@ -1,0 +1,186 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #141414;
+  color: white;
+  font-size: 100%; }
+
+div {
+  float: center;
+  text-align: center; }
+
+h1 {
+  font-family: 'Bebas Neue', cursive;
+  text-align: center;
+  font-size: 4em;
+  font-weight: 500;
+  color: #e50914;
+  margin-top: auto;
+  margin-bottom: auto;
+  background: linear-gradient(360deg, #171717 0%, #1a1a1a 100%); }
+
+h2 {
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 150%;
+  font-weight: lighter;
+  text-align: center;
+  background-color: #171717;
+  background: linear-gradient(180deg, #171717 0%, #141414 100%); }
+
+#data {
+  font-size: 75%; }
+
+.container {
+  width: 92%;
+  margin: auto;
+  overflow-x: hidden; }
+
+.container img {
+  width: 80%;
+  height: auto;
+  border-radius: 1.5%;
+  -webkit-border-radius: 1.5%;
+  -moz-border-radius: 1.5%;
+  -ms-border-radius: 1.5%;
+  border-radius: 1.5%;
+  max-width: 100%;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -ms-transition: 0.25s;
+  transition: 0.25s; }
+  .container img:hover {
+    width: 100%;
+    height: auto; }
+
+.imagemesquerda {
+  position: relative;
+  animation: esquerda 2s; }
+@keyframes esquerda {
+  0% {
+    right: -1000%;
+    opacity: 0%; }
+  50% {
+    right: 8%;
+    opacity: 50%; }
+  100% {
+    right: 0%;
+    opacity: 100%; } }
+.imagemcentro {
+  position: relative;
+  animation: esquerda 2.75s; }
+@keyframes esquerda {
+  0% {
+    right: -1000%;
+    opacity: 0%; }
+  50% {
+    right: 8%;
+    opacity: 50%; }
+  100% {
+    right: 0%;
+    opacity: 100%; } }
+.imagemdireita {
+  position: relative;
+  animation: direita 3.5s; }
+@keyframes direita {
+  0% {
+    right: -1000%;
+    opacity: 0%; }
+  50% {
+    right: 8%;
+    opacity: 50%; }
+  80% {
+    right: 0%;
+    opacity: 100%; } }
+footer {
+  text-align: center;
+  background: linear-gradient(180deg, #141414 0%, #1a1a1a 100%); }
+
+@media screen {
+  .col1 {
+    float: left;
+    padding: 1%;
+    width: 6%; }
+
+  .col2 {
+    float: left;
+    padding: 1%;
+    width: 14%; }
+
+  .col3 {
+    float: left;
+    padding: 1%;
+    width: 22%; }
+
+  .col4 {
+    float: left;
+    padding: 1%;
+    width: 30%; }
+
+  .col5 {
+    float: left;
+    padding: 1%;
+    width: 38%; }
+
+  .col6 {
+    float: left;
+    padding: 1%;
+    width: 46%; }
+
+  .col7 {
+    float: left;
+    padding: 1%;
+    width: 54%; }
+
+  .col8 {
+    float: left;
+    padding: 1%;
+    width: 62%; }
+
+  .col9 {
+    float: left;
+    padding: 1%;
+    width: 70%; }
+
+  .col10 {
+    float: left;
+    padding: 1%;
+    width: 78%; }
+
+  .col11 {
+    float: left;
+    padding: 1%;
+    width: 86%; }
+
+  .col12 {
+    float: left;
+    padding: 1%;
+    width: 94%; } }
+@media screen and (min-width: 648px) and (max-width: 1024px) {
+  .col4 {
+    float: left;
+    padding: 1%;
+    width: 46%; } }
+@media screen and (max-width: 648px) {
+  .col4 {
+    float: left;
+    padding: 1%;
+    width: 98%; } }
+/* width */
+::-webkit-scrollbar {
+  width: 16px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #141414; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #585858;
+  border-radius: 25px;
+  border: 4px solid #141414; }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #7c7c7c; }
+
+/*# sourceMappingURL=estiloo.css.map */
