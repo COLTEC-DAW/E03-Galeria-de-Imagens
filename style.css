@@ -86,7 +86,16 @@ footer{
 img{
     width: 100%;
     height: 500px;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
 }
+
+img:hover{
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
 
 #titulo{
     font-size: 3.0rem;
@@ -100,6 +109,8 @@ img{
     border-style: solid;
     border-color: white;
     border-width: 0.0001rem;
-}     
+}
+
+
   
       
