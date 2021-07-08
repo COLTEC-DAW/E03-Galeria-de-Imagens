@@ -1,6 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
-
 
     .container {
         width: 95%;
@@ -31,6 +29,24 @@
       .col_4 {
         width: 31%;
       }
+
+      @media screen and (min-width: 0px) {
+          .col_4{
+              width: 98%;
+          }
+      }
+
+      @media screen and (min-width: 648px) {
+        .col_4{
+            width: 48%;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        .col_4{
+            width: 31%;
+        }
+    }
   
   
       .col_5 {
@@ -92,17 +108,15 @@ img{
 }
 
 img:hover{
-    -moz-transform: scale(1.5);
-    -webkit-transform: scale(1.5);
-    transform: scale(1.5);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
   }
 
 #titulo{
     font-size: 3.0rem;
-    background-color: rgb(167, 111, 26);
-    color: rgb(27, 17, 36);
+    color: white;
     border-style:solid;
-    
 }
 
 #titulo:hover {
