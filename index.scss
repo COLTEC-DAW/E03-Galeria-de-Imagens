@@ -1,0 +1,134 @@
+$font-stack: Georgia, 'Times New Roman', Times, serif;
+$font-title: 'Courier New', Courier, monospace;
+$fontSize: 75%;
+$column-size1: 75%;
+$column-size2: 35%;
+$font-color: rgb(252, 203, 223);
+$backgroundColor: rgb(182, 182, 182);
+$shadow: 2px 2px #242424;
+
+@mixin border-radius($radius){
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin animation($animation){
+    -webkit-animation: $animation;
+    -moz-animation: $animation;
+    -ms-animation: $animation;
+    animation: $animation;
+}
+
+* {
+    font-family: $font-stack;
+    color: $font-color;
+    background-color: $backgroundColor;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#titulo{
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: $shadow;
+}
+
+#subtitulo{
+    text-align: left;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+@keyframes myFirst{
+    from{bottom: -300px;}
+    to{bottom: 0px;}
+}
+
+div:hover{
+    width: 200%;
+    height: 200%;
+}
+
+img{
+    width: 14em;
+    height: 20em;
+}
+
+.container{
+    width: 96%;
+    margin: auto;
+    border: 1px solid;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: $backgroundColor;
+    @include border-radius(10px)
+}
+
+.col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12 {
+    float: left;
+    padding: 1%;
+}
+
+
+.col_1 {
+    width: 6%;
+}
+
+.col_2 {
+    width: 14%;
+}
+
+.col_3 {
+    width: 22%;
+}
+
+.col_4 {
+    width: 30%;
+}
+
+.col_5 {
+    width: 38%;
+}
+
+.col_6{
+    width: 46%;
+}
+
+.col_7{
+    width: 54%;
+}
+
+.col_8{
+    width: 62%;
+}
+
+.col_9 {
+    width: 70%;
+}
+
+.col_10{
+    width: 78%;
+}
+
+.col_11 {
+    width: 86%;
+}
+
+.col_12 {
+    width: 94%;
+}
+
+@media screen and (min-width: 1024px){
+    .col_3{
+        width: $column-size2;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .col_3{
+        font-size: $fontSize;
+        width: $column-size1;
+    }
+} 
