@@ -1,26 +1,42 @@
-* {
+body {
     background-color: lightblue;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
 }
 
 /*--------------------------------------------------------*/
-
 .titulo{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 500%;
-    text-shadow: 3px 3px 0px #dddddd;
+    font-size: 2.8em;
     text-align: center;
 }
 
 .subtitulo{
-    font-size: 250%;
+    font-size: 1.6em;
     text-align: center;
-    text-shadow: 1px 1px 0px #dddddd;
+}
+
+.nomeDoFilme{
+    font-size: 1.3em;
+    overflow:-moz-hidden-unscrollable;
+    text-align: center;
+}
+
+.anoDoFilme{
+    font-size: 1.15em;
+    text-align: center;
 }
 
 footer{
-    font-size: 150%;
+    font-size: 1.25em;
     text-align: left;
 }
+
+/*--------------------------------------------------------*/
+
+img, embed, object, video {
+    max-width: 100%;
+  }
 
 .container {
     margin: auto;
@@ -31,13 +47,13 @@ footer{
 }
 
 img {
-    width: 85%;
-    height: 85%;
+    max-width: 65%;
+    max-height: 65%;
 
     box-shadow: -5px 5px 0px rgb(64, 79, 85);;
-    animation: mymove 5s infinite;
 
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
 }
 /*--------------------------------------------------------*/
@@ -48,34 +64,42 @@ img {
     padding: 0.75%;
     background-color: rgb(104, 129, 138);
     
-    padding-bottom: 100px;
-    margin-bottom: -100px;
+    padding-bottom: 100em;
+    margin-bottom: -100em;
 }
 
 .border {
     
     border: #dddddd;
     border-style: outset;
-    border-radius: 1px;
-}
-
-.border > p, b:not(.subtitulo){
-    background-color: rgb(104, 129, 138);
-    text-align: center;
-    font-size: 120%;
+    border-radius: 0.5%;
 }
 
 /*--------------------------------------------------------*/
 
 /* Col Filmes */
-.col_4 { max-width: 30%;
-    transition: transform 0s, padding-bottom 0s, margin-botton 0s;
-    
+@media screen and (min-width: 1024px) /*Desktop*/ {
+    .col_4 { max-width: 30%;
+        transition: transform 0s, padding-bottom 0s, margin-botton 0s;
+    }
 }
+
+@media screen and (min-width: 648px) and (max-width: 1024px) /*Tablet*/ {
+    .col_4 { max-width: 46%;
+        transition: transform 0s, padding-bottom 0s, margin-botton 0s;
+    }
+}
+
+@media screen and (max-width: 648px) /*Smartphone*/ {
+    .col_4 { max-width: 98%;
+        transition: transform 0s, padding-bottom 0s, margin-botton 0s;
+    }
+}
+
 .col_4:hover{
     transform: scale(1.2, 1.2);
-    padding-bottom: 0px;
-    margin-bottom: 0px;
+    padding-bottom: 0em;
+    margin-bottom: 0em;
 }
 
 /* Col Footer*/
