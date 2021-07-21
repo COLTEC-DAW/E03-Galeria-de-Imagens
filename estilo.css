@@ -1,0 +1,86 @@
+div.col-3 {
+        float: left;
+        border: 4px solid;
+        border-radius: 8px;
+        margin-top: 3%;
+        margin-left: 2%;
+        transition: 2s;
+    }
+
+    div.col-3:hover {
+        background-color: #a1a1d3;
+        border-color: rgb(214, 95, 39);
+    }
+
+  /* div.caes {
+        background-color: #FFE81C;
+    }
+   div.pulp {
+        background-color: #61FFB8;
+    }
+
+    div.kill {
+        background-color: #343CFF;
+    }
+
+    div.bastardos {
+        background-color: #C8FF74;
+    }
+
+    div.django {
+        background-color: #996311;
+    }
+
+    div.odiados {
+        background-color: #994318;
+    }
+*/
+    div.col-12 {
+        text-align: center;
+    }
+
+  /*  img {
+        display: block;
+        margin: auto;
+        padding: 4%;
+        animation-name: entrada;
+        animation-duration: 1s;
+    }
+*/
+    p {
+        text-align: center;
+    }
+
+   /* p.fonteaumentada {
+        font-size: 1.15em;
+    }
+
+    p.fontenome {
+        font-size: 1.3em;
+    }
+*/
+    h1 {
+      /*  font-family: cursive; */
+        animation-duration: 1s;
+        animation-name: entrada;
+    }
+
+    @keyframes entrada {
+        from {
+            margin-left: 100%;
+            width: 300%;
+        }
+
+        to {
+            margin-left: 0%;
+            width: 100%;
+        }
+    }
+
+    img:hover {
+        width: 85%;
+        height: 75%;
+
+        margin-left: auto;
+        margin-right: auto;
+    }

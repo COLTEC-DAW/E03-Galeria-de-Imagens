@@ -1,0 +1,128 @@
+$num-cols: 12;
+$padding: 4%;
+$font-stack: cursive;
+$colorimg1: #FFE81C;
+$colorimg2: #61FFB8;
+$colorimg3: #343CFF;
+$colorimg4: #C8FF74;
+$colorimg5: #996311;
+$colorimg6: #994318;
+
+@mixin tamanho_col($tamanho) {
+    @for $i from 1 to 13 {
+        .col_#{$tamanho}_#{$i} {
+            float: left;
+            width: ($i / $num-cols) * 150% - $padding * 2;
+            margin-left: 2%;
+            margin-bottom: 2%;
+        }
+    }
+}
+
+@mixin border-radius($radius) {
+	border-radius: $radius;
+}    
+
+@mixin transition($img-transition) {
+    transition: $img-transition;
+}
+
+@for $i from 1 to 13 {
+    .col_#{$i} {
+        width: ($i / $num-cols) * 100% - $padding * 2;
+        padding-left: $padding;
+        padding-right: $padding;
+    }
+}
+
+.caes {
+    @include border-radius(8px);
+    border: 4px solid;
+    background-color: $colorimg1;
+}
+
+.pulp {
+    @include border-radius(8px);
+    border: 4px solid;
+    background-color: $colorimg2;
+}
+
+.kill {
+    @include border-radius(8px);
+    border: 4px solid;
+    background-color: $colorimg3;
+}
+
+.bastardos {
+    @include border-radius(8px);
+    border: 4px solid;
+    background-color: $colorimg4; 
+}
+
+.django {
+    @include border-radius(8px);
+    border: 4px solid;
+    background-color: $colorimg5;
+}
+
+.odiados {
+    @include border-radius(8px);
+    border: 4px solid;
+    background-color: $colorimg6;
+}
+
+img {
+    display: block;
+    margin: auto;
+    padding: 4%;
+    animation-name: entrada;
+    animation-duration: 1s;
+    @include transition (2s);
+    &:hover {
+        width: 85%;
+        height: 75%;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.container {
+    width: 98%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.col-3 {
+    margin-top: 3%;
+    margin-left: 2%;
+}
+
+h1 {
+    font: 100% $font-stack;
+    font-size: 2.8em;
+}
+
+p.fonteaumentada {
+    font-size: 1.15em;
+}
+
+p.fontenome {
+    font-size: 1.3em;
+}
+
+p.s {
+    font-size: 1.6em;
+}
+
+@media screen and (min-width: 1024px) {
+    @include tamanho_col (lg);
+}
+
+@media screen and (min-width: 648px) and (max-width: 1024px) {
+    @include tamanho_col(md);
+}
+
+@media screen and (max-width: 648px) {
+    @include tamanho_col(sm);
+}
