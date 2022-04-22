@@ -1,0 +1,216 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+
+    padding: 0;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #041213;
+}
+
+.container{
+
+    height: 100vh;
+    background-image: linear-gradient(
+
+    to bottom, 
+    rgba(0,0,0,0.8) 0%,
+    rgba(0,0,0,0.2) 20%,
+    rgba(20,20,20,0.2) 80%,
+    rgba(20,20,20,1) 100%
+
+    ),
+
+    url(img/EUPHORIA.jpg);
+    background-size: cover;
+    padding: 0.26rem 0.75rem 0 0.75rem;
+
+
+}
+
+h1{
+
+    font-size: 30px;
+    flex-direction: row;
+}
+
+.banner{
+
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    justify-content: center;
+    width: 50%;
+}
+
+
+.banner .subtitle{
+
+    color: white;
+    font-size: 20px;
+    line-height: 1.25;
+    padding-top: .5rem;
+    text-align: justify;
+    width: 450px;
+}
+
+
+.logo{
+
+    text-decoration: none;
+    color: white;
+    width: 40%;
+    
+}
+
+.main_content{
+
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 3rem;
+
+}
+
+.header{
+
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.links{
+
+    text-decoration: none;
+}
+
+
+.menu_right ul li {
+
+    padding-right: 1.5rem;
+}
+
+.menu_right{
+
+    display: flex;
+    color: white;
+    font-size: .87rem;
+    text-align: right;
+
+}
+
+.menu ul{
+
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.menu ul li{
+
+    padding-right: .9rem;
+}
+
+.menu .user{
+
+    display: flex;
+    align-items: center;
+}
+
+.menu i{
+
+    font-size: 20px;
+}
+
+.menu .user img{
+
+    border-radius: 50%;
+    width: 3rem;
+    margin-right: .5rem;
+}
+
+.buttons{
+
+    margin-top: 3rem;
+
+}
+
+.buttons .btn{
+
+    padding: 0.6rem;
+    color: white;
+    margin-right: .50rem ;
+    border-radius: .50rem;
+    font-weight: 600;
+    background: rgba(51, 51, 51, 0.2);
+    font-family: inherit;
+    font-size: 100%;
+    border: 0;
+}
+
+.buttons .btn i {
+
+    margin-right:1rem;
+}
+
+.category span{
+
+    color: white;
+    font-size: 20px;
+    line-height: 17px;
+    font-weight: 600;
+}
+
+.slider{
+
+    margin-top: 20px;
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.movie{
+
+    margin-right: 20px;
+}
+
+.movie img{
+
+    border-radius: 20px;
+}
+
+.footer{
+
+    width: 100%;
+
+}
+
+.slider .movie{
+
+    min-width: none;
+}
+
+.social_media{
+
+      text-align: center;
+}
+
+.footer img{
+
+    margin-top: 20px;
+    width: 30px;
+    height: 30px;
+    margin-right: 50px;
+    margin-bottom: 40px;
+}
