@@ -33,14 +33,14 @@ body{
 h1{
 
     font-size: 30px;
-    flex-direction: row;
+    
 }
 
 .banner{
 
     display: flex;
     flex-direction: column;
-    height: 70%;
+    height: 75%;
     justify-content: center;
     width: 50%;
 }
@@ -61,7 +61,7 @@ h1{
 
     text-decoration: none;
     color: white;
-    width: 40%;
+    width: 320px;
     
 }
 
@@ -95,31 +95,14 @@ h1{
 }
 
 
-.menu_right ul li {
-
-    padding-right: 1.5rem;
-}
-
 .menu_right{
 
     display: flex;
     color: white;
-    font-size: .87rem;
     text-align: right;
 
 }
 
-.menu ul{
-
-    display: flex;
-    list-style: none;
-    align-items: center;
-}
-
-.menu ul li{
-
-    padding-right: .9rem;
-}
 
 .menu .user{
 
@@ -136,7 +119,7 @@ h1{
 
     border-radius: 50%;
     width: 3rem;
-    margin-right: .5rem;
+   
 }
 
 .buttons{
@@ -188,6 +171,7 @@ h1{
 .movie img{
 
     border-radius: 20px;
+
 }
 
 .footer{
@@ -196,10 +180,12 @@ h1{
 
 }
 
-.slider .movie{
+.division{
 
-    min-width: none;
+    flex-direction: row;
+    display: flex;
 }
+
 
 .social_media{
 
@@ -213,4 +199,44 @@ h1{
     height: 30px;
     margin-right: 50px;
     margin-bottom: 40px;
+}
+
+@media screen and (max-width: 2000px) {
+
+    .movie img{
+
+        width: 100%
+    }
+    
+}
+
+@media screen and (max-width: 1300px) {
+
+    .slider{
+
+        width:100%;
+        margin-right: 0px;
+
+        justify-content: center;
+    }
+    .movie img{
+
+        width: 100%
+    }
+
+    .movie{
+
+        margin-bottom: 20px;
+    }
+  
+    .division{
+
+        flex-direction: column;
+    }
+
+    .category {
+
+        text-align: center;
+    }
+    
 }
