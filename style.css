@@ -1,0 +1,89 @@
+ *{
+    margin: 0;
+    padding: 0;
+    transition: all 0.5s ease;
+}
+  
+*, *::before, *::after{ 
+    box-sizing: border-box; 
+}
+
+html{
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    background-color: #021240;
+    justify-content: center;
+    display: flex;
+    font-size: 18px;
+}
+
+.title{
+    font-weight: 900;
+    font-size: 2.8em;
+    color: #FFCA0A;
+    text-align: center;
+}
+
+
+.subtitle{
+    color: #077FFF;
+    font-size: 1.6em;
+    font-weight: 900;
+    text-align: center;
+    margin: 10px 10px 50px 10px;
+    font-style: italic;
+}
+
+p{
+    color: #FF0000;
+    font-weight: 400;
+    margin: 2px;
+
+}
+
+.card-title{
+    font-size: 1.3em;
+}
+
+.card-date{
+    font-size: 1.15em;
+}
+
+footer{
+    color: #077FFF;
+    margin: 80px 10px 20px 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(202px, 1fr));
+    gap: 20px;
+}
+
+.container .card {
+    display: grid;
+    position: relative;
+    height: 580px;
+    box-shadow: 0px 30px 30px rgba(0,0,0,.2);
+    border-radius: 30px;
+    text-align: center;
+}
+
+.container .card:hover {
+    transform:scale(1.03);
+    box-shadow: 0px 10px 25px rgba(0,0,0,.4);
+}
+
+.card-img{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 450px;
+    pointer-events: none;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
