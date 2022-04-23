@@ -24,6 +24,7 @@ body{
     ),
 
     url(img/EUPHORIA.jpg);
+
     background-size: cover;
     padding: 0.26rem 0.75rem 0 0.75rem;
 
@@ -152,6 +153,7 @@ h1{
     font-size: 20px;
     line-height: 17px;
     font-weight: 600;
+    text-align: left;
 }
 
 .slider{
@@ -161,6 +163,7 @@ h1{
     overflow: hidden;
     margin-bottom: 20px;
     position: relative;
+    justify-content: center;
 }
 
 .movie{
@@ -174,13 +177,14 @@ h1{
 
 }
 
+
 .footer{
 
     width: 100%;
 
 }
 
-.division{
+.division, .last_division{
 
     flex-direction: row;
     display: flex;
@@ -210,13 +214,19 @@ h1{
     
 }
 
-@media screen and (max-width: 1300px) {
+
+@media screen and (max-width: 1450px) {
+
+
+    .category{
+
+        text-align: center;
+    }
 
     .slider{
 
         width:100%;
         margin-right: 0px;
-
         justify-content: center;
     }
     .movie img{
@@ -228,15 +238,125 @@ h1{
 
         margin-bottom: 20px;
     }
+
   
-    .division{
+    .division, .last_division{
 
         flex-direction: column;
+        display: flex;
     }
 
-    .category {
+
+}
+
+@media screen and (max-width: 1100px) {
+
+   
+    body{
+        background-color: #0f1524;
+    }
+
+    .container{
+
+        background-image: url(img/EUPHORIA.png);
+        background-size: cover;
+        padding: 0.26rem 0.75rem 0 0.75rem;
+     }
+}
+
+@media screen and (max-width: 850px) {
+
+    
+    body{
+        background-color: #0f1524;
+    }
+
+
+    
+    .container{
+
+        background-image: url(img/EUPHORIA.png);
+        background-size: cover;
+        padding: 0.26rem 0.75rem 0 0.75rem;
+     }
+ 
+
+    .slider{
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+
+    .last_division{
+
+        display: flex;
+        width: 200%;
+        flex-direction: row;
+
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+
+    body{
+        background-color: #0f1524;
+    }
+
+    .container{
+
+       background-image: url(img/EUPHORIA.png);
+       background-size: cover;
+       padding: 0.26rem 0.75rem 0 0.75rem;
+    }
+
+
+    .last_division{
+
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+
+    }
+
+    .category{
 
         text-align: center;
     }
-    
+
+
+    .banner .subtitle{
+
+        justify-content: center;
+        width: 350px;
+    }
+
+    .subtitle h1{
+
+        text-align: center;
+    }
+
+
+    .slider {
+
+        display: block;
+        flex-direction: column;
+
+    }
+
+    .footer img{
+
+        width: 30px;
+        height: 30px;
+        margin-right:38px;
+    }
+
+    .movie img{
+
+        margin-left: 20px;
+    }
+
+ 
 }
