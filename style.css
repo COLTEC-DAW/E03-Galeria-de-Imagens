@@ -161,10 +161,12 @@ h1{
     border: 0;
 }
 
-.movie img:hover, .btn:hover{
+.movie img:hover, .btn:hover, .img_actors:hover{
 
     border: 4px solid rebeccapurple;
+    opacity: .5;
 }
+
 
 .buttons .btn i {
 
