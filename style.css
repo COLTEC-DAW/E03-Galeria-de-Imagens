@@ -32,9 +32,23 @@ body{
 
 }
 
+.actors{
+
+    margin-top: 10px;
+
+}
+
+.img_actors{
+
+    height: 200px;
+    border-radius: 20px;
+    opacity: .6;
+    
+}
+
 h1{
 
-    font-size: 30px;
+    font-size: 25px;
     
 }
 
@@ -45,6 +59,7 @@ h1{
     height: 75%;
     justify-content: center;
     width: 50%;
+    color: white;
 }
 
 
@@ -56,9 +71,9 @@ h1{
     font-size: 20px;
     line-height: 1.25;
     padding-top: .5rem;
-    padding-bottom: .5rem;
+    padding-bottom: .1rem;
     text-align: justify;
-    width: 450px;
+    width: 400px;
 }
 
 
@@ -339,16 +354,17 @@ h1{
     }
 
 
-    .banner .subtitle{
+    .banner .subtitle, .actors{
 
         justify-content: center;
         width: 350px;
     }
 
-    .subtitle h1{
+    .banner h1{
 
         text-align: center;
     }
+
 
 
     .slider {
@@ -368,6 +384,11 @@ h1{
     .movie img{
 
         margin-left: 20px;
+    }
+
+    .img_actors{
+
+        width: 350px;
     }
 
  
