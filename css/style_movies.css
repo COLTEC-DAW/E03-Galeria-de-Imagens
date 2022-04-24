@@ -1,0 +1,138 @@
+    
+    *{
+        box-sizing: border-box;
+    }
+
+    body{
+
+        padding: 0;
+        margin: 0 auto;
+        font-family:Arial, Helvetica, sans-serif;
+        background-color: #041213;
+    }   
+
+    .container{
+
+        height: 100vh;
+        width: 100vw;
+        padding: 0.26rem 0.75rem 0 0.75rem;
+        background-size: cover;
+
+    }
+
+    #black_mirror{
+
+        background-image: url(../img_movies/black_mirror.jpg);
+    }
+
+    .banner .subtitle{
+
+        color: white;
+        font-size: 20px;
+        line-height: 1.25;
+        padding-top: .5rem;
+        padding-bottom: .1rem;
+        text-align: justify;
+        width: 400px;
+    }
+
+    .buttons{
+
+        margin-top: 3rem;
+    
+    }
+    
+    .buttons .btn{
+
+        margin-bottom: 20px;
+        padding: 0.6rem;
+        color: white;
+        margin-right: .50rem ;
+        border-radius: .50rem;
+        font-weight: 600;
+        background: rgba(51, 51, 51, 0.2);
+        font-family: inherit;
+        font-size: 100%;
+        border: 0;
+    }
+
+    .buttons .btn i {
+
+        margin-right:1rem;
+    }
+
+    .btn:hover{
+
+        border: 4px solid rebeccapurple;
+        background-color: white;
+        color: rebeccapurple;
+    
+    }
+
+
+    .banner{
+
+        display: flex;
+        flex-direction: column;
+        height: 75%;
+        justify-content: center;
+        width: 50%;
+        color: white;
+    }
+
+    .main_content{
+
+        width: 100%;
+        margin: 0 auto;
+        height: 100%;
+        padding: 0 3rem;
+    
+    }
+
+    .menu .user img{
+
+        border-radius: 50%;
+        width: 3rem;
+       
+    }
+
+    .menu .user{
+
+        display: flex;
+        align-items: center;
+    }
+
+    .menu_right{
+
+        display: flex;
+        color: white;
+        text-align: right;
+    
+    }
+    
+
+    .menu{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .logo{
+
+        width: 320px;
+        
+    }
+
+    .logo h1{
+
+        color: white;
+        font-size: 32px;
+    }
+
+    .links{
+
+        text-decoration: none;
+        
+    }
