@@ -25,6 +25,66 @@
         background-image: url(../img_movies/black_mirror.jpg);
     }
 
+    #sex_education{
+
+        background-image: url(../img_movies/sex_education.jpg);
+        
+    }
+
+    #vis_a_vis{
+
+        background-image: url(../img_movies/vis_a_vis.jpg);
+    }
+
+    #dark{
+
+        background-image: url(../img_movies/dark.png);
+    }
+
+    #you{
+
+        background-image: url(../img_movies/you.jpg);
+    }
+
+    #peaky_blinders{
+
+        background-image: url(../img_movies/peaky_blinders.jpg);
+    }
+
+    #F1{
+
+        background-image: url(../img_movies/F1.jpg);
+    }
+
+    #last_dance{
+
+        background-image: url(../img_movies/last_dance.jpg);
+    }
+
+    #la_casa_de_papel{
+
+        background-image: url(../img_movies/la_casa_de_papel.jpg);
+
+    }
+
+    #gambito_da_rainha{
+
+        background-image: url(../img_movies/gambito_da_dama.jpg);
+
+    }
+
+    #forest_gump{
+
+        background-image: url(../img_movies/forest_gump.jpg);
+        opacity: .8;
+    }
+
+    #clube_da_luta{
+
+        background-image: url(../img_movies/clube_da_luta.jpg);
+
+    }
+
     .banner .subtitle{
 
         color: white;
@@ -32,8 +92,12 @@
         line-height: 1.25;
         padding-top: .5rem;
         padding-bottom: .1rem;
-        text-align: justify;
         width: 400px;
+    }
+
+    .banner .subtitle div{
+
+        text-align: justify;
     }
 
     .buttons{
