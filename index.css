@@ -41,4 +41,11 @@ h1{
 img{
     width: 30%;
     box-shadow: 10px 5px 5px black;
+    position: relative;
+    animation: show-film 2s;
+}
+
+@keyframes show-film {
+    from {bottom: -90px;}
+    to {bottom: 0px;}
 }
