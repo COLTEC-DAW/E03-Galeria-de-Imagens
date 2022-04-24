@@ -20,9 +20,21 @@ html{
 }
 
 .col_2{
-    width: 30%;
+    width: 48%;
     -webkit-transition: width 2s, height 2s;
     transition: width 2s, height 2s;
+}
+
+@media (min-width: 1024px){
+    .col_2{
+        width:30%;
+    }
+}
+
+@media (max-width: 648) {
+    .col_2{
+        width: 80%;
+    }
 }
 
 .col_2:hover {
