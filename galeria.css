@@ -1,0 +1,57 @@
+#titulo{
+ 
+    text-align: center;
+    padding-top: 1px;
+    width: 1500px;
+    height:110px;
+	background-color:#2b3444;
+	border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+    .container {
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        padding-top: 35px;
+        padding-left: 20%;
+        padding-right: 20%;
+
+    }
+
+    .container .titulo_do_filme{
+
+        font-size: 20px;
+
+    }
+
+    .container .filme {
+        height: 580px;
+        border-radius: 30px;
+        text-align: center;
+        background-color: rgb(26, 97, 20);
+    }
+
+    .container .filme:hover {
+
+        transform:scale(1.05);
+
+    }
+
+    .container .poster{
+
+        width: 100%;
+        height: 450px;
+        border-radius: 15px;
+        margin-bottom: 10px;
+
+    }
+
+    p{
+
+        font-family: 'Helvetica';
+
+    }
