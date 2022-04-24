@@ -21,6 +21,12 @@ html{
 
 .col_2{
     width: 30%;
+    -webkit-transition: width 2s, height 2s;
+    transition: width 2s, height 2s;
+}
+
+.col_2:hover {
+  width: 60%;
 }
 
 .col_3{
@@ -48,4 +54,4 @@ img{
 @keyframes show-film {
     from {bottom: -90px;}
     to {bottom: 0px;}
-}
+  }
