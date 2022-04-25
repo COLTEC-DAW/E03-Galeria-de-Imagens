@@ -1,7 +1,8 @@
 body
 {
     text-align: center;
-    background-color: rgb(0, 59, 61);
+    background: url(img/37bf09ee6fd52872d72e7c453818b488.png);
+    background-size: auto;
     border-radius: 10px;
 }
 
