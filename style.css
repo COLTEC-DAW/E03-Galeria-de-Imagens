@@ -162,6 +162,12 @@ h1{
     border: 0;
 }
 
+
+.movie img{
+
+    transition: opacity 1s;
+}
+
 .movie img:hover, .img_actors:hover{
 
     border: 4px solid rebeccapurple;
