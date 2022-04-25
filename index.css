@@ -1,5 +1,32 @@
+@keyframes cardAnimation {
+    from {opacity: 10%; rotate: 0deg;}
+    to {opacity: 100%; rotate: 360deg;}
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-size: 18px;
+}
+.anoFilme{
+    font-size: 1.15em;
+}
+p b{
+    font-size: 1.3em;
+}
+h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.8em;
+}
+#header p{
+    font-size: 1.6em;
+}
+html{
+    background-color: rgb(66, 66, 66);
+}
 .container {
-    width: 92vw;
+    width: 90%;
     margin: auto;
 }
 
@@ -17,15 +44,11 @@
 .col_12 {
     float: left;
     padding: 1.3%;
+    overflow: hidden;
 }
 
 .col_1 {
     width: 7.6%;
-}
-.col_3meios{
-    float: left;
-    width: 11.4%;
-    padding: 1.3%;
 }
 .col_2 {
     width: 15.2%;
@@ -34,7 +57,7 @@
     width: 22.5%;
 }
 .col_4 {
-    width: 28%;
+    width: 30%;
 }
 .col_5 {
     width: 35%;
@@ -68,25 +91,48 @@ p {
     text-align: center;
 }
 img{
-    width: 100%;
-}
-#menu {
-    background-color: #7E8AA2;
-}
-
-
-#about {
-    background-color: #FF9800;
-}
+    display: block;
+    width: 80%;
+    margin: auto;
+}  
 
 #header {
     background-color: #6410ff;
     color: white;
 }
+
 footer{
     background-color: #6410ff;
     color: white;
     float: left;
     width: 100%;
-    clear: both;
+}
+
+.filmCard{
+    position: relative;
+    background-color: #561ac5;
+    border: 2px black solid;
+    border-radius: 5%;
+    color: white;
+    animation-name: cardAnimation;
+    animation-duration: 1s;
+    transition: ease-out;
+}
+
+.filmCard:hover{
+    transform: scale(2);
+}
+
+@media (max-width: 1024px){
+    .col_4{
+        width: 40%;
+        height: calc(650px - 10vmax);
+    }
+}
+@media (max-width: 648px){
+    .col_4{
+        width: 50%;
+        height: 400px;
+        margin: auto;
+    }
 }
