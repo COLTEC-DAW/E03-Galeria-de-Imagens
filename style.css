@@ -1,0 +1,83 @@
+.container{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12{
+    float: left;
+    padding: 0,3%;
+    padding-bottom: 99999px;
+    margin-bottom: -99999px;
+}
+
+.col_1 {
+    width: 8%;
+}
+.col_2 {
+    width: 16%;
+}
+.col_3 {
+    width: 24%;
+}
+.col_4 {
+    width: 32%;
+}
+.col_5 {
+    width: 40%;
+}
+.col_6 {
+    width: 48%;
+}
+.col_7 {
+    width: 56%;
+}
+.col_8 {
+    width: 64%;
+}
+.col_9 {
+    width: 72%;
+}
+.col_10 {
+    width: 80%;
+}
+.col_11 {
+    width: 88%;
+}
+.col_12 {
+    width: 96%;
+}
+
+.filmes{
+    text-align: center;
+    border: 5px;
+}
+
+.imagens{
+    max-width: 200px;
+    max-height: 300px;
+	-webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0 77);
+	-moz-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+	box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+}
+
+.imagens:hover{
+    transform:scale(1.05);
+}
+
+.tituloPrincipal, .subtituloPrincipal{
+    text-align: center;
+}
+
+.moldura{
+    border: 4px solid #999;
+}
+
+body{
+    font-family: Tahoma;
+    background: radial-gradient(#e66465, #9198e5);
+}
+
+footer{
+    text-align: center;
+}
