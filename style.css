@@ -5,7 +5,7 @@
 }
 .col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12{
     float: left;
-    padding: 0.3%;
+    padding: 1%;
     padding-bottom: 99999px;
     margin-bottom: -99999px;
 }
