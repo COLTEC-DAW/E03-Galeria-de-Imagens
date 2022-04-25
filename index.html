@@ -3,91 +3,49 @@
     <head>
         <meta encoding="utf-8">
         <title>Galeria de Filmes: Quentin Tarantino</title>
-        <style>
-            h1
-            {
-                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;                
-                text-align: center;
-                color: beige;
-                background-color: rgb(66, 121, 66);
-                border: 4px outset rgb(66, 121, 66);
-                border-radius: 10px;
-            }
-            .linha
-            {
-                display: flex;
-                flex-flow: row wrap;
-            }
-            .coluna-33
-            {
-                width: 32.6%;
-                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                color: beige;
-                background-color: rgb(59, 107, 65);
-                border: 3px outset rgb(59, 107, 65);
-                border-radius: 10px;
-            }
-            body
-            {
-                text-align: center;
-                background-color: rgb(92, 160, 137);
-                border: 5px outset rgb(72, 124, 107);
-                border-radius: 10px;
-            }
-            div
-            {
-                text-align: center;
-            }
-            img 
-            {
-                max-width: 250px;
-                max-height: 200px;
-                width: auto;
-                height: auto;
-            }
-        </style>
+        <link href="arq.css" rel="stylesheet">
     </head>
     <body>
         <h1>Galeria do Tarantino</h1>
         <p style="color: white;">Galeria de alguns dos filmes de Quentin Tarantino</p>
-        <div class="linha">
-            <div class="coluna-33">
-                <img src="img/caes_de_aluguel.jpg" alt="">
-                <p><b>Cães de Aluguel</b></p>
-                <p>1992</p>
-            </div>
-            <div class="coluna-33">
-              <img src="img/pulp_fiction.jpg" alt="">
-              <p><b>Pulp Fiction: Tempos de Violência</b></p>
-              <p>1994</p>
-            </div>
-            <div class="coluna-33">
-                <img src="img/kill_bill.jpg" alt="">
-                <p><b>Kill Bill: Volume 1</b></p>
-                <p>2003</p>
-            </div>
-        </div>
+        <section class="container">
+                <div class="item">
+                    <img src="img/caes_de_aluguel.jpg" alt="">
+                        <p><b>Cães de Aluguel</b></p>
+                    <p>1992</p>
+                </div>
+                <div class="item">
+                <img src="img/pulp_fiction.jpg" alt="">
+                <p><b>Pulp Fiction: Tempos de Violência</b></p>
+                <p>1994</p>
+                </div>
+                <div class="item">
+                    <img src="img/kill_bill.jpg" alt="">
+                    <p><b>Kill Bill: Volume 1</b></p>
+                    <p>2003</p>
+                </div>
 
-        <div class="linha">
+                <div class="item">
+                    <img src="img/bastardos_inglorios.jpg">
+                    <p><b>Bastardos Inglórios</b></p>
+                    <p>2009</p>
+                </div>
 
-            <div class="coluna-33">
-                <img src="img/bastardos_inglorios.jpg">
-                <p><b>Bastardos Inglórios</b></p>
-                <p>2009</p>
-            </div>
-            <div class="coluna-33">
-                <img src="img/django_livre.jpg">
-                <p><b>Django Livre</b></p>
-                <p>2012</p>
-            </div>
-            <div class="coluna-33">
-                <img src="img/os_oito_odiados.jpg">
-                <p><b>Os Oito Odiados</b></p>
-                <p>2015</p>
-            </div>
-        </div>
-        <br>
-        <br>
+                <div class="item">
+                    <img src="img/django_livre.jpg">
+                    <p><b>Django Livre</b></p>
+                    <p>2012</p>
+                </div>
+
+                <div class="item">
+                    <img src="img/os_oito_odiados.jpg">
+                    <p><b>Os Oito Odiados</b></p>
+                    <p>2015</p>
+                </div>
+                <div class="footer"></div>
+            <br>
+            <br>
+        </section>    
         <footer style="color: white;">
             Desenvolvimento de Aplicações Web - COLTEC/UFMG
         </footer>
