@@ -56,8 +56,6 @@
 .imagens{
     max-width: 200px;
     max-height: 300px;
-	-webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0 77);
-	-moz-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
 	box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
 }
 
@@ -67,10 +65,16 @@
 
 .tituloPrincipal, .subtituloPrincipal{
     text-align: center;
+    font-family: 'Bebas Neue', cursive;
 }
 
 .moldura{
     border: 4px solid #999;
+}
+
+#Gzao{
+    color: #000000;
+    text-decoration: none;
 }
 
 body{
