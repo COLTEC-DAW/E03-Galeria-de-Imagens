@@ -68,7 +68,7 @@ body .title{
 .item img:hover{
 
     opacity: .7;
-    border: 3px solid white;
+    border: 3px solid rgb(203, 126, 255);
 }
 
 
