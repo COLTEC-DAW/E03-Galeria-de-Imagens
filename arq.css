@@ -25,11 +25,13 @@ div
 
 .container
 {
-    max-width: auto;
+    max-width: 1200px;
     margin: 0 auto;
+    padding:0px 20px 20px;
     border: 0px solid green;
     display: grid;
     grid-gap: 20px;
+    justify-content: center;
     grid-template-areas: 
     "sidenav item item"
     "sidenav item item"
@@ -45,20 +47,21 @@ img
     width: auto;
     height: auto;
 }
-
+/*
 .sidenav
 {
     width: 300px;
     height: 700px;
     background-color: aquamarine;
-    border-radius: 200px;
+    border-radius: 20px;
     grid-area: "sidenav";
     grid-row: sidenav;
 }
-
+*/
 .item
 {
-    width: 300px;
+    max-width: 300px;
+    min-width: 200px;
     height: 300px;
     background-color: aquamarine;
     border-radius: 20px;
@@ -75,3 +78,43 @@ img
     grid-column: footer;
 }
 
+@media (max-width: 700px)
+{
+    .container
+    {
+        max-width: auto;
+        margin: 0 auto;
+        border: 0px solid green;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-areas: 
+        "sidenav item"
+        "sidenav item"
+        "sidenav item"
+        "sidenav item"
+        "sidenav item"
+        "sidenav item"
+        "footer footer";
+    }
+}
+
+@media (max-width: 700px)
+{
+    .container
+    {
+        max-width: auto;
+        margin: 0 auto;
+        border: 0px solid green;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-areas: 
+        "sidenav" 
+        "item"
+        "item"
+        "item"
+        "item"
+        "item"
+        "item"
+        "footer footer";
+    }
+}
