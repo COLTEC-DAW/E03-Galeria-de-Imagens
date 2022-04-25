@@ -1,0 +1,107 @@
+.container{
+    width: 92%;
+    text-align: center;
+
+}
+
+.col_1{
+   
+    padding: 2%;
+    width: 8.33%;
+    float: left;
+
+}
+
+.col_2{
+   
+    padding: 2%;
+    width: 15.66%;
+    float: left;
+    
+}
+
+.col_3{
+    
+    padding: 2%;
+    width: 23.99%;
+    float: left;
+    
+}
+
+.col_4{
+    
+    padding: 2%;
+    width: 32.32%;
+    float: left;
+    
+}
+
+.col_5{
+    
+    padding: 2%;
+    width: 40.65%;
+    float: left;
+    
+}
+
+.col_6{
+   
+    padding: 2%;
+    width: 48.98%;
+    float: left;
+    
+}
+
+.col_7{
+    
+    padding: 2%;
+    width: 57.31%;
+    float: left;
+}
+
+.col_8{
+   
+    padding: 2%;
+    width: 65.64%;
+    float: left;
+}
+
+.col_9{
+   
+    padding: 2%;
+    width: 73.97%;
+    float: left;
+}
+
+.col_10{
+   
+    padding: 2%;
+    width: 82.3%;
+    float: left;
+}
+
+.col_11{
+    
+    padding: 2%;
+    width: 90.63%;
+    float: left;
+}
+
+.col_12{
+    
+    padding: 2%;
+    width: 98.96%;
+    float: left;
+}
+
+#titulo{
+
+    text-align: center;
+}
+
+img{
+    border-radius: 5% 5% 5% 5%;
+    margin: 5% 0% 0% 10%;
+    width: 80%;
+   
+}
