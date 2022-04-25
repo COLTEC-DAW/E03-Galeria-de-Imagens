@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background: url(snow2.jpg);
+    background-size: 100px 100px;
+    ;
+} 
+.titulo, .bloquinhosContainer, .rodape {
+    margin: auto;
+    text-align: center;
+    font-size: large;
+    font-style: italic;
+}
+
+.bloquinhosContainer{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 80%;
+}
+
+.titulo{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+
+}
+
+
+
+.blocoFilme {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 30%;
+    border: 3px solid;
+    border-radius: 10px;
+    background: url(snow3.jpg);
+    background-size: 300% 100%;
+
+    transition: width 2s, height 2s;
+    
+}
+
+.blocoFilme img{
+    width: 80%;
+    height: 100%;
+}
