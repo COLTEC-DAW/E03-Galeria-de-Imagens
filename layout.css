@@ -3,9 +3,9 @@
     margin: auto;
 }
 
-.col_1, .col_2, .col_3, .col_4, .col_5{
-    float: left;
-    padding: 1%
+.col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12{
+    float: center;
+    padding: 1.2%;
 }
 
 .col_1{

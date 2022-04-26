@@ -1,13 +1,69 @@
+body{
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(65,63,63,1) 50%, rgba(2,0,36,1) 100%);
+    margin: auto;
+}
+
+h1{
+    font-family:  'Alfa Slab One', cursive;;
+    font-size: 65px;
+    font-weight: 300;
+    color: #d40f26ac;
+    text-align: center;
+    line-height: 0.6;
+}
+ 
+p{
+    color: rgba(255, 255, 255, 0.744);
+    font-family: 'Kanit', sans-serif;
+}
+ 
 img{
-    height: 300px;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 90%;
+    float: center;
+    padding: 5%;
 }
-
+ 
 div{
-    display: block;
-    margin: 15px;
-    padding: 30px;
+    display: inline-block;
+    border: solid #797373 2px;
+    border-radius: 4%;
+    margin: 2%;
+    padding: auto;
+    position: relative;
+    animation: entrada 3.5s;
+    animation-iteration-count: 1;
+   
 }
-
+ 
+@keyframes entrada{
+    0%{background: #534f4f;}
+    100%{ background: rgba(36, 28, 28, 0)}
+}
+ 
+footer{
+    font-family: 'Kanit', sans-serif;
+    color: #797373;
+    text-align: center;
+    padding-top: 50px;
+}
+ 
+.letra-grande{
+    font-size: 100px;
+}
+ 
+#subtitulo{
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 10px;
+    font-weight: BOLD;
+}
+ 
+.nome-filmes{
+    font-size: 20px;
+}
+ 
+.grow:hover
+{
+    transform: scale(1.1);
+}
