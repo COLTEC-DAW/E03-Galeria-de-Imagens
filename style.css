@@ -1,66 +1,111 @@
-.container {
+.container{
     width: 100%;
     margin: auto;
+    padding-bottom: 1%;
+    padding-top: 1%;
     overflow: hidden;
 }
 .col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12{
     float: left;
-    padding: 0.3%;
-    padding-bottom: 99999px;
-    margin-bottom: -99999px;
+    padding: 1%;
+    /* padding-bottom: 99999px;
+    margin-bottom: -99999px; */
 }
 .col_1 {
-    width: 8%;
+    width: 7.5%;
 }
 .col_2 {
-    width: 16%;
+    width: 15%;
 }
 .col_3 {
-    width: 24%;
+    width: 22.5%;
 }
 .col_4 {
-    width: 32%;
+    width: 30%;
 }
 .col_5 {
-    width: 40%;
+    width: 37.5%;
 }
 .col_6 {
-    width: 48%;
+    width: 45%;
 }
 .col_7 {
-    width: 56%;
+    width: 52.5%;
 }
 .col_8 {
-    width: 64%;
+    width: 60%;
 }
 .col_9 {
-    width: 72%;
+    width: 67.5%;
 }
 .col_10 {
-    width: 80%;
+    width: 75%;
 }
 .col_11 {
-    width: 88%;
+    width: 82.5%;
 }
 .col_12 {
-    width: 96%;
+    width: 97.5%;
+}
+
+body{
+    background: linear-gradient(#00ffff, #a52a2a);
 }
 
 .header{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     margin-bottom: 1%;
+    background: #84baf8;
+    color: white;
+}
+.header > p{
+    margin-top: 1px;
+    margin-bottom: 1px;
 }
 
 .imagens{
-    max-width: 200px;
-    max-height: 300px;
+    max-height: 40vmin;
+    max-width: 50vmin;
 }
-
 .filmes{
     text-align: center;
+    background: #7ba6c4;
+    border-color: black;
+    border: 2px solid;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px #000000;
+    border-width: 1px;
+    padding-top: 5%;
+    animation: animation 2s;
+    animation-iteration-count: 1;
+}
+.filmes:hover{
+    background: #ff0000;
+    transform: scale(1.01);
+}
+
+@keyframes animation {
+    from {transform: rotate(50deg);}
+    to {transform: rotate(0deg);}
 }
 
 footer{
     text-align: center;
+    background: #84baf8;
+    color: white;
 }
+footer > p{
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+.titulos{
+    font-family: 'Ubuntu';
+    font-size: 220%;
+}
+
+p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 90%;
+}
+
