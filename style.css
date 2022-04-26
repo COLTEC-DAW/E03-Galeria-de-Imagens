@@ -73,23 +73,11 @@ p{
     max-height: max-content;
 }
 
-.item-1{
-    position: relative;
-    animation: FromLeft-1 3s;
-    animation-fill-mode: forwards;
+.item-1, .item-4{
+    grid-column-start: 4;
+    grid-column-end: 6;
 }
 
-.item-4{
-    position: relative;
-    animation: FromLeft-2 3s;
-    animation-fill-mode: forwards;
-}
-
-.item-2{
-    position: relative;
-    animation: FromLeft-3 3s;
-    animation-fill-mode: forwards;
-}
 
 .item-2, .item-5{
     grid-column-start: 6;
@@ -122,45 +110,6 @@ p{
     margin: 10px;
     font-size: 1.3em;
     background-color: #0f79af;
-}
-
-@keyframes FromLeft-1 {
-    from{
-        grid-column-start: 4;
-        grid-column-end: 6;
-
-        grid-row-start: 2;
-        grid-row-end: 2;
-        left: -1000px;
-    }
-    to{
-        grid-column-start: 4;
-        grid-column-end: 6;
-
-        grid-row-start: 2;
-        grid-row-end: 2;
-        left: 0px;
-    }
-}
-
-@keyframes FromLeft-2 {
-    from{
-
-        grid-row-start: 2;
-        grid-row-end: 2;
-
-        grid-column-start: 4;
-        grid-column-end: 6;
-        left: -1000px;
-    }
-    to{
-        left: 0px;
-        grid-column-start: 4;
-        grid-column-end: 6;
-
-        grid-row-start: 3;
-        grid-row-end: 3;
-    }
 }
 
 @media (max-width: 1024px){
