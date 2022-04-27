@@ -61,11 +61,20 @@
 
 .imagens:hover{
     transform:scale(1.05);
+    animation: mymove 5s infinite;
 }
 
 .tituloPrincipal, .subtituloPrincipal{
     text-align: center;
     font-family: 'Bebas Neue', cursive;
+}
+
+.tituloPrincipal{
+    font-size: 50px;
+}
+
+.subtituloPrincipal{
+    font-size: 30px;
 }
 
 .moldura{
@@ -84,4 +93,8 @@ body{
 
 footer{
     text-align: center;
+}
+
+@keyframes giradinha{
+    
 }
