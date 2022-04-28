@@ -7,26 +7,27 @@ body
     background: linear-gradient(rgb(86, 0, 184), rgb(51, 2, 114), rgb(25, 0, 58));
 }
 
-body .title{
+body .title
+{
     justify-content: center;
     display: flex;
 }
 
-.background{
+.background
+{
     width: max-content;
     background-color: rgb(48, 0, 110);
     padding:10px;
 }
 
-.title{
-    
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;                
+.title
+{
+    font-family: 'Times New Roman', Times, serif;
     text-align: center;
     color: white;
     border-radius: 10px;
     padding: 1px;
     width: 100vw;
-
 }
 
 .container div
@@ -42,7 +43,7 @@ body .title{
     padding:0px 20px 20px;
     border: 0px solid green;
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 10px;
     justify-content: center;
     grid-template-areas: 
     "sidenav item item"
@@ -93,7 +94,6 @@ body .title{
 
 
 footer{
-
     margin-bottom: 40px;
     font-size: 20px;
 }
