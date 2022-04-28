@@ -52,7 +52,8 @@ body .title{
     "footer footer footer";
 }
 
-.item img{
+.item img
+{
 
     margin-top: 20px;
     max-width: 75%;
@@ -63,11 +64,10 @@ body .title{
     border-radius: 20px;
 }
 
-.item img:hover{
-
-    opacity: .7;
-    border-left: 5px solid rgb(41, 0, 82);
-    border-bottom: 5px solid rgb(41, 0, 82);
+.item img:hover
+{
+    border-left: 5px solid rgb(60, 0, 121);
+    border-bottom: 5px solid rgb(60, 0, 121);
 }
 
 
@@ -92,8 +92,8 @@ body .title{
     grid-area: "item";
 }
 
-footer{
-
+footer
+{
     margin-bottom: 40px;
     font-size: 20px;
 }
