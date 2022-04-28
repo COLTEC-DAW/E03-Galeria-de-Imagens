@@ -22,6 +22,8 @@ body .title
 
 .title
 {
+    font-size: 25px;
+    line-height: 3px;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     color: white;
