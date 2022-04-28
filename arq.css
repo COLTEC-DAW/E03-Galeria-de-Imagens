@@ -4,7 +4,7 @@ body
     padding: 0;
     height: 100%;
     text-align: center;
-    background: linear-gradient(rgb(86, 0, 184), rgb(25, 0, 58));
+    background: linear-gradient(rgb(86, 0, 184), rgb(51, 2, 114), rgb(25, 0, 58));
 }
 
 body .title{
