@@ -2,8 +2,9 @@ body
 {
     margin: 0;
     padding: 0;
+    height: 100%;
     text-align: center;
-    background-color: rgb(97, 0, 189);
+    background: linear-gradient(rgb(86, 0, 184), rgb(25, 0, 58));
 }
 
 body .title{
@@ -11,12 +12,10 @@ body .title{
     display: flex;
 }
 
-.border{
-
+.background{
     width: max-content;
-    border: 2px dotted white;
-    border-radius: 20px;
-    padding:10px 
+    background-color: rgb(48, 0, 110);
+    padding:10px;
 }
 
 .title{
@@ -64,10 +63,9 @@ body .title{
     border-radius: 20px;
 }
 
-.item img:hover
-{
-    border-left: 5px solid rgb(60, 0, 121);
-    border-bottom: 5px solid rgb(60, 0, 121);
+.item img:hover{
+    border-left: 5px solid rgb(40, 0, 80);
+    border-bottom: 5px solid rgb(40, 0, 80);
 }
 
 
@@ -92,12 +90,15 @@ body .title{
     grid-area: "item";
 }
 
-footer
-{
+
+
+footer{
+
     margin-bottom: 40px;
     font-size: 20px;
 }
 
+/*
 .footer
 {
     width: auto;
@@ -107,7 +108,7 @@ footer
     grid-area: "footer";
     grid-column: footer;
 }
-
+*/
 @media (max-width: 700px)
 {
     .container
