@@ -1,14 +1,12 @@
 body
 {
+    margin: 0;
+    padding: 0;
     text-align: center;
-    background: url(img/37bf09ee6fd52872d72e7c453818b488.png);
-    background-size: auto;
-    border-radius: 10px;
-    
+    background-color: rgb(41, 0, 82)
 }
 
 body .title{
-
     justify-content: center;
     display: flex;
 }
@@ -35,7 +33,7 @@ body .title{
 .container div
 {
     text-align: center;
-    color: black;
+    color: white;
 }
 
 .container
@@ -68,7 +66,7 @@ body .title{
 .item img:hover{
 
     opacity: .7;
-    border: 3px solid rgb(203, 126, 255);
+    border: 3px solid rgb(105, 0, 175);
 }
 
 
@@ -85,7 +83,7 @@ body .title{
 */
 .item
 {
-    background-color: rgb(132, 0, 255);
+    background-color: rgb(69, 0, 134);
     max-width: 300px;
     min-width: 200px;
     height: 380px;
@@ -98,7 +96,7 @@ footer{
     margin-bottom: 40px;
     font-size: 20px;
 }
-/*
+
 .footer
 {
     width: auto;
@@ -108,7 +106,7 @@ footer{
     grid-area: "footer";
     grid-column: footer;
 }
-*/
+
 @media (max-width: 700px)
 {
     .container
