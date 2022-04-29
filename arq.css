@@ -72,7 +72,7 @@ body .title
 }
 
 
-/*
+
 .sidenav
 {
     width: 300px;
@@ -82,7 +82,7 @@ body .title
     grid-area: "sidenav";
     grid-row: sidenav;
 }
-*/
+
 .item
 {
     margin: 0;
@@ -100,17 +100,16 @@ footer{
     font-size: 20px;
 }
 
-/*
+
 .footer
 {
-    width: auto;
-    height: 300px;
-    background-color: aquamarine;
-    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    border: 0px solid white;
     grid-area: "footer";
     grid-column: footer;
 }
-*/
+
 @media (max-width: 700px)
 {
     .container
