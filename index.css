@@ -57,7 +57,7 @@ html{
     width: 22.5%;
 }
 .col_4 {
-    width: 30%;
+    width: 33%;
 }
 .col_5 {
     width: 35%;
@@ -121,6 +121,7 @@ footer{
 
 .filmCard:hover{
     transform: scale(2);
+    z-index: 999;
 }
 
 @media (max-width: 1024px){
@@ -131,8 +132,9 @@ footer{
 }
 @media (max-width: 648px){
     .col_4{
-        width: 50%;
+        position: relative;
+        width: 51%;
         height: 400px;
-        margin: auto;
+        left: 25%;
     }
 }
