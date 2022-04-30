@@ -1,12 +1,42 @@
-.container{
-    width: 92%;
-    text-align: center;
+body {
+    text-decoration: solid;
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(0,0,0,0.8) 0%,
+        rgba(0,0,0,0.2) 20%,
+        rgba(20,20,20,0.2) 80%,
+        rgba(20,20,20,1) 100%
+        ),
 
+    url(wallpaper.jpg);
+    background-size: cover;
+    
+}
+
+#titulo{
+    font-family: Anton;
+    font-size: 2.8em;
+   
+}
+
+#subtitulo{
+    font-family: Anton;
+    font-size: 1.6em;
+}
+
+.container{
+    
+    
+    width: 100%;
+    text-align: center;
+    font-family: Verdana;
+    color: white;
+    
 }
 
 .col_1{
    
-    padding: 2%;
+    padding: 4%;
     width: 8.33%;
     float: left;
 
@@ -14,7 +44,7 @@
 
 .col_2{
    
-    padding: 2%;
+    padding: 4%;
     width: 15.66%;
     float: left;
     
@@ -22,15 +52,15 @@
 
 .col_3{
     
-    padding: 2%;
-    width: 23.99%;
+    padding: 4%;
+    width: 25%;
     float: left;
     
 }
 
 .col_4{
     
-    padding: 2%;
+    padding: 4%;
     width: 32.32%;
     float: left;
     
@@ -38,7 +68,7 @@
 
 .col_5{
     
-    padding: 2%;
+    padding: 4%;
     width: 40.65%;
     float: left;
     
@@ -46,7 +76,7 @@
 
 .col_6{
    
-    padding: 2%;
+    padding: 4%;
     width: 48.98%;
     float: left;
     
@@ -54,54 +84,102 @@
 
 .col_7{
     
-    padding: 2%;
+    padding: 4%;
     width: 57.31%;
     float: left;
 }
 
 .col_8{
    
-    padding: 2%;
+    padding: 4%;
     width: 65.64%;
     float: left;
 }
 
 .col_9{
    
-    padding: 2%;
+    padding: 4%;
     width: 73.97%;
     float: left;
 }
 
 .col_10{
    
-    padding: 2%;
+    padding: 4%;
     width: 82.3%;
     float: left;
 }
 
 .col_11{
     
-    padding: 2%;
+    padding: 4%;
     width: 90.63%;
     float: left;
 }
 
 .col_12{
     
-    padding: 2%;
+    padding: 4%;
     width: 98.96%;
     float: left;
 }
 
-#titulo{
-
-    text-align: center;
-}
-
 img{
     border-radius: 5% 5% 5% 5%;
-    margin: 5% 0% 0% 10%;
-    width: 80%;
+    width: 75%;
    
+}
+
+#movie{
+
+    animation-duration: 5s;
+    animation-name: entrada;
+
+}
+
+@keyframes entrada {
+    from {
+      
+      width: 20%;
+      
+    }
+  
+    to {
+
+        width: 25%;
+       
+    }
+  }
+
+#movie:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 1024px){
+
+    .col_3{
+
+        padding-left: 15%;
+    }
+    
+}
+
+@media (max-width: 648px){
+
+    .col_3{
+
+        padding-left: 40%;
+        
+    }
+    
+}
+
+#ano{
+
+    font-size: 1.15em;
+}
+
+#nome{
+
+    font-size: 1.3em;
 }
