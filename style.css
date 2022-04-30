@@ -5,6 +5,7 @@
 
 body {
     margin: 0;
+    background: linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 0%, 0%, 1) 0%, hsla(0, 0%, 100%, 1) 50%, hsla(0, 0%, 0%, 1) 100%);
 }
 
 h1 {
@@ -60,13 +61,26 @@ img {
 }
 
 #filmes {
+    background-color: white;
     max-width: 400px;
     min-width: 200px;
+    animation: appear 1.5s 1;
 }
 
 #filmes:hover {
     box-shadow: 0 0 20px red;
     transform: scale(1.1);
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0%;
+        transform: scale(0.0);
+    }
+    100% {
+        opacity: 100%;
+        transform: scale(1);
+    }
 }
 
 .filme1 {
