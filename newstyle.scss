@@ -1,14 +1,16 @@
+/*text colors*/
+$main-bg-color: #021240;
+$title-color: #FFCA0A;
+$secondary-title-color: #077FFF;
+$plain-text-color: #FF0000;
+
+$layout-breakpoint-small: 648px;
+$layout-breakpoint-medium: 1024px;
+
 @keyframes card-animation {
     from {opacity: 10%; rotate: 0deg;}
     to {opacity: 100%; rotate: 360deg;}
 }
-
-:root {
-    --main-bg-color: #021240;
-    --title-color: #FFCA0A;
-    --secondary-title-color: #077FFF;
-    --plain-text-color: #FF0000;
-} 
 
 *{
     margin: 0;
@@ -147,13 +149,15 @@ div{
     max-height: 400px;
 }  
 
-.card:hover{
-    transform:scale(1.05); /*200% fica muuuuuuito grande...*/
-    box-shadow: 0px 10px 25px rgba(0,0,0,.4);
+@media (hover : hover){
+    .card:hover{
+        transform:scale(1.05); /*200% fica muuuuuuito grande...*/
+        box-shadow: 0px 10px 25px rgba(0,0,0,.4);
+    }
 }
 
 /*tablet*/
-@media only screen and (min-width: 648px) and (max-width: 1024px){
+@media only screen and (min-width: $layout-breakpoint-small) and (max-width: $layout-breakpoint-big){
     .col_4{
         width: 45%;
     }
