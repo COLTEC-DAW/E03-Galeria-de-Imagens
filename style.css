@@ -42,6 +42,8 @@ p{
 
     grid-column-start: 1;
     grid-column-end: 13;
+
+    animation: ShowUp 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 }
 
 .header p{
@@ -103,14 +105,27 @@ p{
 }
 
 .movie-name{
-    max-width: 194px;
-    min-height: 68px;
+    max-width: 100%;
+    min-height: 40px;
 
     border: 1px solid white;
     margin: 10px;
     font-size: 1.3em;
     background-color: #0f79af;
 }
+
+@keyframes ShowUp{
+    0%{
+        transform: scale(2);
+        filter: blur(4px);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        filter: blur(0px);
+        opacity: 1;
+    }
+  }
 
 @media (max-width: 1024px){
     .item-1, .item-3, .item-5{
