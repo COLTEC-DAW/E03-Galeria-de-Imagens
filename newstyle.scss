@@ -37,7 +37,6 @@ body{
     text-align: center;
 }
 
-
 .subtitle{
     color: var(--secondary-title-color);
     font-size: 1.6em;
@@ -69,7 +68,7 @@ footer{
 
 div{
      display: block;
- }
+}
 
 .container {
     width: 92%;
@@ -163,7 +162,7 @@ div{
     }
 }
 
-/**/
+/*mobile*/
 @media (max-width: 648px){
     .col_4{
         width: 84%;
