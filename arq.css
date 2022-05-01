@@ -8,38 +8,33 @@ body
     text-align: center;
     background: linear-gradient(rgb(86, 0, 184), rgb(51, 2, 114), rgb(25, 0, 58));
 }
-
-body .title
-{
-    font-size: 2.8em;
-    justify-content: center;
-    display: flex;
-}
-
 .textbody
 {
     font-weight: bold;
     line-height: 23px;
-    font-size: 18px; 
-    color: white; font-family: 'Times New Roman', Times, serif;
+    color: white; 
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .background
 {
     width: max-content;
+    
     background-color: rgb(48, 0, 110);
-    padding: 10px;
+    padding: 30px;
 }
 
 .title
 {
-    font-size: 25px;
-    line-height: 5px;
-    font-family: 'Times New Roman', Times, serif;
+    justify-content: center;
+    display: flex;
+    font-size: 2.8em;
+    line-height: 7px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     color: white;
     border-radius: 10px;
-    padding: 1px;
+    padding: 0px;
     width: 100vw;
 }
 
@@ -55,7 +50,7 @@ body .title
     max-width: 1200px;
     margin: auto;
     padding:0px 20px 20px;
-    border: 0px solid green;
+    /* border: 0px solid green; */
     display: grid;
     grid-gap: 20px;
     justify-content: center;
