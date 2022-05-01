@@ -8,6 +8,7 @@ body
     text-align: center;
     background: linear-gradient(rgb(86, 0, 184), rgb(51, 2, 114), rgb(25, 0, 58));
 }
+
 .textbody
 {
     font-weight: bold;
@@ -19,7 +20,6 @@ body
 .background
 {
     width: max-content;
-    
     background-color: rgb(48, 0, 110);
     padding: 30px;
 }
@@ -61,8 +61,8 @@ body
     "footer footer footer";
 }
 
-.item img
-{
+.item img 
+{ 
     margin-top: 20px;
     max-width: 75%;
     max-height: 75%;
@@ -76,8 +76,6 @@ body
     border-left: 5px solid rgb(40, 0, 80);
     border-bottom: 5px solid rgb(40, 0, 80);
 }
-
-
 
 .sidenav
 {
@@ -96,6 +94,7 @@ body
     min-width: 200px;
     height: 380px;
     border-radius: 20px;
+    background: ;
     grid-area: "item";
 }
 
