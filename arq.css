@@ -68,7 +68,8 @@ body
     width: 75%;
     height: auto;
     border-radius: 20px;
-    -webkit-transition: 0.5s;
+    animation-name: animg;
+    animation-duration: 2.0s;
 }
 
 .item img:hover
@@ -76,7 +77,10 @@ body
     width: 89%;
     border-left: 10px solid rgb(40, 0, 80);
     border-bottom: 10px solid rgb(40, 0, 80);
+    -webkit-transition: 0.5s;
 }
+
+
 
 .sidenav
 {
@@ -128,6 +132,13 @@ footer
         "sidenav item"
         "footer footer";
     }
+}
+
+@keyframes animg
+{
+    0% {width: 75%; border-left: 5px solid rgb(200, 145, 255); border-bottom: 10px solid rgb(200, 145, 255);}
+    50% {width: 89%; border-left: 10px solid rgb(40, 0, 80); border-bottom: 10px solid rgb(40, 0, 80);}
+    100% {width: 75%; border-left: 5px solid rgb(200, 145, 255); border-bottom: 5px solid rgb(200, 145, 255);}
 }
 
 @media (max-width: 648px)
