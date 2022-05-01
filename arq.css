@@ -69,7 +69,7 @@ body
     height: auto;
     border-radius: 20px;
     animation-name: animg;
-    animation-duration: 2.0s;
+    animation-duration: 1.8s;
 }
 
 .item img:hover
