@@ -12,25 +12,38 @@ body, ul, li, p{
 
 a{
     text-decoration: none; 
-    color: white;
+    color: #f1f1f1;
 }
 
 img{
     width: 100%;
     display: block; 
-    border-radius: 10px;
+    border-radius:60px;
 }
 
 /* BACKGROUND */
 
+@keyframes background_a{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
 .background{
-    background-color: #282828;
+    background: linear-gradient(45deg, #000000,#3D0000,#950101,#FF0000);
+    background-size: 220% 220%;
+    animation: background_a 15s ease infinite;
 }
 
 /* HEADER */
 
 .header{
-    background:#101010;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -52,18 +65,17 @@ img{
 .menu li a{
     display: block;
     padding: 5px;
-    background: tomato;
+    border-radius: 35px;
 }
 
 .title{
-
     text-align: center;
     font-family: 'Bebas Neue', Times, serif;
-    font-size: 45px;
+    font-size: 35px;
     line-height: 5px;
     color: orange;
     background-color: #282828;
-    border-radius: 10px;
+    border-radius: 45px;
     padding: 1px;
     width: 100%;
 }
@@ -71,20 +83,23 @@ img{
 /*FILM CARDS*/
 
 .grid{
-
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     max-width: 700px;
     margin: 0 auto;
-    border: 0px solid white;
+    margin-top: 10px;
+    border: px solid #f1f1f1;
     grid-gap: 20px;  
 }
 
 .grid p{
     text-align: center;
-    color: white;
+    color: #f1f1f1;
 }
 
-.footer{
-    
+.footer-01{
+   text-align: left;
+   color: #f1f1f1;   
 }
+
+ 
