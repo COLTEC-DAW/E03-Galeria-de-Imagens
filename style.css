@@ -70,6 +70,8 @@ div{
 
 .container {
     width: 92%;
+    justify-content: center;
+    align-items: center;
     margin: auto;
 }
 
@@ -85,52 +87,53 @@ div{
 .col_10,
 .col_11,
 .col_12 {
+
     float: left;
     padding: 1%;
 }
 
 .col_1 {
-    width: 7%;
+    width: 8.4%;
 }
 .col_2 {
-    width: 14.6%;
+    width: 16%;
 }
 .col_3 {
-    width: 22.6%;
+    width: 23.6%;
 }
 .col_4 {
-    width: 29.8%;
+    width: 31.2%;
 }
 .col_5 {
-    width: 37.4%;
+    width: 38.8%;
 }
 .col_6{
-    width: 45%;
+    width: 46.4%;
 }
 .col_7{
-    width: 52.6%;
+    width: 54%;
 }
 .col_8{
-    width: 60.2%;
+    width: 61.6%;
 }
 .col_9{
-    width: 67.8%;
+    width: 69.2%;
 }
 .col_10{
-    width: 75.4%;
+    width: 76.8%;
 }
 .col_11{
-    width: 83%;
+    width: 84.4%;
 }
 .col_12{
-    width: 84%;
+    width: 92%;
 }
 
 .card{
     position: relative;
     text-align: center;
     max-width: 100%;
-    max-height: 480px;
+    height: 520px;
     margin: 1%;
     padding: 10px;
     box-shadow: 0px 10px 25px rgba(0,0,0,.3);
@@ -149,18 +152,26 @@ div{
 .card:hover{
     transform:scale(1.05); /*200% fica muuuuuuito grande...*/
     box-shadow: 0px 10px 25px rgba(0,0,0,.4);
-}
+}   
 
 /*tablet*/
 @media only screen and (min-width: 648px) and (max-width: 1024px){
+
     .col_4{
-        width: 45%;
+        width: 48%;
+    }
+
+    .subtitle{
+        font-size: 1.0em;
     }
 }
 
 /*mobile*/
 @media (max-width: 648px){
     .col_4{
-        width: 84%;
+        width: 92%;
+    }
+    .subtitle{
+        font-size: 0.8em;
     }
 }
