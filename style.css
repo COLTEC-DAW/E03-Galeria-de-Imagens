@@ -1,9 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-/* TÍTULO */
-.background{
-    background-color: #4B0082;
+/* RESETS/PRE-SET */
+
+body, ul, li, p{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: 'Bebas Neue', Times, serif;
 }
+
+a{
+    text-decoration: none; 
+    color: white;
+}
+
+img{
+    width: 100%;
+    display: block; 
+    border-radius: 10px;
+}
+
+/* BACKGROUND */
+
+.background{
+    background-color: #282828;
+}
+
+/* HEADER */
+
+.header{
+    background:#101010;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* MENU HEADER */
+
+.menu{
+    display: flex;
+
+}
+
+.menu li{
+    margin-left: 10px;
+}
+
+.menu li a{
+    display: block;
+    padding: 5px;
+    background: tomato;
+}
+
 .title{
 
     text-align: center;
@@ -11,152 +62,29 @@
     font-size: 45px;
     line-height: 5px;
     color: orange;
-    background-color: #9400D3;
+    background-color: #282828;
     border-radius: 10px;
     padding: 1px;
     width: 100%;
 }
 
-.subtitle{
-    text-align: center;
-    font-family: 'Bebas Neue', Times, serif;
-    font-size: 50px;
-    line-height: 5px;
-    color: orange;
-
-    border-radius: 10px;
-    padding: 5px;
-    width: 100%;
-}
-
 /*FILM CARDS*/
 
-.cardfilm{
-    max-width: 1200px;
-    margin: 0 auto;
-
-    border: 0px solid white;
+.grid{
 
     display: grid;
-    grid-gap: 15px;
-    grid-template-areas: 
-    "item item item"
-    "item item item";
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 700px;
+    margin: 0 auto;
+    border: 0px solid white;
+    grid-gap: 20px;  
 }
 
-img{
-    width: 100%;   
-    border-radius: 10px;
-}
-
-.item{
-    width: 300px;
-    height: 300px;
-
-    background-color: #383838;
-    border-radius: 20px;
-
-    grid-area: item;
+.grid p{
+    text-align: center;
+    color: white;
 }
 
 .footer{
     
-}
-
-/* COLUNAS */
-.container{
-
-    width: 92%;
-    text-align: center;
-
-}
-
-.col_1{
-
-    padding: 2%;
-    width: 8.33%;
-    float: left;
-
-}
-
-.col_2{
-
-    padding: 2%;
-    width: 15.66%;
-    float: left;
-
-}
-
-.col_3{
-
-    padding: 2%;
-    width: 23.99%;
-    float: left;
-
-}
-
-.col_4{
-
-    padding: 2%;
-    width: 32.32%;
-    float: left;
-
-}
-
-.col_5{
-
-    padding: 2%;
-    width: 40.65%;
-    float: left;
-
-}
-
-.col_6{
-
-    padding: 2%;
-    width: 48.98%;
-    float: left;
-
-}
-
-.col_7{
-
-    padding: 2%;
-    width: 57.31%;
-    float: left;
-}
-
-.col_8{
-
-    padding: 2%;
-    width: 65.64%;
-    float: left;
-}
-
-.col_9{
-
-    padding: 2%;
-    width: 73.97%;
-    float: left;
-}
-
-.col_10{
-
-    padding: 2%;
-    width: 82.3%;
-    float: left;
-}
-
-.col_11{
-
-    padding: 2%;
-    width: 90.63%;
-    float: left;
-}
-
-.col_12{
-
-    padding: 2%;
-    width: 98.96%;
-    float: left;
 }
