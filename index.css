@@ -117,7 +117,7 @@ footer{
     animation-name: cardAnimation;
     animation-duration: 1s;
     transition: ease-out;
-    height: calc(650px - 5vmax);
+    height: 700px;
 }
 
 .filmCard:hover{
