@@ -14,13 +14,18 @@ body
     font-weight: bold;
     line-height: 23px;
     color: white; 
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
-.background
+.backgroundHeader
 {
     background-color: rgb(48, 0, 110);
     padding: 30px;
+}
+
+header img.logo
+{
+    max-width: 60px;
 }
 
 .title
@@ -48,7 +53,6 @@ body
     width: 100%;
     max-width: 1200px;
     margin: auto;
-    padding:0px 20px 20px;
     /* border: 0px solid green; */
     display: grid;
     grid-gap: 20px;
@@ -83,7 +87,7 @@ body
 {
     width: 300px;
     height: 700px;
-    background-color: aquamarine;
+  /*background-color: aquamarine;*/
     border-radius: 20px;
     grid-area: "sidenav";
     grid-row: sidenav;
@@ -95,8 +99,8 @@ body
     max-width: 300px;
     min-width: 200px;
     height: 380px;
-    border-radius: 20px;
-    background: ;
+  /*border-radius: 20px;
+    background-color: rgb(86, 0, 184);*/
     grid-area: "item";
 }
 
