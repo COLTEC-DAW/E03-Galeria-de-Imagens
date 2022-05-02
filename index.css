@@ -45,6 +45,7 @@ html{
     float: left;
     padding: 1.3%;
     overflow: hidden;
+    margin: 1%;
 }
 
 .col_1 {
@@ -57,7 +58,7 @@ html{
     width: 22.5%;
 }
 .col_4 {
-    width: 33%;
+    width: 30%;
 }
 .col_5 {
     width: 35%;
@@ -83,7 +84,6 @@ html{
 .col_12{
     width: 84%;
 }
-
 
 h1,
 h2,
@@ -117,6 +117,7 @@ footer{
     animation-name: cardAnimation;
     animation-duration: 1s;
     transition: ease-out;
+    height: calc(650px - 5vmax);
 }
 
 .filmCard:hover{
@@ -127,14 +128,15 @@ footer{
 @media (max-width: 1024px){
     .col_4{
         width: 40%;
-        height: calc(650px - 10vmax);
+        height: 550px;
+        max-height: fit-content;
     }
 }
 @media (max-width: 648px){
     .col_4{
         position: relative;
         width: 51%;
-        height: 400px;
+        height: 435px;
         left: 25%;
     }
 }
