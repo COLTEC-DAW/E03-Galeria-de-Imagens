@@ -139,7 +139,7 @@ footer
 {
     0% {width: 75%; border-left: 5px solid rgb(200, 145, 255); border-bottom: 10px solid rgb(200, 145, 255);}
     50% {width: 89%; border-left: 10px solid rgb(40, 0, 80); border-bottom: 10px solid rgb(40, 0, 80);}
-    100% {width: 75%; border-left: 5px solid rgb(200, 145, 255); border-bottom: 5px solid rgb(200, 145, 255);}
+    100% {width: 75%; border-left: 2px solid rgb(200, 145, 255); border-bottom: 2px solid rgb(200, 145, 255);}
 }
 
 @media (max-width: 648px)
