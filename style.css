@@ -57,11 +57,11 @@
     max-width: 200px;
     max-height: 300px;
 	box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+    animation: giradinha 2s linear;
 }
 
 .imagens:hover{
     transform:scale(1.05);
-    animation: mymove 5s infinite;
 }
 
 .tituloPrincipal, .subtituloPrincipal{
@@ -96,5 +96,10 @@ footer{
 }
 
 @keyframes giradinha{
-    
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
