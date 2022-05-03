@@ -4,12 +4,12 @@
     <head>
         <meta encoding="utf-8">
         <title>Galeria de Filmes: Quentin Tarantino</title>
+
         <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 
         <style>
-            *{  
-                text-align: center;     font-family: 'Anton';    
-            }
+            *{  text-align: center;     font-family: 'Anton';       font-size: 24px;}
+            
             body{   
                 background-color: #131313;
             }
@@ -17,32 +17,49 @@
                 width: 95%;             min-width: 1080px;          margin: auto;
             }
 
-            .col_1{width: 6,33%;}       
-            .col_2{
-                width: 14,66%;          background-color: #ad4b4b;
+            .col_3{
+                width: 23%;             background-color: #ad4b4b;
                 border-style: solid;    border-color: #cfc6c6;
-                padding-top: 2%;        float: left;
+                padding-top: 3%;        float: left;
 
-                margin-left: 2%;        margin-right: 2%;
-                margin-bottom: 4%;
+                margin-left: 4.8%;      margin-right: 4.8%;
+                margin-bottom: 12%;     box-shadow: 20px 20px 20px #ad4b4b;
+
+                transform: scale(1);    transition: 1s;
+
+                animation: zoomCard 2s;  animation-iteration-count: 1;      animation-delay: 1s;
             }
-            .col_3{width: 23%;}         .col_4{width: 31,33%;}      .col_5{width: 39,66%;}
-            .col_6{width: 48%;}         .col_7{width: 56,33%;}      .col_8{width: 64,66%;}
-            .col_9{width: 73%;}         .col_10{width: 81,33%;}     .col_11{width: 89,66%;}
-            .col_12{width: 97,99%;}
+
+            .col_3:hover{transform: scale(1.5)}
+
+            @keyframes zoomCard{
+                0%{transform: scale(1);}
+                50%{transform: scale(1.1); background-color: #cf5b5b}
+                100%{transform: scale(1);}
+            }
+
+            .col_2{width: 14,66%;}      .col_4{width: 31,33%;}          .col_5{width: 39,66%;}
+            .col_6{width: 48%;}         .col_7{width: 56,33%;}          .col_8{width: 64,66%;}
+            .col_9{width: 73%;}         .col_10{width: 81,33%;}         .col_11{width: 89,66%;}
 
             h1{
-                color: #cfc6c6;       font-size: 96px;            background-color: #ad4b4b;  
+                color: #cfc6c6;       font-size: 121px;             background-color: #ad4b4b;
+                text-shadow: 5px 5px 5px #131313;                   box-shadow: 0px -10px 2px #cfc6c6;
+                animation: zoomTitle 2s;  animation-iteration-count: 1;
+
             }
-            img{
-                width: 269px;           height: 400px;              filter: grayscale(100%);
+            @keyframes zoomTitle{
+                0%{transform: scale(1)}
+                50%{transform: scale(1.2); background-color: #cf5b5b}
+                100%{transform: scale(1)}
             }
 
             #subtitulo,footer{
-                font-size: 24px;            color: #ad4b4b;
-                padding-bottom: 2%;         margin: auto;
+                font-size: 32px;    color: #cfc6c6;   padding-bottom: 4%;
             }
-            #painel{margin: auto;}
+            img{
+                width: 336px;       height: 500px;      max-width: 100%;        filter: grayscale(100%);
+            }
 
         </style>
     </head>
@@ -52,48 +69,45 @@
         <h1 class="col_11">Galeria do Tarantino</h1>
         <p id="subtitulo" class="col_11">Galeria de alguns dos filmes de Quentin Tarantino</p>
 
-        <div class="col_6" id="painel">
-            <div class="col_2">
+        <div class="col_8">
+            <div class="col_3">
                 <img src="img/caes_de_aluguel.jpg" alt="">
                 <p>Cães de Aluguel</p>
                 <p>1992</p>
             </div>
 
-            <div class="col_2">
+            <div class="col_3" class="card">
                 <img src="img/pulp_fiction.jpg" alt="">
                 <p>Pulp Fiction: Tempos de Violência</p>
                 <p>1994</p>
             </div>
 
-            <div class="col_2">
+            <div class="col_3" class="card">
                 <img src="img/kill_bill.jpg" alt="">
                 <p>Kill Bill: Volume 1</p>
                 <p>2003</p>
             </div>
 
-            <div class="col_2">
+            <div class="col_3" class="card">
                 <img src="img/bastardos_inglorios.jpg" alt="">
                 <p>Bastardos Inglórios</p>
                 <p>2009</p>
             </div>
 
-            <div class="col_2">
+            <div class="col_3" class="card">
                 <img src="img/django_livre.jpg" alt="">
                 <p>Django Livre</p>
                 <p>2012</p>
             </div>
 
-            <div class="col_2">
+            <div class="col_3" class="card">
                 <img src="img/os_oito_odiados.jpg" alt="">
                 <p>Os Oito Odiados</p>
                 <p>2015</p>
             </div>
-            
-            <footer class="col_11">
-                Desenvolvimento de Aplicações Web - COLTEC/UFMG
-            </footer>
-
         </div>
+
+        <footer class="col_11">Desenvolvimento de Aplicações Web - COLTEC/UFMG</footer>
 
         </div>
     </body>
