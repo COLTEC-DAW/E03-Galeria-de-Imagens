@@ -1,12 +1,7 @@
-.container {
+.container{
     width: 100%;
     margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center
 }
-
 .col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12 {
     float: left;
     padding: 1%;
@@ -60,14 +55,66 @@
     width: 98%;
 }
 
-* {
+* div:not(:first-of-type), div p, div b{
     background-color: rgb(202, 167, 70);
+}
+
+* div:not(:first-of-type, p, b){
+    border: 2px solid;
+    border-radius: 3%;
+    margin:3%;
+}
+h2{
+    font-style: italic;
 }
 
 h1{
     text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 0.25px;
 }
 
-h2{
-    font-style: italic;
+*:not(div){
+    background-color: skyblue;
+}
+
+div#filme{
+    -webkit-animation: myfirst 3s;
+    -webkit-animation-iteration-count: 1;
+    animation: myfirst 3s;
+    animation-iteration-count: 1;
+}    
+
+@-webkit-keyframes myfirst {
+    from {background-color: rgb(202, 167, 70);}
+    to {background-color: red}
+    100% {-webkit-transform: rotate(15deg);}
+}
+@keyframes myfirst {
+    from {background-color: rgb(202, 167, 70);}
+    to {background-color: red}
+    100% {-webkit-transform: rotate(15deg);}
+}
+div p, b{
+    -webkit-animation: myfirst1 3s;
+    -webkit-animation-iteration-count: 1;
+    animation: myfirst1 3s;
+    animation-iteration-count: 1;
+}    
+
+@-webkit-keyframes myfirst1 {
+    from {background-color: rgb(202, 167, 70);}
+    to {background-color: red}
+}
+@keyframes myfirst1 {
+    from {background-color: rgb(202, 167, 70);}
+    to {background-color: red}
+}
+div[id=filme]{
+    zoom:0%;
+    transition: transform .2s;
+}
+
+div[id=filme]:hover{
+    transform: scale(1.2);
 }
