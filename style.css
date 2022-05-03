@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
 .conteiner {
     width: 95%;
     margin: 0 auto;
+    background: linear-gradient(red, orange, green);
     
 }
 
@@ -10,9 +13,24 @@
     margin-left: 1%;
     
     text-align: center;
+
+    
+
     
     
-    
+}
+
+.col4:hover {
+    transform: scale(1.1);
+}
+
+@keyframes animacao {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .col1 {
@@ -68,7 +86,11 @@ img {
     width: 31.32%;
     border-radius: 5px 5px 5px 5px;
     text-align: center;
+    animation: animacao 2s;
+    
 }
+
+
 
 p {
     clear: both;
@@ -76,6 +98,15 @@ p {
 
 h1, h1 + p {
     text-align: center;
+}
+
+h1 {
+    font-family: 'Caveat', cursive;
+}
+
+h1 + p {
+    font-style: italic;
+    
 }
 
 
@@ -86,5 +117,6 @@ footer {
     bottom: 0;
     
 }
+
 
 
