@@ -88,7 +88,8 @@
 
 body{
     font-family: Tahoma;
-    background: radial-gradient(#e66465, #9198e5);
+    background: radial-graient(#e66465, #9198e5);
+    animation: giradinha 2s linear;
 }
 
 footer{
