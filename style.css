@@ -53,6 +53,7 @@ p{
 
 .card-title{
     font-size: 1.3em;
+    margin: 20px 0px 0px 0px;
 }
 
 .card-date{
@@ -161,8 +162,12 @@ div{
         width: 48%;
     }
 
-    .subtitle{
+    .card-title{
         font-size: 1.0em;
+    }
+    
+    .card-date{
+        font-size: 0.85em;
     }
 }
 
@@ -171,7 +176,12 @@ div{
     .col_4{
         width: 92%;
     }
-    .subtitle{
-        font-size: 0.8em;
+
+    .card-title{
+        font-size: 0.85em;
+    }
+    
+    .card-date{
+        font-size: 0.7em;
     }
 }
