@@ -5,7 +5,7 @@
 
 body {
     margin: 0;
-    background: linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 0%, 0%, 1) 0%, hsla(0, 0%, 100%, 1) 50%, hsla(0, 0%, 0%, 1) 100%);
+    background: linear-gradient(black, white);
 }
 
 h1 {
@@ -32,7 +32,7 @@ img {
     height: 100%;
 
     font-family: 'Times New Roman';
-    font-size: 20px;
+    font-size: 1.25em;
     font-style: normal;
 
     display: grid;
@@ -40,7 +40,6 @@ img {
     grid-template-rows: 90px 1fr 1fr 100px;
     gap: 30px;
 
-    padding: 10px;
     box-sizing: border-box;
 }
 
