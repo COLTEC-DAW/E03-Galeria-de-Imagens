@@ -2,11 +2,11 @@
     width: 100%;
     margin: auto;
 }
+@media screen and (min-width: 1024px){
 .col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12 {
     float: left;
     padding: 1%;
 } 
-
 .col_1{
     width: 6,33%;
 }
@@ -54,6 +54,34 @@
 .col_12{
     width: 98%;
 }
+}
+@media screen and (max-width: 1024px){
+    .col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12 {
+        float: left;
+        padding: 1%;
+    } 
+    .col_4{
+        width: 48%;
+    }
+}
+@media screen and (max-width: 648px){
+    .col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12 {
+        float: left;
+        padding: 1%;
+    } 
+    .col_4{
+        width: 98%;
+    }
+}
+body{
+    font-size: 18px;
+}
+div p{ 
+    font-size: 1.15em;
+}
+div b{
+    font-size: 1.30em;
+}
 
 * div:not(:first-of-type), div p, div b{
     background-color: rgb(202, 167, 70);
@@ -64,16 +92,16 @@
     border-radius: 3%;
     margin:3%;
 }
-h2{
-    font-style: italic;
-}
-
 h1{
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: 0.25px;
+    font-size: 2.8em;
 }
-
+h2{
+    font-style: italic;
+    font-size: 1.6em;
+}
 *:not(div){
     background-color: skyblue;
 }
