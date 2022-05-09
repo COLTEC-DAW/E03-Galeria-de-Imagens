@@ -8,57 +8,78 @@
         <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 
         <style>
-            *{  text-align: center;     font-family: 'Anton';       font-size: 24px;}
-            
+            *{  font-family: 'Anton';   }
+
             body{   
-                background-color: #131313;
+                font-size: 18px;            text-align: center;             background-color: #131313;
             }
             .container{
-                width: 95%;             min-width: 1080px;          margin: auto;
+                min-width: 95%;             width: 95%;                     margin: auto;
             }
 
-            .col_3{
-                width: 23%;             background-color: #ad4b4b;
-                border-style: solid;    border-color: #cfc6c6;
-                padding-top: 3%;        float: left;
+            #ano{font-size: 1.15em;}        #nome{font-size: 1.3em;}        #titulo{font-size: 6em;}
 
-                margin-left: 4.8%;      margin-right: 4.8%;
-                margin-bottom: 12%;     box-shadow: 20px 20px 20px #ad4b4b;
+            #subtitulo{font-size: 1.6em;    padding-bottom: 3%;             color: #cfc6c6}
 
-                transform: scale(1);    transition: 1s;
+            #tela{margin: auto;}
 
-                animation: zoomCard 2s;  animation-iteration-count: 1;      animation-delay: 1s;
+            .col_1{width: 6,33%;}           .col_2{width: 14,66%;}          .col_3{width: 23%;}
+            .col_4{width: 31,33%;}          .col_5{width: 39,66%;}          .col_6{width: 48%;}
+            .col_7{width: 56,33%;}          .col_8{width: 64,66%;}          .col_9{width: 73%;}         
+            .col_10{width: 81,33%;}         .col_11{width: 89,66%;}         .col_12{width: 98%;}
+
+            .card{
+                background-color: #ad4b4b;
+                
+                min-width: 15em;            min-height: 27em;
+
+                border-style: solid;        border-color: #cfc6c6;
+                padding-top: 3%;            float: left;
+
+                margin-left: 2%;            margin-right: 2%;
+                margin-bottom: 10%;         box-shadow: 20px 20px 20px #ad4b4b;
+
+                transform: scale(1);        transition: 1s;
+
+                animation: zoomCard 2s;     animation-delay: 1s;            animation-iteration-count: 1;
             }
 
-            .col_3:hover{transform: scale(1.5)}
+            .card:hover{transform: scale(1.25)}
 
             @keyframes zoomCard{
                 0%{transform: scale(1);}
-                50%{transform: scale(1.1); background-color: #cf5b5b}
+                50%{transform: scale(1.1);  background-color: #cf5b5b}
                 100%{transform: scale(1);}
             }
 
-            .col_2{width: 14,66%;}      .col_4{width: 31,33%;}          .col_5{width: 39,66%;}
-            .col_6{width: 48%;}         .col_7{width: 56,33%;}          .col_8{width: 64,66%;}
-            .col_9{width: 73%;}         .col_10{width: 81,33%;}         .col_11{width: 89,66%;}
-
             h1{
-                color: #cfc6c6;       font-size: 121px;             background-color: #ad4b4b;
-                text-shadow: 5px 5px 5px #131313;                   box-shadow: 0px -10px 2px #cfc6c6;
-                animation: zoomTitle 2s;  animation-iteration-count: 1;
+                background-color:#ad4b4b;               color: #cfc6c6;
 
+                text-shadow: 5px 5px 5px #131313;       box-shadow: 0px -10px 2px #cfc6c6;
+                animation: zoomTitle 2s;                  animation-iteration-count: 1;
             }
+
             @keyframes zoomTitle{
-                0%{transform: scale(1)}
-                50%{transform: scale(1.2); background-color: #cf5b5b}
-                100%{transform: scale(1)}
+                0%{transform: scale(1)}50%{transform: scale(1.2); background-color: #cf5b5b}100%{transform: scale(1)}
             }
 
-            #subtitulo,footer{
-                font-size: 32px;    color: #cfc6c6;   padding-bottom: 4%;
-            }
             img{
-                width: 336px;       height: 500px;      max-width: 100%;        filter: grayscale(100%);
+                width: 75%;       height: 75%;          max-width: 100%;        filter: grayscale(100%);
+            }
+
+            @media (max-width: 1024px){
+                .card{
+                    min-width: 15em;            min-height: 20em;
+                }
+                #ano{font-size: 1em;}           #nome{font-size: 1em;}        
+                #titulo{font-size: 4em;}     #subtitulo{font-size: 1.2em;}
+            }
+            @media screen and (max-width: 648px){
+                .card{
+                    min-width: 16em;            min-height: 28em;
+                }
+                #ano{font-size: 1.4em;}        #nome{font-size: 1.5em;}        
+                #titulo{font-size: 3em;}     #subtitulo{font-size: 1em;}
             }
 
         </style>
@@ -66,48 +87,48 @@
     <body>
         <div class="container">
 
-        <h1 class="col_11">Galeria do Tarantino</h1>
-        <p id="subtitulo" class="col_11">Galeria de alguns dos filmes de Quentin Tarantino</p>
+        <h1 class="col_11" id="titulo">Galeria do Tarantino</h1>
+        <p class="col_11" id="subtitulo">Galeria de alguns dos filmes de Quentin Tarantino</p>
 
-        <div class="col_8">
-            <div class="col_3">
+        <div id="tela">
+            <div class="card col_3">
                 <img src="img/caes_de_aluguel.jpg" alt="">
-                <p>Cães de Aluguel</p>
-                <p>1992</p>
+                <p id="nome">Cães de Aluguel</p>
+                <p id="ano">1992</p>
             </div>
 
-            <div class="col_3" class="card">
+            <div class="card col_3">
                 <img src="img/pulp_fiction.jpg" alt="">
-                <p>Pulp Fiction: Tempos de Violência</p>
-                <p>1994</p>
+                <p id="nome">Pulp Fiction: Tempos de Violência</p>
+                <p id="ano">1994</p>
             </div>
 
-            <div class="col_3" class="card">
+            <div class="card col_3">
                 <img src="img/kill_bill.jpg" alt="">
-                <p>Kill Bill: Volume 1</p>
-                <p>2003</p>
+                <p id="nome">Kill Bill: Volume 1</p>
+                <p id="ano">2003</p>
             </div>
 
-            <div class="col_3" class="card">
+            <div class="card col_3">
                 <img src="img/bastardos_inglorios.jpg" alt="">
-                <p>Bastardos Inglórios</p>
-                <p>2009</p>
+                <p id="nome">Bastardos Inglórios</p>
+                <p id="ano">2009</p>
             </div>
 
-            <div class="col_3" class="card">
+            <div class="card col_3">
                 <img src="img/django_livre.jpg" alt="">
-                <p>Django Livre</p>
-                <p>2012</p>
+                <p id="nome">Django Livre</p>
+                <p id="ano">2012</p>
             </div>
 
-            <div class="col_3" class="card">
+            <div class="card col_3">
                 <img src="img/os_oito_odiados.jpg" alt="">
-                <p>Os Oito Odiados</p>
-                <p>2015</p>
+                <p id="nome">Os Oito Odiados</p>
+                <p id="ano">2015</p>
             </div>
-        </div>
 
-        <footer class="col_11">Desenvolvimento de Aplicações Web - COLTEC/UFMG</footer>
+
+        </div>
 
         </div>
     </body>
