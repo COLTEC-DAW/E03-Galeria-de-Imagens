@@ -1,0 +1,20 @@
+{
+  "name": "E03-Galeria-de-Imagens",
+  "version": "1.0.0",
+  "description": "**OBS: É importante que você gere um commit para cada parte da atividade que você concluir.**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eric-Catarina/E03-Galeria-de-Imagens.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Eric-Catarina/E03-Galeria-de-Imagens/issues"
+  },
+  "homepage": "https://github.com/Eric-Catarina/E03-Galeria-de-Imagens#readme"
+}

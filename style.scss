@@ -1,0 +1,179 @@
+$vermelho : #EA5455 !default;
+$preto : #141E27 !default;
+$cinza1: #E0DDAA !default;
+$cinza2: #EEEDDE !default;
+
+
+
+@mixin border-radius($tamanho) {
+    border-radius: ($tamanho);
+
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: $preto;
+    background-size: 100px 100px;
+    font-size: 18px;
+
+}
+
+
+
+.paleta {
+    &-vermelho {
+        color: $vermelho;
+    }
+}
+
+
+
+.subtitulo {
+    text-shadow: 1.5px 1.5px $vermelho;
+    font-size: 1.6em;
+    color: $cinza2;
+    text-align: center;
+    margin: auto;
+    font-style: italic;
+
+}
+
+.nomeDoFilme {
+    font-size: 1.15em;
+    color: $preto;
+}
+
+.anoDoFilme {
+    font-size: 1.3em;
+    color: $preto;
+}
+
+.titulo,
+.bloquinhosContainer,
+.rodape {
+    margin: auto;
+    text-align: center;
+
+    font-style: italic;
+
+}
+
+
+
+
+
+.bloquinhosContainer {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.titulo {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2.8em;
+    color: $cinza1;
+
+}
+
+
+
+.blocoFilme {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 25%;
+    border: 3px solid;
+    border-radius: 15px;
+    background: $cinza2;
+    background-size: 100% 70%;
+    box-shadow: 5px 5px 5px $cinza2;
+    transition: width 1.5s, height 1.5s;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+
+    &:hover {
+        width: 32%;
+        height: 35%;
+    }
+
+}
+
+.blocoFilme img {
+    @include border-radius(15px);
+}
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+
+.area {
+    text-align: center;
+    font-size: 2em;
+    color: $cinza2;
+    letter-spacing: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    animation: blur 1.5s ease-out infinite;
+    text-shadow: 0px 0px 5px rgb(68, 43, 43), 0px 0px 7px rgb(0, 0, 0);
+}
+
+@keyframes blur {
+    from {
+        text-shadow: 0px 0px 10px $cinza1,
+            0px 0px 10px #fff,
+            0px 0px 25px #fff,
+            0px 0px 25px #fff,
+            0px 0px 25px #fff,
+            0px 0px 25px #fff,
+            0px 0px 25px #fff,
+            0px 0px 25px #fff,
+            0px 0px 50px #fff,
+            0px 0px 50px #fff,
+            0px 0px 50px #7B96B8,
+            0px 0px 150px #7B96B8,
+            0px 10px 100px #7B96B8,
+            0px 10px 100px #7B96B8,
+            0px 10px 100px #7B96B8,
+            0px 10px 100px #7B96B8,
+            0px -10px 100px #7B96B8,
+            0px -10px 100px #7B96B8;
+    }
+}
+
+
+// PROFESSOR, EU REIMPLEMENTEI O LAYOUT RESPONSIVO DO CSS COM SCSS :D
+
+$tablet: 1024px;
+$smartphone: 648px;
+$blocoFilmeWidth: 40%;
+$blocoFilmeHoverWidth: 45%;
+$blocoFilmeHoverHeight: 45%;
+
+@each $width in $tablet,
+$smartphone {
+    @media screen and (max-width : $width) {
+        .blocoFilme {
+            width: $blocoFilmeWidth;
+
+
+            &:hover {
+                width: $blocoFilmeHoverWidth;
+                height: $blocoFilmeHoverHeight;
+            }
+        }
+
+    }
+
+    $blocoFilmeWidth: $blocoFilmeWidth+30%;
+    $blocoFilmeHoverWidth : $blocoFilmeHoverWidth+31%;
+    $blocoFilmeHoverHeight: $blocoFilmeHoverHeight+41%;
+
+}
