@@ -1,0 +1,118 @@
+html {
+    background-color: #424242;
+  }
+  
+  #header {
+    background-color: #6410ff;
+    color: white;
+  }
+  
+  .col_1 {
+    width: 7%;
+    float: left;
+    padding: 1.3%;
+    overflow: hidden;
+    margin: 1%;
+  }
+  
+  .col_2 {
+    width: 14%;
+    float: left;
+    padding: 1.3%;
+    overflow: hidden;
+    margin: 1%;
+  }
+  
+  .col_3 {
+    width: 21%;
+    float: left;
+    padding: 1.3%;
+    overflow: hidden;
+    margin: 1%;
+  }
+  
+  .col_4 {
+    width: 28%;
+    float: left;
+    padding: 1.3%;
+    overflow: hidden;
+    margin: 1%;
+  }
+  
+  .col_5 {
+    width: 35%;
+    float: left;
+    padding: 1.3%;
+    overflow: hidden;
+    margin: 1%;
+  }
+  
+  .col_6 {
+    width: 42%;
+    float: left;
+    padding: 1.3%;
+    overflow: hidden;
+    margin: 1%;
+  }
+  
+  .col_7 {
+    width: 49%;
+    float: left;
+    padding: 1.3%;
+    overflow: hidden;
+    margin: 1%;
+  }
+  
+  .col_8 {
+    width: 56%;
+    float: left;
+    padding: 1.3%;
+    overflow: hidden;
+    margin: 1%;
+  }
+  
+  .col_9 {
+    width: 63%;
+    float: left;
+    padding: 1.3%;
+    overflow: hidden;
+    margin: 1%;
+  }
+  
+  .col_10 {
+    width: 70%;
+    float: left;
+    padding: 1.3%;
+    overflow: hidden;
+    margin: 1%;
+  }
+  
+  .col_11 {
+    width: 77%;
+    float: left;
+    padding: 1.3%;
+    overflow: hidden;
+    margin: 1%;
+  }
+  
+  img {
+    display: block;
+    width: 80%;
+    margin: auto;
+  }
+  
+  .filmCard {
+    position: relative;
+    background-color: #561ac5;
+    border: 2px black solid;
+    border-radius: 5%;
+    color: white;
+    -webkit-animation-name: cardAnimation;
+            animation-name: cardAnimation;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-transition: ease-out;
+    transition: ease-out;
+    height: 700px;
+  }
+  /*# sourceMappingURL=bloh.css.map */

@@ -1,0 +1,62 @@
+/*
+Variables declaration
+*/
+$pageBackgroundColor: rgb(66, 66, 66);
+$title-font: 'Bebas Neue', cursive;
+$headerAndFooterBg: #6410ff;
+$filmCardBg: #561ac5;
+$filmCardBorderColor: black;
+$font-color: white;
+$filmCardHeight: 700px;
+
+html{
+    background-color: #{$pageBackgroundColor};
+}
+#header {
+    background-color: #{$headerAndFooterBg};
+    color: #{$font-color};
+}
+@for $i from 1 to 12 {
+    .col_#{$i} { width: 7% * $i; float: left; padding: 1.3%; overflow: hidden; margin: 1%; };
+}
+img{
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+.filmCard {
+    position: relative;
+    background-color: #{$filmCardBg};
+    border: 2px #{$filmCardBorderColor} solid;
+    @include border-radius(5%);
+    color: #{$font-color};
+    @include animation-name(cardAnimation);
+    @include animation-duration(1s);
+    @include transition(ease-out);
+    height: #{$filmCardHeight};
+}
+/*
+Mixins for page compatibilty between browsers
+*/
+@mixin box-sizing($type) {
+    -webkit-box-sizing: $type;
+    box-sizing: $type;
+}
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+@mixin animation-name($name){
+    -webkit-animation-name: $name;
+    animation-name: $name;
+}
+@mixin animation-duration($time) {
+    -webkit-animation-duration: $time;
+    animation-duration: $time;
+}
+@mixin transition($type){
+    -webkit-transition: $type;
+    transition: $type;
+}
