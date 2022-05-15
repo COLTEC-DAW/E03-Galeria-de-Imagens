@@ -1,0 +1,154 @@
+//Variáveis
+$rosa: #e66465;
+$roxoAzulado: #9198e5;
+$fontePrincipal: Tahoma;
+$fonteSubtituloeTitulo: "Bebas Neue", cursive;
+$tamanhoPadraoFonte: 18px;
+$tamanhoFonteSubtitulo: 2.8em;
+$tamanhoFonteTitulo: 1.6em;
+$tamanhoFonteAnoFilme: 1.15em;
+$tamanhoFonteFilme: 1.3em;
+$corSombraCartao: rgba(50, 50, 50, 0.77);
+$preto: #000000;
+$cinza: #999;
+
+body {
+    font-size: tamanhoPadraoFonte;
+    font-family: fontePrincipal;
+    background: radial-gradient(rosa, roxoAzulado);
+}
+
+footer {
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.col_1,
+.col_2,
+.col_3,
+.col_4,
+.col_5,
+.col_6,
+.col_7,
+.col_8,
+.col_9,
+.col_10,
+.col_11,
+.col_12 {
+    float: left;
+    padding: 0, 3%;
+    padding-bottom: 99999px;
+    margin-bottom: -99999px;
+}
+
+.col_1 {
+    width: 8%;
+}
+.col_2 {
+    width: 16%;
+}
+.col_3 {
+    width: 24%;
+}
+.col_4 {
+    width: 32%;
+}
+.col_5 {
+    width: 40%;
+}
+.col_6 {
+    width: 48%;
+}
+.col_7 {
+    width: 56%;
+}
+.col_8 {
+    width: 64%;
+}
+.col_9 {
+    width: 72%;
+}
+.col_10 {
+    width: 80%;
+}
+.col_11 {
+    width: 88%;
+}
+.col_12 {
+    width: 96%;
+}
+
+.filmes {
+    text-align: center;
+    border: 2.5%;
+}
+
+.imagens {
+    max-width: 80%;
+    max-height: 80%;
+    box-shadow: 9px 7px 5px corSombraCartao;
+    animation: giradinha 2s linear;
+}
+
+.imagens:hover {
+    transform: scale(1.05);
+}
+
+.tituloPrincipal,
+.subtituloPrincipal {
+    text-align: center;
+    font-family: fonteSubtituloeTitulo;
+}
+
+.tituloPrincipal {
+    font-size: tamanhoFonteTitulo;
+}
+
+.subtituloPrincipal {
+    font-size: tamanhoFonteSubtitulo;
+}
+
+.moldura {
+    border: 4px solid cinza;
+}
+
+.anoFilme {
+    font-size: tamanhoFonteAnoFilme;
+}
+
+.nomeFilme {
+    font-size: tamanhoFonteFilme;
+}
+
+#Gzao {
+    color: preto;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 648px) {
+    /*Smartphone*/
+    .col_4 {
+        width: 96%;
+    }
+}
+
+@media screen and (min-width: 648px) and (max-width: 1024px) {
+    /*Tablet*/
+    .col_4 {
+        width: 48%;
+    }
+}
+
+@keyframes giradinha {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
