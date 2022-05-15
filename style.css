@@ -87,10 +87,6 @@ footer{
     font-size: 1.6em;
 }
 
-.moldura{
-    border: 4px solid #999;
-}
-
 .anoFilme{
     font-size: 1.15em;
 }
@@ -105,6 +101,7 @@ footer{
 }
 
 @media screen and (max-width: 648px){ /*Smartphone*/
+    
     .col_4 {
         width: 96%;
     }
