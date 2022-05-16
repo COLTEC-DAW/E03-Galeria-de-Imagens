@@ -39,8 +39,10 @@ img + p{
 
 .col_2{
     width: 48%;
-    -webkit-transition: width 2s, height 2s;
-    transition: width 2s, height 2s;
+    @include animacao(2s);
+    &:hover{
+        width: 60%;
+    }
 }
 
 @media (min-width: 1024px){
@@ -53,10 +55,6 @@ img + p{
     .col_2{
         width: 80%;
     }
-}
-
-.col_2:hover {
-  width: 60%;
 }
 
 .col_3{
@@ -89,4 +87,9 @@ img{
 @keyframes show-film {
     from {bottom: -90px;}
     to {bottom: 0px;}
+}
+
+@mixin animacao($seconds){
+    -webkit-transition: width $seconds, height $seconds;
+    transition: width $seconds, height $seconds;
 }
