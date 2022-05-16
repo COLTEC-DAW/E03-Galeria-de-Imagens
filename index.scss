@@ -1,0 +1,92 @@
+$tam-font: 18px;
+$tam-font2: 1.15em;
+$font-titulo: 2.8em;
+$back-color: rgb(26, 26, 26);
+$second-color: black;
+
+html{
+    background-color: $back-color;
+    color: azure;
+}
+
+body{
+    font-size: $tam-font;
+}
+
+p + p{
+    font-size: $tam-font2;
+}
+
+img + p{
+    font-size: $tam-font2 + 0.15em;
+}
+
+.container{
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+}
+
+.col_1, .col_2, .col_3{
+    float: left;
+    padding: 1%;
+}
+
+.col_1{
+    width: 100%;
+    background-color: $second-color;
+}
+
+.col_2{
+    width: 48%;
+    -webkit-transition: width 2s, height 2s;
+    transition: width 2s, height 2s;
+}
+
+@media (min-width: 1024px){
+    .col_2{
+        width:30%;
+    }
+}
+
+@media (max-width: 648) {
+    .col_2{
+        width: 80%;
+    }
+}
+
+.col_2:hover {
+  width: 60%;
+}
+
+.col_3{
+    width: 100%;
+
+}
+
+div{
+    display: block;
+    text-align: center;
+    border-bottom: 2px solid;
+}
+
+h1{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: $font-titulo;
+}
+
+h1 + p{
+    font-size: $font-titulo - 1.2em;
+}
+
+img{
+    width: 30%;
+    box-shadow: 10px 5px 5px $second-color;
+    position: relative;
+    animation: show-film 2s;
+}
+
+@keyframes show-film {
+    from {bottom: -90px;}
+    to {bottom: 0px;}
+}
