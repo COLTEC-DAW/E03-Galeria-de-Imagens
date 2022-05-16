@@ -72,7 +72,7 @@ img{
     text-align: center;
     font-family: 'Bebas Neue', Times, serif;
     font-size: 35px;
-    line-height: 5px;
+    line-height: 60px;
     color: orange;
     background-color: #282828;
     border-radius: 45px;
@@ -84,7 +84,7 @@ img{
 
 .grid{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     max-width: 700px;
     margin: 0 auto;
     margin-top: 10px;
