@@ -1,142 +1,195 @@
-@keyframes cardAnimation {
-    from {opacity: 10%; rotate: 0deg;}
-    to {opacity: 100%; rotate: 360deg;}
-}
-
-*{
-    box-sizing: border-box;
-}
-body{
-    font-size: 18px;
-}
-.anoFilme{
-    font-size: 1.15em;
-}
-p b{
-    font-size: 1.3em;
-}
-h1{
-    font-family: 'Bebas Neue', cursive;
+@-webkit-keyframes cardAnimation {
+    from {
+      opacity: 10%;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+  
+  @keyframes cardAnimation {
+    from {
+      opacity: 10%;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+  
+  /*
+  Mixins for page compatibilty between browsers
+  */
+  /*
+  Variables declaration
+  */
+  html {
+    background-color: #424242;
+  }
+  
+  #header {
+    background-color: #6410ff;
+    color: white;
+  }
+  
+  #header h1 {
+    font-family: Bebas Neue, cursive;
     font-size: 2.8em;
-}
-#header p{
-    font-size: 1.6em;
-}
-html{
-    background-color: rgb(66, 66, 66);
-}
-.container {
-    width: 90%;
-    margin: auto;
-}
-
-.col_1,
-.col_2,
-.col_3,
-.col_4,
-.col_5,
-.col_6,
-.col_7,
-.col_8,
-.col_9,
-.col_10,
-.col_11,
-.col_12 {
+  }
+  
+  footer {
+    float: left;
+    width: 100%;
+    background-color: #6410ff;
+    color: white;
+  }
+  
+  h1,
+  h2,
+  p {
+    display: block;
+    text-align: center;
+  }
+  
+  .col_1 {
+    width: 7%;
     float: left;
     padding: 1.3%;
     overflow: hidden;
     margin: 1%;
-}
-
-.col_1 {
-    width: 7.6%;
-}
-.col_2 {
-    width: 15.2%;
-}
-.col_3 {
-    width: 22.5%;
-}
-.col_4 {
-    width: 30%;
-}
-.col_5 {
-    width: 35%;
-}
-.col_6{
-    width: 42%;
-}
-.col_7{
-    width: 49%;
-}
-.col_8{
-    width: 56%;
-}
-.col_9{
-    width: 63%;
-}
-.col_10{
-    width: 70%;
-}
-.col_11{
-    width: 77%;
-}
-.col_12{
-    width: 84%;
-}
-
-h1,
-h2,
-p {
-    text-align: center;
-}
-img{
-    display: block;
-    width: 80%;
-    margin: auto;
-}  
-
-#header {
-    background-color: #6410ff;
-    color: white;
-}
-
-footer{
-    background-color: #6410ff;
-    color: white;
+  }
+  
+  .col_2 {
+    width: 14%;
     float: left;
-    width: 100%;
-}
-
-.filmCard{
-    position: relative;
+    padding: 1.3%;
+    overflow: hidden;
+    margin: 1%;
+  }
+  
+  .col_3 {
+    width: 21%;
+    float: left;
+    padding: 1.3%;
+    overflow: hidden;
+    margin: 1%;
+  }
+  
+  .col_4 {
+    width: 28%;
+    float: left;
+    padding: 1.3%;
+    overflow: hidden;
+    margin: 1%;
+  }
+  
+  .col_5 {
+    width: 35%;
+    float: left;
+    padding: 1.3%;
+    overflow: hidden;
+    margin: 1%;
+  }
+  
+  .col_6 {
+    width: 42%;
+    float: left;
+    padding: 1.3%;
+    overflow: hidden;
+    margin: 1%;
+  }
+  
+  .col_7 {
+    width: 49%;
+    float: left;
+    padding: 1.3%;
+    overflow: hidden;
+    margin: 1%;
+  }
+  
+  .col_8 {
+    width: 56%;
+    float: left;
+    padding: 1.3%;
+    overflow: hidden;
+    margin: 1%;
+  }
+  
+  .col_9 {
+    width: 63%;
+    float: left;
+    padding: 1.3%;
+    overflow: hidden;
+    margin: 1%;
+  }
+  
+  .col_10 {
+    width: 70%;
+    float: left;
+    padding: 1.3%;
+    overflow: hidden;
+    margin: 1%;
+  }
+  
+  .col_11 {
+    width: 77%;
+    float: left;
+    padding: 1.3%;
+    overflow: hidden;
+    margin: 1%;
+  }
+  
+  .filmCard {
     background-color: #561ac5;
     border: 2px black solid;
     border-radius: 5%;
     color: white;
+    -webkit-animation-name: cardAnimation;
     animation-name: cardAnimation;
-    animation-duration: 1s;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-transition: ease-out;
     transition: ease-out;
-    height: 700px;
-}
-
-.filmCard:hover{
-    transform: scale(2);
-    z-index: 999;
-}
-
-@media (max-width: 1024px){
-    .col_4{
-        width: 40%;
-        height: 550px;
-        max-height: fit-content;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+  }
+  
+  .filmCard:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  
+  .filmCard img {
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 5%;
+    border: 5px black solid;
+  }
+  
+  .filmCard .anoFilme {
+    font-size: 1em;
+  }
+  
+  .filmCard p b {
+    font-size: 1.2em;
+  }
+  
+  @media (max-width: 1024px) {
+    .col_4 {
+      width: 40%;
     }
-}
-@media (max-width: 648px){
-    .col_4{
-        position: relative;
-        width: 51%;
-        height: 435px;
-        left: 25%;
+    .filmCard {
+      height: 55vmax;
     }
-}
+  }
+  
+  @media (max-width: 648px) {
+    .col_4 {
+      position: relative;
+      width: 51%;
+      height: 435px;
+      left: 25%;
+    }
+  }
+  /*# sourceMappingURL=teste.css.map */
