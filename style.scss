@@ -8,14 +8,16 @@ $tamanhoFonteSubtitulo: 2.8em;
 $tamanhoFonteTitulo: 1.6em;
 $tamanhoFonteAnoFilme: 1.15em;
 $tamanhoFonteFilme: 1.3em;
+$dimensaoSmartph: 648px;
+$dimensaoTablet: 1024px;
 $corSombraCartao: rgba(50, 50, 50, 0.77);
 $preto: #000000;
 $cinza: #999;
 
 body {
-    font-size: tamanhoPadraoFonte;
-    font-family: fontePrincipal;
-    background: radial-gradient(rosa, roxoAzulado);
+    font-size: $tamanhoPadraoFonte;
+    font-family: $fontePrincipal;
+    background: radial-gradient($rosa, $roxoAzulado);
 }
 
 footer {
@@ -28,59 +30,15 @@ footer {
     overflow: hidden;
 }
 
-.col_1,
-.col_2,
-.col_3,
-.col_4,
-.col_5,
-.col_6,
-.col_7,
-.col_8,
-.col_9,
-.col_10,
-.col_11,
-.col_12 {
+.col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12 {
     float: left;
     padding: 0, 3%;
     padding-bottom: 99999px;
     margin-bottom: -99999px;
 }
 
-.col_1 {
-    width: 8%;
-}
-.col_2 {
-    width: 16%;
-}
-.col_3 {
-    width: 24%;
-}
-.col_4 {
-    width: 32%;
-}
-.col_5 {
-    width: 40%;
-}
-.col_6 {
-    width: 48%;
-}
-.col_7 {
-    width: 56%;
-}
-.col_8 {
-    width: 64%;
-}
-.col_9 {
-    width: 72%;
-}
-.col_10 {
-    width: 80%;
-}
-.col_11 {
-    width: 88%;
-}
-.col_12 {
-    width: 96%;
+@for $i from 1 to 13 { //Colocando as dimensões das 12 colunas
+    .col_#{$i} { width: 8% * $i; }
 }
 
 .filmes {
@@ -91,53 +49,48 @@ footer {
 .imagens {
     max-width: 80%;
     max-height: 80%;
-    box-shadow: 9px 7px 5px corSombraCartao;
+    box-shadow: 9px 7px 5px $corSombraCartao;
     animation: giradinha 2s linear;
-}
-
-.imagens:hover {
-    transform: scale(1.05);
+    :hover{
+        transform: scale(1.05);
+    }
 }
 
 .tituloPrincipal,
 .subtituloPrincipal {
     text-align: center;
-    font-family: fonteSubtituloeTitulo;
+    font-family: $fonteSubtituloeTitulo;
 }
 
 .tituloPrincipal {
-    font-size: tamanhoFonteTitulo;
+    font-size: $tamanhoFonteTitulo;
 }
 
 .subtituloPrincipal {
-    font-size: tamanhoFonteSubtitulo;
-}
-
-.moldura {
-    border: 4px solid cinza;
+    font-size: $tamanhoFonteSubtitulo;
 }
 
 .anoFilme {
-    font-size: tamanhoFonteAnoFilme;
+    font-size: $tamanhoFonteAnoFilme;
 }
 
 .nomeFilme {
-    font-size: tamanhoFonteFilme;
+    font-size: $tamanhoFonteFilme;
 }
 
 #Gzao {
-    color: preto;
+    color: $preto;
     text-decoration: none;
 }
 
-@media screen and (max-width: 648px) {
+@media screen and (max-width: $dimensaoSmartph) {
     /*Smartphone*/
     .col_4 {
         width: 96%;
     }
 }
 
-@media screen and (min-width: 648px) and (max-width: 1024px) {
+@media screen and (min-width: $dimensaoSmartph) and (max-width: $dimensaoTablet) {
     /*Tablet*/
     .col_4 {
         width: 48%;
