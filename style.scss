@@ -2,6 +2,16 @@ $primaryColor: #041213;
 $ColorResponsive: #0f1524;
 $primaryfont: Arial, Helvetica, sans-serif;
 
+$width1_responsive: 3400px;
+$width2_responsive: 1450px;
+$width3_responsive: 1100px;
+$width4_responsive: 850px;
+$width5_responsive: 600px;
+
+$widthCollum: 100%;
+$widthLastCollum: 200%;
+
+
 @mixin MainSlide(){
 
     @keyframes slide {
@@ -289,17 +299,17 @@ h1{
 }
 
 
-@media screen and (max-width: 3400px) {
+@media screen and (max-width: $width1_responsive) {
 
     .movie img{
 
-        width: 100%
+        width: $widthCollum;
     }
     
 }
 
 
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: $width2_responsive) {
 
 
     .category{
@@ -309,13 +319,13 @@ h1{
 
     .slider{
 
-        width:100%;
+        width:$widthCollum;
         margin-right: 0px;
         justify-content: center;
     }
     .movie img{
 
-        width: 100%
+        width: $widthCollum;
     }
 
     .movie{
@@ -333,7 +343,7 @@ h1{
 
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: $width3_responsive) {
 
    
     body{
@@ -348,7 +358,7 @@ h1{
     }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: $width4_responsive) {
 
     
     body{
@@ -374,14 +384,14 @@ h1{
     .last_division{
 
         display: flex;
-        width: 200%;
+        width: $widthLastCollum;
         flex-direction: row;
 
     }
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: $width5_responsive) {
 
 
     body{
@@ -399,7 +409,7 @@ h1{
     .last_division{
 
         display: flex;
-        width: 100%;
+        width: $widthCollum;
         flex-direction: column;
 
     }
