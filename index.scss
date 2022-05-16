@@ -3,6 +3,7 @@ $tam-font2: 1.15em;
 $font-titulo: 2.8em;
 $back-color: rgb(26, 26, 26);
 $second-color: black;
+$layout:60%;
 
 html{
     background-color: $back-color;
@@ -41,19 +42,19 @@ img + p{
     width: 48%;
     @include animacao(2s);
     &:hover{
-        width: 60%;
+        width: $layout;
     }
 }
 
 @media (min-width: 1024px){
     .col_2{
-        width:30%;
+        width:$layout - 30%;
     }
 }
 
 @media (max-width: 648) {
     .col_2{
-        width: 80%;
+        width: $layout + 20%;
     }
 }
 
