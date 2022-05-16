@@ -74,7 +74,7 @@ img {
 }
 
 .container div {
-    flex: 1 1 300px;
+    flex: 1 1 350px;
 
     margin: 10px;
     padding: 10px;
@@ -95,7 +95,7 @@ img {
 
 #filmes {
     max-width: 400px;
-    min-width: 200px;
+    min-width: 300px;
 
     @include all-prefix('animation', 'appear 1.5s 1');
 }
