@@ -1,25 +1,40 @@
+
+/*const*/
 /*text colors*/
 $main-bg-color: #021240;
 $title-color: #FFCA0A;
 $secondary-title-color: #077FFF;
 $plain-text-color: #FF0000;
 
+/*screen sizes*/
 $layout-breakpoint-small: 648px;
 $layout-breakpoint-medium: 1024px;
+
+/*fonts*/
+$primary-font: 'Raleway', sans-serif;
+
+@mixin inital-settings{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin all-prefix($name, $value) {
+    @each $vendor in ('-webkit-', '-moz-', '-ms-', '-o-', '') {
+      #{$vendor}#{$name}: #{$value};
+    }
+  }
+
+* {
+    @include initial-settings()
+}
+
 
 @keyframes card-animation {
     from {opacity: 10%; rotate: 0deg;}
     to {opacity: 100%; rotate: 360deg;}
 }
 
-*{
-    margin: 0;
-    padding: 0;
-}
-  
-*, *::before, *::after{ 
-    box-sizing: border-box; 
-}
 
 html{
     font-family: 'Raleway', sans-serif;
