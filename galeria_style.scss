@@ -1,0 +1,67 @@
+$fonte-divs: Helvetica; 
+$cor-divs: rgb(202, 167, 70);
+$cor-fundo: skyblue;
+$vermelho: red;
+$widthcelular: 648px;
+$widthdesktop: 1024px;
+
+*div:not(:first-of-type), div p, div b{
+    background-color: $cor-divs;
+}
+
+*:not(div){
+    background-color: $cor-fundo;
+}
+
+@mixin border-radius($radius){
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+* div:not(:first-of-type, p, b){
+   @include border-radius(3%);
+}
+
+@mixin animation($name, $from, $to) {
+    @keyframes #{$name} {
+      from {background-color: $cor-divs;}
+      to {background-color: $vermelho}
+  }
+}  
+@include animation($myfirst, $cor-divs, $vermelho);
+
+@mixin transition($transform){
+    -webkit-transition: $transform;
+    -moz-transition: $transform;
+    -ms-transition: $transform;
+    -o-transition: $transform;
+    transition: $transform;
+  }
+div[id=filme]{
+    zoom:0%;
+    @include transition(transform .2s);
+}
+
+div[id=filme]:hover{
+    @Include transition(transform scale(1.2));
+}
+
+@media screen and (max-width: $widthdesktop){
+    .col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12 {
+        float: left;
+        padding: 1%;
+    } 
+    .col_4{
+        width: 48%;
+    }
+}
+@media screen and (max-width: $widthcelular){
+    .col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12 {
+        float: left;
+        padding: 1%;
+    } 
+    .col_4{
+        width: 98%;
+    }
+}
