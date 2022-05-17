@@ -1,0 +1,358 @@
+$primary-color: #fff;
+$text-color: #535823;
+
+$width1: 1024px;
+$width2: 648px;
+$font-family: Anton;
+$fontsize-body: 18px;
+$fontsize-titulo: 2.8em;
+$fontsize-sub: 1.6em;
+$fontsize-ano: 1.15em;
+$fontsize-nome: 1.3em;
+
+@mixin border-radius($radius) {
+
+	border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+}
+
+@mixin animation($name, $duration, $timing, $type){
+
+    -o-animation: $name $duration $timing $type;
+    -moz-animation: $name $duration $timing $type;
+    -webkit-animation: $name $duration $timing $type;
+    animation: $name $duration $timing $type;
+}
+
+@mixin keyframes($value) {
+    @-webkit-keyframes #{$value} {
+      @content;
+    }
+    @-moz-keyframes #{$value} {
+      @content;
+    }
+    @-o-keyframes #{$value} {
+      @content;
+    }
+    @keyframes #{$value} {
+      @content;
+    }
+}
+
+@mixin transform($value) {
+    -o-transform: $value;
+    -ms-transform: $value;
+    -webkit-transform: $value;
+    transform: $value;
+  }
+
+body {
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(0,0,0,0.8) 0%,
+        rgba(0,0,0,0.2) 20%,
+        rgba(20,20,20,0.2) 80%,
+        rgba(20,20,20,1) 100%
+        ),
+
+    url(wallpaper.jpg);
+    background-size: cover;
+    text-align: center;
+    font-size: $fontsize-body;
+}
+
+#titulo{
+    font-family: $font-family;
+    color: $text-color;
+    font-size: $fontsize-titulo;
+}
+
+#subtitulo{
+    
+    font-family: $font-family;
+    font-size: $fontsize-sub;
+    margin-bottom: 10%;
+}
+
+#ano{
+
+    font-size: $fontsize-ano;
+}
+
+#nome{
+
+    font-size: $fontsize-nome;
+}
+
+footer {
+
+    margin-top: 10%;
+    margin-bottom: 5%;
+    font-family: $font-family;
+    font-size: $fontsize-sub;
+
+}
+
+.container{
+
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 92%;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    margin-right: auto;
+    margin-left: auto;
+    color: $primary-color;
+}
+
+
+.container img {
+
+    @include border-radius(5%);
+    width: 75%;
+
+}
+
+@media (min-width: $width1){
+    .col-1 {
+        float: left;
+        flex: 0 0 auto;
+        width: 8.33333333%;
+      }
+
+      .col-2 {
+        float: left;
+        flex: 0 0 auto;
+        width: 16.66666667%;
+      }
+
+      .col-3 {
+        float: left;
+        flex: 0 0 auto;
+        width: 25%;
+      }
+
+      .col-4 {
+        float: left;
+        flex: 0 0 auto;
+        width: 33.33333333%;
+      }
+
+      .col-5 {
+        float: left;
+        flex: 0 0 auto;
+        width: 41.66666667%;
+      }
+
+      .col-6 {
+        float: left;
+        flex: 0 0 auto;
+        width: 50%;
+      }
+
+      .col-7 {
+        float: left;
+        flex: 0 0 auto;
+        width: 58.33333333%;
+      }
+
+      .col-8 {
+        float: left;
+        flex: 0 0 auto;
+        width: 66.66666667%;
+      }
+
+      .col-9 {
+        float: left;
+        flex: 0 0 auto;
+        width: 75%;
+      }
+
+      .col-10 {
+        float: left;
+        flex: 0 0 auto;
+        width: 83.33333333%;
+      }
+
+      .col-11 {
+        float: left;
+        flex: 0 0 auto;
+        width: 91.66666667%;
+      }
+
+      .col-12 {
+        float: left;
+        flex: 0 0 auto;
+        width: 100%;
+      }
+}
+
+@media (max-width: $width1) and (min-width: $width2){
+    .colt-1 {
+        float: left;
+        flex: 0 0 auto;
+        width: 8.33333333%;
+      }
+
+      .colt-2 {
+        float: left;
+        flex: 0 0 auto;
+        width: 16.66666667%;
+      }
+
+      .colt-3 {
+        float: left;
+        flex: 0 0 auto;
+        width: 25%;
+      }
+
+      .colt-4 {
+        float: left;
+        flex: 0 0 auto;
+        width: 33.33333333%;
+      }
+
+      .colt-5 {
+        float: left;
+        flex: 0 0 auto;
+        width: 41.66666667%;
+      }
+
+      .colt-6 {
+        float: left;
+        flex: 0 0 auto;
+        width: 50%;
+      }
+
+      .colt-7 {
+        float: left;
+        flex: 0 0 auto;
+        width: 58.33333333%;
+      }
+
+      .colt-8 {
+        float: left;
+        flex: 0 0 auto;
+        width: 66.66666667%;
+      }
+
+      .colt-9 {
+        float: left;
+        flex: 0 0 auto;
+        width: 75%;
+      }
+
+      .colt-10 {
+        float: left;
+        flex: 0 0 auto;
+        width: 83.33333333%;
+      }
+
+      .colt-11 {
+        float: left;
+        flex: 0 0 auto;
+        width: 91.66666667%;
+      }
+
+      .colt-12 {
+        float: left;
+        flex: 0 0 auto;
+        width: 100%;
+      }
+
+}
+
+@media (max-width: $width2){
+
+    .colm-1 {
+        float: left;
+        flex: 0 0 auto;
+        width: 8.33333333%;
+      }
+
+      .colm-2 {
+        float: left;
+        flex: 0 0 auto;
+        width: 16.66666667%;
+      }
+
+      .colm-3 {
+        float: left;
+        flex: 0 0 auto;
+        width: 25%;
+      }
+
+      .colm-4 {
+        float: left;
+        flex: 0 0 auto;
+        width: 33.33333333%;
+      }
+
+      .colm-5 {
+        float: left;
+        flex: 0 0 auto;
+        width: 41.66666667%;
+      }
+
+      .colm-6 {
+        float: left;
+        flex: 0 0 auto;
+        width: 50%;
+      }
+
+      .colm-7 {
+        float: left;
+        flex: 0 0 auto;
+        width: 58.33333333%;
+      }
+
+      .colm-8 {
+        float: left;
+        flex: 0 0 auto;
+        width: 66.66666667%;
+      }
+
+      .colm-9 {
+        float: left;
+        flex: 0 0 auto;
+        width: 75%;
+      }
+
+      .colm-10 {
+        float: left;
+        flex: 0 0 auto;
+        width: 83.33333333%;
+      }
+
+      .colm-11 {
+        float: left;
+        flex: 0 0 auto;
+        width: 91.66666667%;
+      }
+
+      .colm-12 {
+        float: left;
+        flex: 0 0 auto;
+        width: 100%;
+      }
+}
+
+#movie {
+
+    @include animation(zoomIn, 2s, 1, both);
+    @include keyframes(zoomIn){
+        0% {
+            opacity: 0;
+            transform: scale3d(.3, .3, .3);
+        }
+        50% {
+            opacity: 1;
+        }
+    }
+}
+
+#movie:hover {
+    @include transform(scale(1.1));
+}
