@@ -1,0 +1,68 @@
+*
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+body
+{
+    text-align: center;
+}
+header
+{
+    font-size: 2rem;
+}
+.container 
+{
+    width: 96%;
+    margin: auto;
+}
+.col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9
+{
+    float: left;
+    padding: 1%;
+}
+.col_1
+{
+    width: 10%;
+}
+.col_2
+{
+    width: 20%;
+}
+.col_3
+{
+    width: 30%;
+}
+.col_4
+{
+    width: 40%;
+}
+.col_5
+{
+    width: 50%;
+}
+.col_6
+{
+    width: 60%;
+}
+.col_7
+{
+    width: 70%
+}
+.col_8
+{
+    width: 80%;
+}
+.col_9
+{
+    width: 90%;
+}
+img
+{
+    width: 70%;
+    height: 70%;
+} 
+footer
+{
+    font-size: 1.2rem;
+}
