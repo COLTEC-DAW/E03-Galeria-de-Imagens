@@ -1,0 +1,120 @@
+.col_1,
+.col_2,
+.col_3,
+.col_4,
+.col_5,
+.col_6,
+.col_7,
+.col_8,
+.col_9,
+.col_10,
+.col_11,
+.col_12 {
+    float: left;
+    padding: 1.3%;
+}
+
+.col_1 {
+    width: 7.6%;
+}
+.col_2 {
+    width: 13.2%;
+}
+.col_3 {
+    width: 22.5%;
+}
+.col_4 {
+    width: 28%;
+}
+.col_5 {
+    width: 35%;
+}
+.col_6{
+    width: 42%;
+}
+.col_7{
+    width: 49%;
+}
+.col_8{
+    width: 56%;
+}
+.col_9{
+    width: 63%;
+}
+.col_10{
+    width: 70%;
+}
+.col_11{
+    width: 77%;
+}
+.col_12{
+    width: 84%;
+}
+
+
+body{
+    font-size: 18px;
+}
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.8em;
+}
+h1 + p{
+    text-align: center;
+    font-size: 1.6em;
+}
+p{
+    font-size: 1.15em;
+}
+p b{
+    font-size: 1.3em;
+}
+footer{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    float: left;
+    width: 100%;
+} 
+
+.header{
+    width: 100%;
+}
+
+
+.filmCard{
+    position: relative;
+    animation-duration: 1s;
+    transition: ease-out;
+}
+
+.filmCard:hover{
+    transform: scale(2);
+    z-index: 10;
+    background-color: white;
+    box-shadow: 0 0 5px black;
+    border-radius: 5%;
+    box-sizing: border-box;
+}
+
+.row-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+@media (max-width: 1024px) {
+    .col_3 {
+        width: 40%;
+    }
+}
+
+@media (max-width: 648px) {
+    .col_3 {
+        position: relative;
+        width: 51%;
+        height: 435px;
+        left: 25%;
+    }
+}
