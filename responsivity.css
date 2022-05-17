@@ -1,43 +1,0 @@
-.movie1 {
-  grid-area: "movie1";
-}
-
-.movie2 {
-  grid-area: "movie2";
-}
-
-.movie3 {
-  grid-area: "movie3";
-}
-
-.movie4 {
-  grid-area: "movie4";
-}
-
-.movie5 {
-  grid-area: "movie5";
-}
-
-.movie6 {
-  grid-area: "movie6";
-}
-
-.container {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 5px;
-      grid-template-areas: "movie1 movie2 movie3" "movie4 movie5 movie6";
-}
-
-@media (max-width: 648px) {
-  .container {
-        grid-template-areas: "movie1" "movie2" "movie3" "movie4" "movie5" "movie6";
-  }
-}
-
-@media (min-width: 649px) and (max-width: 1024px) {
-  .container {
-        grid-template-areas: "movie1 movie2" "movie3 movie4" "movie5 movie6";
-  }
-}
-/*# sourceMappingURL=responsivity.css.map */
