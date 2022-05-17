@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+@import 'animation';
+@import 'responsivity';
+
+$backGroundColor :  rgb(7, 31, 51);
+$headerColor: aliceblue;
+
+$headerFontSize: 2.8em;
+$titleFontsize: 1.3em;
+$dateFontSize: 1.15em;
+
+$marginValue: 20px;
+$paddingValue: 20px;
+$borderRadiusValue: 20px;
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $backGroundColor;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+header{
+    text-align: center;
+    font-size: $headerFontSize;
+    color: $headerColor;
+    text-align: center;
+    font-family: Roboto;
+    width: 100vw;
+}
+
+p{
+    color: $headerColor;
+}
+
+b{
+    color: rgb(202, 59, 59);
+}
+
+
+
+.movie{
+    
+    margin : 0 auto;
+    width: 60%;
+    padding: $paddingValue;
+    border: 1px solid white;
+    border-radius: $borderRadiusValue;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: transform 2s;
+    margin-bottom: $marginValue;    
+}
+
+
+.title{
+    font-size: $titleFontsize;
+}
+
+
+.releaseDate{
+    font-size: $dateFontSize;
+}
+
+
+.movie img{
+
+    width: 100%;
+    margin-right: $marginValue;
+    justify-content: center;
+}
+
+
+
+
+
+

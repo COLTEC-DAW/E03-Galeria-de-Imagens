@@ -1,0 +1,38 @@
+$movies: "movie1", "movie2", "movie3", "movie4", "movie5", "movie6";
+
+@each $m in $movies{
+    .#{$m}{
+        grid-area: $m;
+    }
+}
+
+
+.container{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-areas: 
+    "movie1 movie2 movie3"
+    "movie4 movie5 movie6"; 
+}
+
+
+@media (max-width: 648px){
+    .container{
+        grid-template-areas: 
+        "movie1"
+        "movie2"
+        "movie3"
+        "movie4"
+        "movie5"
+        "movie6";
+    }
+}
+
+@media (min-width: 649px) and (max-width:1024px){
+    .container{
+            grid-template-areas: 
+            "movie1 movie2"
+            "movie3 movie4"
+            "movie5 movie6";
+    }
+}

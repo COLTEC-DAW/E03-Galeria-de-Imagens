@@ -1,88 +1,139 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
-
-.container{
-
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap");
+@-webkit-keyframes pulse {
+  from {
+    color: aqua;
+  }
+  to {
+    color: gold;
+  }
+}
+@keyframes pulse {
+  from {
+    color: aqua;
+  }
+  to {
+    color: gold;
+  }
 }
 
-
-*{
-    box-sizing: border-box;
+h1 > b:hover {
+  -webkit-animation: pulse 5s;
+          animation: pulse 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
-body{
-    background-color: rgb(7, 31, 51);
-    font-family: Arial, Helvetica, sans-serif;
+.movie:hover {
+  scale: 30%;
+  border: 3px solid yellow;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 
-p{
-    color: aliceblue;
+.movie1 {
+  grid-area: "movie1";
 }
 
-b{
-    color: rgb(202, 59, 59);
+.movie2 {
+  grid-area: "movie2";
 }
 
-.header{
-    text-align: center;
-    color:azure;
-    width: 100vw;
-    font-size: 30px;
-    font-family: Roboto;
+.movie3 {
+  grid-area: "movie3";
 }
 
-.movie{
-    
-    margin : 10px;
-    width: 15%;
-    padding: 20px;
-    border: 1px solid white;
-    border-radius: 20px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+.movie4 {
+  grid-area: "movie4";
 }
 
-.movie img{
-
-    width: 100%;
-    margin-right: 20px;
-    justify-content: center;
+.movie5 {
+  grid-area: "movie5";
 }
 
-.movies{
-    width: 100vw;
+.movie6 {
+  grid-area: "movie6";
 }
 
-.division{
-
-    justify-content: center;
-    flex-direction: row;
-    display: flex;
-    margin-bottom: 30px;
+.container {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 5px;
+      grid-template-areas: "movie1 movie2 movie3" "movie4 movie5 movie6";
 }
 
-.movie{
-    transition: transform 2s;
+@media (max-width: 648px) {
+  .container {
+        grid-template-areas: "movie1" "movie2" "movie3" "movie4" "movie5" "movie6";
+  }
 }
 
-
-
-h1 > b:hover{
-    animation: pulse 5s;
-    animation-iteration-count: infinite;
+@media (min-width: 649px) and (max-width: 1024px) {
+  .container {
+        grid-template-areas: "movie1 movie2" "movie3 movie4" "movie5 movie6";
+  }
 }
 
-.movie:hover{
-    scale: 30%;
-    border: 3px dotted yellow;
-    transform: scale(1.15);
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-@keyframes pulse{
-    from {color: aqua;}
-    to {color: gold;} 
+body {
+  background-color: #071f33;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
+
+header {
+  text-align: center;
+  font-size: 2.8em;
+  color: aliceblue;
+  text-align: center;
+  font-family: Roboto;
+  width: 100vw;
+}
+
+p {
+  color: aliceblue;
+}
+
+b {
+  color: #ca3b3b;
+}
+
+.movie {
+  margin: 0 auto;
+  width: 60%;
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 20px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 1.3em;
+}
+
+.releaseDate {
+  font-size: 1.15em;
+}
+
+.movie img {
+  width: 100%;
+  margin-right: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=style.css.map */

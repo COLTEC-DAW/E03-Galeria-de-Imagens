@@ -1,0 +1,15 @@
+@keyframes pulse{
+    from {color: aqua;}
+    to {color: gold;} 
+}
+
+h1 > b:hover{
+    animation: pulse 5s;
+    animation-iteration-count: infinite;
+}
+
+.movie:hover{
+    scale: 30%;
+    border: 3px solid yellow;
+    transform: scale(1.15);
+}
