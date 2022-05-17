@@ -9,124 +9,286 @@ body {
 
     url(wallpaper.jpg);
     background-size: cover;
+    text-align: center;
+    font-size: 18px;
 }
 
 #titulo{
+    
     font-family: Anton;
     font-size: 2.8em;
    
 }
 
 #subtitulo{
+    
     font-family: Anton;
     font-size: 1.6em;
+    margin-bottom: 10%;
+}
+
+#ano{
+
+    font-size: 1.15em;
+}
+
+#nome{
+
+    font-size: 1.3em;
+}
+
+footer {
+
+    margin-top: 10%;
+    margin-bottom: 5%;
+    padding-block: white;
+    font-family: Anton;
+    font-size: 1.6em;
+    
 }
 
 .container{
-    
-    
-    width: 100%;
-    text-align: center;
-    font-family: Verdana;
+
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 92%;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    margin-right: auto;
+    margin-left: auto;
     color: white;
-    
-}
-@media (min-width: 1024px){
-    .col_1{
-    
-        padding: 4%;
-        width: 8.33%;
-        float: left;
-
-    }
-
-    .col_2{
-    
-        padding: 4%;
-        width: 15.66%;
-        float: left;
-        
-    }
-
-    .col_3{
-        
-        padding: 4%;
-        width: 25%;
-        float: left;
-        
-    }
-
-    .col_4{
-        
-        padding: 4%;
-        width: 32.32%;
-        float: left;
-        
-    }
-
-    .col_5{
-        
-        padding: 4%;
-        width: 40.65%;
-        float: left;
-        
-    }
-
-    .col_6{
-    
-        padding: 4%;
-        width: 48.98%;
-        float: left;
-        
-    }
-
-    .col_7{
-        
-        padding: 4%;
-        width: 57.31%;
-        float: left;
-    }
-
-    .col_8{
-    
-        padding: 4%;
-        width: 65.64%;
-        float: left;
-    }
-
-    .col_9{
-    
-        padding: 4%;
-        width: 73.97%;
-        float: left;
-    }
-
-    .col_10{
-    
-        padding: 4%;
-        width: 82.3%;
-        float: left;
-    }
-
-    .col_11{
-        
-        padding: 4%;
-        width: 90.63%;
-        float: left;
-    }
-
-    .col_12{
-        
-        padding: 4%;
-        width: 98.96%;
-        float: left;
-    }
+  
 }
 
-img{
+.container img{
+
     border-radius: 5% 5% 5% 5%;
     width: 75%;
    
+}
+
+@media (min-width: 1024px){
+    .col-1 {
+        float: left;
+        flex: 0 0 auto;
+        width: 8.33333333%;
+      }
+      
+      .col-2 {
+        float: left;
+        flex: 0 0 auto;
+        width: 16.66666667%;
+      }
+      
+      .col-3 {
+        float: left;
+        flex: 0 0 auto;
+        width: 25%;
+      }
+      
+      .col-4 {
+        float: left;
+        flex: 0 0 auto;
+        width: 33.33333333%;
+      }
+      
+      .col-5 {
+        float: left;
+        flex: 0 0 auto;
+        width: 41.66666667%;
+      }
+      
+      .col-6 {
+        float: left;
+        flex: 0 0 auto;
+        width: 50%;
+      }
+      
+      .col-7 {
+        float: left;
+        flex: 0 0 auto;
+        width: 58.33333333%;
+      }
+      
+      .col-8 {
+        float: left;
+        flex: 0 0 auto;
+        width: 66.66666667%;
+      }
+      
+      .col-9 {
+        float: left;
+        flex: 0 0 auto;
+        width: 75%;
+      }
+      
+      .col-10 {
+        float: left;
+        flex: 0 0 auto;
+        width: 83.33333333%;
+      }
+      
+      .col-11 {
+        float: left;
+        flex: 0 0 auto;
+        width: 91.66666667%;
+      }
+      
+      .col-12 {
+        float: left;
+        flex: 0 0 auto;
+        width: 100%;
+      }
+}
+
+@media (max-width: 1024px) and (min-width: 648px){
+    .colt-1 {
+        float: left;
+        flex: 0 0 auto;
+        width: 8.33333333%;
+      }
+      
+      .colt-2 {
+        float: left;
+        flex: 0 0 auto;
+        width: 16.66666667%;
+      }
+      
+      .colt-3 {
+        float: left;
+        flex: 0 0 auto;
+        width: 25%;
+      }
+      
+      .colt-4 {
+        float: left;
+        flex: 0 0 auto;
+        width: 33.33333333%;
+      }
+      
+      .colt-5 {
+        float: left;
+        flex: 0 0 auto;
+        width: 41.66666667%;
+      }
+      
+      .colt-6 {
+        float: left;
+        flex: 0 0 auto;
+        width: 50%;
+      }
+      
+      .colt-7 {
+        float: left;
+        flex: 0 0 auto;
+        width: 58.33333333%;
+      }
+      
+      .colt-8 {
+        float: left;
+        flex: 0 0 auto;
+        width: 66.66666667%;
+      }
+      
+      .colt-9 {
+        float: left;
+        flex: 0 0 auto;
+        width: 75%;
+      }
+      
+      .colt-10 {
+        float: left;
+        flex: 0 0 auto;
+        width: 83.33333333%;
+      }
+      
+      .colt-11 {
+        float: left;
+        flex: 0 0 auto;
+        width: 91.66666667%;
+      }
+      
+      .colt-12 {
+        float: left;
+        flex: 0 0 auto;
+        width: 100%;
+      }
+
+}
+
+@media (max-width: 648px){
+
+    .colm-1 {
+        float: left;
+        flex: 0 0 auto;
+        width: 8.33333333%;
+      }
+      
+      .colm-2 {
+        float: left;
+        flex: 0 0 auto;
+        width: 16.66666667%;
+      }
+      
+      .colm-3 {
+        float: left;
+        flex: 0 0 auto;
+        width: 25%;
+      }
+      
+      .colm-4 {
+        float: left;
+        flex: 0 0 auto;
+        width: 33.33333333%;
+      }
+      
+      .colm-5 {
+        float: left;
+        flex: 0 0 auto;
+        width: 41.66666667%;
+      }
+      
+      .colm-6 {
+        float: left;
+        flex: 0 0 auto;
+        width: 50%;
+      }
+      
+      .colm-7 {
+        float: left;
+        flex: 0 0 auto;
+        width: 58.33333333%;
+      }
+      
+      .colm-8 {
+        float: left;
+        flex: 0 0 auto;
+        width: 66.66666667%;
+      }
+      
+      .colm-9 {
+        float: left;
+        flex: 0 0 auto;
+        width: 75%;
+      }
+      
+      .colm-10 {
+        float: left;
+        flex: 0 0 auto;
+        width: 83.33333333%;
+      }
+      
+      .colm-11 {
+        float: left;
+        flex: 0 0 auto;
+        width: 91.66666667%;
+      }
+      
+      .colm-12 {
+        float: left;
+        flex: 0 0 auto;
+        width: 100%;
+      }
 }
 
 #movie {
@@ -148,202 +310,4 @@ img{
 
 #movie:hover {
     transform: scale(1.1);
-}
-
-@media (max-width: 1024px) and (min-width: 648px){
-    .col_1{
-    
-        padding: 4%;
-        width: 8.33%;
-        float: left;
-
-    }
-
-    .col_2{
-    
-        padding: 4%;
-        width: 15.66%;
-        float: left;
-        
-    }
-
-    .col_3{
-        
-        padding: 4%;
-        padding-left: 15%;
-        width: 24.95%;
-        float: left;
-        
-    }
-
-    .col_4{
-        
-        padding: 15%;
-        width: 32.32%;
-        float: left;
-        
-    }
-
-    .col_5{
-        
-        padding: 4%;
-        width: 40.65%;
-        float: left;
-        
-    }
-
-    .col_6{
-    
-        padding: 4%;
-        width: 48.98%;
-        float: left;
-        
-    }
-
-    .col_7{
-        
-        padding: 4%;
-        width: 57.31%;
-        float: left;
-    }
-
-    .col_8{
-    
-        padding: 4%;
-        width: 65.64%;
-        float: left;
-    }
-
-    .col_9{
-    
-        padding: 4%;
-        width: 73.97%;
-        float: left;
-    }
-
-    .col_10{
-    
-        padding: 4%;
-        width: 82.3%;
-        float: left;
-    }
-
-    .col_11{
-        
-        padding: 4%;
-        width: 90.63%;
-        float: left;
-    }
-
-    .col_12{
-        
-        padding: 4%;
-        width: 98.96%;
-        float: left;
-    }
-
-}
-
-@media (max-width: 648px){
-
-    .col_1{
-    
-        padding: 4%;
-        width: 8.33%;
-        float: left;
-
-    }
-
-    .col_2{
-    
-        padding: 4%;
-        width: 15.66%;
-        float: left;
-        
-    }
-
-    .col_3{
-        
-        padding: 4%;
-        padding-left: 40%;
-        width: 24.95%;
-        float: left;
-        
-    }
-
-    .col_4{
-        
-        padding: 15%;
-        width: 32.32%;
-        float: left;
-        
-    }
-
-    .col_5{
-        
-        padding: 4%;
-        width: 40.65%;
-        float: left;
-        
-    }
-
-    .col_6{
-    
-        padding: 4%;
-        width: 48.98%;
-        float: left;
-        
-    }
-
-    .col_7{
-        
-        padding: 4%;
-        width: 57.31%;
-        float: left;
-    }
-
-    .col_8{
-    
-        padding: 4%;
-        width: 65.64%;
-        float: left;
-    }
-
-    .col_9{
-    
-        padding: 4%;
-        width: 73.97%;
-        float: left;
-    }
-
-    .col_10{
-    
-        padding: 4%;
-        width: 82.3%;
-        float: left;
-    }
-
-    .col_11{
-        
-        padding: 4%;
-        width: 90.63%;
-        float: left;
-    }
-
-    .col_12{
-        
-        padding: 4%;
-        width: 98.96%;
-        float: left;
-    }
-}
-
-#ano{
-
-    font-size: 1.15em;
-}
-
-#nome{
-
-    font-size: 1.3em;
 }
