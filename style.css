@@ -52,57 +52,52 @@ footer {
   .col-2 {
     float: left;
     flex: 0 0 auto;
-    width: 16.66666667%; }
+    width: 16.66666666%; }
 
   .col-3 {
     float: left;
     flex: 0 0 auto;
-    width: 25%; }
+    width: 24.99999999%; }
 
   .col-4 {
     float: left;
     flex: 0 0 auto;
-    width: 33.33333333%; }
+    width: 33.33333332%; }
 
   .col-5 {
     float: left;
     flex: 0 0 auto;
-    width: 41.66666667%; }
+    width: 41.66666665%; }
 
   .col-6 {
     float: left;
     flex: 0 0 auto;
-    width: 50%; }
+    width: 49.99999998%; }
 
   .col-7 {
     float: left;
     flex: 0 0 auto;
-    width: 58.33333333%; }
+    width: 58.33333331%; }
 
   .col-8 {
     float: left;
     flex: 0 0 auto;
-    width: 66.66666667%; }
+    width: 66.66666664%; }
 
   .col-9 {
     float: left;
     flex: 0 0 auto;
-    width: 75%; }
+    width: 74.99999997%; }
 
   .col-10 {
     float: left;
     flex: 0 0 auto;
-    width: 83.33333333%; }
+    width: 83.3333333%; }
 
   .col-11 {
     float: left;
     flex: 0 0 auto;
-    width: 91.66666667%; }
-
-  .col-12 {
-    float: left;
-    flex: 0 0 auto;
-    width: 100%; } }
+    width: 91.66666663%; } }
 @media (max-width: 1024px) and (min-width: 648px) {
   .colt-1 {
     float: left;
@@ -112,57 +107,52 @@ footer {
   .colt-2 {
     float: left;
     flex: 0 0 auto;
-    width: 16.66666667%; }
+    width: 16.66666666%; }
 
   .colt-3 {
     float: left;
     flex: 0 0 auto;
-    width: 25%; }
+    width: 24.99999999%; }
 
   .colt-4 {
     float: left;
     flex: 0 0 auto;
-    width: 33.33333333%; }
+    width: 33.33333332%; }
 
   .colt-5 {
     float: left;
     flex: 0 0 auto;
-    width: 41.66666667%; }
+    width: 41.66666665%; }
 
   .colt-6 {
     float: left;
     flex: 0 0 auto;
-    width: 50%; }
+    width: 49.99999998%; }
 
   .colt-7 {
     float: left;
     flex: 0 0 auto;
-    width: 58.33333333%; }
+    width: 58.33333331%; }
 
   .colt-8 {
     float: left;
     flex: 0 0 auto;
-    width: 66.66666667%; }
+    width: 66.66666664%; }
 
   .colt-9 {
     float: left;
     flex: 0 0 auto;
-    width: 75%; }
+    width: 74.99999997%; }
 
   .colt-10 {
     float: left;
     flex: 0 0 auto;
-    width: 83.33333333%; }
+    width: 83.3333333%; }
 
   .colt-11 {
     float: left;
     flex: 0 0 auto;
-    width: 91.66666667%; }
-
-  .colt-12 {
-    float: left;
-    flex: 0 0 auto;
-    width: 100%; } }
+    width: 91.66666663%; } }
 @media (max-width: 648px) {
   .colm-1 {
     float: left;
@@ -172,57 +162,52 @@ footer {
   .colm-2 {
     float: left;
     flex: 0 0 auto;
-    width: 16.66666667%; }
+    width: 16.66666666%; }
 
   .colm-3 {
     float: left;
     flex: 0 0 auto;
-    width: 25%; }
+    width: 24.99999999%; }
 
   .colm-4 {
     float: left;
     flex: 0 0 auto;
-    width: 33.33333333%; }
+    width: 33.33333332%; }
 
   .colm-5 {
     float: left;
     flex: 0 0 auto;
-    width: 41.66666667%; }
+    width: 41.66666665%; }
 
   .colm-6 {
     float: left;
     flex: 0 0 auto;
-    width: 50%; }
+    width: 49.99999998%; }
 
   .colm-7 {
     float: left;
     flex: 0 0 auto;
-    width: 58.33333333%; }
+    width: 58.33333331%; }
 
   .colm-8 {
     float: left;
     flex: 0 0 auto;
-    width: 66.66666667%; }
+    width: 66.66666664%; }
 
   .colm-9 {
     float: left;
     flex: 0 0 auto;
-    width: 75%; }
+    width: 74.99999997%; }
 
   .colm-10 {
     float: left;
     flex: 0 0 auto;
-    width: 83.33333333%; }
+    width: 83.3333333%; }
 
   .colm-11 {
     float: left;
     flex: 0 0 auto;
-    width: 91.66666667%; }
-
-  .colm-12 {
-    float: left;
-    flex: 0 0 auto;
-    width: 100%; } }
+    width: 91.66666663%; } }
 #movie {
   -o-animation: zoomIn 2s 1 both;
   -moz-animation: zoomIn 2s 1 both;
