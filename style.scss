@@ -1,0 +1,89 @@
+$vermelho: #ad4b4b;           $cinza: #cfc6c6;              $preto: #131313;
+
+@mixin cardShadow($tam){        box-shadow: $tam $tam $tam $vermelho;       }
+
+@mixin cardSize($width, $height){
+    min-width: 4 * $width;
+    min-height: 3 * $height;
+}
+@mixin cardAnimation($duracao, $delay, $vezes){
+
+    -webkit-animation: zoomCard $duracao;           -ms-animation: zoomCard $duracao;               animation: zoomCard $duracao;
+    -webkit-animation-delay: $delay;                -ms-animation-delay: $delay;                    animation-delay: $delay;
+    -webkit-animation-iteration-count: $vezes;      -ms-animation-iteration-count: $vezes;          animation-iteration-count: $vezes;
+}
+
+
+body{   
+    font-size: 18px;            text-align: center;             background-color: $preto;           font-family: 'Anton';
+}
+
+#ano{font-size: 1.15em;}        #nome{font-size: 1.3em;}        #titulo{font-size: 6em;}
+#texto{font-size: 1.6em;        padding-bottom: 3%;             color: $cinza}
+
+
+.container{ min-width: 95%; }
+.caixa{
+    display: flex;              align-items: center;            justify-content: center;
+}
+
+@for $i from 1 to 12{
+    .col_#{$i}{
+        width: $i * 0.063em;
+    }
+}
+
+// .col_1{width: 6,33%;}           .col_2{width: 14,66%;}          .col_3{width: 23%;}
+// .col_4{width: 31,33%;}          .col_5{width: 39,66%;}          .col_6{width: 48%;}
+// .col_7{width: 56,33%;}          .col_8{width: 64,66%;}          .col_9{width: 73%;}         
+// .col_10{width: 81,33%;}         .col_11{width: 89,66%;}         .col_12{width: 98%;}
+
+
+.card{             
+    @include cardShadow(16px);  @include cardSize(4em, 9em);
+
+    border-style: solid;        border-color: $cinza;           background-color: $vermelho;
+    padding-top: 3%;            float: left;                    
+    margin-left: 2%;            margin-right: 2%;               margin-bottom: 10%;         
+
+    transition: 1s;             transform: scale(1);            @include cardAnimation(2s, 1s, 1);
+}
+
+.card:hover{transform: scale(1.25)}
+
+@keyframes zoomCard{
+    0%{transform: scale(1);}
+    50%{transform: scale(1.1);  background-color: $vermelho}
+    100%{transform: scale(1);}
+}
+
+
+img{
+    width: 75%;       height: 75%;          max-width: 100%;        filter: grayscale(100%);
+}
+
+h1{
+    background-color: $vermelho;                color: $cinza;
+
+    text-shadow: 5px 5px 5px $preto;            box-shadow: 0px -10px 2px $cinza;
+    animation: zoomTitle 2s;                    animation-iteration-count: 1;
+}
+
+@keyframes zoomTitle{
+    0%{transform: scale(1)}     50%{transform: scale(1.2); background-color: $vermelho}     100%{transform: scale(1)}
+}
+
+
+@media screen and (max-width: 1024px){
+    .card{@include cardSize(5em, 8em);}
+
+    #ano{font-size: 1em;}           #nome{font-size: 1em;}        
+    #titulo{font-size: 4em;}        #subtitulo{font-size: 1.2em;}
+}
+
+@media screen and (max-width: 648px){
+    .card{@include cardSize(6em, 7em);}
+
+    #ano{font-size: 1.2em;}         #nome{font-size: 1.25em;}        
+    #titulo{font-size: 3em;}        #subtitulo{font-size: 1em;}
+}

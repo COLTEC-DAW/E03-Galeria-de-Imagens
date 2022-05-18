@@ -1,0 +1,237 @@
+body {
+  font-size: 18px;
+  text-align: center;
+  background-color: #131313;
+  font-family: 'Anton';
+}
+
+#ano {
+  font-size: 1.15em;
+}
+
+#nome {
+  font-size: 1.3em;
+}
+
+#titulo {
+  font-size: 6em;
+}
+
+#texto {
+  font-size: 1.6em;
+  padding-bottom: 3%;
+  color: #cfc6c6;
+}
+
+.container {
+  min-width: 95%;
+}
+
+.caixa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.col_1 {
+  width: 0.063em;
+}
+
+.col_2 {
+  width: 0.126em;
+}
+
+.col_3 {
+  width: 0.189em;
+}
+
+.col_4 {
+  width: 0.252em;
+}
+
+.col_5 {
+  width: 0.315em;
+}
+
+.col_6 {
+  width: 0.378em;
+}
+
+.col_7 {
+  width: 0.441em;
+}
+
+.col_8 {
+  width: 0.504em;
+}
+
+.col_9 {
+  width: 0.567em;
+}
+
+.col_10 {
+  width: 0.63em;
+}
+
+.col_11 {
+  width: 0.693em;
+}
+
+.card {
+  -webkit-box-shadow: 16px 16px 16px #ad4b4b;
+          box-shadow: 16px 16px 16px #ad4b4b;
+  min-width: 16em;
+  min-height: 27em;
+  border-style: solid;
+  border-color: #cfc6c6;
+  background-color: #ad4b4b;
+  padding-top: 3%;
+  float: left;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 10%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-animation: zoomCard 2s;
+  animation: zoomCard 2s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+@-webkit-keyframes zoomCard {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    background-color: #ad4b4b;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes zoomCard {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    background-color: #ad4b4b;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+img {
+  width: 75%;
+  height: 75%;
+  max-width: 100%;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+h1 {
+  background-color: #ad4b4b;
+  color: #cfc6c6;
+  text-shadow: 5px 5px 5px #131313;
+  -webkit-box-shadow: 0px -10px 2px #cfc6c6;
+          box-shadow: 0px -10px 2px #cfc6c6;
+  -webkit-animation: zoomTitle 2s;
+          animation: zoomTitle 2s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+@-webkit-keyframes zoomTitle {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    background-color: #ad4b4b;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes zoomTitle {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    background-color: #ad4b4b;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .card {
+    min-width: 20em;
+    min-height: 24em;
+  }
+  #ano {
+    font-size: 1em;
+  }
+  #nome {
+    font-size: 1em;
+  }
+  #titulo {
+    font-size: 4em;
+  }
+  #subtitulo {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 648px) {
+  .card {
+    min-width: 24em;
+    min-height: 21em;
+  }
+  #ano {
+    font-size: 1.2em;
+  }
+  #nome {
+    font-size: 1.25em;
+  }
+  #titulo {
+    font-size: 3em;
+  }
+  #subtitulo {
+    font-size: 1em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
