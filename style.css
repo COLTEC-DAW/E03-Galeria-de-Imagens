@@ -1,7 +1,8 @@
 body {
   font-size: 18px;
   font-family: Tahoma;
-  background: radial-gradient(#e66465, #9198e5);
+  background: -webkit-gradient(linear, left top, left bottom, from(#e66465), to(#9198e5));
+  background: linear-gradient(#e66465, #9198e5);
 }
 
 footer {
