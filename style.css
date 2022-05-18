@@ -1,68 +1,64 @@
-*
-{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: black;
-}
 body
 {
+    background-color: #18191a;
     text-align: center;
+    color: #e4e6eb;
 }
 header
 {
-    font-size: 2rem;
+    background-color: #3a3b3c;
+    border-style: solid;
+    border-color: #b0b3b8;
+    margin: 2%;
+    font-size: 150%;
+    font-family: 'Bebas Neue', cursive;
 }
-.container 
+h1
 {
-    width: 96%;
-    margin: auto;
+    margin: 4px;
 }
-.col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9
+p
 {
-    float: left;
-    padding: 1%;
-}
-.col_1
-{
-    width: 10%;
-}
-.col_2
-{
-    width: 20%;
-}
-.col_3
-{
-    width: 30%;
-}
-.col_4
-{
-    width: 40%;
-}
-.col_5
-{
-    width: 50%;
-}
-.col_6
-{
-    width: 60%;
-}
-.col_7
-{
-    width: 70%
-}
-.col_8
-{
-    width: 80%;
-}
-.col_9
-{
-    width: 90%;
+    margin: 8px;
 }
 img
 {
-    width: 70%;
-    height: 70%;
-} 
-footer
+    margin: 16px;
+    margin-bottom: 0px;
+    animation-name: girada;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+.animacao
 {
-    font-size: 1.2rem;
+    transition: background-color 0.4s
+}
+.animacao:hover
+{
+    background-color: #242526;
+    image-orientation: inherit;
+}
+.col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9
+{
+    background-color: #3a3b3c;
+    border-style: solid;
+    border-color: #b0b3b8;
+    padding: 0px;
+    margin: 1%;
+    
+}
+@keyframes girada
+{
+    0%
+    {
+        width: 0%;
+        height: 0%;
+		transform: rotate(0);
+    }
+    100%
+    {
+        width: 70%;
+        height: 70%;
+        transform: rotate(360deg);
+    }
 }
