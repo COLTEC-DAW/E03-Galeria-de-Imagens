@@ -17,7 +17,7 @@ $cinza: #999;
 body {
     font-size: $tamanhoPadraoFonte;
     font-family: $fontePrincipal;
-    background: radial-gradient($rosa, $roxoAzulado);
+    background: linear-gradient($rosa, $roxoAzulado);
 }
 
 footer {
