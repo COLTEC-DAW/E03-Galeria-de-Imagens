@@ -84,14 +84,17 @@ img{
 
 .grid{
     display: grid;
-    max-width: 900px;
+    max-width: 700px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     margin: 0 auto;
     margin-top: 10px;
     border: px solid #f1f1f1;
     grid-gap: 20px;  
 }
-
+.grid div img:hover{
+    animation-name: image_animation;   
+    animation-duration: 2s;
+}
 .grid p{
     text-align: center;
     color: #f1f1f1;
@@ -102,4 +105,11 @@ img{
    color: #f1f1f1;   
 }
 
- 
+ @keyframes image_animation{
+     from {
+         width: 340px;
+     }
+     to {
+        width: 355px;
+     }
+ }
