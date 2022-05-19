@@ -1,15 +1,37 @@
+$color_background: #18191a;
+$color_card: #3a3b3c;
+$color_border: #b0b3b8;
+$color_hover: #242526;
+$color_text: #e4e6eb;
+$font_title: 'Bebas Neue', cursive;
+@mixin inital-settings
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@mixin all-prefix($name, $value)
+{
+    @each $vendor in ('-webkit-', '-moz-', '-ms-', '-o-', '')
+    {
+      #{$vendor}#{$name}: #{$value};
+    }
+}
+*{
+    @include initial-settings()
+}
 body
 {
-    background-color: #18191a;
+    background-color: var($color_background);
     text-align: center;
-    color: #e4e6eb;
+    color: var($color_text);
     font-size: 18px;
 }
 header
 {
-    background-color: #3a3b3c;
+    background-color: var($color_card);
     border-style: solid;
-    border-color: #b0b3b8;
+    border-color: var($color_border);
     margin: 2%;
     font-family: 'Bebas Neue', cursive;
 }
@@ -47,9 +69,9 @@ img
 }
 .col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9
 {
-    background-color: #3a3b3c;
+    background-color: var($color_card);
     border-style: solid;
-    border-color: #b0b3b8;
+    border-color: var($color_border);
     padding: 0px;
     margin: 1%;
     
@@ -60,7 +82,7 @@ img
 }
 .cartao:hover
 {
-    background-color: #242526;
+    background-color: var($color_hover);
     image-orientation: inherit;
 }
 @keyframes girada

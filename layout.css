@@ -48,23 +48,23 @@ img
 {
     width: 70%;
 }
-@media screen and (max-width: 647px) 
+@media screen and (max-width: 647px)
 {
-    .animacao
+    .cartao
     {
         width: 90%;
     }
 }
-@media screen and (min-width: 648px) and (max-width: 1024px) 
+@media screen and (min-width: 648px) and (max-width: 1024px)
 {
-    .animacao
+    .cartao
     {
         width: 45%;
     }
 }
-@media screen and (min-width: 1025px) 
+@media screen and (min-width: 1025px)
 {
-    .animacao
+    .cartao
     {
         width: 30%;
     }
