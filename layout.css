@@ -48,3 +48,24 @@ img
 {
     width: 70%;
 }
+@media screen and (max-width: 647px) 
+{
+    .animacao
+    {
+        width: 90%;
+    }
+}
+@media screen and (min-width: 648px) and (max-width: 1024px) 
+{
+    .animacao
+    {
+        width: 45%;
+    }
+}
+@media screen and (min-width: 1025px) 
+{
+    .animacao
+    {
+        width: 30%;
+    }
+}

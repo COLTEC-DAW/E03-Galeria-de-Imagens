@@ -3,6 +3,7 @@ body
     background-color: #18191a;
     text-align: center;
     color: #e4e6eb;
+    font-size: 18px;
 }
 header
 {
@@ -10,7 +11,6 @@ header
     border-style: solid;
     border-color: #b0b3b8;
     margin: 2%;
-    font-size: 150%;
     font-family: 'Bebas Neue', cursive;
 }
 h1
@@ -29,14 +29,21 @@ img
     animation-duration: 2s;
     animation-iteration-count: 1;
 }
-.animacao
+.titulo
 {
-    transition: background-color 0.4s
+    font-size: 2.8em;
 }
-.animacao:hover
+.subtitulo
 {
-    background-color: #242526;
-    image-orientation: inherit;
+    font-size: 1.6em;
+}
+.filme
+{
+    font-size: 1.3em;
+}
+.ano
+{
+    font-size: 1.15em;
 }
 .col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9
 {
@@ -46,6 +53,15 @@ img
     padding: 0px;
     margin: 1%;
     
+}
+.animacao
+{
+    transition: background-color 0.4s
+}
+.animacao:hover
+{
+    background-color: #242526;
+    image-orientation: inherit;
 }
 @keyframes girada
 {
