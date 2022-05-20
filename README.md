@@ -51,7 +51,7 @@ Adapte as fontes da página para um tamanho que seja relativo, conforme as técn
 * Ano do filme: `1.15em`
 * Nome do filme: `1.3em`
 * Título da página: `2.8em`
-* Subtítulo da página: `1.6em`
+* Ftítulo da página: `1.6em`
 
 
 ## Modularizando CSS com SCSS
