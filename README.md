@@ -1,4 +1,3 @@
->Este repositório é uma cópia do original apenas para que tudo que eu fiz seja considerado nos meus stats
 
 **OBS: É importante que você gere um commit para cada parte da atividade que você concluir.**
 
