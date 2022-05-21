@@ -1,4 +1,3 @@
-
 /*const*/
 /*text colors*/
 $main-bg-color: #021240;
@@ -13,7 +12,7 @@ $layout-breakpoint-medium: 1024px;
 /*fonts*/
 $primary-font: 'Raleway', sans-serif;
 
-@mixin inital-settings{
+@mixin initial-settings{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -36,8 +35,59 @@ $primary-font: 'Raleway', sans-serif;
 }
 
 
+$breakpoints: (
+    sm: (
+        min: 576px,
+        max: 575.98px,
+    ),
+    md: (
+        min: 648px,
+        max: 647.98px
+    ),
+    lg: (
+        min: 1024px,
+        max: 1023.98px
+    ),
+);
+
+@mixin breakpoint($breakpoint, $direction: min) {
+    
+    @if map-has-key($breakpoints, $breakpoint) { 
+        $breakpoint-values: map-get($breakpoints, $breakpoint);
+        $breakpoint-min: map-get($breakpoint-values, min);
+        $breakpoint-max: map-get($breakpoint-values, max);
+
+        @if $direction == min {
+            @media (min-width: $breakpoint-min) {
+                @content;
+            }
+        }
+
+        @else {
+            @media (max-width: $breakpoint-max) {
+                @content;
+            }
+        }
+    
+    } @else {
+        
+        @if $direction == min {
+            @media (min-width: $breakpoint) {
+                @content;
+            }
+        }
+
+        @else {
+            @media (max-width: $breakpoint) {
+                @content;
+            }
+        }
+    }
+}
+
+
 html{
-    font-family: 'Raleway', sans-serif;
+    font-family: $primary-font;
 }
 
 body{
@@ -90,57 +140,17 @@ div{
     margin: auto;
 }
 
-.col_1,
-.col_2,
-.col_3,
-.col_4,
-.col_5,
-.col_6,
-.col_7,
-.col_8,
-.col_9,
-.col_10,
-.col_11,
-.col_12 {
-    float: left;
-    padding: 1%;
+@for $i from 1 to 12 {
+    .col_#{$i} { width: 7% * $i; float: left; padding: 1.3%; overflow: hidden; margin: 1%; };
 }
 
-.col_1 {
-    width: 7%;
-}
-.col_2 {
-    width: 14.6%;
-}
-.col_3 {
-    width: 22.6%;
-}
-.col_4 {
-    width: 29.8%;
-}
-.col_5 {
-    width: 37.4%;
-}
-.col_6{
-    width: 45%;
-}
-.col_7{
-    width: 52.6%;
-}
-.col_8{
-    width: 60.2%;
-}
-.col_9{
-    width: 67.8%;
-}
-.col_10{
-    width: 75.4%;
-}
-.col_11{
-    width: 83%;
-}
-.col_12{
-    width: 84%;
+.col_4{
+    @include from($breakpoint){
+        width: 45%;
+    }
+    @include until($breakpoint){
+        width: 84%;
+    }
 }
 
 .card{
@@ -167,19 +177,5 @@ div{
     .card:hover{
         transform:scale(1.05); /*200% fica muuuuuuito grande...*/
         box-shadow: 0px 10px 25px rgba(0,0,0,.4);
-    }
-}
-
-/*tablet*/
-@media only screen and (min-width: $layout-breakpoint-small) and (max-width: $layout-breakpoint-big){
-    .col_4{
-        width: 45%;
-    }
-}
-
-/*mobile*/
-@media (max-width: 648px){
-    .col_4{
-        width: 84%;
     }
 }
