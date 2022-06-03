@@ -76,32 +76,32 @@ footer{
     background: rgb(255,255,255,0.9); ;
 }
 
-@keyframes Esquerda {
+@keyframes Subindo {
     0%{
-        left: -100px;
+        bottom: -100px;
         opacity: 0.5;
     }
 
     25%{
-        left: 0;
+        bottom: 0;
         opacity: 1;
     }
     
     50%{
-        left: 0;
+        bottom: 0;
         opacity: 1;
     }
 
     100%{
-        left: 0;
+        bottom: 0;
         opacity: 1;
     }
 
 }
 
-.entradaEsquerda{
+.entradaSubindo{
     position: relative;
-    animation: Esquerda 6s ;
+    animation: Subindo 6s ;
 }
 
 @keyframes Direita {
