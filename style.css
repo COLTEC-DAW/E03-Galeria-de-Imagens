@@ -76,58 +76,59 @@ footer{
     background: rgb(255,255,255,0.9); ;
 }
 
-@keyframes Esquerda {
+@keyframes Subindo2 {
     0%{
-        left: -100px;
+        bottom: -150px;
         opacity: 0.5;
     }
 
     25%{
-        left: 0;
-        opacity: 1;
+        bottom: 0;
+        opacity: 0.8;
     }
     
     50%{
-        left: 0;
+        bottom: 0;
         opacity: 1;
     }
 
     100%{
-        left: 0;
+        bottom: 0;
         opacity: 1;
     }
 
 }
 
-.entradaEsquerda{
+.entradaSubindo2{
     position: relative;
-    animation: Esquerda 6s ;
+    animation: Subindo2 6s ;
 }
 
-@keyframes Direita {
+
+@keyframes Subindo {
     0%{
-        right: -100px;
+        bottom: -100px;
         opacity: 0.5;
     }
 
     25%{
-        right: 0;
+        bottom: 0;
         opacity: 1;
     }
     
     50%{
-        right: 0;
+        bottom: 0;
         opacity: 1;
     }
 
     100%{
-        right: 0;
+        bottom: 0;
         opacity: 1;
     }
 
 }
 
-.entradaDireita{
+.entradaSubindo{
     position: relative;
-    animation: Direita 6s;
+    animation: Subindo 6s;
 }
