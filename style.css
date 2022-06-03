@@ -1,21 +1,14 @@
+/*FONTES E TEXTOS*/
+
 @font-face {
     font-family: "Candice";
     src: url("candice.woff");
 }
 
-img{
-    width: 90%;
-    margin: 5%;
-}
-
-.arredondar{
-    border-radius: 10px;
-}
-
 h1{
     font-family: "Candice";
-    font-size: 4em;
-    color: #f3a7a9;
+    font-size: 2.8em;
+    color: #ee898d;
     font-weight: 100;
     text-align: center;
     margin: 30px 0 10px 0;
@@ -23,7 +16,7 @@ h1{
 
 h2{
     font-family: "Candice";
-    font-size: 2em;
+    font-size: 1.6em;
     color: #f3a7a9;
     font-weight: 50;
     text-align: center;
@@ -33,11 +26,26 @@ h2{
 .textos{
     font-weight: bold;
     font-family: "Kanit";
-    font-size: 200%;
+    font-size: 1.3em;
     color: #ff767b;
     margin-top: 1px;
     margin-left: 5%;
     margin-bottom: 5px;
+}
+/*--------------------------------*/
+
+body{
+    background: linear-gradient(#ffecec, #f3b5b5);
+    font-size: 18px;
+}
+
+img{
+    width: 90%;
+    margin: 5%;
+}
+
+.arredondar{
+    border-radius: 10px;
 }
 
 .card{
@@ -55,12 +63,8 @@ h2{
 .container{
     width: 90%;
     margin: 0 auto;
-    float: right;
+    float: center;
     
-}
-
-body{
-    background: linear-gradient(#ffecec, #f3b5b5);
 }
 
 footer{
@@ -70,7 +74,7 @@ footer{
     margin: 20px;
 }
 
-
+/*ANIMAÇÕES--------------------------------*/
 .zoom:hover {
     transform: scale(1.1);
     background: rgb(255,255,255,0.9); ;
@@ -131,4 +135,14 @@ footer{
 .entradaSubindo{
     position: relative;
     animation: Subindo 6s;
+}
+
+/*----------------------------*/
+
+.inline{
+    display: inline-block;
+    width: 30%;
+    height: 100%;
+    float: left;
+    margin: 0;
 }
