@@ -1,0 +1,299 @@
+#pagina {
+    width: 960px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #c0c0c0;
+    font-size: 100%;
+
+}
+#h1 {
+    margin:0px auto 0px auto;
+    width:960px;
+    height:82px;
+    position:relative;
+	background:#c94343; 
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2.5em;
+    text-align: center;
+}
+@-webkit-keyframes mymove{
+    from {background: red}
+    to {background: yellow}  
+}
+@keyframes mymove {
+    from {background: red}
+    to {background: yellow} 
+}
+#div1{
+    width: 30%;
+    height: 30%;
+    margin: 1%;
+    background: #978d8d;
+    float: left;
+    border-width: thick;
+    border-color: black;
+    border-style: solid;
+    animation: mymove 3s infinite;
+}
+#div2{
+    width: 30%;
+    height: 30%;
+    margin: 1%;
+    background: #773a3a;
+    float: left;
+    border-width: thick;
+    border-color: black;
+    border-style: solid;
+    animation: mymove 3s infinite;
+}
+#div3{
+    width: 30%;
+    height: 30%;
+    margin: 1%;
+    background: #1f2177;
+    float: left;
+    border-width: thick;
+    border-color: black;
+    border-style: solid;
+    animation: mymove 3s infinite;
+}
+#div4{
+    width: 30%;
+    height: 30%;
+    margin: 1%;
+    background:#5b60a5;
+    float: left;
+    border-width: thick;
+    border-color: black;
+    border-style: solid;
+    animation: mymove 3s infinite;
+}
+#div5{
+    width: 30%;
+    height: 30%;
+    margin: 1%;
+    background: #8d1ba3;
+    float: left;
+    border-width: thick;
+    border-color: black;
+    border-style: solid;
+    animation: mymove 3s infinite;
+}
+#div6{
+    width: 30%;
+    height: 30%;
+    margin: 1%;
+    background: #16a17e;
+    float: left;
+    border-width: thick;
+    border-color: black;
+    border-style: solid;
+    animation: mymove 3s infinite;
+    -webkit-transition: width 2s, height 2s;
+    transition: width 2s, height 2s;
+}
+div :hover{
+    transform: scale(1.5,1.5);
+}
+
+#subtitulo{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#rodape{
+    float: center;
+    text-align: center;
+}
+
+.imagem{
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    width: 75%;
+}
+@media (max-width: 1024px) {
+
+    #div1{
+        width: 30%;
+        height: 30%;
+        margin: 1%;
+        background: #978d8d;
+        float: left;
+        border-width: thick;
+        border-color: black;
+        border-style: solid;
+        animation: mymove 3s infinite;
+    }
+    #div2{
+        width: 30%;
+        height: 30%;
+        margin: 1%;
+        background: #773a3a;
+        float: left;
+        border-width: thick;
+        border-color: black;
+        border-style: solid;
+        animation: mymove 3s infinite;
+    }
+    #div3{
+        width: 30%;
+        height: 30%;
+        margin: 1%;
+        background: #1f2177;
+        float: left;
+        border-width: thick;
+        border-color: black;
+        border-style: solid;
+        animation: mymove 3s infinite;
+    }
+    #div4{
+        width: 30%;
+        height: 30%;
+        margin: 1%;
+        background:#5b60a5;
+        float: left;
+        border-width: thick;
+        border-color: black;
+        border-style: solid;
+        animation: mymove 3s infinite;
+    }
+    #div5{
+        width: 30%;
+        height: 30%;
+        margin: 1%;
+        background: #8d1ba3;
+        float: left;
+        border-width: thick;
+        border-color: black;
+        border-style: solid;
+        animation: mymove 3s infinite;
+    }
+    #div6{
+        width: 30%;
+        height: 30%;
+        margin: 1%;
+        background: #16a17e;
+        float: left;
+        border-width: thick;
+        border-color: black;
+        border-style: solid;
+        animation: mymove 3s infinite;
+        -webkit-transition: width 2s, height 2s;
+        transition: width 2s, height 2s;
+    }
+    div :hover{
+        transform: scale(1.5,1.5);
+    }
+    
+    #subtitulo{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    #rodape{
+        float: center;
+        text-align: center;
+    }
+    
+}
+@media (max-width: 648px) {
+    #h1 {
+        margin:0px auto 0px auto;
+        width:960px;
+        height:82px;
+        position:relative;
+        background:#c94343; 
+        font-family: 'Kaushan Script', cursive;
+        font-size: 2.5em;
+        text-align: center;
+    }
+    @-webkit-keyframes mymove{
+        from {background: red}
+        to {background: yellow}  
+    }
+    @keyframes mymove {
+        from {background: red}
+        to {background: yellow} 
+    }
+    #div1{
+        width: 30%;
+        height: 30%;
+        margin: 1%;
+        background: #978d8d;
+        float: left;
+        border-width: thick;
+        border-color: black;
+        border-style: solid;
+        animation: mymove 3s infinite;
+    }
+    #div2{
+        width: 30%;
+        height: 30%;
+        margin: 1%;
+        background: #773a3a;
+        float: left;
+        border-width: thick;
+        border-color: black;
+        border-style: solid;
+        animation: mymove 3s infinite;
+    }
+    #div3{
+        width: 30%;
+        height: 30%;
+        margin: 1%;
+        background: #1f2177;
+        float: left;
+        border-width: thick;
+        border-color: black;
+        border-style: solid;
+        animation: mymove 3s infinite;
+    }
+    #div4{
+        width: 30%;
+        height: 30%;
+        margin: 1%;
+        background:#5b60a5;
+        float: left;
+        border-width: thick;
+        border-color: black;
+        border-style: solid;
+        animation: mymove 3s infinite;
+    }
+    #div5{
+        width: 30%;
+        height: 30%;
+        margin: 1%;
+        background: #8d1ba3;
+        float: left;
+        border-width: thick;
+        border-color: black;
+        border-style: solid;
+        animation: mymove 3s infinite;
+    }
+    #div6{
+        width: 30%;
+        height: 30%;
+        margin: 1%;
+        background: #16a17e;
+        float: left;
+        border-width: thick;
+        border-color: black;
+        border-style: solid;
+        animation: mymove 3s infinite;
+        -webkit-transition: width 2s, height 2s;
+        transition: width 2s, height 2s;
+    }
+    div :hover{
+        transform: scale(1.5,1.5);
+    }
+    
+    #subtitulo{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    #rodape{
+        float: center;
+        text-align: center;
+    }
+    
+}
